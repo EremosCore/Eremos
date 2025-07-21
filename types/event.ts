@@ -11,3 +11,9 @@ export type Signal = {
   timestamp: number;
   source: string;
 };
+
+export interface WalletEvent {
+  wallet: string;
+  txCount: number;
+  timestamp: string;
+}
