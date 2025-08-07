@@ -8,7 +8,6 @@
 // Core Types
 export * from "./types/agent";
 export * from "./types/signal";
-export * from "./types/event";
 export * from "./types/config";
 
 // Utilities
@@ -24,10 +23,7 @@ export * from "./utils/debug";
 
 // Agents
 export { Theron } from "./agents/theron";
-export { default as Observer } from "./agents/observer";
-export { default as Harvester } from "./agents/harvester";
-export { default as LaunchTracker } from "./agents/launchtracker";
-export { default as ExampleAgent } from "./agents/example";
+export { Observer } from "./agents/observer";
 
 // Version info
 export const version = "0.1.0";

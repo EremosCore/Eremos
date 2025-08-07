@@ -30,7 +30,8 @@
     "utils/**/*",
     "types/**/*",
     "scripts/**/*",
-    "tests/**/*"
+    "tests/**/*",
+    "index.ts"
   ],
   "exclude": [
     "node_modules",

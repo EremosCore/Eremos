@@ -58,8 +58,8 @@
   "devDependencies": {
     "@types/jest": "^29.5.12",
     "@types/node": "^20.11.24",
-    "@typescript-eslint/eslint-plugin": "^7.1.1",
-    "@typescript-eslint/parser": "^7.1.1",
+    "@typescript-eslint/eslint-plugin": "^8.39.0",
+    "@typescript-eslint/parser": "^8.39.0",
     "eslint": "^8.57.0",
     "eslint-config-prettier": "^9.1.0",
     "eslint-plugin-prettier": "^5.1.3",
@@ -70,14 +70,18 @@
     "typescript": "^5.4.2"
   },
   "dependencies": {
-    "@solana/web3.js": "^1.91.1",
-    "@solana/spl-token": "^0.4.1"
+    "@solana/spl-token": "^0.4.1",
+    "@solana/web3.js": "^1.91.1"
   },
   "jest": {
     "preset": "ts-jest",
     "testEnvironment": "node",
-    "roots": ["<rootDir>/tests"],
-    "testMatch": ["**/*.test.ts"],
+    "roots": [
+      "<rootDir>/tests"
+    ],
+    "testMatch": [
+      "**/*.test.ts"
+    ],
     "collectCoverageFrom": [
       "agents/**/*.ts",
       "utils/**/*.ts",
