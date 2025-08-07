@@ -273,4 +273,4 @@ If you have questions about contributing:
 - Join our community discussions
 - Contact the maintainers directly
 
-Thank you for contributing to Eremos! 🚀
+Thank you for contributing to Eremos!
