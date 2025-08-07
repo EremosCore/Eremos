@@ -2,17 +2,63 @@
   "name": "eremos-core",
   "version": "0.1.0",
   "description": "Modular agent framework for on-chain activity monitoring.",
-  "main": "index.js",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "scripts": {
-    "dev": "echo 'Running dev mode...'"
+    "build": "tsc",
+    "dev": "ts-node scripts/dev-agent.ts",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "lint": "eslint . --ext .ts",
+    "lint:fix": "eslint . --ext .ts --fix",
+    "format": "prettier --write \"**/*.{ts,js,json,md}\"",
+    "clean": "rm -rf dist",
+    "prebuild": "npm run clean",
+    "start": "node dist/index.js",
+    "validate": "ts-node scripts/validate-agent.ts",
+    "generate:agent": "ts-node scripts/generate-agent.ts",
+    "export:memory": "ts-node scripts/export-agent-memory.ts",
+    "simulate": "ts-node scripts/simulate-cluster.ts",
+    "stress": "ts-node scripts/stress-test.ts"
   },
   "keywords": [
     "agent",
     "onchain",
     "modular",
     "blockchain",
-    "framework"
+    "framework",
+    "solana",
+    "typescript",
+    "swarm-agents"
   ],
+  "author": "EremosCore",
   "license": "MIT",
-  "author": "EremosCore"
+  "devDependencies": {
+    "@types/jest": "^29.5.12",
+    "@types/node": "^20.11.24",
+    "@typescript-eslint/eslint-plugin": "^7.18.0",
+    "@typescript-eslint/parser": "^7.18.0",
+    "eslint": "^8.57.0",
+    "eslint-config-prettier": "^9.1.2",
+    "eslint-plugin-prettier": "^5.5.4",
+    "jest": "^29.7.0",
+    "prettier": "^3.2.5",
+    "ts-jest": "^29.1.2",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.3.3"
+  },
+  "dependencies": {
+    "node-fetch": "^3.3.2"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/EremosCore/Eremos.git"
+  },
+  "bugs": {
+    "url": "https://github.com/EremosCore/Eremos/issues"
+  },
+  "homepage": "https://github.com/EremosCore/Eremos#readme"
 }
