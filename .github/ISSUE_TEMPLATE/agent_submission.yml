@@ -1,0 +1,88 @@
+name: 🤖 Agent Submission
+description: Submit a new agent for the Eremos swarm
+title: "[Agent]: "
+labels: ["agent", "community", "needs-review"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for contributing a new agent to the Eremos swarm! Please provide details about your agent.
+
+  - type: input
+    id: agent-name
+    attributes:
+      label: Agent name
+      description: What is the name of your agent?
+      placeholder: e.g., "Oracle", "Sentinel", "Harvester"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: agent-role
+    attributes:
+      label: Agent role
+      description: What role does this agent fulfill?
+      options:
+        - observer
+        - memory_vault
+        - trigger
+        - harvester
+        - tracker
+        - analyzer
+        - custom
+    validations:
+      required: true
+
+  - type: textarea
+    id: agent-description
+    attributes:
+      label: Agent description
+      description: Provide a detailed description of what this agent does.
+      placeholder: This agent monitors... and emits signals when...
+    validations:
+      required: true
+
+  - type: textarea
+    id: signal-types
+    attributes:
+      label: Signal types
+      description: What types of signals does this agent emit?
+      placeholder: |
+        - wallet_activity
+        - contract_deployment
+        - anomaly_detected
+    validations:
+      required: true
+
+  - type: textarea
+    id: watch-targets
+    attributes:
+      label: Watch targets
+      description: What blockchain events or patterns does this agent watch?
+      placeholder: |
+        - New token launches on Pump.fun
+        - Whale wallet movements
+        - Suspicious transaction patterns
+
+  - type: checkboxes
+    id: checklist
+    attributes:
+      label: Submission checklist
+      description: Please confirm the following
+      options:
+        - label: Agent follows the Eremos agent interface
+          required: true
+        - label: Agent includes proper TypeScript types
+          required: true
+        - label: Agent has been tested locally
+          required: true
+        - label: Agent includes documentation
+          required: true
+        - label: Code follows the project's style guidelines
+          required: true
+
+  - type: textarea
+    id: additional-notes
+    attributes:
+      label: Additional notes
+      description: Any additional information about the agent or implementation details.
