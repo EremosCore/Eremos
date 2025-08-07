@@ -7,9 +7,9 @@ type SignalSimulation = {
 
 const thresholds = [0.5, 0.6, 0.72, 0.85, 0.91];
 
-thresholds.forEach((confidence) => {
+thresholds.forEach(confidence => {
   const result: SignalSimulation = {
-    agent: "Theron",
+    agent: 'Theron',
     threshold: 0.7,
     currentConfidence: confidence,
     willEmit: confidence > 0.7,
@@ -18,5 +18,5 @@ thresholds.forEach((confidence) => {
   console.log(`\n[Signal Test]`);
   console.log(`Confidence: ${result.currentConfidence}`);
   console.log(`Threshold: ${result.threshold}`);
-  console.log(`Emitted: ${result.willEmit ? "YES" : "NO"}`);
+  console.log(`Emitted: ${result.willEmit ? 'YES' : 'NO'}`);
 });
