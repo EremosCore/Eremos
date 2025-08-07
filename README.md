@@ -74,9 +74,10 @@ Confidence is computed via agent-side scoring and logged alongside the signal.
 
 ## Tech Stack
 
-- **Frontend:** Next.js, Tailwind CSS
-- **Backend:** Node.js (TypeScript-based agent runner)
 - **Language:** TypeScript (typed logic across agents, utils, and infra)
+- **Runtime:** Node.js (TypeScript-based agent runner)
+- **Testing:** Jest with TypeScript support
+- **Linting:** ESLint with Prettier formatting
 - **Chain Layer:** RPC watchers, mempool filters, native triggers
 
 ---
@@ -92,8 +93,33 @@ npm install
 Set up your environment:
 
 ```bash
-cp .env.example .env.local
+cp env.example .env.local
 npm run dev
+```
+
+## Development
+
+```bash
+# Run tests
+npm test
+
+# Run tests in watch mode
+npm run test:watch
+
+# Lint code
+npm run lint
+
+# Format code
+npm run format
+
+# Build the project
+npm run build
+
+# Validate agents
+npm run validate
+
+# Generate new agent
+npm run generate:agent
 ```
 
 ---
@@ -110,8 +136,24 @@ npm run dev
 
 ## Contributing
 
-We’re open to contributors.  
-If you are experienced in TypeScript and like agent-based systems, check `example.ts` and build your own observer.
+We're open to contributors! Here's how to get started:
+
+1. **Fork the repository**
+2. **Set up your development environment:**
+   ```bash
+   npm install
+   cp env.example .env.local
+   npm run lint
+   npm test
+   ```
+3. **Create a new agent or improve existing ones**
+4. **Follow our coding standards:**
+   - Run `npm run lint` before committing
+   - Add tests for new functionality
+   - Use TypeScript for all new code
+5. **Submit a pull request**
+
+If you're experienced in TypeScript and like agent-based systems, check `agents/example.ts` and build your own observer.
 If you're a designer, artist, or just have ideas that fit the mythos - send us a DM on Twitter. [@EremosCore](https://x.com/EremosCore)
 
 ---
