@@ -1,10 +1,12 @@
 import { Agent } from "../types/agent"
+import { generateSignalHash } from "../utils/signal";
+import { logSignal } from "../utils/logger";
 
 export const Observer: Agent = {
   id: "agent-observer",
   name: "Observer",
   role: "surveillance",
-  glyph: "φ",
+  glyph: "Δ",
   watchType: "wallet_activity",
   triggerThreshold: 3,
   lastSignal: null,
@@ -13,7 +15,14 @@ export const Observer: Agent = {
 
   observe: (event) => {
     if (event?.type === "wallet_activity" && event.cluster?.length > 3) {
-      console.log("Observed cluster:", event.cluster)
+      const hash = generateSignalHash(event);
+      logSignal({
+        agent: "Observer",
+        type: "cluster_detected",
+        glyph: "Δ",
+        hash,
+        timestamp: new Date().toISOString(),
+      })
     }
   }
 }
