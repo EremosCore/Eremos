@@ -1,8 +1,18 @@
 # Eremos
 
+<div align="center">
+
 ![Eremos](docs/banner2.png)
 
 **Autonomous swarm agents for early on-chain signal detection**
+
+[![CI/CD Pipeline](https://github.com/EremosCore/Eremos/actions/workflows/ci.yml/badge.svg)](https://github.com/EremosCore/Eremos/actions/workflows/ci.yml)
+[![TypeScript](https://img.shields.io/badge/TypeScript-5.2+-blue.svg)](https://www.typescriptlang.org/)
+[![Node.js](https://img.shields.io/badge/Node.js-18+-green.svg)](https://nodejs.org/)
+[![MIT License](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](docs/contributing.md)
+
+</div>
 
 Eremos is a lightweight framework for deploying modular agents that monitor blockchain activity - tracking wallet clusters, mint patterns, and contract anomalies.
 Designed for devs who want low-noise, early signals embedded into their workflows.
@@ -94,6 +104,34 @@ Set up your environment:
 ```bash
 cp .env.example .env.local
 npm run dev
+```
+
+### Development Commands
+
+```bash
+# Run tests
+npm test
+npm run test:watch     # Watch mode
+npm run test:coverage  # With coverage report
+
+# Code quality
+npm run lint           # Check linting
+npm run lint:fix       # Fix linting issues
+npm run format         # Format code with Prettier
+npm run type-check     # TypeScript type checking
+
+# Build
+npm run build          # Compile TypeScript
+npm run clean          # Clean build directory
+
+# Agent utilities
+npm run agent:list     # List all available agents
+npm run agent:generate # Generate new agent template
+npm run agent:validate # Validate agent configuration
+
+# Simulation and testing
+npm run simulate       # Run agent cluster simulation
+npm run stress-test    # Performance stress testing
 ```
 
 ---
