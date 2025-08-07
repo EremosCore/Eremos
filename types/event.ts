@@ -5,9 +5,3 @@ export type WalletActivityEvent = {
   cluster?: string[];
 };
 
-export type Signal = {
-  type: string;
-  payload: any;
-  timestamp: number;
-  source: string;
-};
