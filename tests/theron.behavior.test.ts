@@ -1,9 +1,14 @@
 import { Theron } from "../agents/theron";
 
-test("Theron emits signal on wallet cluster", () => {
-  const event = { type: "wallet_activity", cluster: [1, 2, 3, 4] };
-  const signals = Theron.observe(event);
-  expect(signals).toBeDefined();
+test("Theron emits signal on anomaly", () => {
+  const consoleSpy = jest.spyOn(console, 'log').mockImplementation(() => {});
+
+  const event = { type: "anomaly" };
+  Theron.observe(event);
+
+  expect(consoleSpy).toHaveBeenCalled();
+
+  consoleSpy.mockRestore();
 });
 
 test("Theron returns memory snapshot", () => {
