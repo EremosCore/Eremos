@@ -21,6 +21,20 @@ Modular and extendable by design.*
 
 **Agent-001 Coming Soon**
 
+## 🎮 Interactive Playground
+
+Experience Eremos agents in action with our **live visualization playground**:
+
+**[▶️ Launch Agent Playground](playground/index.html)** - *Open in your browser*
+
+- **Real-time agent visualization** with interactive 3D-style interface
+- **Live signal monitoring** and confidence tracking
+- **Performance metrics** dashboard
+- **Simulation controls** to trigger events and test scenarios
+- **Agent behavior analytics** with detailed logging
+
+*Click agents to trigger events, watch signal flows, and monitor swarm intelligence in real-time!*
+
 ---
 
 ## Features
@@ -81,7 +95,53 @@ Confidence is computed via agent-side scoring and logged alongside the signal.
 
 ---
 
+## 🛠️ Developer Tools
+
+### Agent Testing Suite
+
+Advanced testing utility for comprehensive agent validation:
+
+```bash
+# Run full test suite on all agents
+npx ts-node tools/agent-tester.ts
+
+# Test specific agents directory
+npx ts-node tools/agent-tester.ts ./custom-agents
+```
+
+**Features:**
+- **Performance profiling** - Execution time & memory usage analysis
+- **Confidence validation** - Signal quality assessment  
+- **Error resilience testing** - Robustness under failure conditions
+- **Concurrent processing** - Multi-threaded capability testing
+- **Detailed reporting** - JSON output with actionable recommendations
+
+The testing suite generates comprehensive reports including:
+- Agent reliability scores
+- Performance benchmarks  
+- Memory efficiency analysis
+- Confidence score distributions
+- Optimization recommendations
+
+---
+
 ## Getting Started
+
+### Quick Demo
+
+Experience Eremos features instantly with our interactive demo:
+
+```bash
+git clone https://github.com/EremosCore/Eremos.git
+cd Eremos
+chmod +x demo.sh && ./demo.sh
+```
+
+This will launch:
+1. **Interactive Playground** - Visual agent simulation in your browser
+2. **Testing Suite** - Comprehensive agent validation and profiling
+
+### Standard Setup
 
 ```bash
 git clone https://github.com/EremosCore/Eremos.git
