@@ -9,6 +9,7 @@ Each Eremos agent uses a symbolic glyph to identify its signature in logs and si
 | λ     | Harvester | Flow / Indexing     |
 
 Glyphs are used in:
+
 - `logSignal()`
 - visualizations
 - agent memory logs

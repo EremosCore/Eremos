@@ -1,0 +1,52 @@
+name: Bug Report
+description: Report a bug or issue that you found.
+title: "[BUG]: bug name"
+labels: [bug]
+body:
+
+  - type: textarea
+    id: bug-description
+    attributes:
+      label: Bug Description
+      description: Short description of the bug. Provide images/code if applicable.
+    validations:
+      required: true
+  
+  - type: textarea
+    id: screenshot
+    attributes:
+      label: Screenshot/Code Snippet
+      description: Include any relevant screenshots or code snippets.
+      value: |
+        ![DESCRIPTION](link.png)
+      render: bash
+    validations:
+      required: false
+  
+  - type: textarea
+    id: steps-to-reproduce
+    attributes:
+      label: Steps to Reproduce
+      description: Provide clear steps to reproduce the bug.
+      placeholder: |
+        1. Go to '...'
+        2. Click on '...'
+        3. Scroll down to '...'
+        4. See error
+    validations:
+      required: true
+
+  - type: textarea
+    id: logs
+    attributes:
+      label: 'Error Message'
+      description: Copy and paste any relevant logs or error messages.
+      render: bash
+    validations:
+      required: false
+  
+  - type: textarea
+    id: extra-information
+    attributes:
+      label: Additional Information
+      description: Provide any additional information that might help us understand the bug.

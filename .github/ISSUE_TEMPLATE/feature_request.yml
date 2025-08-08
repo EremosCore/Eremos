@@ -1,0 +1,55 @@
+name: Feature Request
+description: Suggest a new feature or improvement for EremosCore.
+title: "[FEATURE]: feature name"
+labels: [enhancement]
+body:
+
+  - type: textarea
+    id: feature-description
+    attributes:
+      label: Feature Description
+      description: Please describe the feature or improvement you would like to see.
+      placeholder: |
+        e.g. I would like to have a new agent that monitors X on Solana...
+    validations:
+      required: true
+
+  - type: textarea
+    id: motivation
+    attributes:
+      label: Motivation / Use Case
+      description: Why is this feature important? What problem does it solve or what value does it add?
+      placeholder: |
+        e.g. This would help users to...
+    validations:
+      required: true
+
+  - type: textarea
+    id: proposed-solution
+    attributes:
+      label: Proposed Solution
+      description: If you have ideas on how to implement this, please describe them here.
+      placeholder: |
+        e.g. Add a new agent class in /agents, update the agent registry, etc.
+    validations:
+      required: false
+
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives Considered
+      description: Have you considered any alternative solutions or features?
+      placeholder: |
+        e.g. Instead of a new agent, maybe an extension to an existing one...
+    validations:
+      required: false
+
+  - type: textarea
+    id: additional-context
+    attributes:
+      label: Additional Context
+      description: Add any other context, screenshots, or references here.
+      placeholder: |
+        e.g. Links to similar features in other projects, diagrams, etc.
+    validations:
+      required: false
