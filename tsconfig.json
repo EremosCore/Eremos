@@ -2,10 +2,21 @@
   "compilerOptions": {
     "target": "es6",
     "module": "commonjs",
+    "outDir": "./dist",
+    "rootDir": "./",
     "strict": true,
     "esModuleInterop": true,
+    "skipLibCheck": true,
     "forceConsistentCasingInFileNames": true,
-    "skipLibCheck": true
+    "declaration": true,
+    "declarationMap": true,
+    "sourceMap": true,
+    "resolveJsonModule": true,
+    "moduleResolution": "node",
+    "allowSyntheticDefaultImports": true,
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true
   },
-  "include": ["./agents", "./types", "./utils"]
+  "include": ["**/*.ts"],
+  "exclude": ["node_modules", "dist"]
 }
