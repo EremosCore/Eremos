@@ -190,56 +190,46 @@
   <table>
     <tr>
       <td align="center">
-        <img src="https://img.shields.io/badge/-171717?style=for-the-badge&logo=data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjMTRGMTk1IiBzdHJva2Utd2lkdGg9IjIiPjxwYXRoIGQ9Ik0xMiAyTDIgN2wxMCA1bDEwLTVMTTIgMTJsMTAgNWwxMC01TTIgMTdsMTAgNWwxMC01Ii8+PC9zdmc+" height="40"/>
-        <h4 style="color: #14F195">Modular Agents</h4>
-        <p style="color: #8A8F98">Scoped logic for detecting wallet activity, contract spawns, and anomalies</p>
+        <h3>🤖</h3>
+        <b>Modular Agents</b>
+        <p>Scoped logic for detecting wallet activity, contract spawns, and anomalies</p>
       </td>
       <td align="center">
-        <img src="https://img.shields.io/badge/-171717?style=for-the-badge&logo=data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjMTRGMTk1IiBzdHJva2Utd2lkdGg9IjIiPjxwYXRoIGQ9Ik0yMyAxMkExMSAxMSAwIDAgMSAxMiAyM0ExMSAxMSAwIDAgMSAxIDEyQTExIDExIDAgMCAxIDIzIDEyIi8+PHBhdGggZD0iTTggMTJMMTEgMTVMMTYgMTAiLz48L3N2Zz4=" height="40"/>
-        <h4 style="color: #14F195">Signal Emission</h4>
-        <p style="color: #8A8F98">Structured signals for logging, alerting, or downstream use</p>
+        <h3>📡</h3>
+        <b>Signal Emission</b>
+        <p>Structured signals for logging, alerting, or downstream use</p>
       </td>
       <td align="center">
-        <img src="https://img.shields.io/badge/-171717?style=for-the-badge&logo=data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjMTRGMTk1IiBzdHJva2Utd2lkdGg9IjIiPjxwYXRoIGQ9Ik0xMiAyQzYuNDggMiAyIDYuNDggMiAxMnM0LjQ4IDEwIDEwIDEwIDEwLTQuNDggMTAtMTBTMTcuNTIgMiAxMiAyem0wIDE4Yy00LjQxIDAtOC0zLjU5LTgtOHMzLjU5LTggOC04IDggMy41OSA4IDgtMy41OSA4LTggOHoiLz48L3N2Zz4=" height="40"/>
-        <h4 style="color: #14F195">Swarm Design</h4>
-        <p style="color: #8A8F98">Each agent operates independently with shared utilities</p>
+        <h3>🌐</h3>
+        <b>Swarm Design</b>
+        <p>Each agent operates independently with shared utilities</p>
       </td>
     </tr>
     <tr>
       <td align="center">
-        <h3 style="font-size: 2em; margin: 0.2em;">🔌</h3>
-        <h4 style="color: #14F195; margin: 0.5em;">Extensible Core</h4>
-        <p style="color: #8A8F98">Plug in watchers, inference layers, or custom triggers</p>
+        <h3>🔌</h3>
+        <b>Extensible Core</b>
+        <p>Plug in watchers, inference layers, or custom triggers</p>
       </td>
       <td align="center">
-        <h3 style="font-size: 2em; margin: 0.2em;">📊</h3>
-        <h4 style="color: #14F195; margin: 0.5em;">Minimal Output</h4>
-        <p style="color: #8A8F98">Log only what matters - high signal, low noise</p>
+        <h3>📊</h3>
+        <b>Minimal Output</b>
+        <p>Log only what matters - high signal, low noise</p>
       </td>
       <td align="center">
-        <h3 style="font-size: 2em; margin: 0.2em;">🎯</h3>
-        <h4 style="color: #14F195; margin: 0.5em;">Launch Detection</h4>
-        <p style="color: #8A8F98">Trace fresh wallets & flag high-confidence deploys in real time</p>
+        <h3>🎯</h3>
+        <b>Launch Detection</b>
+        <p>Trace fresh wallets & flag high-confidence deploys in real time</p>
       </td>
     </tr>
   </table>
 </div>
 
-<div align="center" style="margin: 2em 0;">
-  <div style="background: #1E1E1E; border: 2px solid #FF6B6B; border-radius: 8px; max-width: 800px; margin: 0 auto;">
-    <div style="background: #FF6B6B; padding: 0.5em; display: flex; align-items: center; justify-content: center; gap: 8px;">
-      <span style="font-size: 1.5em;">👻</span>
-      <h3 style="color: #171717; margin: 0; font-size: 1.2em;">Ghost Watcher</h3>
-    </div>
-    <div style="padding: 1.5em; color: #FF6B6B;">
-      <p style="margin: 0;">
-        <strong>⚠️ WARNING:</strong> Monitors long-dormant wallets that suddenly become active again.<br/>
-        Perfect for tracing old dev wallets or detecting potential rug setups.
-      </p>
-    </div>
-  </div>
-</div>
-
+### 👻 Ghost Watcher
+<p align="center">
+  <i>Monitors long-dormant wallets that suddenly become active again. <br/>
+  Perfect for tracing old dev wallets or detecting potential rug setups.</i>
+</p>
 
 ---
 
