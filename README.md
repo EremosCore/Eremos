@@ -77,7 +77,7 @@
   </table>
 </div>
 
-## How It Works
+## How It Works?
 
 <div align="center">
   <table>
@@ -267,7 +267,7 @@ Confidence is computed via agent-side scoring and logged alongside the signal.
 
 ---
 
-## Tech Stack
+## ⚙️ Tech Stack
 
 - **Frontend:** Next.js, Tailwind CSS
 - **Backend:** Node.js (TypeScript-based agent runner)
@@ -276,7 +276,7 @@ Confidence is computed via agent-side scoring and logged alongside the signal.
 
 ---
 
-## Getting Started
+## 🚀 Getting Started
 
 ```bash
 git clone https://github.com/EremosCore/Eremos.git
@@ -293,7 +293,7 @@ npm run dev
 
 ---
 
-## Key Folders
+## 📂 Key Folders
 
 - `/agents` - Agent templates + logic  
 - `/utils` - Shared signal/logging utilities  
@@ -303,7 +303,7 @@ npm run dev
 
 ---
 
-## Contributing
+## 🤝 Contributing
 
 We’re open to contributors.  
 If you are experienced in TypeScript and like agent-based systems, check `example.ts` and build your own observer.
@@ -311,13 +311,13 @@ If you're a designer, artist, or just have ideas that fit the mythos - send us a
 
 ---
 
-## License
+## 🪪 License
 
 MIT © Eremos
 
 ---
 
-## Links
+## 🔗 Links
 
 - **Twitter/X:** [@EremosCore](https://x.com/EremosCore)
 - **Website:** [Eremos.io](https://www.eremos.io/)
