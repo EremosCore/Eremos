@@ -124,33 +124,30 @@
     B --> C[Pattern Detection]
     C --> D[Confidence Scoring]
     D --> E[Signal Emission]
-    style A fill:#ff9900
-    style B fill:#3498db
-    style C fill:#2ecc71
-    style D fill:#9b59b6
-    style E fill:#e74c3c
+    style A fill:#171717,stroke:#14F195,color:#14F195
+    style B fill:#171717,stroke:#14F195,color:#14F195
+    style C fill:#171717,stroke:#14F195,color:#14F195
+    style D fill:#171717,stroke:#14F195,color:#14F195
+    style E fill:#171717,stroke:#14F195,color:#14F195
   ```
 </div>
 
-## 🎮 Use Cases
+## Use Cases
 
 <div align="center">
   <table>
     <tr>
-      <td align="center">
-        <h3>👥</h3>
-        <b>Developers</b>
-        <p>Monitor contract deployments & track wallet patterns</p>
+      <td align="center" width="33%">
+        <img src="https://img.shields.io/badge/Developers-171717?style=for-the-badge&labelColor=171717&color=14F195&logo=data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjMTRGMTk1IiBzdHJva2Utd2lkdGg9IjIiPjxwYXRoIGQ9Ik04IDJoOE0xNiAydjRNOCAydjRNMyA5aDE4TTMgOXYxMGEyIDIgMCAwMDIgMmgxNGEyIDIgMCAwMDItMlY5Ii8+PC9zdmc+" height="28"/>
+        <p style="color: #8A8F98; margin-top: 8px;">Monitor contract deployments & track wallet patterns</p>
       </td>
-      <td align="center">
-        <h3>📊</h3>
-        <b>Analysts</b>
-        <p>Track emerging trends & token launches</p>
+      <td align="center" width="33%">
+        <img src="https://img.shields.io/badge/Analysts-171717?style=for-the-badge&labelColor=171717&color=14F195&logo=data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjMTRGMTk1IiBzdHJva2Utd2lkdGg9IjIiPjxwYXRoIGQ9Ik0yMSAxMkg3TTIxIDZIN00yMSAxOEg3TTMgNmgyTTMgMTJoMk0zIDE4aDIiLz48L3N2Zz4=" height="28"/>
+        <p style="color: #8A8F98; margin-top: 8px;">Track emerging trends & token launches</p>
       </td>
-      <td align="center">
-        <h3>🔒</h3>
-        <b>Security Teams</b>
-        <p>Detect suspicious wallet activities & potential threats</p>
+      <td align="center" width="33%">
+        <img src="https://img.shields.io/badge/Security-171717?style=for-the-badge&labelColor=171717&color=14F195&logo=data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjMTRGMTk1IiBzdHJva2Utd2lkdGg9IjIiPjxwYXRoIGQ9Ik0xMiAyMnM4LTQgOC0xMFY1bC04LTNsLTggM3Y3YzAgNiA4IDEwIDggMTB6Ii8+PC9zdmc+" height="28"/>
+        <p style="color: #8A8F98; margin-top: 8px;">Detect suspicious wallet activities & potential threats</p>
       </td>
     </tr>
   </table>
