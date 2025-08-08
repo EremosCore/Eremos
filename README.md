@@ -56,8 +56,6 @@
 
 ---
 
----
-
 ## What is Eremos?
 
 <div align="center">
