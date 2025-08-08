@@ -22,7 +22,9 @@
   </a>
 </p>
 
-<h3 align="center">🔮 Autonomous swarm agents for early on-chain signal detection 🔮</h3>
+<h3 align="center">
+  <img src="https://img.shields.io/badge/|-Autonomous%20Swarm%20Agents-202024?style=for-the-badge&logo=data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI4MDAiIGhlaWdodD0iNjAwIiB2aWV3Qm94PSIwIDAgMjQgMjQiPjxwYXRoIGZpbGw9IiNmZmYiIGQ9Ik0xMiAyQzYuNDggMiAyIDYuNDggMiAxMnM0LjQ4IDEwIDEwIDEwIDEwLTQuNDggMTAtMTBTMTcuNTIgMiAxMiAyem0wIDE4Yy00LjQyIDAtOC0zLjU4LTgtOHMzLjU4LTggOC04IDggMy41OCA4IDgtMy41OCA4LTggOHoiLz48L3N2Zz4=" alt="Autonomous Agents"/>
+</h3>
 
 <p align="center">
   <b>Eremos</b> is a lightweight framework for deploying modular agents that monitor blockchain activity - tracking wallet clusters, mint patterns, and contract anomalies.
@@ -31,57 +33,75 @@
 </p>
 
 <p align="center">
-  <a href="#features">Features</a> •
-  <a href="#getting-started">Quick Start</a> •
-  <a href="#example-signal">Signals</a> •
-  <a href="#tech-stack">Tech Stack</a> •
-  <a href="#contributing">Contributing</a>
+  <a href="#features">
+    <img src="https://img.shields.io/badge/Features-202024?style=flat-square&logo=data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNiIgaGVpZ2h0PSIxNiIgdmlld0JveD0iMCAwIDI0IDI0Ij48cGF0aCBmaWxsPSIjZmZmIiBkPSJNMTEuOTkgMkM2LjQ3IDIgMiA2LjQ4IDIgMTJzNC40NyAxMCA5Ljk5IDEwQzE3LjUyIDIyIDIyIDE3LjUyIDIyIDEyUzE3LjUyIDIgMTEuOTkgMnptNC4yNCAxNkwxMiAxNC4yNSA3Ljc2IDE4bDEuMTItNC44N0w1IDkuOTFsNC45MS0uNDJMMTIgNWwyLjA5IDQuNDkgNC45MS40Mi0zLjg4IDMuMjJ6Ii8+PC9zdmc+" alt="Features"/>
+  </a> •
+  <a href="#getting-started">
+    <img src="https://img.shields.io/badge/Quick%20Start-202024?style=flat-square&logo=data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNiIgaGVpZ2h0PSIxNiIgdmlld0JveD0iMCAwIDI0IDI0Ij48cGF0aCBmaWxsPSIjZmZmIiBkPSJNMTMgM3YxOGw5LTlMMTMgM3oiLz48L3N2Zz4=" alt="Quick Start"/>
+  </a> •
+  <a href="#example-signal">
+    <img src="https://img.shields.io/badge/Signals-202024?style=flat-square&logo=data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNiIgaGVpZ2h0PSIxNiIgdmlld0JveD0iMCAwIDI0IDI0Ij48cGF0aCBmaWxsPSIjZmZmIiBkPSJNMTIgMkM2LjQ4IDIgMiA2LjQ4IDIgMTJzNC40OCAxMCAxMCAxMCAxMC00LjQ4IDEwLTEwUzE3LjUyIDIgMTIgMnptMCAxOGMtNC40MiAwLTgtMy41OC04LThzMy41OC04IDgtOCA4IDMuNTggOCA4LTMuNTggOC04IDh6Ii8+PC9zdmc+" alt="Signals"/>
+  </a> •
+  <a href="#tech-stack">
+    <img src="https://img.shields.io/badge/Tech%20Stack-202024?style=flat-square&logo=data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNiIgaGVpZ2h0PSIxNiIgdmlld0JveD0iMCAwIDI0IDI0Ij48cGF0aCBmaWxsPSIjZmZmIiBkPSJNMjAgOGgtM1Y0SDNjLTEuMSAwLTIgLjktMiAydjExYzAgMS4xLjkgMiAyIDJoMTRjMS4xIDAgMi0uOSAyLTJ2LTJoMyIvPjwvc3ZnPg==" alt="Tech Stack"/>
+  </a> •
+  <a href="#contributing">
+    <img src="https://img.shields.io/badge/Contributing-202024?style=flat-square&logo=data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNiIgaGVpZ2h0PSIxNiIgdmlld0JveD0iMCAwIDI0IDI0Ij48cGF0aCBmaWxsPSIjZmZmIiBkPSJNMTYgMTFjMS42NiAwIDIuOTktMS4zNCAyLjk5LTNTMTcuNjYgNSAxNiA1Yy0xLjY2IDAtMyAxLjM0LTMgM3MxLjM0IDMgMyAzem0tOCAwYzEuNjYgMCAyLjk5LTEuMzQgMi45OS0zUzkuNjYgNSA4IDVDNi4zNCA1IDUgNi4zNCA1IDhzMS4zNCAzIDMgM3ptMCAyYy0yLjMzIDAtNyAxLjE3LTcgMy41VjE5aDE0di0yLjVjMC0yLjMzLTQuNjctMy41LTctMy41em04IDBjLS4yOSAwLS42Mi4wMi0uOTcuMDUgMS4xNi44NCAxLjk3IDEuOTcgMS45NyAzLjQ1VjE5aDZ2LTIuNWMwLTIuMzMtNC42Ny0zLjUtNy0zLjV6Ii8+PC9zdmc+" alt="Contributing"/>
+  </a>
 </p>
 
 </div>
 
 ---
 
-## 🎯 What is Eremos?
+## What is Eremos?
 
 <div align="center">
   <table>
     <tr>
       <td align="center" width="50%">
-        <h3>🔍 Problem</h3>
+        <h3>
+          <img src="https://img.shields.io/badge/Problem-critical?style=for-the-badge&logo=data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNiIgaGVpZ2h0PSIxNiIgdmlld0JveD0iMCAwIDI0IDI0Ij48cGF0aCBmaWxsPSIjZmZmIiBkPSJNMTEgMTVoMnYyaC0ydi0yem0wLThoMnY2aC0yVjd6bS45OS01QzYuNDcgMiAyIDYuNDggMiAxMnM0LjQ3IDEwIDkuOTkgMTBDMTcuNTIgMjIgMjIgMTcuNTIgMjIgMTJTMTcuNTIgMiAxMS45OSAyek0xMiAyMGMtNC40MiAwLTgtMy41OC04LThzMy41OC04IDgtOCA4IDMuNTggOCA4LTMuNTggOC04IDh6Ii8+PC9zdmc+" alt="Problem"/>
+        </h3>
         <p>On-chain activities like token launches, wallet movements, and contract deployments often go unnoticed until it's too late to act.</p>
       </td>
       <td align="center" width="50%">
-        <h3>💡 Solution</h3>
+        <h3>
+          <img src="https://img.shields.io/badge/Solution-success?style=for-the-badge&logo=data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNiIgaGVpZ2h0PSIxNiIgdmlld0JveD0iMCAwIDI0IDI0Ij48cGF0aCBmaWxsPSIjZmZmIiBkPSJNOSAxNi4yTDQuOCAxMmwtMS40IDEuNEw5IDE5IDIxIDdsLTEuNC0xLjRMOSAxNi4yeiIvPjwvc3ZnPg==" alt="Solution"/>
+        </h3>
         <p>Eremos deploys autonomous agents that monitor blockchain activities 24/7 and alert you about significant events before they become obvious.</p>
       </td>
     </tr>
   </table>
 </div>
 
-## ⚡ How It Works
+## How It Works
 
 <div align="center">
   <table>
     <tr>
       <td align="center">
-        <h3>1️⃣</h3>
-        <b>Monitor</b>
+        <h3>
+          <img src="https://img.shields.io/badge/1-Monitor-202024?style=for-the-badge&logo=data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNiIgaGVpZ2h0PSIxNiIgdmlld0JveD0iMCAwIDI0IDI0Ij48cGF0aCBmaWxsPSIjZmZmIiBkPSJNMTIgNGMtNC40MiAwLTggMy41OC04IDhzMy41OCA4IDggOCA4LTMuNTggOC04LTMuNTgtOC04LTh6bTAgMTRjLTMuMzEgMC02LTIuNjktNi02czIuNjktNiA2LTYgNiAyLjY5IDYgNi0yLjY5IDYtNiA2eiIvPjwvc3ZnPg==" alt="1. Monitor"/>
+        </h3>
         <p>Agents continuously watch on-chain activities</p>
       </td>
       <td align="center">
-        <h3>2️⃣</h3>
-        <b>Analyze</b>
+        <h3>
+          <img src="https://img.shields.io/badge/2-Analyze-202024?style=for-the-badge&logo=data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNiIgaGVpZ2h0PSIxNiIgdmlld0JveD0iMCAwIDI0IDI0Ij48cGF0aCBmaWxsPSIjZmZmIiBkPSJNMTkuMTQgMTIuOTRjLjA0LS4zLjA2LS42MS4wNi0uOTQgMC0uMzItLjAyLS42NC0uMDctLjk0bDIuMDMtMS41OGMuMTgtLjE0LjIzLS4zNC4xMi0uNTJsLTEuOTItMy4zMmMtLjEyLS4yMi0uMzctLjI5LS41OS0uMjJsLTIuMzkuOTZjLS41LS4zOC0xLjAzLS43LTEuNjItLjk0TDE0LjQgMi44MWMtLjA0LS4yNC0uMjQtLjQxLS40OC0uNDFoLTMuODRjLS24gMC0uNDMuMTctLjQ3LjQxTDkuMjUgNS4zNUM4LjY2IDUuNTkgOC4xMiA1LjkyIDcuNjMgNi4zTDUuMjQgNS4zM2MtLjIyLS4wNy0uNDcgMC0uNTkuMjJMMS43MyA4Ljg3Yy0uMTEuMTgtLjA2LjM5LjEyLjUybDIuMDMgMS41OGMtLjA1LjMtLjA3LjYyLS4wNy45NHMuMDIuNjQuMDcuOTRsLTIuMDMgMS41OGMtLjE4LjE0LS4yMy4zNC0uMTIuNTJsMS45MiAzLjMyYy4xMi4yMi4zNy4yOS41OS4yMmwyLjM5LS45NmMuNS4zOCAxLjAzLjcgMS42Mi45NGwuMzYgMi41NGMuMDUuMjQuMjQuNDEuNDguNDFoMy44NGMuMjQgMCAuNDQtLjE3LjQ3LS40MWwuMzYtMi41NGMuNTktLjI0IDEuMTMtLjU2IDEuNjItLjk0bDIuMzkuOTZjLjIyLjA4LjQ3IDAgLjU5LS4yMmwxLjkyLTMuMzJjLjEyLS4yMi4wNy0uMzktLjEyLS41MmwtMi4wMy0xLjU4ek0xMiAxNS42Yy0xLjk4IDAtMy42LTEuNjItMy42LTMuNnMxLjYyLTMuNiAzLjYtMy42IDMuNiAxLjYyIDMuNiAzLjYtMS42MiAzLjYtMy42IDMuNnoiLz48L3N2Zz4=" alt="2. Analyze"/>
+        </h3>
         <p>Pattern detection & behavioral analysis</p>
       </td>
       <td align="center">
-        <h3>3️⃣</h3>
-        <b>Score</b>
+        <h3>
+          <img src="https://img.shields.io/badge/3-Score-202024?style=for-the-badge&logo=data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNiIgaGVpZ2h0PSIxNiIgdmlld0JveD0iMCAwIDI0IDI0Ij48cGF0aCBmaWxsPSIjZmZmIiBkPSJNMTYgNmwtMS40LTEuNEw5IDEwLjJWNGgtMnYxMGg4di0ySDEwLjhsNS4yLTZ6Ii8+PC9zdmc+" alt="3. Score"/>
+        </h3>
         <p>Calculate confidence based on multiple factors</p>
       </td>
       <td align="center">
-        <h3>4️⃣</h3>
-        <b>Alert</b>
+        <h3>
+          <img src="https://img.shields.io/badge/4-Alert-202024?style=for-the-badge&logo=data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNiIgaGVpZ2h0PSIxNiIgdmlld0JveD0iMCAwIDI0IDI0Ij48cGF0aCBmaWxsPSIjZmZmIiBkPSJNMTIgMjJjMS4xIDAgMi0uOSAyLTJoLTRjMCAxLjEuODkgMiAyIDJ6bTYtNnYtNWMwLTMuMDctMS42NC01LjY0LTQuNS02LjMyVjRjMC0uODMtLjY3LTEuNS0xLjUtMS41cy0xLjUuNjctMS41IDEuNXYuNjhDNy42MyA1LjM2IDYgNy45MiA2IDExdjVsLTIgMnYxaDE2di0xbC0yLTJ6Ii8+PC9zdmc+" alt="4. Alert"/>
+        </h3>
         <p>Emit high-confidence signals to your workflow</p>
       </td>
     </tr>
