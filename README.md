@@ -1,56 +1,67 @@
-# Eremos
-
 <div align="center">
-  
-![Eremos](docs/banner2.png)
+  <picture>
+    <img src="docs/banner2.png" alt="Eremos Banner" style="max-width: 800px"/>
+  </picture>
 
-<p align="center">
-  <a href="https://github.com/EremosCore/Eremos/blob/main/LICENSE">
-    <img src="https://img.shields.io/badge/license-MIT-blue.svg" alt="License" />
-  </a>
-  <a href="#">
-    <img src="https://img.shields.io/badge/version-0.1.0-brightgreen.svg" alt="Version" />
-  </a>
-  <a href="#">
-    <img src="https://img.shields.io/badge/Solana-Powered-purple?logo=solana" alt="Solana Powered" />
-  </a>
-  <a href="#">
-    <img src="https://img.shields.io/badge/TypeScript-Ready-blue?logo=typescript" alt="TypeScript Ready" />
-  </a>
-  <a href="#">
-    <img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg" alt="PRs Welcome" />
-  </a>
-</p>
+  <div style="margin: 2em 0;">
+    <a href="https://github.com/EremosCore/Eremos/blob/main/LICENSE">
+      <img src="https://img.shields.io/badge/License-MIT-171717?style=for-the-badge&labelColor=171717&color=15847D" alt="License" />
+    </a>
+    <a href="#">
+      <img src="https://img.shields.io/badge/Version-0.1.0-171717?style=for-the-badge&labelColor=171717&color=E44D26" alt="Version" />
+    </a>
+    <a href="#">
+      <img src="https://img.shields.io/badge/Solana-Powered-171717?style=for-the-badge&labelColor=171717&color=14F195&logo=solana&logoColor=14F195" alt="Solana Powered" />
+    </a>
+    <a href="#">
+      <img src="https://img.shields.io/badge/TypeScript-Ready-171717?style=for-the-badge&labelColor=171717&color=3178C6&logo=typescript&logoColor=3178C6" alt="TypeScript Ready" />
+    </a>
+    <a href="#">
+      <img src="https://img.shields.io/badge/PRs-Welcome-171717?style=for-the-badge&labelColor=171717&color=4B32C3" alt="PRs Welcome" />
+    </a>
+  </div>
+
+  <h1>
+    <img src="https://img.shields.io/badge/EREMOS-171717?style=for-the-badge&labelColor=171717&color=000000" alt="EREMOS" style="margin-bottom: 1em"/>
+  </h1>
+  
+  <h3>
+    <img src="https://img.shields.io/badge/Autonomous%20Swarm%20Agents-171717?style=for-the-badge&logo=data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjMTRGMTk1IiBzdHJva2Utd2lkdGg9IjIiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCI+PHBhdGggZD0iTTEyIDNMMjAgN1YxN0wxMiAyMUw0IDE3VjdMMTIgM1oiLz48cGF0aCBkPSJNMTIgMTFDMTMuMTA0NiAxMSAxNCAxMC4xMDQ2IDE0IDlDMTQgNy44OTU0MyAxMy4xMDQ2IDcgMTIgN0MxMC44OTU0IDcgMTAgNy44OTU0MyAxMCA5QzEwIDEwLjEwNDYgMTAuODk1NCAxMSAxMiAxMVoiLz48cGF0aCBkPSJNMTYgMTUuNjZDMTUuMjMgMTUuMjUgMTQuMTYgMTUgMTMgMTVIMTFDOS44NCAxNSA4Ljc3IDE1LjI1IDggMTUuNjYiLz48L3N2Zz4=" alt="Autonomous Agents"/>
+  </h3>
 
 <h3 align="center">
   <img src="https://img.shields.io/badge/|-Autonomous%20Swarm%20Agents-202024?style=for-the-badge&logo=data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI4MDAiIGhlaWdodD0iNjAwIiB2aWV3Qm94PSIwIDAgMjQgMjQiPjxwYXRoIGZpbGw9IiNmZmYiIGQ9Ik0xMiAyQzYuNDggMiAyIDYuNDggMiAxMnM0LjQ4IDEwIDEwIDEwIDEwLTQuNDggMTAtMTBTMTcuNTIgMiAxMiAyem0wIDE4Yy00LjQyIDAtOC0zLjU4LTgtOHMzLjU4LTggOC04IDggMy41OCA4IDgtMy41OCA4LTggOHoiLz48L3N2Zz4=" alt="Autonomous Agents"/>
 </h3>
 
-<p align="center">
-  <b>Eremos</b> is a lightweight framework for deploying modular agents that monitor blockchain activity - tracking wallet clusters, mint patterns, and contract anomalies.
-  <br/>
-  Designed for devs who want low-noise, early signals embedded into their workflows.
-</p>
+  <div style="max-width: 800px; margin: 2em auto; line-height: 1.6;">
+    <p style="font-size: 1.2em; color: #14F195; margin-bottom: 1.5em;">
+      A lightweight framework for deploying modular agents that monitor blockchain activity - tracking wallet clusters, mint patterns, and contract anomalies.
+    </p>
+    <p style="color: #8A8F98; font-size: 1.1em;">
+      Designed for devs who want low-noise, early signals embedded into their workflows.
+    </p>
+  </div>
 
-<p align="center">
-  <a href="#features">
-    <img src="https://img.shields.io/badge/Features-202024?style=flat-square&logo=data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNiIgaGVpZ2h0PSIxNiIgdmlld0JveD0iMCAwIDI0IDI0Ij48cGF0aCBmaWxsPSIjZmZmIiBkPSJNMTEuOTkgMkM2LjQ3IDIgMiA2LjQ4IDIgMTJzNC40NyAxMCA5Ljk5IDEwQzE3LjUyIDIyIDIyIDE3LjUyIDIyIDEyUzE3LjUyIDIgMTEuOTkgMnptNC4yNCAxNkwxMiAxNC4yNSA3Ljc2IDE4bDEuMTItNC44N0w1IDkuOTFsNC45MS0uNDJMMTIgNWwyLjA5IDQuNDkgNC45MS40Mi0zLjg4IDMuMjJ6Ii8+PC9zdmc+" alt="Features"/>
-  </a> •
-  <a href="#getting-started">
-    <img src="https://img.shields.io/badge/Quick%20Start-202024?style=flat-square&logo=data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNiIgaGVpZ2h0PSIxNiIgdmlld0JveD0iMCAwIDI0IDI0Ij48cGF0aCBmaWxsPSIjZmZmIiBkPSJNMTMgM3YxOGw5LTlMMTMgM3oiLz48L3N2Zz4=" alt="Quick Start"/>
-  </a> •
-  <a href="#example-signal">
-    <img src="https://img.shields.io/badge/Signals-202024?style=flat-square&logo=data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNiIgaGVpZ2h0PSIxNiIgdmlld0JveD0iMCAwIDI0IDI0Ij48cGF0aCBmaWxsPSIjZmZmIiBkPSJNMTIgMkM2LjQ4IDIgMiA2LjQ4IDIgMTJzNC40OCAxMCAxMCAxMCAxMC00LjQ4IDEwLTEwUzE3LjUyIDIgMTIgMnptMCAxOGMtNC40MiAwLTgtMy41OC04LThzMy41OC04IDgtOCA4IDMuNTggOCA4LTMuNTggOC04IDh6Ii8+PC9zdmc+" alt="Signals"/>
-  </a> •
-  <a href="#tech-stack">
-    <img src="https://img.shields.io/badge/Tech%20Stack-202024?style=flat-square&logo=data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNiIgaGVpZ2h0PSIxNiIgdmlld0JveD0iMCAwIDI0IDI0Ij48cGF0aCBmaWxsPSIjZmZmIiBkPSJNMjAgOGgtM1Y0SDNjLTEuMSAwLTIgLjktMiAydjExYzAgMS4xLjkgMiAyIDJoMTRjMS4xIDAgMi0uOSAyLTJ2LTJoMyIvPjwvc3ZnPg==" alt="Tech Stack"/>
-  </a> •
-  <a href="#contributing">
-    <img src="https://img.shields.io/badge/Contributing-202024?style=flat-square&logo=data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNiIgaGVpZ2h0PSIxNiIgdmlld0JveD0iMCAwIDI0IDI0Ij48cGF0aCBmaWxsPSIjZmZmIiBkPSJNMTYgMTFjMS42NiAwIDIuOTktMS4zNCAyLjk5LTNTMTcuNjYgNSAxNiA1Yy0xLjY2IDAtMyAxLjM0LTMgM3MxLjM0IDMgMyAzem0tOCAwYzEuNjYgMCAyLjk5LTEuMzQgMi45OS0zUzkuNjYgNSA4IDVDNi4zNCA1IDUgNi4zNCA1IDhzMS4zNCAzIDMgM3ptMCAyYy0yLjMzIDAtNyAxLjE3LTcgMy41VjE5aDE0di0yLjVjMC0yLjMzLTQuNjctMy41LTctMy41em04IDBjLS4yOSAwLS42Mi4wMi0uOTcuMDUgMS4xNi44NCAxLjk3IDEuOTcgMS45NyAzLjQ1VjE5aDZ2LTIuNWMwLTIuMzMtNC42Ny0zLjUtNy0zLjV6Ii8+PC9zdmc+" alt="Contributing"/>
-  </a>
-</p>
-
+  <div style="margin: 2em 0;">
+    <a href="#features">
+      <img src="https://img.shields.io/badge/Features-171717?style=for-the-badge&logo=data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjMTRGMTk1IiBzdHJva2Utd2lkdGg9IjIiPjxwb2x5Z29uIHBvaW50cz0iMTIgMiAxNS4wOSA4LjI2IDIyIDkuMjcgMTcgMTQuMTQgMTguMTggMjEuMDIgMTIgMTcuNzcgNS44MiAyMS4wMiA3IDE0LjE0IDIgOS4yNyA4LjkxIDguMjYgMTIgMiI+PC9wb2x5Z29uPjwvc3ZnPg==" alt="Features"/>
+    </a>
+    &nbsp;
+    <a href="#getting-started">
+      <img src="https://img.shields.io/badge/Quick%20Start-171717?style=for-the-badge&logo=data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjMTRGMTk1IiBzdHJva2Utd2lkdGg9IjIiPjxwb2x5bGluZSBwb2ludHM9IjUgMTIgMTEgMTggMjAgOCI+PC9wb2x5bGluZT48L3N2Zz4=" alt="Quick Start"/>
+    </a>
+    &nbsp;
+    <a href="#example-signal">
+      <img src="https://img.shields.io/badge/Signals-171717?style=for-the-badge&logo=data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjMTRGMTk1IiBzdHJva2Utd2lkdGg9IjIiPjxwYXRoIGQ9Ik0yMy4zMiA2Ljc0QzIxLjg4IDUuMyAyMC4xMyA0LjI4IDE4LjI2IDMuNjFDMTUuMTcgMi40MyAxMS44MyAyLjQzIDguNzQgMy42MUM2Ljg3IDQuMjggNS4xMiA1LjMgMy42OCA2Ljc0QzEuNSA4LjkyIDAgMTEuNzggMCAxNC44M3YxLjY2QzAgMTkuNCAxLjY2IDIxLjc4IDUuMDggMjIuNDVDNi45NSAyMi44MiA4Ljg3IDIzIDEwLjggMjNIMTMuMkMxNS4xMyAyMyAxNy4wNSAyMi44MiAxOC45MiAyMi40NUMyMi4zNCAyMS43OCAyNCAyMS40IDI0IDE2LjQ5VjE0LjgzQzI0IDExLjc4IDIyLjUgOC45MiAyMC4zMiA2Ljc0WiI+PC9wYXRoPjxwYXRoIGQ9Ik0xMS45OSAxMEEyLjk5IDIuOTkgMCAxIDEgOS4wMSAxM0EzIDMgMCAwIDEgMTEuOTkgMTBaIj48L3BhdGg+PC9zdmc+" alt="Signals"/>
+    </a>
+    &nbsp;
+    <a href="#tech-stack">
+      <img src="https://img.shields.io/badge/Tech%20Stack-171717?style=for-the-badge&logo=data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjMTRGMTk1IiBzdHJva2Utd2lkdGg9IjIiPjxwYXRoIGQ9Ik0xMiAxOEw2IDEyTDEyIDZNMTggMThMMTIgMTJMMTggNiI+PC9wYXRoPjwvc3ZnPg==" alt="Tech Stack"/>
+    </a>
+  </div>
 </div>
+
+---
 
 ---
 
