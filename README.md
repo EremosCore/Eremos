@@ -20,18 +20,11 @@
       <img src="https://img.shields.io/badge/PRs-Welcome-171717?style=for-the-badge&labelColor=171717&color=4B32C3" alt="PRs Welcome" />
     </a>
   </div>
-
-  <h1>
-    <img src="https://img.shields.io/badge/EREMOS-171717?style=for-the-badge&labelColor=171717&color=000000" alt="EREMOS" style="margin-bottom: 1em"/>
-  </h1>
   
   <h3>
     <img src="https://img.shields.io/badge/Autonomous%20Swarm%20Agents-171717?style=for-the-badge&logo=data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjMTRGMTk1IiBzdHJva2Utd2lkdGg9IjIiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCI+PHBhdGggZD0iTTEyIDNMMjAgN1YxN0wxMiAyMUw0IDE3VjdMMTIgM1oiLz48cGF0aCBkPSJNMTIgMTFDMTMuMTA0NiAxMSAxNCAxMC4xMDQ2IDE0IDlDMTQgNy44OTU0MyAxMy4xMDQ2IDcgMTIgN0MxMC44OTU0IDcgMTAgNy44OTU0MyAxMCA5QzEwIDEwLjEwNDYgMTAuODk1NCAxMSAxMiAxMVoiLz48cGF0aCBkPSJNMTYgMTUuNjZDMTUuMjMgMTUuMjUgMTQuMTYgMTUgMTMgMTVIMTFDOS44NCAxNSA4Ljc3IDE1LjI1IDggMTUuNjYiLz48L3N2Zz4=" alt="Autonomous Agents"/>
   </h3>
 
-<h3 align="center">
-  <img src="https://img.shields.io/badge/|-Autonomous%20Swarm%20Agents-202024?style=for-the-badge&logo=data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI4MDAiIGhlaWdodD0iNjAwIiB2aWV3Qm94PSIwIDAgMjQgMjQiPjxwYXRoIGZpbGw9IiNmZmYiIGQ9Ik0xMiAyQzYuNDggMiAyIDYuNDggMiAxMnM0LjQ4IDEwIDEwIDEwIDEwLTQuNDggMTAtMTBTMTcuNTIgMiAxMiAyem0wIDE4Yy00LjQyIDAtOC0zLjU4LTgtOHMzLjU4LTggOC04IDggMy41OCA4IDgtMy41OCA4LTggOHoiLz48L3N2Zz4=" alt="Autonomous Agents"/>
-</h3>
 
   <div style="max-width: 800px; margin: 2em auto; line-height: 1.6;">
     <p style="font-size: 1.2em; color: #14F195; margin-bottom: 1.5em;">
@@ -93,7 +86,13 @@
     <tr>
       <td align="center">
         <h3>
-          <img src="https://img.shields.io/badge/1-Monitor-202024?style=for-the-badge&logo=data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNiIgaGVpZ2h0PSIxNiIgdmlld0JveD0iMCAwIDI0IDI0Ij48cGF0aCBmaWxsPSIjZmZmIiBkPSJNMTIgNGMtNC40MiAwLTggMy41OC04IDhzMy41OCA4IDggOCA4LTMuNTggOC04LTMuNTgtOC04LTh6bTAgMTRjLTMuMzEgMC02LTIuNjktNi02czIuNjktNiA2LTYgNiAyLjY5IDYgNi0yLjY5IDYtNiA2eiIvPjwvc3ZnPg==" alt="1. Monitor"/>
+                    <img src="https://img.shields.io/badge/1-Monitor-171717?style=for-the-badge&labelColor=171717&color=14F195&logo=data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjMTRGMTk1IiBzdHJva2Utd2lkdGg9IjIiPjxjaXJjbGUgY3g9IjEyIiBjeT0iMTIiIHI9IjEwIi8+PGNpcmNsZSBjeD0iMTIiIGN5PSIxMiIgcj0iNCIvPjwvc3ZnPg==" alt="1. Monitor"/>
+        </h3>
+        <p style="color: #8A8F98;">Agents continuously watch on-chain activities</p>
+      </td>
+      <td align="center">
+        <h3>
+          <img src="https://img.shields.io/badge/2-Analyze-171717?style=for-the-badge&labelColor=171717&color=14F195&logo=data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjMTRGMTk1IiBzdHJva2Utd2lkdGg9IjIiPjxwYXRoIGQ9Ik0yIDNsMTggMThNOS41IDkuNWw1IDVNMTUgOWwtNS41IDUuNU0xNSA5bDUuNSA1LjVNOSAxNWw1LjUgNS41Ii8+PC9zdmc+" alt="2. Analyze"/>
         </h3>
         <p>Agents continuously watch on-chain activities</p>
       </td>
@@ -105,13 +104,13 @@
       </td>
       <td align="center">
         <h3>
-          <img src="https://img.shields.io/badge/3-Score-202024?style=for-the-badge&logo=data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNiIgaGVpZ2h0PSIxNiIgdmlld0JveD0iMCAwIDI0IDI0Ij48cGF0aCBmaWxsPSIjZmZmIiBkPSJNMTYgNmwtMS40LTEuNEw5IDEwLjJWNGgtMnYxMGg4di0ySDEwLjhsNS4yLTZ6Ii8+PC9zdmc+" alt="3. Score"/>
+          <img src="https://img.shields.io/badge/3-Score-171717?style=for-the-badge&labelColor=171717&color=14F195&logo=data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjMTRGMTk1IiBzdHJva2Utd2lkdGg9IjIiPjxwYXRoIGQ9Ik0xOSAyTDEyIDEzbTcgOWwtNy0xMU01IDIybDctMTFNNSAybDcgMTEiLz48L3N2Zz4=" alt="3. Score"/>
         </h3>
-        <p>Calculate confidence based on multiple factors</p>
+        <p style="color: #8A8F98;">Calculate confidence based on multiple factors</p>
       </td>
       <td align="center">
         <h3>
-          <img src="https://img.shields.io/badge/4-Alert-202024?style=for-the-badge&logo=data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNiIgaGVpZ2h0PSIxNiIgdmlld0JveD0iMCAwIDI0IDI0Ij48cGF0aCBmaWxsPSIjZmZmIiBkPSJNMTIgMjJjMS4xIDAgMi0uOSAyLTJoLTRjMCAxLjEuODkgMiAyIDJ6bTYtNnYtNWMwLTMuMDctMS42NC01LjY0LTQuNS02LjMyVjRjMC0uODMtLjY3LTEuNS0xLjUtMS41cy0xLjUuNjctMS41IDEuNXYuNjhDNy42MyA1LjM2IDYgNy45MiA2IDExdjVsLTIgMnYxaDE2di0xbC0yLTJ6Ii8+PC9zdmc+" alt="4. Alert"/>
+          <img src="https://img.shields.io/badge/4-Alert-171717?style=for-the-badge&labelColor=171717&color=14F195&logo=data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjMTRGMTk1IiBzdHJva2Utd2lkdGg9IjIiPjxwYXRoIGQ9Ik0xOCA4QzE4IDE2IDEyIDIwIDEyIDIwQzEyIDIwIDYgMTYgNiA4QzYgNSA4LjUgMiAxMiAyQzE1LjUgMiAxOCA1IDE4IDhaIi8+PC9zdmc+" alt="4. Alert"/>
         </h3>
         <p>Emit high-confidence signals to your workflow</p>
       </td>
@@ -197,19 +196,19 @@
   <table>
     <tr>
       <td align="center">
-        <h3>🤖</h3>
-        <b>Modular Agents</b>
-        <p>Scoped logic for detecting wallet activity, contract spawns, and anomalies</p>
+        <img src="https://img.shields.io/badge/-171717?style=for-the-badge&logo=data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjMTRGMTk1IiBzdHJva2Utd2lkdGg9IjIiPjxwYXRoIGQ9Ik0xMiAyTDIgN2wxMCA1bDEwLTVMTTIgMTJsMTAgNWwxMC01TTIgMTdsMTAgNWwxMC01Ii8+PC9zdmc+" height="40"/>
+        <h4 style="color: #14F195">Modular Agents</h4>
+        <p style="color: #8A8F98">Scoped logic for detecting wallet activity, contract spawns, and anomalies</p>
       </td>
       <td align="center">
-        <h3>📡</h3>
-        <b>Signal Emission</b>
-        <p>Structured signals for logging, alerting, or downstream use</p>
+        <img src="https://img.shields.io/badge/-171717?style=for-the-badge&logo=data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjMTRGMTk1IiBzdHJva2Utd2lkdGg9IjIiPjxwYXRoIGQ9Ik0yMyAxMkExMSAxMSAwIDAgMSAxMiAyM0ExMSAxMSAwIDAgMSAxIDEyQTExIDExIDAgMCAxIDIzIDEyIi8+PHBhdGggZD0iTTggMTJMMTEgMTVMMTYgMTAiLz48L3N2Zz4=" height="40"/>
+        <h4 style="color: #14F195">Signal Emission</h4>
+        <p style="color: #8A8F98">Structured signals for logging, alerting, or downstream use</p>
       </td>
       <td align="center">
-        <h3>🌐</h3>
-        <b>Swarm Design</b>
-        <p>Each agent operates independently with shared utilities</p>
+        <img src="https://img.shields.io/badge/-171717?style=for-the-badge&logo=data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjMTRGMTk1IiBzdHJva2Utd2lkdGg9IjIiPjxwYXRoIGQ9Ik0xMiAyQzYuNDggMiAyIDYuNDggMiAxMnM0LjQ4IDEwIDEwIDEwIDEwLTQuNDggMTAtMTBTMTcuNTIgMiAxMiAyem0wIDE4Yy00LjQxIDAtOC0zLjU5LTgtOHMzLjU5LTggOC04IDggMy41OSA4IDgtMy41OSA4LTggOHoiLz48L3N2Zz4=" height="40"/>
+        <h4 style="color: #14F195">Swarm Design</h4>
+        <p style="color: #8A8F98">Each agent operates independently with shared utilities</p>
       </td>
     </tr>
     <tr>
@@ -232,11 +231,15 @@
   </table>
 </div>
 
-### 👻 Ghost Watcher
-<p align="center">
-  <i>Monitors long-dormant wallets that suddenly become active again. <br/>
-  Perfect for tracing old dev wallets or detecting potential rug setups.</i>
-</p>
+<div align="center">
+  <img src="https://img.shields.io/badge/Ghost%20Watcher-171717?style=for-the-badge&labelColor=171717&color=FF6B6B&logo=data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjRkY2QjZCIiBzdHJva2Utd2lkdGg9IjIiPjxwYXRoIGQ9Ik0xMiAyQzYuNDggMiAyIDYuNDggMiAxMnM0LjQ4IDEwIDEwIDEwIDEwLTQuNDggMTAtMTBTMTcuNTIgMiAxMiAyem0wIDE4Yy00LjQxIDAtOC0zLjU5LTgtOHMzLjU5LTggOC04IDggMy41OSA4IDgtMy41OSA4LTggOHoiLz48bGluZSB4MT0iMTIiIHkxPSI4IiB4Mj0iMTIiIHkyPSIxMiIvPjxsaW5lIHgxPSIxMiIgeTE9IjE2IiB4Mj0iMTIiIHkyPSIxNiIvPjwvc3ZnPg==" alt="Ghost Watcher"/>
+  <div style="margin: 1em; padding: 1em; border-left: 4px solid #FF6B6B; background: #171717;">
+    <p style="color: #FF6B6B; margin: 0;">
+      <strong>WARNING:</strong> Monitors long-dormant wallets that suddenly become active again.<br/>
+      Perfect for tracing old dev wallets or detecting potential rug setups.
+    </p>
+  </div>
+</div>
 
 
 ---
