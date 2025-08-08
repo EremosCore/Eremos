@@ -3,7 +3,7 @@
     <img src="docs/banner2.png" alt="Eremos Banner" style="max-width: 800px"/>
   </picture>
 
-  <div style="margin: 2em 0;">
+  <div style="margin: 2em 0; display: flex; gap: 8px; justify-content: center;">
     <a href="https://github.com/EremosCore/Eremos/blob/main/LICENSE">
       <img src="https://img.shields.io/badge/License-MIT-171717?style=for-the-badge&labelColor=171717&color=15847D" alt="License" />
     </a>
@@ -95,12 +95,6 @@
           <img src="https://img.shields.io/badge/2-Analyze-171717?style=for-the-badge&labelColor=171717&color=14F195&logo=data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjMTRGMTk1IiBzdHJva2Utd2lkdGg9IjIiPjxwYXRoIGQ9Ik0yIDNsMTggMThNOS41IDkuNWw1IDVNMTUgOWwtNS41IDUuNU0xNSA5bDUuNSA1LjVNOSAxNWw1LjUgNS41Ii8+PC9zdmc+" alt="2. Analyze"/>
         </h3>
         <p>Agents continuously watch on-chain activities</p>
-      </td>
-      <td align="center">
-        <h3>
-          <img src="https://img.shields.io/badge/2-Analyze-202024?style=for-the-badge&logo=data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNiIgaGVpZ2h0PSIxNiIgdmlld0JveD0iMCAwIDI0IDI0Ij48cGF0aCBmaWxsPSIjZmZmIiBkPSJNMTkuMTQgMTIuOTRjLjA0LS4zLjA2LS42MS4wNi0uOTQgMC0uMzItLjAyLS42NC0uMDctLjk0bDIuMDMtMS41OGMuMTgtLjE0LjIzLS4zNC4xMi0uNTJsLTEuOTItMy4zMmMtLjEyLS4yMi0uMzctLjI5LS41OS0uMjJsLTIuMzkuOTZjLS41LS4zOC0xLjAzLS43LTEuNjItLjk0TDE0LjQgMi44MWMtLjA0LS4yNC0uMjQtLjQxLS40OC0uNDFoLTMuODRjLS24gMC0uNDMuMTctLjQ3LjQxTDkuMjUgNS4zNUM4LjY2IDUuNTkgOC4xMiA1LjkyIDcuNjMgNi4zTDUuMjQgNS4zM2MtLjIyLS4wNy0uNDcgMC0uNTkuMjJMMS43MyA4Ljg3Yy0uMTEuMTgtLjA2LjM5LjEyLjUybDIuMDMgMS41OGMtLjA1LjMtLjA3LjYyLS4wNy45NHMuMDIuNjQuMDcuOTRsLTIuMDMgMS41OGMtLjE4LjE0LS4yMy4zNC0uMTIuNTJsMS45MiAzLjMyYy4xMi4yMi4zNy4yOS41OS4yMmwyLjM5LS45NmMuNS4zOCAxLjAzLjcgMS42Mi45NGwuMzYgMi41NGMuMDUuMjQuMjQuNDEuNDguNDFoMy44NGMuMjQgMCAuNDQtLjE3LjQ3LS40MWwuMzYtMi41NGMuNTktLjI0IDEuMTMtLjU2IDEuNjItLjk0bDIuMzkuOTZjLjIyLjA4LjQ3IDAgLjU5LS4yMmwxLjkyLTMuMzJjLjEyLS4yMi4wNy0uMzktLjEyLS41MmwtMi4wMy0xLjU4ek0xMiAxNS42Yy0xLjk4IDAtMy42LTEuNjItMy42LTMuNnMxLjYyLTMuNiAzLjYtMy42IDMuNiAxLjYyIDMuNiAzLjYtMS42MiAzLjYtMy42IDMuNnoiLz48L3N2Zz4=" alt="2. Analyze"/>
-        </h3>
-        <p>Pattern detection & behavioral analysis</p>
       </td>
       <td align="center">
         <h3>
@@ -213,31 +207,36 @@
     </tr>
     <tr>
       <td align="center">
-        <h3>🔌</h3>
-        <b>Extensible Core</b>
-        <p>Plug in watchers, inference layers, or custom triggers</p>
+        <h3 style="font-size: 2em; margin: 0.2em;">🔌</h3>
+        <h4 style="color: #14F195; margin: 0.5em;">Extensible Core</h4>
+        <p style="color: #8A8F98">Plug in watchers, inference layers, or custom triggers</p>
       </td>
       <td align="center">
-        <h3>📊</h3>
-        <b>Minimal Output</b>
-        <p>Log only what matters - high signal, low noise</p>
+        <h3 style="font-size: 2em; margin: 0.2em;">📊</h3>
+        <h4 style="color: #14F195; margin: 0.5em;">Minimal Output</h4>
+        <p style="color: #8A8F98">Log only what matters - high signal, low noise</p>
       </td>
       <td align="center">
-        <h3>🎯</h3>
-        <b>Launch Detection</b>
-        <p>Trace fresh wallets & flag high-confidence deploys in real time</p>
+        <h3 style="font-size: 2em; margin: 0.2em;">🎯</h3>
+        <h4 style="color: #14F195; margin: 0.5em;">Launch Detection</h4>
+        <p style="color: #8A8F98">Trace fresh wallets & flag high-confidence deploys in real time</p>
       </td>
     </tr>
   </table>
 </div>
 
-<div align="center">
-  <img src="https://img.shields.io/badge/Ghost%20Watcher-171717?style=for-the-badge&labelColor=171717&color=FF6B6B&logo=data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjRkY2QjZCIiBzdHJva2Utd2lkdGg9IjIiPjxwYXRoIGQ9Ik0xMiAyQzYuNDggMiAyIDYuNDggMiAxMnM0LjQ4IDEwIDEwIDEwIDEwLTQuNDggMTAtMTBTMTcuNTIgMiAxMiAyem0wIDE4Yy00LjQxIDAtOC0zLjU5LTgtOHMzLjU5LTggOC04IDggMy41OSA4IDgtMy41OSA4LTggOHoiLz48bGluZSB4MT0iMTIiIHkxPSI4IiB4Mj0iMTIiIHkyPSIxMiIvPjxsaW5lIHgxPSIxMiIgeTE9IjE2IiB4Mj0iMTIiIHkyPSIxNiIvPjwvc3ZnPg==" alt="Ghost Watcher"/>
-  <div style="margin: 1em; padding: 1em; border-left: 4px solid #FF6B6B; background: #171717;">
-    <p style="color: #FF6B6B; margin: 0;">
-      <strong>WARNING:</strong> Monitors long-dormant wallets that suddenly become active again.<br/>
-      Perfect for tracing old dev wallets or detecting potential rug setups.
-    </p>
+<div align="center" style="margin: 2em 0;">
+  <div style="background: #1E1E1E; border: 2px solid #FF6B6B; border-radius: 8px; max-width: 800px; margin: 0 auto;">
+    <div style="background: #FF6B6B; padding: 0.5em; display: flex; align-items: center; justify-content: center; gap: 8px;">
+      <span style="font-size: 1.5em;">👻</span>
+      <h3 style="color: #171717; margin: 0; font-size: 1.2em;">Ghost Watcher</h3>
+    </div>
+    <div style="padding: 1.5em; color: #FF6B6B;">
+      <p style="margin: 0;">
+        <strong>⚠️ WARNING:</strong> Monitors long-dormant wallets that suddenly become active again.<br/>
+        Perfect for tracing old dev wallets or detecting potential rug setups.
+      </p>
+    </div>
   </div>
 </div>
 
