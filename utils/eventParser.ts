@@ -1,4 +1,6 @@
-export function parseWalletEvent(event: any) {
+import { WalletEvent } from "../types/event";
+
+export function parseWalletEvent(event: WalletEvent): WalletEvent {
   return {
     wallet: event.wallet || "unknown",
     txCount: event.txCount || 0,

@@ -14,5 +14,8 @@
     "framework"
   ],
   "license": "MIT",
-  "author": "EremosCore"
+  "author": "EremosCore",
+  "devDependencies": {
+    "@types/node": "^24.0.15"
+  }
 }
