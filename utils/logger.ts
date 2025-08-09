@@ -5,6 +5,7 @@ export function logSignal(signal: {
   hash: string;
   timestamp: string;
   details?: Record<string, any>;
+  confidence?: number;
 }) {
   console.log(`[${signal.agent}] stored signal ${signal.hash} (${signal.type}) at ${signal.timestamp}`);
   if (signal.details) {
