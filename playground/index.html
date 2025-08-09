@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eremos Agent Playground</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'SF Mono', 'Monaco', 'Inconsolata', 'Fira Code', 'Droid Sans Mono', monospace;
+            background: #0a0a0a;
+            color: #00ff88;
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .header h1 {
+            font-size: 3rem;
+            margin-bottom: 10px;
+            background: linear-gradient(45deg, #00ff88, #00ccff);
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            color: transparent;
+            animation: glow 2s ease-in-out infinite alternate;
+        }
+
+        @keyframes glow {
+            from { text-shadow: 0 0 5px #00ff88; }
+            to { text-shadow: 0 0 20px #00ff88, 0 0 30px #00ff88; }
+        }
+
+        .subtitle {
+            font-size: 1.2rem;
+            color: #888;
+            margin-bottom: 30px;
+        }
+
+        .playground {
+            display: grid;
+            grid-template-columns: 1fr 400px;
+            gap: 30px;
+            height: 600px;
+        }
+
+        .main-panel {
+            background: rgba(0, 255, 136, 0.05);
+            border: 2px solid rgba(0, 255, 136, 0.3);
+            border-radius: 12px;
+            padding: 20px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .control-panel {
+            background: rgba(0, 255, 136, 0.05);
+            border: 2px solid rgba(0, 255, 136, 0.3);
+            border-radius: 12px;
+            padding: 20px;
+        }
+
+        .agent-visualization {
+            height: 100%;
+            position: relative;
+            background: radial-gradient(circle at 50% 50%, rgba(0, 255, 136, 0.1) 0%, transparent 50%);
+        }
+
+        .agent {
+            position: absolute;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            border: 2px solid #00ff88;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            font-size: 12px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            animation: pulse 3s ease-in-out infinite;
+        }
+
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); opacity: 0.8; }
+            50% { transform: scale(1.1); opacity: 1; }
+        }
+
+        .agent:hover {
+            transform: scale(1.2);
+            box-shadow: 0 0 20px #00ff88;
+        }
+
+        .agent.theron {
+            background: rgba(0, 255, 136, 0.2);
+            top: 30%;
+            left: 20%;
+        }
+
+        .agent.observer {
+            background: rgba(0, 204, 255, 0.2);
+            border-color: #00ccff;
+            top: 50%;
+            left: 60%;
+            animation-delay: -1s;
+        }
+
+        .agent.harvester {
+            background: rgba(255, 136, 0, 0.2);
+            border-color: #ff8800;
+            top: 70%;
+            left: 30%;
+            animation-delay: -2s;
+        }
+
+        .signal-line {
+            position: absolute;
+            height: 2px;
+            background: linear-gradient(90deg, transparent, #00ff88, transparent);
+            opacity: 0;
+            animation: signal-flow 2s ease-in-out infinite;
+        }
+
+        @keyframes signal-flow {
+            0%, 100% { opacity: 0; transform: scaleX(0); }
+            50% { opacity: 1; transform: scaleX(1); }
+        }
+
+        .controls {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .control-group {
+            background: rgba(0, 255, 136, 0.1);
+            padding: 15px;
+            border-radius: 8px;
+            border: 1px solid rgba(0, 255, 136, 0.2);
+        }
+
+        .control-group h3 {
+            margin-bottom: 15px;
+            color: #00ff88;
+            font-size: 1.1rem;
+        }
+
+        .button {
+            background: rgba(0, 255, 136, 0.1);
+            border: 1px solid #00ff88;
+            color: #00ff88;
+            padding: 10px 15px;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            margin: 5px;
+            font-family: inherit;
+        }
+
+        .button:hover {
+            background: rgba(0, 255, 136, 0.2);
+            box-shadow: 0 0 10px rgba(0, 255, 136, 0.3);
+        }
+
+        .metrics {
+            font-size: 0.9rem;
+            line-height: 1.8;
+        }
+
+        .metric-item {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 8px;
+            padding: 5px 0;
+            border-bottom: 1px solid rgba(0, 255, 136, 0.1);
+        }
+
+        .signal-log {
+            background: #111;
+            border: 1px solid rgba(0, 255, 136, 0.3);
+            border-radius: 6px;
+            padding: 10px;
+            height: 200px;
+            overflow-y: auto;
+            font-size: 0.8rem;
+            margin-top: 15px;
+        }
+
+        .signal-entry {
+            margin-bottom: 5px;
+            opacity: 0;
+            animation: fadeIn 0.5s ease-in forwards;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateX(-10px); }
+            to { opacity: 1; transform: translateX(0); }
+        }
+
+        .timestamp {
+            color: #666;
+        }
+
+        .agent-name {
+            color: #00ccff;
+            font-weight: bold;
+        }
+
+        .confidence {
+            color: #ff8800;
+        }
+
+        .footer {
+            text-align: center;
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid rgba(0, 255, 136, 0.2);
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>🤖 Eremos Agent Playground</h1>
+            <p class="subtitle">Interactive visualization of autonomous swarm agents detecting on-chain signals</p>
+        </header>
+
+        <div class="playground">
+            <div class="main-panel">
+                <div class="agent-visualization" id="visualization">
+                    <div class="agent theron" data-agent="Theron" title="Agent-000: Pattern-sensitive observer">
+                        000
+                    </div>
+                    <div class="agent observer" data-agent="Observer" title="Launch detection specialist">
+                        OBS
+                    </div>
+                    <div class="agent harvester" data-agent="Harvester" title="Wallet cluster tracker">
+                        HRV
+                    </div>
+                </div>
+            </div>
+
+            <div class="control-panel">
+                <div class="controls">
+                    <div class="control-group">
+                        <h3>🎮 Simulation Controls</h3>
+                        <button class="button" onclick="startSimulation()">Start Monitoring</button>
+                        <button class="button" onclick="triggerEvent()">Trigger Event</button>
+                        <button class="button" onclick="resetSimulation()">Reset</button>
+                    </div>
+
+                    <div class="control-group">
+                        <h3>📊 Live Metrics</h3>
+                        <div class="metrics">
+                            <div class="metric-item">
+                                <span>Active Agents:</span>
+                                <span id="active-agents">3</span>
+                            </div>
+                            <div class="metric-item">
+                                <span>Signals Detected:</span>
+                                <span id="signals-detected">0</span>
+                            </div>
+                            <div class="metric-item">
+                                <span>Confidence Avg:</span>
+                                <span id="confidence-avg">0.00</span>
+                            </div>
+                            <div class="metric-item">
+                                <span>Uptime:</span>
+                                <span id="uptime">00:00:00</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="control-group">
+                        <h3>📡 Signal Log</h3>
+                        <div class="signal-log" id="signal-log">
+                            <div class="signal-entry">
+                                <span class="timestamp">[00:00:00]</span> 
+                                <span class="agent-name">System</span>: 
+                                Playground initialized
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let isRunning = false;
+        let signalCount = 0;
+        let startTime = null;
+        let confidenceSum = 0;
+
+        const agents = ['Theron', 'Observer', 'Harvester'];
+        const eventTypes = ['launch_detected', 'wallet_cluster', 'contract_anomaly', 'funding_pattern'];
+        
+        function startSimulation() {
+            if (isRunning) return;
+            
+            isRunning = true;
+            startTime = Date.now();
+            
+            logSignal('System', 'Monitoring started - agents activated');
+            
+            // Start periodic signal generation
+            const interval = setInterval(() => {
+                if (!isRunning) {
+                    clearInterval(interval);
+                    return;
+                }
+                
+                generateRandomSignal();
+                updateMetrics();
+            }, Math.random() * 3000 + 2000); // 2-5 second intervals
+        }
+
+        function triggerEvent() {
+            generateRandomSignal();
+            updateMetrics();
+        }
+
+        function resetSimulation() {
+            isRunning = false;
+            signalCount = 0;
+            confidenceSum = 0;
+            startTime = null;
+            
+            document.getElementById('signal-log').innerHTML = `
+                <div class="signal-entry">
+                    <span class="timestamp">[00:00:00]</span> 
+                    <span class="agent-name">System</span>: 
+                    Playground reset
+                </div>
+            `;
+            
+            updateMetrics();
+        }
+
+        function generateRandomSignal() {
+            const agent = agents[Math.floor(Math.random() * agents.length)];
+            const eventType = eventTypes[Math.floor(Math.random() * eventTypes.length)];
+            const confidence = (Math.random() * 0.4 + 0.6).toFixed(2); // 0.60-1.00
+            
+            signalCount++;
+            confidenceSum += parseFloat(confidence);
+            
+            const messages = {
+                'launch_detected': `Token launch detected - confidence ${confidence}`,
+                'wallet_cluster': `Wallet cluster activity - ${Math.floor(Math.random() * 8 + 3)} linked wallets`,
+                'contract_anomaly': `Contract anomaly flagged - unusual pattern detected`,
+                'funding_pattern': `CEX funding pattern identified - ${confidence} confidence`
+            };
+            
+            logSignal(agent, messages[eventType], confidence);
+            animateAgent(agent);
+        }
+
+        function logSignal(agent, message, confidence = null) {
+            const log = document.getElementById('signal-log');
+            const time = formatTime();
+            
+            const entry = document.createElement('div');
+            entry.className = 'signal-entry';
+            entry.innerHTML = `
+                <span class="timestamp">[${time}]</span> 
+                <span class="agent-name">${agent}</span>: 
+                ${message}
+                ${confidence ? `<span class="confidence">(${confidence})</span>` : ''}
+            `;
+            
+            log.appendChild(entry);
+            log.scrollTop = log.scrollHeight;
+            
+            // Keep only last 20 entries
+            while (log.children.length > 20) {
+                log.removeChild(log.firstChild);
+            }
+        }
+
+        function animateAgent(agentName) {
+            const agent = document.querySelector(`[data-agent="${agentName}"]`);
+            agent.style.transform = 'scale(1.3)';
+            agent.style.boxShadow = '0 0 30px #00ff88';
+            
+            setTimeout(() => {
+                agent.style.transform = '';
+                agent.style.boxShadow = '';
+            }, 500);
+        }
+
+        function updateMetrics() {
+            document.getElementById('signals-detected').textContent = signalCount;
+            document.getElementById('confidence-avg').textContent = 
+                signalCount > 0 ? (confidenceSum / signalCount).toFixed(2) : '0.00';
+            
+            if (startTime) {
+                const elapsed = Date.now() - startTime;
+                document.getElementById('uptime').textContent = formatDuration(elapsed);
+            }
+        }
+
+        function formatTime() {
+            const now = new Date();
+            return now.toTimeString().split(' ')[0];
+        }
+
+        function formatDuration(ms) {
+            const seconds = Math.floor(ms / 1000);
+            const minutes = Math.floor(seconds / 60);
+            const hours = Math.floor(minutes / 60);
+            
+            return `${hours.toString().padStart(2, '0')}:${(minutes % 60).toString().padStart(2, '0')}:${(seconds % 60).toString().padStart(2, '0')}`;
+        }
+
+        // Initialize
+        updateMetrics();
+        
+        // Add click events to agents
+        document.querySelectorAll('.agent').forEach(agent => {
+            agent.addEventListener('click', () => {
+                const agentName = agent.dataset.agent;
+                triggerEvent();
+                animateAgent(agentName);
+            });
+        });
+
+        // Auto-start demo after 3 seconds
+        setTimeout(() => {
+            logSignal('System', 'Demo mode activated - agents will begin monitoring automatically');
+            setTimeout(startSimulation, 2000);
+        }, 3000);
+    </script>
+</body>
+</html>
