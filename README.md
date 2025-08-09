@@ -1,38 +1,233 @@
-# Eremos
+<div align="center">
+  <picture>
+    <img src="docs/banner2.png" alt="Eremos Banner" style="max-width: 800px"/>
+  </picture>
 
-![Eremos](docs/banner2.png)
+  <div style="margin: 2em 0; display: flex; gap: 8px; justify-content: center;">
+    <a href="https://github.com/EremosCore/Eremos/blob/main/LICENSE">
+      <img src="https://img.shields.io/badge/License-MIT-171717?style=for-the-badge&labelColor=171717&color=15847D" alt="License" />
+    </a>
+    <a href="#">
+      <img src="https://img.shields.io/badge/Version-0.1.0-171717?style=for-the-badge&labelColor=171717&color=E44D26" alt="Version" />
+    </a>
+    <a href="#">
+      <img src="https://img.shields.io/badge/Solana-Powered-171717?style=for-the-badge&labelColor=171717&color=14F195&logo=solana&logoColor=14F195" alt="Solana Powered" />
+    </a>
+    <a href="#">
+      <img src="https://img.shields.io/badge/TypeScript-Ready-171717?style=for-the-badge&labelColor=171717&color=3178C6&logo=typescript&logoColor=3178C6" alt="TypeScript Ready" />
+    </a>
+    <a href="#">
+      <img src="https://img.shields.io/badge/PRs-Welcome-171717?style=for-the-badge&labelColor=171717&color=4B32C3" alt="PRs Welcome" />
+    </a>
+  </div>
+  
+  <h3>
+    <img src="https://img.shields.io/badge/Autonomous%20Swarm%20Agents-171717?style=for-the-badge&logo=data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjMTRGMTk1IiBzdHJva2Utd2lkdGg9IjIiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCI+PHBhdGggZD0iTTEyIDNMMjAgN1YxN0wxMiAyMUw0IDE3VjdMMTIgM1oiLz48cGF0aCBkPSJNMTIgMTFDMTMuMTA0NiAxMSAxNCAxMC4xMDQ2IDE0IDlDMTQgNy44OTU0MyAxMy4xMDQ2IDcgMTIgN0MxMC44OTU0IDcgMTAgNy44OTU0MyAxMCA5QzEwIDEwLjEwNDYgMTAuODk1NCAxMSAxMiAxMVoiLz48cGF0aCBkPSJNMTYgMTUuNjZDMTUuMjMgMTUuMjUgMTQuMTYgMTUgMTMgMTVIMTFDOS44NCAxNSA4Ljc3IDE1LjI1IDggMTUuNjYiLz48L3N2Zz4=" alt="Autonomous Agents"/>
+  </h3>
 
-**Autonomous swarm agents for early on-chain signal detection**
 
-Eremos is a lightweight framework for deploying modular agents that monitor blockchain activity - tracking wallet clusters, mint patterns, and contract anomalies.
-Designed for devs who want low-noise, early signals embedded into their workflows.
+  <div style="max-width: 800px; margin: 2em auto; line-height: 1.6;">
+    <p style="font-size: 1.2em; color: #14F195; margin-bottom: 1.5em;">
+      A lightweight framework for deploying modular agents that monitor blockchain activity - tracking wallet clusters, mint patterns, and contract anomalies.
+    </p>
+    <p style="color: #8A8F98; font-size: 1.1em;">
+      Designed for devs who want low-noise, early signals embedded into their workflows.
+    </p>
+  </div>
+
+  <div style="margin: 2em 0;">
+    <a href="#features">
+      <img src="https://img.shields.io/badge/Features-171717?style=for-the-badge&logo=data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjMTRGMTk1IiBzdHJva2Utd2lkdGg9IjIiPjxwb2x5Z29uIHBvaW50cz0iMTIgMiAxNS4wOSA4LjI2IDIyIDkuMjcgMTcgMTQuMTQgMTguMTggMjEuMDIgMTIgMTcuNzcgNS44MiAyMS4wMiA3IDE0LjE0IDIgOS4yNyA4LjkxIDguMjYgMTIgMiI+PC9wb2x5Z29uPjwvc3ZnPg==" alt="Features"/>
+    </a>
+    &nbsp;
+    <a href="#getting-started">
+      <img src="https://img.shields.io/badge/Quick%20Start-171717?style=for-the-badge&logo=data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjMTRGMTk1IiBzdHJva2Utd2lkdGg9IjIiPjxwb2x5bGluZSBwb2ludHM9IjUgMTIgMTEgMTggMjAgOCI+PC9wb2x5bGluZT48L3N2Zz4=" alt="Quick Start"/>
+    </a>
+    &nbsp;
+    <a href="#example-signal">
+      <img src="https://img.shields.io/badge/Signals-171717?style=for-the-badge&logo=data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjMTRGMTk1IiBzdHJva2Utd2lkdGg9IjIiPjxwYXRoIGQ9Ik0yMy4zMiA2Ljc0QzIxLjg4IDUuMyAyMC4xMyA0LjI4IDE4LjI2IDMuNjFDMTUuMTcgMi40MyAxMS44MyAyLjQzIDguNzQgMy42MUM2Ljg3IDQuMjggNS4xMiA1LjMgMy42OCA2Ljc0QzEuNSA4LjkyIDAgMTEuNzggMCAxNC44M3YxLjY2QzAgMTkuNCAxLjY2IDIxLjc4IDUuMDggMjIuNDVDNi45NSAyMi44MiA4Ljg3IDIzIDEwLjggMjNIMTMuMkMxNS4xMyAyMyAxNy4wNSAyMi44MiAxOC45MiAyMi40NUMyMi4zNCAyMS43OCAyNCAyMS40IDI0IDE2LjQ5VjE0LjgzQzI0IDExLjc4IDIyLjUgOC45MiAyMC4zMiA2Ljc0WiI+PC9wYXRoPjxwYXRoIGQ9Ik0xMS45OSAxMEEyLjk5IDIuOTkgMCAxIDEgOS4wMSAxM0EzIDMgMCAwIDEgMTEuOTkgMTBaIj48L3BhdGg+PC9zdmc+" alt="Signals"/>
+    </a>
+    &nbsp;
+    <a href="#tech-stack">
+      <img src="https://img.shields.io/badge/Tech%20Stack-171717?style=for-the-badge&logo=data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjMTRGMTk1IiBzdHJva2Utd2lkdGg9IjIiPjxwYXRoIGQ9Ik0xMiAxOEw2IDEyTDEyIDZNMTggMThMMTIgMTJMMTggNiI+PC9wYXRoPjwvc3ZnPg==" alt="Tech Stack"/>
+    </a>
+  </div>
+</div>
 
 ---
 
+## What is Eremos?
+
+<div align="center">
+  <table>
+    <tr>
+      <td align="center" width="50%">
+        <h3>
+          <img src="https://img.shields.io/badge/Problem-critical?style=for-the-badge&logo=data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNiIgaGVpZ2h0PSIxNiIgdmlld0JveD0iMCAwIDI0IDI0Ij48cGF0aCBmaWxsPSIjZmZmIiBkPSJNMTEgMTVoMnYyaC0ydi0yem0wLThoMnY2aC0yVjd6bS45OS01QzYuNDcgMiAyIDYuNDggMiAxMnM0LjQ3IDEwIDkuOTkgMTBDMTcuNTIgMjIgMjIgMTcuNTIgMjIgMTJTMTcuNTIgMiAxMS45OSAyek0xMiAyMGMtNC40MiAwLTgtMy41OC04LThzMy41OC04IDgtOCA4IDMuNTggOCA4LTMuNTggOC04IDh6Ii8+PC9zdmc+" alt="Problem"/>
+        </h3>
+        <p>On-chain activities like token launches, wallet movements, and contract deployments often go unnoticed until it's too late to act.</p>
+      </td>
+      <td align="center" width="50%">
+        <h3>
+          <img src="https://img.shields.io/badge/Solution-success?style=for-the-badge&logo=data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNiIgaGVpZ2h0PSIxNiIgdmlld0JveD0iMCAwIDI0IDI0Ij48cGF0aCBmaWxsPSIjZmZmIiBkPSJNOSAxNi4yTDQuOCAxMmwtMS40IDEuNEw5IDE5IDIxIDdsLTEuNC0xLjRMOSAxNi4yeiIvPjwvc3ZnPg==" alt="Solution"/>
+        </h3>
+        <p>Eremos deploys autonomous agents that monitor blockchain activities 24/7 and alert you about significant events before they become obvious.</p>
+      </td>
+    </tr>
+  </table>
+</div>
+
+## How It Works?
+
+<div align="center">
+  <table>
+    <tr>
+      <td align="center">
+        <h3>
+                    <img src="https://img.shields.io/badge/1-Monitor-171717?style=for-the-badge&labelColor=171717&color=14F195&logo=data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjMTRGMTk1IiBzdHJva2Utd2lkdGg9IjIiPjxjaXJjbGUgY3g9IjEyIiBjeT0iMTIiIHI9IjEwIi8+PGNpcmNsZSBjeD0iMTIiIGN5PSIxMiIgcj0iNCIvPjwvc3ZnPg==" alt="1. Monitor"/>
+        </h3>
+        <p style="color: #8A8F98;">Agents continuously watch on-chain activities</p>
+      </td>
+      <td align="center">
+        <h3>
+          <img src="https://img.shields.io/badge/2-Analyze-171717?style=for-the-badge&labelColor=171717&color=14F195&logo=data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjMTRGMTk1IiBzdHJva2Utd2lkdGg9IjIiPjxwYXRoIGQ9Ik0yIDNsMTggMThNOS41IDkuNWw1IDVNMTUgOWwtNS41IDUuNU0xNSA5bDUuNSA1LjVNOSAxNWw1LjUgNS41Ii8+PC9zdmc+" alt="2. Analyze"/>
+        </h3>
+        <p>Agents continuously watch on-chain activities</p>
+      </td>
+      <td align="center">
+        <h3>
+          <img src="https://img.shields.io/badge/3-Score-171717?style=for-the-badge&labelColor=171717&color=14F195&logo=data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjMTRGMTk1IiBzdHJva2Utd2lkdGg9IjIiPjxwYXRoIGQ9Ik0xOSAyTDEyIDEzbTcgOWwtNy0xMU01IDIybDctMTFNNSAybDcgMTEiLz48L3N2Zz4=" alt="3. Score"/>
+        </h3>
+        <p style="color: #8A8F98;">Calculate confidence based on multiple factors</p>
+      </td>
+      <td align="center">
+        <h3>
+          <img src="https://img.shields.io/badge/4-Alert-171717?style=for-the-badge&labelColor=171717&color=14F195&logo=data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjMTRGMTk1IiBzdHJva2Utd2lkdGg9IjIiPjxwYXRoIGQ9Ik0xOCA4QzE4IDE2IDEyIDIwIDEyIDIwQzEyIDIwIDYgMTYgNiA4QzYgNSA4LjUgMiAxMiAyQzE1LjUgMiAxOCA1IDE4IDhaIi8+PC9zdmc+" alt="4. Alert"/>
+        </h3>
+        <p>Emit high-confidence signals to your workflow</p>
+      </td>
+    </tr>
+  </table>
+
+  ```mermaid
+  graph LR
+    A[On-chain Activity] --> B[Swarm Agents]
+    B --> C[Pattern Detection]
+    C --> D[Confidence Scoring]
+    D --> E[Signal Emission]
+    style A fill:#171717,stroke:#14F195,color:#14F195
+    style B fill:#171717,stroke:#14F195,color:#14F195
+    style C fill:#171717,stroke:#14F195,color:#14F195
+    style D fill:#171717,stroke:#14F195,color:#14F195
+    style E fill:#171717,stroke:#14F195,color:#14F195
+  ```
+</div>
+
+## Use Cases
+
+<div align="center">
+  <table>
+    <tr>
+      <td align="center" width="33%">
+        <img src="https://img.shields.io/badge/Developers-171717?style=for-the-badge&labelColor=171717&color=14F195&logo=data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjMTRGMTk1IiBzdHJva2Utd2lkdGg9IjIiPjxwYXRoIGQ9Ik04IDJoOE0xNiAydjRNOCAydjRNMyA5aDE4TTMgOXYxMGEyIDIgMCAwMDIgMmgxNGEyIDIgMCAwMDItMlY5Ii8+PC9zdmc+" height="28"/>
+        <p style="color: #8A8F98; margin-top: 8px;">Monitor contract deployments & track wallet patterns</p>
+      </td>
+      <td align="center" width="33%">
+        <img src="https://img.shields.io/badge/Analysts-171717?style=for-the-badge&labelColor=171717&color=14F195&logo=data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjMTRGMTk1IiBzdHJva2Utd2lkdGg9IjIiPjxwYXRoIGQ9Ik0yMSAxMkg3TTIxIDZIN00yMSAxOEg3TTMgNmgyTTMgMTJoMk0zIDE4aDIiLz48L3N2Zz4=" height="28"/>
+        <p style="color: #8A8F98; margin-top: 8px;">Track emerging trends & token launches</p>
+      </td>
+      <td align="center" width="33%">
+        <img src="https://img.shields.io/badge/Security-171717?style=for-the-badge&labelColor=171717&color=14F195&logo=data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjMTRGMTk1IiBzdHJva2Utd2lkdGg9IjIiPjxwYXRoIGQ9Ik0xMiAyMnM4LTQgOC0xMFY1bC04LTNsLTggM3Y3YzAgNiA4IDEwIDggMTB6Ii8+PC9zdmc+" height="28"/>
+        <p style="color: #8A8F98; margin-top: 8px;">Detect suspicious wallet activities & potential threats</p>
+      </td>
+    </tr>
+  </table>
+</div>
+
+---
+
+<div align="center">
+  <table>
+    <tr>
+      <td align="center" width="400px">
+        <img src="docs/therontphd2.png" alt="Agent Theron" width="155"/><br/>
+        <h3>🌟 Meet Theron - Agent-000</h3>
+        <p><i>The first deployed agent in the swarm</i></p>
+        <table>
+          <tr>
+            <td>Status</td>
+            <td><img src="https://img.shields.io/badge/status-active-success.svg"/></td>
+          </tr>
+          <tr>
+            <td>Type</td>
+            <td><img src="https://img.shields.io/badge/type-pattern%20detection-blue.svg"/></td>
+          </tr>
+          <tr>
+            <td>Role</td>
+            <td><img src="https://img.shields.io/badge/role-passive%20observer-yellow.svg"/></td>
+          </tr>
+        </table>
+      </td>
+      <td align="center" width="400px">
+        <h3>🔜 Agent-001</h3>
+        <p><i>Coming Soon</i></p>
+        <a href="https://x.com/EremosCore/status/1949154939923833239">
+          <img src="https://img.shields.io/badge/status-teaser-orange.svg"/>
+        </a>
+        <p>Get ready for the next evolution<br/>in our swarm intelligence</p>
+      </td>
+    </tr>
+  </table>
+</div>
+
+---
+
+## ✨ Features
+
+<div align="center">
+  <table>
+    <tr>
+      <td align="center">
+        <h3>🤖</h3>
+        <b>Modular Agents</b>
+        <p>Scoped logic for detecting wallet activity, contract spawns, and anomalies</p>
+      </td>
+      <td align="center">
+        <h3>📡</h3>
+        <b>Signal Emission</b>
+        <p>Structured signals for logging, alerting, or downstream use</p>
+      </td>
+      <td align="center">
+        <h3>🌐</h3>
+        <b>Swarm Design</b>
+        <p>Each agent operates independently with shared utilities</p>
+      </td>
+    </tr>
+    <tr>
+      <td align="center">
+        <h3>🔌</h3>
+        <b>Extensible Core</b>
+        <p>Plug in watchers, inference layers, or custom triggers</p>
+      </td>
+      <td align="center">
+        <h3>📊</h3>
+        <b>Minimal Output</b>
+        <p>Log only what matters - high signal, low noise</p>
+      </td>
+      <td align="center">
+        <h3>🎯</h3>
+        <b>Launch Detection</b>
+        <p>Trace fresh wallets & flag high-confidence deploys in real time</p>
+      </td>
+    </tr>
+  </table>
+</div>
+
+### 👻 Ghost Watcher
 <p align="center">
-  <img src="docs/therontphd2.png" alt="Agent Theron" width="155"/><br/>
-  <em>Theron - Agent (000)</em>
+  <i>Monitors long-dormant wallets that suddenly become active again. <br/>
+  Perfect for tracing old dev wallets or detecting potential rug setups.</i>
 </p>
-
-**Meet Theron - Agent-000**  
-*The first deployed agent in the swarm. Passive. Pattern-sensitive.  
-Modular and extendable by design.*
-
-
-**Agent-001 Coming Soon** [Teaser](https://x.com/EremosCore/status/1949154939923833239)
-
----
-
-## Features
-
-- **Modular Agents** - Scoped logic for detecting wallet activity, contract spawns, and anomalies  
-- **Signal Emission** - Structured signals for logging, alerting, or downstream use  
-- **Swarm Design** - Each agent operates independently with shared utilities  
-- **Extensible Core** - Plug in watchers, inference layers, or custom triggers  
-- **Minimal Output** - Log only what matters
-- **Launch Wallet Detection** - Agents can trace freshly funded wallets (e.g. from CEXs), track their contract interactions, and flag high-confidence deploys in real time
-- **Ghost Watcher** - Monitors long-dormant wallets that suddenly become active again. Useful for tracing old dev wallets or rug setups.
-
 
 ---
 
@@ -72,7 +267,7 @@ Confidence is computed via agent-side scoring and logged alongside the signal.
 
 ---
 
-## Tech Stack
+## ⚙️ Tech Stack
 
 - **Frontend:** Next.js, Tailwind CSS
 - **Backend:** Node.js (TypeScript-based agent runner)
@@ -81,7 +276,7 @@ Confidence is computed via agent-side scoring and logged alongside the signal.
 
 ---
 
-## Getting Started
+## 🚀 Getting Started
 
 ```bash
 git clone https://github.com/EremosCore/Eremos.git
@@ -98,7 +293,7 @@ npm run dev
 
 ---
 
-## Key Folders
+## 📂 Key Folders
 
 - `/agents` - Agent templates + logic  
 - `/utils` - Shared signal/logging utilities  
@@ -108,7 +303,7 @@ npm run dev
 
 ---
 
-## Contributing
+## 🤝 Contributing
 
 We’re open to contributors.  
 If you are experienced in TypeScript and like agent-based systems, check `example.ts` and build your own observer.
@@ -116,13 +311,13 @@ If you're a designer, artist, or just have ideas that fit the mythos - send us a
 
 ---
 
-## License
+## 🪪 License
 
 MIT © Eremos LLC
 
 ---
 
-## Links
+## 🔗 Links
 
 - **Twitter/X:** [@EremosCore](https://x.com/EremosCore)
 - **Website:** [Eremos.io](https://www.eremos.io/)
