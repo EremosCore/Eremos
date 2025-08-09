@@ -1,5 +1,11 @@
 # Eremos
 
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
+[![Node.js](https://img.shields.io/badge/Node.js-43853D?logo=node.js&logoColor=white)](https://nodejs.org/)
+[![Version](https://img.shields.io/badge/version-0.1.0-blue.svg)](https://github.com/EremosCore/Eremos)
+[![Solana](https://img.shields.io/badge/Solana-14FDFF?logo=solana&logoColor=white)](https://solana.com/)
+
 ![Eremos](docs/banner2.png)
 
 **Autonomous swarm agents for early on-chain signal detection**
@@ -18,12 +24,22 @@ Designed for devs who want low-noise, early signals embedded into their workflow
 *The first deployed agent in the swarm. Passive. Pattern-sensitive.  
 Modular and extendable by design.*
 
-
 **Agent-001 Coming Soon** [Teaser](https://x.com/EremosCore/status/1949154939923833239)
 
 ---
 
-## Features
+## 🚀 Quick Start
+
+```bash
+git clone https://github.com/EremosCore/Eremos.git
+cd Eremos
+npm install
+npm run dev
+```
+
+---
+
+## ✨ Features
 
 - **Modular Agents** - Scoped logic for detecting wallet activity, contract spawns, and anomalies  
 - **Signal Emission** - Structured signals for logging, alerting, or downstream use  
@@ -33,10 +49,9 @@ Modular and extendable by design.*
 - **Launch Wallet Detection** - Agents can trace freshly funded wallets (e.g. from CEXs), track their contract interactions, and flag high-confidence deploys in real time
 - **Ghost Watcher** - Monitors long-dormant wallets that suddenly become active again. Useful for tracing old dev wallets or rug setups.
 
-
 ---
 
-## Example Signal
+## 📊 Example Signal
 
 An example signal emitted by an agent detecting a live token deployment:
 
@@ -60,7 +75,7 @@ An example signal emitted by an agent detecting a live token deployment:
 
 ---
 
-## Signal Confidence
+## 🎯 Signal Confidence
 
 Each emitted signal includes a `confidence` score (0-1) based on behavioral heuristics:
 - CEX-origin funding (e.g. Kraken, Coinbase)
@@ -72,7 +87,7 @@ Confidence is computed via agent-side scoring and logged alongside the signal.
 
 ---
 
-## Tech Stack
+## 🛠️ Tech Stack
 
 - **Frontend:** Next.js, Tailwind CSS
 - **Backend:** Node.js (TypeScript-based agent runner)
@@ -81,15 +96,34 @@ Confidence is computed via agent-side scoring and logged alongside the signal.
 
 ---
 
-## Getting Started
+## 📁 Project Structure
 
-```bash
-git clone https://github.com/EremosCore/Eremos.git
-cd Eremos
-npm install
+```
+Eremos/
+├── agents/          # Agent templates + logic
+├── utils/           # Shared signal/logging utilities
+├── types/           # TypeScript interfaces + definitions
+├── scripts/         # Bootstrap and dev scripts
+├── docs/            # Swarm structure, architecture, & artwork
+└── tests/           # Test suites for agents and utilities
 ```
 
-Set up your environment:
+---
+
+## 🧪 Development
+
+### Available Scripts
+
+```bash
+npm run dev          # Start development mode
+npm run build        # Build TypeScript
+npm run test         # Run test suite
+npm run lint         # Lint code
+npm run clean        # Clean build artifacts
+npm run setup        # Setup development environment
+```
+
+### Environment Setup
 
 ```bash
 cp .env.example .env.local
@@ -98,34 +132,31 @@ npm run dev
 
 ---
 
-## Key Folders
+## 🤝 Contributing
 
-- `/agents` - Agent templates + logic  
-- `/utils` - Shared signal/logging utilities  
-- `/types` - TypeScript interfaces + definitions  
-- `/scripts` - Bootstrap and dev scripts  
-- `/docs` - Swarm structure, architecture, & our artwork/official whitepaper
+We're open to contributors! Check out our [Contributing Guide](docs/contributing.md) for details.
 
----
+**For Developers:**
+- If you're experienced in TypeScript and like agent-based systems, check `example.ts` and build your own observer
+- Use `/scripts/dev-agent.ts` to test your agents
+- Follow our [Agent Guide](docs/agents.md) for development patterns
 
-## Contributing
-
-We’re open to contributors.  
-If you are experienced in TypeScript and like agent-based systems, check `example.ts` and build your own observer.
-If you're a designer, artist, or just have ideas that fit the mythos - send us a DM on Twitter. [@EremosCore](https://x.com/EremosCore)
+**For Designers & Artists:**
+- If you're a designer, artist, or just have ideas that fit the mythos - send us a DM on Twitter
 
 ---
 
-## License
+## 📄 License
 
 MIT © Eremos LLC
 
 ---
 
-## Links
+## 🔗 Links
 
 - **Twitter/X:** [@EremosCore](https://x.com/EremosCore)
 - **Website:** [Eremos.io](https://www.eremos.io/)
 - **Whitepaper:** [v1.0 PDF](docs/whitepaper.pdf)
 
-_Maintained by the Eremos Core team 💛._
+*Maintained by the Eremos Core team 💛.*
+
