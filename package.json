@@ -1,18 +1,43 @@
 {
   "name": "eremos-core",
   "version": "0.1.0",
-  "description": "Modular agent framework for on-chain activity monitoring.",
+  "description": "Modular agent framework for on-chain activity monitoring and early signal detection",
   "main": "index.js",
   "scripts": {
-    "dev": "echo 'Running dev mode...'"
+    "dev": "echo 'Running dev mode...'",
+    "test": "echo 'Running tests...'",
+    "dev-agent": "echo 'Running agent development mode...'",
+    "validate-agent": "echo 'Validating agent configuration...'",
+    "simulate-cluster": "echo 'Simulating agent cluster...'",
+    "build": "echo 'Building project...'",
+    "lint": "echo 'Running linter...'",
+    "format": "echo 'Formatting code...'"
   },
   "keywords": [
     "agent",
     "onchain",
     "modular",
     "blockchain",
-    "framework"
+    "framework",
+    "solana",
+    "monitoring",
+    "signals",
+    "swarm",
+    "autonomous",
+    "typescript"
   ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/EremosCore/Eremos.git"
+  },
+  "bugs": {
+    "url": "https://github.com/EremosCore/Eremos/issues"
+  },
+  "homepage": "https://www.eremos.io/",
   "license": "MIT",
-  "author": "EremosCore"
+  "author": "EremosCore",
+  "engines": {
+    "node": ">=18.0.0",
+    "npm": ">=8.0.0"
+  }
 }
