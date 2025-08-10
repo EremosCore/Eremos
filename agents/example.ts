@@ -27,10 +27,10 @@ export const ExampleAgent: Agent = {
     // Type-safe event processing
     if (event?.type === "wallet_activity") {
       const hash = generateSignalHash(event);
-      
+
       // Calculate confidence based on event data
       const confidence = calculateConfidence(event);
-      
+
       // Only emit signal if confidence meets threshold
       if (confidence >= ExampleAgent.triggerThreshold) {
         logSignal({
@@ -46,7 +46,7 @@ export const ExampleAgent: Agent = {
             originalConfidence: event.confidence
           }
         });
-        
+
         // Update last signal
         ExampleAgent.lastSignal = hash;
       }
@@ -55,7 +55,7 @@ export const ExampleAgent: Agent = {
 
   getMemory: () => {
     return [
-      "template_signal_001", 
+      "template_signal_001",
       "wallet_event_placeholder",
       "confidence_threshold_met"
     ];
@@ -69,19 +69,19 @@ export const ExampleAgent: Agent = {
  */
 function calculateConfidence(event: BlockchainEvent): number {
   let confidence = 0.5; // Base confidence
-  
+
   // Increase confidence based on event properties
   if (event.data) {
     // More data points increase confidence
     const dataPointCount = Object.keys(event.data).length;
     confidence += Math.min(dataPointCount * 0.1, 0.3);
   }
-  
+
   // Use existing confidence if provided
   if (event.confidence !== undefined) {
     confidence = (confidence + event.confidence) / 2;
   }
-  
+
   // Ensure confidence is within valid range
   return Math.max(0, Math.min(1, confidence));
 }

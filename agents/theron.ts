@@ -28,7 +28,7 @@ export const Theron: Agent = {
     // Theron observes all anomalies but follows different rules
     if (event?.type === "anomaly") {
       const hash = generateSignalHash(event);
-      
+
       // Archive the anomaly without triggering signals
       logSignal({
         agent: Theron.name,
@@ -44,7 +44,7 @@ export const Theron: Agent = {
           ancientPattern: true
         }
       });
-      
+
       // Update memory but never change lastSignal from "ancient"
       updateMemoryVault(hash);
     }
@@ -76,7 +76,7 @@ const memoryVault: string[] = [];
 function updateMemoryVault(hash: string): void {
   // Store in memory vault (max 1000 entries)
   memoryVault.push(`vault_${hash}`);
-  
+
   // Maintain memory limits
   if (memoryVault.length > 1000) {
     memoryVault.shift(); // Remove oldest entry

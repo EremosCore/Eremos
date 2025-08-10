@@ -16,9 +16,9 @@ export function generateSignalHash(event: BlockchainEvent): string {
     data: event.data || {},
     // Exclude timestamp to make hash deterministic for same event
   };
-  
+
   const eventString = JSON.stringify(eventData, Object.keys(eventData).sort());
-  
+
   // Simple hash function that's deterministic and provides good distribution
   let hash = 0;
   for (let i = 0; i < eventString.length; i++) {
@@ -26,10 +26,10 @@ export function generateSignalHash(event: BlockchainEvent): string {
     hash = ((hash << 5) - hash) + char;
     hash = hash & hash; // Convert to 32-bit integer
   }
-  
+
   // Convert to hex and ensure 12 characters
   const hexHash = ('000000000000' + Math.abs(hash).toString(16)).slice(-12);
-  
+
   return `sig_${hexHash}`;
 }
 
@@ -41,7 +41,7 @@ export function generateSignalHash(event: BlockchainEvent): string {
  */
 export function generateUniqueSignalHash(event: BlockchainEvent): string {
   const base = JSON.stringify(event) + Date.now() + Math.random();
-  
+
   // Simple hash with timestamp and random component
   let hash = 0;
   for (let i = 0; i < base.length; i++) {
@@ -49,9 +49,9 @@ export function generateUniqueSignalHash(event: BlockchainEvent): string {
     hash = ((hash << 5) - hash) + char;
     hash = hash & hash;
   }
-  
+
   const hexHash = ('000000000000' + Math.abs(hash).toString(16)).slice(-12);
-  
+
   return `sig_${hexHash}`;
 }
 
