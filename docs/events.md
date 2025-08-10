@@ -4,6 +4,7 @@ Events are the core unit of observation for Eremos agents.
 Each event represents a blockchain occurrence like a wallet transfer, mint, or contract call.
 
 ### Event Example
+
 ```ts
 {
   type: "wallet_activity",
@@ -12,4 +13,5 @@ Each event represents a blockchain occurrence like a wallet transfer, mint, or c
   timestamp: 1717201922
 }
 ```
+
 Agents consume these events through their observe() function and emit signals based on custom logic.

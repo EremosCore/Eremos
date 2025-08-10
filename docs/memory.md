@@ -6,6 +6,7 @@ This allows agents to retain lightweight state or emit recognizable signals acro
 ## Purpose
 
 Memory helps agents:
+
 - Track previously seen patterns
 - Share known tags or identifiers
 - Enable external tools to interpret their state
@@ -15,7 +16,7 @@ Memory helps agents:
 Memory is returned as an array of string tokens:
 
 ```ts
-getMemory: () => ["cluster:001", "mint:phantom_batch", "flag:volatile"]
+getMemory: () => ['cluster:001', 'mint:phantom_batch', 'flag:volatile']
 ```
 
 These tokens can represent tags, signal IDs, or abstract state cues.

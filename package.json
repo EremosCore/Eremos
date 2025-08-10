@@ -4,7 +4,8 @@
   "description": "Modular agent framework for on-chain activity monitoring.",
   "main": "index.js",
   "scripts": {
-    "dev": "echo 'Running dev mode...'"
+    "dev": "ts-node agents/theron.ts",
+    "format": "prettier --write ."
   },
   "keywords": [
     "agent",
@@ -14,5 +15,9 @@
     "framework"
   ],
   "license": "MIT",
-  "author": "EremosCore"
+  "author": "EremosCore",
+  "devDependencies": {
+    "@types/node": "^24.2.1",
+    "prettier": "^3.6.2"
+  }
 }
