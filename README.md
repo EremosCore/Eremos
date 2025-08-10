@@ -1,16 +1,37 @@
-# Eremos
+# 🗿 Eremos
 
-![Eremos](docs/banner2.png)
+![Eremos Banner](https://github.com/EremosCore/Eremos/raw/main/docs/banner2.png)
 
-**Autonomous swarm agents for early on-chain signal detection**
+<p align="center">
+  <a href="https://github.com/EremosCore/Eremos/stargazers">
+    <img src="https://img.shields.io/github/stars/EremosCore/Eremos?style=for-the-badge&color=gold" alt="Stars Badge"/>
+  </a>
+  <a href="https://github.com/EremosCore/Eremos/network/members">
+    <img src="https://img.shields.io/github/forks/EremosCore/Eremos?style=for-the-badge&color=orange" alt="Forks Badge"/>
+  </a>
+  <a href="https://github.com/EremosCore/Eremos/issues">
+    <img src="https://img.shields.io/github/issues/EremosCore/Eremos?style=for-the-badge&color=red" alt="Issues Badge"/>
+  </a>
+  <a href="https://github.com/EremosCore/Eremos/blob/main/LICENSE">
+    <img src="https://img.shields.io/github/license/EremosCore/Eremos?style=for-the-badge&color=blue" alt="License Badge"/>
+  </a>
+</p>
 
-Eremos is a lightweight framework for deploying modular agents that monitor blockchain activity - tracking wallet clusters, mint patterns, and contract anomalies.
-Designed for devs who want low-noise, early signals embedded into their workflows.
+---
+
+## 📜 What is Eremos?
+
+**Eremos** is a **modular framework** for deploying autonomous “swarm agents” that monitor **on-chain activity** across the **Solana ecosystem**.  
+These agents run independently, observing funding flows, bundling behavior, deploy patterns, and more — **surfacing early signals before they’re obvious**.
+
+Built as a **public good**, Eremos aims to enhance transparency and insight across Solana. It is **fully open-source**, **easily extendable**, and designed to **plug into developer or analyst workflows**.
+
+🔗 **Learn more:** [GitHub](https://github.com/EremosCore/Eremos) | [Twitter](https://x.com/EremosCore) | [Website](https://www.eremos.io)
 
 ---
 
 <p align="center">
-  <img src="docs/therontphd2.png" alt="Agent Theron" width="155"/><br/>
+  <img src="https://github.com/EremosCore/Eremos/raw/main/docs/therontphd2.png" alt="Agent Theron" width="155"/><br/>
   <em>Theron - Agent (000)</em>
 </p>
 
@@ -18,27 +39,23 @@ Designed for devs who want low-noise, early signals embedded into their workflow
 *The first deployed agent in the swarm. Passive. Pattern-sensitive.  
 Modular and extendable by design.*
 
-
-**Agent-001 Coming Soon** [Teaser](https://x.com/EremosCore/status/1949154939923833239)
-
----
-
-## Features
-
-- **Modular Agents** - Scoped logic for detecting wallet activity, contract spawns, and anomalies  
-- **Signal Emission** - Structured signals for logging, alerting, or downstream use  
-- **Swarm Design** - Each agent operates independently with shared utilities  
-- **Extensible Core** - Plug in watchers, inference layers, or custom triggers  
-- **Minimal Output** - Log only what matters
-- **Launch Wallet Detection** - Agents can trace freshly funded wallets (e.g. from CEXs), track their contract interactions, and flag high-confidence deploys in real time
-- **Ghost Watcher** - Monitors long-dormant wallets that suddenly become active again. Useful for tracing old dev wallets or rug setups.
-
+🆕 **Agent-001 Coming Soon:** [Teaser](https://x.com/EremosCore/status/1949154939923833239)
 
 ---
 
-## Example Signal
+## ✨ Features
 
-An example signal emitted by an agent detecting a live token deployment:
+- **🧩 Modular Agents** – Scoped logic for detecting wallet activity, contract spawns, and anomalies  
+- **📡 Signal Emission** – Structured signals for logging, alerting, or downstream use  
+- **🐝 Swarm Design** – Each agent operates independently with shared utilities  
+- **🔌 Extensible Core** – Plug in watchers, inference layers, or custom triggers  
+- **📉 Minimal Output** – Log only what matters  
+- **🚀 Launch Wallet Detection** – Trace freshly funded wallets (e.g., from CEXs), track their contract interactions, and flag high-confidence deploys in real-time  
+- **👻 Ghost Watcher** – Detects long-dormant wallets that suddenly become active again (useful for tracing old dev wallets or rug setups)  
+
+---
+
+## 📊 Example Signal
 
 ```ts
 [agent-observer] → fresh funding detected from kraken (wallet: 6Yxk...P2M8) at 04:41:12Z
@@ -56,76 +73,96 @@ An example signal emitted by an agent detecting a live token deployment:
   source: "agent-observer",
   confidence: 0.91
 }
-```
+````
 
 ---
 
-## Signal Confidence
+## 🎯 Signal Confidence
 
-Each emitted signal includes a `confidence` score (0-1) based on behavioral heuristics:
-- CEX-origin funding (e.g. Kraken, Coinbase)
-- Time between funding → deploy
-- Wallet linkage density (bundled activity)
-- Token metadata validation
+Each emitted signal includes a **confidence score** (0-1) based on behavioral heuristics:
+
+* 🏦 CEX-origin funding (e.g., Kraken, Coinbase)
+* ⏳ Time between funding → deploy
+* 🔗 Wallet linkage density (bundled activity)
+* 📝 Token metadata validation
 
 Confidence is computed via agent-side scoring and logged alongside the signal.
 
 ---
 
-## Tech Stack
+## 🛠 Tech Stack
 
-- **Frontend:** Next.js, Tailwind CSS
-- **Backend:** Node.js (TypeScript-based agent runner)
-- **Language:** TypeScript (typed logic across agents, utils, and infra)
-- **Chain Layer:** RPC watchers, mempool filters, native triggers
+* **Frontend:** Next.js, Tailwind CSS
+* **Backend:** Node.js (TypeScript-based agent runner)
+* **Language:** TypeScript (typed logic across agents, utils, and infra)
+* **Chain Layer:** RPC watchers, mempool filters, native triggers
 
 ---
 
-## Getting Started
+## 🚀 Getting Started
 
 ```bash
+# Clone the repo
 git clone https://github.com/EremosCore/Eremos.git
 cd Eremos
+
+# Install dependencies
 npm install
-```
 
-Set up your environment:
-
-```bash
+# Set up environment variables
 cp .env.example .env.local
+
+# Run the project in development mode
 npm run dev
 ```
 
 ---
 
-## Key Folders
+## 📂 Key Folders
 
-- `/agents` - Agent templates + logic  
-- `/utils` - Shared signal/logging utilities  
-- `/types` - TypeScript interfaces + definitions  
-- `/scripts` - Bootstrap and dev scripts  
-- `/docs` - Swarm structure, architecture, & our artwork/official whitepaper
-
----
-
-## Contributing
-
-We’re open to contributors.  
-If you are experienced in TypeScript and like agent-based systems, check `example.ts` and build your own observer.
-If you're a designer, artist, or just have ideas that fit the mythos - send us a DM on Twitter. [@EremosCore](https://x.com/EremosCore)
+* `/agents` – Agent templates + logic
+* `/utils` – Shared signal/logging utilities
+* `/types` – TypeScript interfaces + definitions
+* `/scripts` – Bootstrap and dev scripts
+* `/docs` – Swarm structure, architecture, & artwork
 
 ---
 
-## License
+## 🤝 Contributing
+
+We’re open to contributors! To participate in the bounty:
+
+1. ⭐ Star and 👀 Watch the [Eremos repo](https://github.com/EremosCore/Eremos)
+2. 🍴 Fork the repo and make your visual or structural improvements (README, docs, tooling, repo organization, badges)
+3. 📬 Open a clean, descriptive Pull Request
+4. 🔗 Submit your PR link on Superteam Earn (max 1 submission)
+
+*Bonus:* A GitHub profile with a strong contribution history will increase your chances!
+
+If you are experienced in TypeScript and agent systems, check `example.ts` to build your own observer.
+If you're a designer or artist with ideas fitting the Eremos mythos, reach out on Twitter: [@EremosCore](https://x.com/EremosCore).
+
+---
+
+## 📜 License
 
 MIT © Eremos LLC
 
 ---
 
-## Links
+## 🔗 Useful Links
 
-- **Twitter/X:** [@EremosCore](https://x.com/EremosCore)
-- **Website:** [Eremos.io](https://www.eremos.io/)
-- **Whitepaper:** [v1.0 PDF](docs/whitepaper.pdf)
+* 🐦 **Twitter/X:** [@EremosCore](https://x.com/EremosCore)
+* 🌐 **Website:** [https://www.eremos.io/](https://www.eremos.io/)
+* 📄 **Whitepaper:** [v1.0 PDF](docs/whitepaper.pdf)
 
-_Maintained by the Eremos Core team 💛._
+---
+
+*Maintained by the Eremos Core team 💛*
+
+```
+
+---
+
+If you want, I can also help you add some **animated badges or GitHub Action status** badges as a bonus! Just ask.
+```
