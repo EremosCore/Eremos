@@ -1,0 +1,58 @@
+name: ✨ Feature Request
+description: Suggest a new feature or enhancement for Eremos
+title: "[Feature]: "
+labels: ["enhancement", "needs-triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for suggesting a new feature! Please provide as much detail as possible.
+
+  - type: textarea
+    id: feature-description
+    attributes:
+      label: Feature description
+      description: A clear and concise description of the feature you'd like to see.
+      placeholder: What would you like to see added to Eremos?
+    validations:
+      required: true
+
+  - type: textarea
+    id: problem-solution
+    attributes:
+      label: Problem and solution
+      description: Is your feature request related to a problem? What solution would you like?
+      placeholder: |
+        Problem: I'm always frustrated when...
+        Solution: I would like to see...
+    validations:
+      required: true
+
+  - type: dropdown
+    id: feature-category
+    attributes:
+      label: Feature category
+      description: What category does this feature belong to?
+      options:
+        - Agent Development
+        - Signal Processing
+        - Documentation
+        - Developer Experience
+        - Performance
+        - Security
+        - Testing
+        - Other
+    validations:
+      required: true
+
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives considered
+      description: Describe any alternative solutions or features you've considered.
+
+  - type: textarea
+    id: additional-context
+    attributes:
+      label: Additional context
+      description: Add any other context, mockups, or examples about the feature request.

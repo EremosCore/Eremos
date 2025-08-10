@@ -1,7 +1,13 @@
 import { Agent } from "../types/agent";
 import fs from "fs";
 
-const raw = fs.readFileSync(process.argv[2], "utf-8");
+const filePath = process.argv[2];
+if (!filePath) {
+  console.error("❌ Please provide a file path as argument.");
+  process.exit(1);
+}
+
+const raw = fs.readFileSync(filePath, "utf-8");
 const agent: Agent = JSON.parse(raw);
 
 if (!agent.id || !agent.observe || !agent.triggerThreshold) {

@@ -1,0 +1,11 @@
+node_modules/
+dist/
+*.log
+.env*
+coverage/
+*.pdf
+*.png
+*.jpg
+*.jpeg
+*.gif
+*.svg
