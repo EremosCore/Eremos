@@ -1,8 +1,19 @@
 # Eremos
 
+<div align="center">
+
 ![Eremos](docs/banner2.png)
 
 **Autonomous swarm agents for early on-chain signal detection**
+
+[![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](https://choosealicense.com/licenses/mit/)
+[![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?logo=typescript&logoColor=white)](https://typescriptlang.org/)
+[![Node.js](https://img.shields.io/badge/Node.js-16+-43853D?logo=node.js&logoColor=white)](https://nodejs.org/)
+[![GitHub Issues](https://img.shields.io/github/issues/EremosCore/Eremos)](https://github.com/EremosCore/Eremos/issues)
+[![GitHub Stars](https://img.shields.io/github/stars/EremosCore/Eremos)](https://github.com/EremosCore/Eremos/stargazers)
+[![Twitter Follow](https://img.shields.io/twitter/follow/EremosCore?style=social)](https://twitter.com/EremosCore)
+
+</div>
 
 Eremos is a lightweight framework for deploying modular agents that monitor blockchain activity - tracking wallet clusters, mint patterns, and contract anomalies.
 Designed for devs who want low-noise, early signals embedded into their workflows.
@@ -83,17 +94,79 @@ Confidence is computed via agent-side scoring and logged alongside the signal.
 
 ## Getting Started
 
+### Prerequisites
+
+- **Node.js**: v16.0.0 or higher
+- **npm**: v7.0.0 or higher  
+- **TypeScript**: Installed automatically with dependencies
+
+### Quick Setup
+
+1. **Clone and install dependencies:**
+   ```bash
+   git clone https://github.com/EremosCore/Eremos.git
+   cd Eremos
+   npm install
+   ```
+
+2. **Set up your environment:**
+   ```bash
+   cp .env.example .env.local
+   # Edit .env.local with your configuration
+   ```
+
+3. **Build the project:**
+   ```bash
+   npm run build
+   ```
+
+4. **Run development mode:**
+   ```bash
+   npm run dev
+   ```
+
+### Development Commands
+
+| Command | Description |
+|---------|-------------|
+| `npm run build` | Compile TypeScript to JavaScript |
+| `npm run dev` | Start development server with hot reload |
+| `npm test` | Run the test suite |
+| `npm run test:watch` | Run tests in watch mode |
+| `npm run test:coverage` | Generate test coverage report |
+| `npm run lint` | Lint and auto-fix code issues |
+| `npm run typecheck` | Run TypeScript type checking |
+| `npm run validate` | Run all checks (typecheck + lint + test) |
+
+### Agent Development
+
 ```bash
-git clone https://github.com/EremosCore/Eremos.git
-cd Eremos
-npm install
+# List all available agents
+npm run agent:list
+
+# Generate a new agent template
+npm run agent:generate
+
+# Validate agent implementation
+npm run agent:validate
+
+# Simulate agent cluster behavior
+npm run cluster:simulate
 ```
 
-Set up your environment:
+### Quick Start Example
 
-```bash
-cp .env.example .env.local
-npm run dev
+```typescript
+import { initializeEremos, Theron } from 'eremos-core';
+
+// Initialize the framework
+const eremos = initializeEremos();
+
+// Use an existing agent
+Theron.observe({ type: 'anomaly', data: '...' });
+
+// Check agent memory
+console.log(Theron.getMemory());
 ```
 
 ---
