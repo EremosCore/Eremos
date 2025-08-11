@@ -130,8 +130,6 @@ flowchart LR
 
 ---
 
-## 📊 Signal Confidence
-Each emitted signal includes a `confidence` score (0–1) based on behavioral heuristics:
 - CEX-origin funding (e.g. Kraken, Coinbase)
 - Time between funding → deploy
 - Wallet linkage density (bundled activity)
@@ -190,8 +188,6 @@ Designers, artists, or those with ideas fitting the mythos—DM us on Twitter [@
 
 ---
 
-## 📜 License
-MIT © Eremos
 
 ---
 

@@ -2,7 +2,7 @@ import { Theron } from "../agents/theron";
 
 const mockEvent = {
   type: "wallet_activity",
-  wallet: "0x4f2...e18",
+  wallet: "Bc4f2...o18",
   txCount: 6,
   timestamp: new Date().toISOString(),
 };
