@@ -1,0 +1,59 @@
+name: '✨ Feature Request'
+description: Suggest a new feature or improvement.
+title: '[Feature]: '
+labels: ['enhancement']
+assignees: []
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## ✨ Feature Request
+        Share your idea for a new feature or improvement.
+
+  - type: input
+    id: summary
+    attributes:
+      label: Summary
+      description: Short description of the feature.
+      placeholder: 'E.g., Add dark mode'
+    validations:
+      required: true
+
+  - type: textarea
+    id: motivation
+    attributes:
+      label: Motivation
+      description: Why is this feature important? What problem does it solve?
+      placeholder: 'It improves accessibility and reduces eye strain.'
+    validations:
+      required: true
+
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed Solution
+      description: How do you imagine this feature working?
+      placeholder: 'Add a theme toggle in the settings menu.'
+    validations:
+      required: false
+
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives Considered
+      description: Have you considered any alternative solutions?
+      placeholder: 'Using browser extensions like Dark Reader.'
+    validations:
+      required: false
+
+  - type: dropdown
+    id: priority
+    attributes:
+      label: Priority
+      options:
+        - Low
+        - Medium
+        - High
+    validations:
+      required: false
