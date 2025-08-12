@@ -36,7 +36,9 @@ export const LaunchTracker: Agent = {
         glyph: "Σ",
         hash,
         timestamp: new Date().toISOString(),
-        confidence,
+        details: {
+          confidence: confidence
+        }
       });
     }
   },

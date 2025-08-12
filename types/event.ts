@@ -14,6 +14,15 @@ export type WalletActivityEvent = {
   txHash?: string;
 };
 
+export type WalletReactivationEvent = {
+  type: "reactivation";
+  address: string;
+  timestamp: number;
+  walletAgeDays: number;
+  source?: string;
+  confidence?: number;
+};
+
 export type Signal = {
   type: string;
   payload: any;
