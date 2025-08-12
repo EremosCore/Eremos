@@ -56,46 +56,15 @@ Modular and extendable by design.*
 
 ## 🤖 Meet the Agents
 
-<table>
-<tr>
-<th>Agent</th>
-<th>Glyph</th>
-<th>Role</th>
-<th>Specialization</th>
-</tr>
-<tr>
-<td><strong>Theron</strong><br/><code>agent-000</code></td>
-<td align="center">Ϸ</td>
-<td>Memory Vault</td>
-<td>Archives anomalies, stores primordial memory. Never emits, only observes.</td>
-</tr>
-<tr>
-<td><strong>LaunchTracker</strong><br/><code>agent-launch</code></td>
-<td align="center">Σ</td>
-<td>Launch Monitor</td>
-<td>Detects freshly funded wallets from CEX sources with 91% confidence scoring.</td>
-</tr>
-<tr>
-<td><strong>Skieró</strong><br/><code>agent-022</code></td>
-<td align="center">ψ</td>
-<td>Ghost Watcher</td>
-<td>Tracks long-dormant wallets (180+ days) that suddenly reactivate.</td>
-</tr>
-<tr>
-<td><strong>Observer</strong><br/><code>agent-observer</code></td>
-<td align="center">φ</td>
-<td>Surveillance</td>
-<td>Logs unusual wallet clustering and coordinated behavior patterns.</td>
-</tr>
-<tr>
-<td><strong>Harvester</strong><br/><code>agent-harvester</code></td>
-<td align="center">λ</td>
-<td>Indexing</td>
-<td>Indexes mint data for high-volume collections and activity spikes.</td>
-</tr>
-</table>
+**5 Active Agents** monitoring different aspects of Solana activity:
 
-> **Note**: Each agent operates independently with its own detection logic and confidence thresholds. More agents are in development.
+- **Ϸ Theron** (agent-000) - *Memory Vault* | Archives all patterns, never emits
+- **Σ LaunchTracker** (agent-launch) - *Launch Monitor* | Detects fresh token deployments  
+- **ψ Skieró** (agent-022) - *Ghost Watcher* | Tracks dormant wallet reactivations
+- **φ Observer** (agent-observer) - *Surveillance* | Monitors wallet clustering patterns
+- **λ Harvester** (agent-harvester) - *Indexing* | Processes mint data and volume spikes
+
+> **📖 Learn More**: See the complete [Agent Guide](docs/agents.md) and [Glyph System](docs/glyphs.md) for detailed information.
 
 ## 📊 Example Signal
 
@@ -121,13 +90,14 @@ An example signal emitted by an agent detecting a live token deployment:
 
 ## 🎚️ Signal Confidence
 
-Each emitted signal includes a `confidence` score (0-1) based on behavioral heuristics:
-- CEX-origin funding (e.g. Kraken, Coinbase)
-- Time between funding → deploy
-- Wallet linkage density (bundled activity)
-- Token metadata validation
+Each signal includes a **confidence score (0-1)** based on behavioral heuristics like CEX funding sources, timing patterns, wallet coordination, and metadata validation. Agents only emit signals when confidence exceeds their threshold.
 
-Confidence is computed via agent-side scoring and logged alongside the signal.
+**Confidence Ranges:**
+- **0.9-1.0**: Extremely high confidence → Immediate alerts
+- **0.7-0.9**: High confidence → Signal emission  
+- **0.5-0.7**: Medium confidence → Monitoring only
+
+> **📖 Learn More**: See the complete [Signal Taxonomy](docs/signals.md) for detailed confidence calculations and signal types.
 
 ## 🛠️ Tech Stack
 
@@ -185,14 +155,16 @@ npx ts-node scripts/validate-agent.ts agents/example.ts
 - `/utils` - Shared signal/logging utilities  
 - `/types` - TypeScript interfaces + definitions  
 - `/scripts` - Bootstrap and dev scripts  
-- `/docs` - Swarm structure, architecture, & our artwork/official whitepaper
+- `/docs` - Comprehensive documentation, architecture guides, and project assets
+
+> **📖 Learn More**: See the [Architecture Guide](docs/architecture.md) for detailed system design and the [Documentation Index](docs/README.md) for all guides.
 
 ## 🤝 Contributing
 
 We welcome contributions from the community! Here's how you can get involved:
 
 ### 🧠 Agent Development
-- **Experienced TypeScript developers**: Check out `agents/example.ts` and build your own observer
+- **Experienced TypeScript developers**: Check out the [Agent Development Guide](docs/agents.md) and start with `agents/example.ts`
 - **Blockchain analysts**: Help improve detection algorithms and confidence scoring
 - **Solana specialists**: Enhance chain-specific monitoring capabilities
 
