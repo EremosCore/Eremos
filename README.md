@@ -120,7 +120,7 @@ Common tasks:
 
 - Install deps: `npm install`
 - Typecheck: `npm run typecheck`
-- Build (transpile): `npm run build`
+- Build: `npm run build`
 
 ---
 
@@ -146,7 +146,7 @@ If you're a designer, artist, or have ideas that fit the mythos, say hi on X/Twi
 
 ## License
 
-MIT © Eremos LLC
+MIT © EremosCore  
 
 ---
 
