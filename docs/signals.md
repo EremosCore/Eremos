@@ -9,17 +9,17 @@
 
 </div>
 
-## 📋 Table of Contents
+## ∴ Table of Contents
 
-- [🎯 Signal Overview](#-signal-overview)
-- [📊 Signal Structure](#-signal-structure)
-- [🏷️ Signal Categories](#️-signal-categories)
-- [🔍 Detection Patterns](#-detection-patterns)
-- [📈 Confidence Scoring](#-confidence-scoring)
+- [◉ Signal Overview](#-signal-overview)
+- [⬢ Signal Structure](#-signal-structure)
+- [∷ Signal Categories](#-signal-categories)
+- [⟿ Detection Patterns](#-detection-patterns)
+- [∆ Confidence Scoring](#-confidence-scoring)
 - [⚡ Emission Patterns](#-emission-patterns)
-- [🧪 Testing Signals](#-testing-signals)
+- [∘ Testing Signals](#-testing-signals)
 
-## 🎯 Signal Overview
+## ◉ Signal Overview
 
 Signals are the primary output of the Eremos agent swarm - structured data packets that indicate detected patterns in blockchain activity. Each signal represents a **high-confidence detection** worthy of attention or action.
 
@@ -29,7 +29,7 @@ Signals are the primary output of the Eremos agent swarm - structured data packe
 - **Contextual Information**: Include relevant detection context
 - **Deterministic Hashing**: Unique identifiers for deduplication
 
-## 📊 Signal Structure
+## ⬢ Signal Structure
 
 ### Standard Signal Format
 
@@ -85,7 +85,7 @@ const hash = generateSignalHash(event);
 }
 ```
 
-## 🏷️ Signal Categories
+## ∷ Signal Categories
 
 ### Primary Signal Types
 
@@ -152,7 +152,7 @@ const hash = generateSignalHash(event);
 | `volume_surge` | Sudden trading volume spikes | Market manipulation |
 | `cross_chain_bridge` | Bridge activity patterns | Liquidity tracking |
 
-## 🔍 Detection Patterns
+## ⟿ Detection Patterns
 
 ### Launch Detection Patterns
 
@@ -208,7 +208,7 @@ if (
 3. **Transaction Patterns**: Similar transaction structures
 4. **Volume Coordination**: Synchronized volume patterns
 
-## 📈 Confidence Scoring
+## ∆ Confidence Scoring
 
 ### Confidence Ranges
 
@@ -326,7 +326,7 @@ if (confidence > triggerThreshold && shouldEmit(agentId, cooldownMs)) {
 }
 ```
 
-## 🧪 Testing Signals
+## ∘ Testing Signals
 
 ### Generate Test Signals
 

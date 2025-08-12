@@ -9,17 +9,17 @@
 
 </div>
 
-## 📋 Table of Contents
+## ∴ Table of Contents
 
-- [🎯 Agent Fundamentals](#-agent-fundamentals)
-- [⚙️ Base Requirements](#️-base-requirements)
-- [🛠️ Development Workflow](#️-development-workflow)
-- [🤖 Active Agent Registry](#-active-agent-registry)
-- [💡 Development Tips](#-development-tips)
-- [🧪 Testing & Validation](#-testing--validation)
-- [📊 Performance Guidelines](#-performance-guidelines)
+- [Ϸ Agent Fundamentals](#-agent-fundamentals)
+- [⚙ Base Requirements](#-base-requirements)
+- [⟩ Development Workflow](#-development-workflow)
+- [Σ Active Agent Registry](#-active-agent-registry)
+- [◎ Development Tips](#-development-tips)
+- [∘ Testing & Validation](#-testing--validation)
+- [∆ Performance Guidelines](#-performance-guidelines)
 
-## 🎯 Agent Fundamentals
+## Ϸ Agent Fundamentals
 
 Eremos agents are **autonomous observers** that monitor blockchain activity and emit structured signals when specific patterns are detected. Each agent operates independently but shares common utilities and interfaces.
 
@@ -29,7 +29,7 @@ Eremos agents are **autonomous observers** that monitor blockchain activity and 
 - **Confidence-Based Emission**: Signals include confidence scores (0-1) based on detection quality
 - **Memory Optional**: Agents can maintain lightweight state for pattern recognition
 
-## ⚙️ Base Requirements
+## ⚙ Base Requirements
 
 Every agent must implement the `Agent` interface:
 
@@ -68,7 +68,7 @@ export type Agent = {
 | `getMemory()` | `function` | Returns array of memory tokens |
 | `lastSignal` | `string \| null` | Last emission state |
 
-## 🛠️ Development Workflow
+## ⟩ Development Workflow
 
 ### 1. **Scaffold Creation**
 ```bash
@@ -134,7 +134,7 @@ npm run agent:validate agents/my-agent.ts
 npm run agent:list
 ```
 
-## 🤖 Active Agent Registry
+## Σ Active Agent Registry
 
 <table>
 <tr>
@@ -195,7 +195,7 @@ npm run agent:list
 
 > **Note**: Theron has `triggerThreshold: Infinity` and never emits signals - it only archives for memory.
 
-## 💡 Development Tips
+## ◎ Development Tips
 
 ### ✅ Best Practices
 
@@ -235,7 +235,7 @@ if (shouldEmit(agentId, 5000)) { // 5 second cooldown
 - **Blocking Operations**: Avoid synchronous heavy computations in `observe()`
 - **Error Handling**: Wrap detection logic in try-catch blocks
 
-## 🧪 Testing & Validation
+## ∘ Testing & Validation
 
 ### Unit Testing
 ```typescript
@@ -268,7 +268,7 @@ npm run cluster:simulate
 npm run signal:preview
 ```
 
-## 📊 Performance Guidelines
+## ∆ Performance Guidelines
 
 ### Confidence Scoring
 - **0.9-1.0**: Extremely high confidence (rare, exceptional patterns)

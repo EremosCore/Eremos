@@ -9,18 +9,18 @@
 
 </div>
 
-## 📋 Table of Contents
+## ∴ Table of Contents
 
-- [🎯 System Overview](#-system-overview)
-- [🤖 Agent Architecture](#-agent-architecture)
-- [📡 Signal Flow](#-signal-flow)
-- [🧠 Memory System](#-memory-system)
-- [⚙️ Runtime Layer](#️-runtime-layer)
-- [🔄 Event Processing Pipeline](#-event-processing-pipeline)
-- [🌐 System Components](#-system-components)
-- [🚀 Future Architecture](#-future-architecture)
+- [◉ System Overview](#-system-overview)
+- [Σ Agent Architecture](#-agent-architecture)
+- [⟿ Signal Flow](#-signal-flow)
+- [Ϸ Memory System](#-memory-system)
+- [⚙ Runtime Layer](#-runtime-layer)
+- [⟩ Event Processing Pipeline](#-event-processing-pipeline)
+- [◊ System Components](#-system-components)
+- [∞ Future Architecture](#-future-architecture)
 
-## 🎯 System Overview
+## ◉ System Overview
 
 Eremos implements a **swarm-style agent framework** for passive blockchain observation on Solana. The architecture prioritizes:
 
@@ -49,7 +49,7 @@ graph TD
     I --> M[Custom Signals]
 ```
 
-## 🤖 Agent Architecture
+## Σ Agent Architecture
 
 ### Agent Lifecycle
 
@@ -129,7 +129,7 @@ interface Agent {
 }
 ```
 
-## 📡 Signal Flow
+## ⟿ Signal Flow
 
 ### Signal Structure
 
@@ -180,7 +180,7 @@ sequenceDiagram
     end
 ```
 
-## 🧠 Memory System
+## Ϸ Memory System
 
 ### Memory Architecture
 
@@ -211,7 +211,7 @@ getMemory(): string[] {
 - **Persistence**: In-memory only (no disk persistence yet)
 - **Cleanup**: Agents responsible for memory management
 
-## ⚙️ Runtime Layer
+## ⚙ Runtime Layer
 
 ### Event Distribution
 
@@ -230,7 +230,7 @@ The runtime layer coordinates agent execution:
 - **Throughput**: Designed for 10k+ events/second
 - **Memory Usage**: <50MB per agent instance
 
-## 🔄 Event Processing Pipeline
+## ⟩ Event Processing Pipeline
 
 ### Event Structure
 
@@ -254,7 +254,7 @@ interface BlockchainEvent {
 5. **Aggregation**: Collect signals and apply deduplication
 6. **Output**: Stream to configured endpoints
 
-## 🌐 System Components
+## ◊ System Components
 
 ### Core Modules
 
@@ -283,7 +283,7 @@ parseWalletEvent(event: any): NormalizedEvent
 formatError(error: unknown): string
 ```
 
-## 🚀 Future Architecture
+## ∞ Future Architecture
 
 ### Planned Enhancements
 

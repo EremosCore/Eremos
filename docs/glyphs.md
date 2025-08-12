@@ -9,16 +9,16 @@
 
 </div>
 
-## 📋 Table of Contents
+## ∴ Table of Contents
 
-- [🎯 Glyph System Overview](#-glyph-system-overview)
-- [🔤 Active Agent Glyphs](#-active-agent-glyphs)
-- [🎨 Visual Usage](#-visual-usage)
-- [📝 Implementation Guide](#-implementation-guide)
-- [🔮 Symbolic Meanings](#-symbolic-meanings)
+- [◉ Glyph System Overview](#-glyph-system-overview)
+- [Ϸ Active Agent Glyphs](#-active-agent-glyphs)
+- [◊ Visual Usage](#-visual-usage)
+- [⟩ Implementation Guide](#-implementation-guide)
+- [∞ Symbolic Meanings](#-symbolic-meanings)
 - [⚡ Future Glyphs](#-future-glyphs)
 
-## 🎯 Glyph System Overview
+## ◉ Glyph System Overview
 
 The Eremos glyph system provides **visual identification** for each agent in the swarm. These Unicode symbols serve as compact identifiers that appear in logs, signals, documentation, and future visualizations.
 
@@ -34,7 +34,7 @@ The Eremos glyph system provides **visual identification** for each agent in the
 - **Geometric**: φ - for observational agents
 - **Custom**: ⚡ - for specialized functions
 
-## 🔤 Active Agent Glyphs
+## Ϸ Active Agent Glyphs
 
 <table>
 <tr>
@@ -119,7 +119,7 @@ The Eremos glyph system provides **visual identification** for each agent in the
 - **Visual**: Arrow-like shape suggesting data movement
 - **Function**: Represents the functional processing of mint data
 
-## 🎨 Visual Usage
+## ◊ Visual Usage
 
 ### Log Output Examples
 
@@ -156,7 +156,7 @@ The Eremos glyph system provides **visual identification** for each agent in the
    λ  Harvester   (agent-harvester)[Indexing]
 ```
 
-## 📝 Implementation Guide
+## ⟩ Implementation Guide
 
 ### Using Glyphs in Code
 
@@ -210,7 +210,7 @@ function validateGlyph(glyph: string): boolean {
 }
 ```
 
-## 🔮 Symbolic Meanings
+## ∞ Symbolic Meanings
 
 ### Mathematical Symbols
 - **Σ (Sigma)**: Summation, aggregation, total accumulation

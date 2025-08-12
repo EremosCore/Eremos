@@ -17,21 +17,21 @@
 Eremos is a lightweight framework for deploying modular agents that monitor blockchain activity - tracking wallet clusters, mint patterns, and contract anomalies.
 Designed for devs who want low-noise, early signals embedded into their workflows.
 
-## 📋 Table of Contents
+## ∴ Table of Contents
 
-- [🎯 Overview](#-overview)
-- [✨ Features](#-features)
-- [🤖 Meet the Agents](#-meet-the-agents)
-- [📊 Example Signal](#-example-signal)
-- [🎚️ Signal Confidence](#️-signal-confidence)
-- [🛠️ Tech Stack](#️-tech-stack)
-- [🚀 Quick Start](#-quick-start)
-- [📁 Project Structure](#-project-structure)
-- [🤝 Contributing](#-contributing)
-- [📄 License](#-license)
-- [🔗 Links](#-links)
+- [◉ Overview](#-overview)
+- [∆ Features](#-features)
+- [Σ Meet the Agents](#-meet-the-agents)
+- [⟿ Example Signal](#-example-signal)
+- [∆ Signal Confidence](#-signal-confidence)
+- [⚙ Tech Stack](#-tech-stack)
+- [⟩ Quick Start](#-quick-start)
+- [◊ Project Structure](#-project-structure)
+- [∞ Contributing](#-contributing)
+- [※ License](#-license)
+- [⟶ Links](#-links)
 
-## 🎯 Overview
+## ◉ Overview
 
 <p align="center">
   <img src="docs/therontphd2.png" alt="Agent Theron" width="155"/><br/>
@@ -44,7 +44,7 @@ Modular and extendable by design.*
 
 **Agent-001 Coming Soon** → [Teaser](https://x.com/EremosCore/status/1949154939923833239)
 
-## ✨ Features
+## ∆ Features
 
 - **Modular Agents** - Scoped logic for detecting wallet activity, contract spawns, and anomalies  
 - **Signal Emission** - Structured signals for logging, alerting, or downstream use  
@@ -54,7 +54,7 @@ Modular and extendable by design.*
 - **Launch Wallet Detection** - Agents can trace freshly funded wallets (e.g. from CEXs), track their contract interactions, and flag high-confidence deploys in real time
 - **Ghost Watcher** - Monitors long-dormant wallets that suddenly become active again. Useful for tracing old dev wallets or rug setups.
 
-## 🤖 Meet the Agents
+## Σ Meet the Agents
 
 <table>
 <tr>
@@ -97,7 +97,7 @@ Modular and extendable by design.*
 
 > **📖 Learn More**: See the complete [Agent Guide](docs/agents.md) and [Glyph System](docs/glyphs.md) for detailed information.
 
-## 📊 Example Signal
+## ⟿ Example Signal
 
 An example signal emitted by an agent detecting a live token deployment:
 
@@ -119,7 +119,7 @@ An example signal emitted by an agent detecting a live token deployment:
 }
 ```
 
-## 🎚️ Signal Confidence
+## ∆ Signal Confidence
 
 Each signal includes a **confidence score (0-1)** based on behavioral heuristics like CEX funding sources, timing patterns, wallet coordination, and metadata validation. Agents only emit signals when confidence exceeds their threshold.
 
@@ -130,14 +130,14 @@ Each signal includes a **confidence score (0-1)** based on behavioral heuristics
 
 > **📖 Learn More**: See the complete [Signal Taxonomy](docs/signals.md) for detailed confidence calculations and signal types.
 
-## 🛠️ Tech Stack
+## ⚙ Tech Stack
 
 - **Frontend:** Next.js, Tailwind CSS
 - **Backend:** Node.js (TypeScript-based agent runner)
 - **Language:** TypeScript (typed logic across agents, utils, and infra)
 - **Chain Layer:** RPC watchers, mempool filters, native triggers
 
-## 🚀 Quick Start
+## ⟩ Quick Start
 
 ### Prerequisites
 
@@ -180,7 +180,7 @@ npx ts-node scripts/dev-agent.ts
 npx ts-node scripts/validate-agent.ts agents/example.ts
 ```
 
-## 📁 Project Structure
+## ◊ Project Structure
 
 - `/agents` - Agent templates + logic  
 - `/utils` - Shared signal/logging utilities  
@@ -190,34 +190,15 @@ npx ts-node scripts/validate-agent.ts agents/example.ts
 
 > **📖 Learn More**: See the [Architecture Guide](docs/architecture.md) for detailed system design and the [Documentation Index](docs/README.md) for all guides.
 
-## 🤝 Contributing
+## ∞ Contributing
 
-We welcome contributions from the community! Here's how you can get involved:
+We welcome contributions! See our [Contributing Guide](docs/contributing.md) for detailed information on how to get involved.
 
-### 🧠 Agent Development
-- **Experienced TypeScript developers**: Check out the [Agent Development Guide](docs/agents.md) and start with `agents/example.ts`
-- **Blockchain analysts**: Help improve detection algorithms and confidence scoring
-- **Solana specialists**: Enhance chain-specific monitoring capabilities
-
-### 🎨 Design & Creative
-- **Designers & Artists**: We're looking for visual improvements and agent artwork
-- **Writers**: Help improve documentation and agent descriptions
-- **Mythbuilders**: Have ideas that fit the Eremos mythos? We'd love to hear them!
-
-### 📋 How to Contribute
-1. Fork the repository
-2. Create a feature branch (`git checkout -b feature/amazing-agent`)
-3. Test your changes with the provided scripts
-4. Submit a pull request with a clear description
-
-### 💬 Get in Touch
-Have questions or ideas? Reach out to us on Twitter: [@EremosCore](https://x.com/EremosCore)
-
-## 📄 License
+## ※ License
 
 MIT © Eremos LLC
 
-## 🔗 Links
+## ⟶ Links
 
 - **Twitter/X:** [@EremosCore](https://x.com/EremosCore)
 - **Website:** [Eremos.io](https://www.eremos.io/)
