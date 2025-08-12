@@ -56,13 +56,44 @@ Modular and extendable by design.*
 
 ## 🤖 Meet the Agents
 
-**5 Active Agents** monitoring different aspects of Solana activity:
-
-- **Ϸ Theron** (agent-000) - *Memory Vault* | Archives all patterns, never emits
-- **Σ LaunchTracker** (agent-launch) - *Launch Monitor* | Detects fresh token deployments  
-- **ψ Skieró** (agent-022) - *Ghost Watcher* | Tracks dormant wallet reactivations
-- **φ Observer** (agent-observer) - *Surveillance* | Monitors wallet clustering patterns
-- **λ Harvester** (agent-harvester) - *Indexing* | Processes mint data and volume spikes
+<table>
+<tr>
+<th>Agent</th>
+<th>Glyph</th>
+<th>Role</th>
+<th>Specialization</th>
+</tr>
+<tr>
+<td><strong>Theron</strong><br/><code>agent-000</code></td>
+<td align="center">Ϸ</td>
+<td>Memory Vault</td>
+<td>Archives anomalies, stores primordial memory. Never emits, only observes.</td>
+</tr>
+<tr>
+<td><strong>LaunchTracker</strong><br/><code>agent-launch</code></td>
+<td align="center">Σ</td>
+<td>Launch Monitor</td>
+<td>Detects freshly funded wallets from CEX sources with 91% confidence scoring.</td>
+</tr>
+<tr>
+<td><strong>Skieró</strong><br/><code>agent-022</code></td>
+<td align="center">ψ</td>
+<td>Ghost Watcher</td>
+<td>Tracks long-dormant wallets (180+ days) that suddenly reactivate.</td>
+</tr>
+<tr>
+<td><strong>Observer</strong><br/><code>agent-observer</code></td>
+<td align="center">φ</td>
+<td>Surveillance</td>
+<td>Logs unusual wallet clustering and coordinated behavior patterns.</td>
+</tr>
+<tr>
+<td><strong>Harvester</strong><br/><code>agent-harvester</code></td>
+<td align="center">λ</td>
+<td>Indexing</td>
+<td>Indexes mint data for high-volume collections and activity spikes.</td>
+</tr>
+</table>
 
 > **📖 Learn More**: See the complete [Agent Guide](docs/agents.md) and [Glyph System](docs/glyphs.md) for detailed information.
 
