@@ -14,8 +14,8 @@ export const Observer: Agent = {
   originTimestamp: new Date().toISOString(),
   description: "A passive agent that logs unusual wallet clustering.",
 
-  observe: (event) => {
-    event = parseWalletActivityEvent(event);
+  observe: (rawEvent) => {
+    const event = parseWalletActivityEvent(rawEvent);
     if (!event) return;
     
     if (event.cluster && event.cluster.length > 3) {
