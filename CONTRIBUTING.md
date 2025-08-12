@@ -4,14 +4,39 @@ Thanks for your interest in contributing. Eremos is an open-source, modular fram
 
 ## Quick Start
 
-1. Fork the repository to your own GitHub account.
-2. Clone your fork locally and create a branch:
-   - `git checkout -b feat/your-descriptive-branch`
-3. Install dependencies and run the dev flow:
-   - `npm install`
-   - `npm run dev`
-4. Make your changes and push your branch to your fork.
-5. Open a Pull Request back to the upstream repo.
+> Quick links: **[Fork this repository](https://github.com/EremosCore/Eremos/fork)** · **[How to clone your fork](https://docs.github.com/en/get-started/quickstart/fork-a-repo#clone-your-forked-repository)** · **[Configure upstream remote](https://docs.github.com/en/get-started/quickstart/fork-a-repo#configure-git-to-sync-your-fork-with-the-original-repository)**
+
+1. Fork the repository to your own GitHub account: **[Fork Eremos →](https://github.com/EremosCore/Eremos/fork)**
+2. Clone your fork and set `upstream` (original repo). If you prefer commands, expand below.
+   <details>
+   <summary>Show command-line steps</summary>
+
+   ```bash
+   # HTTPS (replace <your-username>)
+   git clone https://github.com/<your-username>/Eremos.git
+   # or SSH
+   # git clone git@github.com:<your-username>/Eremos.git
+   cd Eremos
+
+   # Add upstream (original repository)
+   git remote add upstream https://github.com/EremosCore/Eremos.git
+   git remote -v
+   ```
+   </details>
+3. Create a branch for your changes:
+   ```bash
+   git checkout -b feat/your-descriptive-branch
+   ```
+4. Install dependencies and run the dev flow:
+   ```bash
+   npm install
+   npm run dev
+   ```
+5. Make your changes and push your branch to your fork:
+   ```bash
+   git push -u origin feat/your-descriptive-branch
+   ```
+6. Open a Pull Request back to the upstream repo.
 
 ## Ways to Contribute
 
@@ -93,8 +118,8 @@ Note: Some scripts assume a TypeScript runtime. If you prefer, transpile first o
 
 ## Community and Support
 
-- X/Twitter: `@EremosCore`
-- Website: `https://www.eremos.io/`
+- X/Twitter: [@EremosCore](https://x.com/EremosCore)
+- Website: [eremos.io](https://www.eremos.io/)
 
 ## License
 
