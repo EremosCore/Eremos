@@ -1,18 +1,72 @@
 {
   "name": "eremos-core",
   "version": "0.1.0",
-  "description": "Modular agent framework for on-chain activity monitoring.",
+  "description": "Autonomous swarm agents for early on-chain signal detection on Solana",
   "main": "index.js",
+  "homepage": "https://www.eremos.io",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/EremosCore/Eremos.git"
+  },
+  "bugs": {
+    "url": "https://github.com/EremosCore/Eremos/issues"
+  },
   "scripts": {
-    "dev": "echo 'Running dev mode...'"
+    "dev": "echo 'Running dev mode...'",
+    "test": "echo 'Running tests...'",
+    "build": "tsc",
+    "lint": "echo 'Running linter...'",
+    "agent:dev": "npx ts-node scripts/dev-agent.ts",
+    "agent:list": "npx ts-node scripts/agent-list.ts",
+    "agent:validate": "npx ts-node scripts/validate-agent.ts",
+    "signal:generate": "npx ts-node scripts/generate-signal.ts",
+    "signal:preview": "npx ts-node scripts/signalhashpreview.ts",
+    "memory:export": "npx ts-node scripts/export-agent-memory.ts",
+    "stress:test": "npx ts-node scripts/stress-test.ts",
+    "cluster:simulate": "npx ts-node scripts/simulate-cluster.ts"
   },
   "keywords": [
     "agent",
+    "agents",
+    "swarm",
     "onchain",
-    "modular",
+    "on-chain",
+    "solana",
     "blockchain",
-    "framework"
+    "monitoring",
+    "signals",
+    "detection",
+    "modular",
+    "framework",
+    "typescript",
+    "autonomous",
+    "intelligence",
+    "wallet-tracking",
+    "defi"
   ],
   "license": "MIT",
-  "author": "EremosCore"
+  "author": {
+    "name": "EremosCore",
+    "email": "core@eremos.io",
+    "url": "https://www.eremos.io"
+  },
+  "contributors": [
+    {
+      "name": "Eremos Core Team",
+      "url": "https://github.com/EremosCore"
+    }
+  ],
+  "engines": {
+    "node": ">=16.0.0",
+    "npm": ">=7.0.0"
+  },
+  "files": [
+    "agents/",
+    "types/",
+    "utils/",
+    "scripts/",
+    "docs/",
+    "README.md",
+    "LICENSE"
+  ]
 }
