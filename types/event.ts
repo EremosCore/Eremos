@@ -2,6 +2,11 @@ export type AnomalyEvent = {
   type: "anomaly";
 };
 
+export type MintActivityEvent = {
+  type: "mint_activity";
+  amount: number;
+};
+
 export type WalletActivityEvent = {
   type: "wallet_activity";
   address: string;

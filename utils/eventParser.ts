@@ -1,4 +1,4 @@
-import { AnomalyEvent, WalletActivityEvent, WalletReactivationEvent } from "../types/event";
+import { AnomalyEvent, MintActivityEvent, WalletActivityEvent, WalletReactivationEvent } from "../types/event";
 
 export function parseAnomalyEvent(event: any): AnomalyEvent | null {
   if (
@@ -15,6 +15,21 @@ export function parseAnomalyEvent(event: any): AnomalyEvent | null {
   };
 }
 
+export function parseMintActivityEvent(event: any): MintActivityEvent | null {
+  if (
+    typeof event !== "object" ||
+    event === null ||
+    !("type" in event) ||
+    (event as any).type !== "mint_activity"
+  ) {
+    return null;
+  }
+
+  return {
+    type: "mint_activity",
+    amount: event.amount || 0,
+  };
+}
 
 export function parseWalletActivityEvent(event: any): WalletActivityEvent | null {
   if (
