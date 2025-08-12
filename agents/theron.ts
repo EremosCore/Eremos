@@ -1,6 +1,7 @@
 import { Agent } from "../types/agent";
 import { generateSignalHash } from "../utils/signal";
 import { logSignal } from "../utils/logger";
+import { parseAnomalyEvent } from "../utils/eventParser";
 
 export const Theron: Agent = {
   id: "agent-000",
@@ -15,17 +16,18 @@ export const Theron: Agent = {
   description:
     "The first observer. Theron archives anomalies but does not emit. All agent heuristics fragment from him - he stores the primordial memory stack.",
 
-  observe: (event) => {
-    if (event?.type === "anomaly") {
-      const hashed = generateSignalHash(event);
-      logSignal({
-        agent: "Theron",
-        type: "archival",
-        glyph: "Ϸ",
-        hash: hashed,
-        timestamp: new Date().toISOString(),
-      });
-    }
+  observe: (rawEvent) => {
+    const event = parseAnomalyEvent(rawEvent);
+    if (!event) return;
+
+    const hashed = generateSignalHash(event);
+    logSignal({
+      agent: "Theron",
+      type: "archival",
+      glyph: "Ϸ",
+      hash: hashed,
+      timestamp: new Date().toISOString(),
+    });
   },
 
   getMemory: () => {
