@@ -1,4 +1,4 @@
-import { AnomalyEvent, WalletActivityEvent } from "../types/event";
+import { AnomalyEvent, WalletActivityEvent, WalletReactivationEvent } from "../types/event";
 
 export function parseAnomalyEvent(event: any): AnomalyEvent | null {
   if (
@@ -40,5 +40,25 @@ export function parseWalletActivityEvent(event: any): WalletActivityEvent | null
     confidence: event.confidence || undefined,
     blockHeight: event.blockHeight || undefined,
     txHash: event.txHash || undefined,
+  };
+}
+
+export function parseWalletReactivationEvent(event: any): WalletReactivationEvent | null {
+  if (
+    typeof event !== "object" ||
+    event === null ||
+    !("type" in event) ||
+    (event as any).type !== "reactivation"
+  ) {
+    return null;
+  }
+
+  return {
+    type: "reactivation",
+    address: event.address || "",
+    timestamp: event.timestamp || Date.now(),
+    walletAgeDays: event.walletAgeDays || 0,
+    source: event.source || undefined,
+    confidence: event.confidence || undefined,
   };
 }
