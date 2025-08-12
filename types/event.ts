@@ -3,6 +3,15 @@ export type WalletActivityEvent = {
   address: string;
   timestamp: number;
   cluster?: string[];
+  txCount?: number;
+  volume?: number;
+  source?: "solana" | "kraken" | "coinbase" | "binance";
+  fundingDetected?: boolean;
+  deployDetected?: boolean;
+  bundleCount?: number;
+  confidence?: number;
+  blockHeight?: number;
+  txHash?: string;
 };
 
 export type Signal = {
