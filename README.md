@@ -2,12 +2,28 @@
 
 ![Eremos](docs/banner2.png)
 
+[![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
+![TypeScript](https://img.shields.io/badge/TypeScript-5.x-3178C6?logo=typescript&logoColor=white)
+![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)
+
 **Autonomous swarm agents for early on-chain signal detection**
 
 Eremos is a lightweight framework for deploying modular agents that monitor blockchain activity - tracking wallet clusters, mint patterns, and contract anomalies.
 Designed for devs who want low-noise, early signals embedded into their workflows.
 
 ---
+
+## Table of Contents
+
+- [Features](#features)
+- [Example Signal](#example-signal)
+- [Signal Confidence](#signal-confidence)
+- [Tech Stack](#tech-stack)
+- [Getting Started](#getting-started)
+- [Key Folders](#key-folders)
+- [Contributing](#contributing)
+- [License](#license)
+- [Links](#links)
 
 <p align="center">
   <img src="docs/therontphd2.png" alt="Agent Theron" width="155"/><br/>
@@ -96,6 +112,12 @@ cp .env.example .env.local
 npm run dev
 ```
 
+Common tasks:
+
+- Install deps: `npm install`
+- Typecheck: `npm run typecheck`
+- Build (transpile): `npm run build`
+
 ---
 
 ## Key Folders
@@ -110,9 +132,11 @@ npm run dev
 
 ## Contributing
 
-We’re open to contributors.  
-If you are experienced in TypeScript and like agent-based systems, check `example.ts` and build your own observer.
-If you're a designer, artist, or just have ideas that fit the mythos - send us a DM on Twitter. [@EremosCore](https://x.com/EremosCore)
+We welcome contributions of all sizes: docs, agent logic, utilities, and DX improvements. See the contribution guide:
+
+- [CONTRIBUTING.md](CONTRIBUTING.md)
+
+If you're a designer, artist, or have ideas that fit the mythos, say hi on X/Twitter: [@EremosCore](https://x.com/EremosCore)
 
 ---
 
