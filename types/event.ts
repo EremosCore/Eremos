@@ -1,3 +1,7 @@
+export type AnomalyEvent = {
+  type: "anomaly";
+};
+
 export type WalletActivityEvent = {
   type: "wallet_activity";
   address: string;

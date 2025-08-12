@@ -1,4 +1,20 @@
-import { WalletActivityEvent } from "../types/event";
+import { AnomalyEvent, WalletActivityEvent } from "../types/event";
+
+export function parseAnomalyEvent(event: any): AnomalyEvent | null {
+  if (
+    typeof event !== "object" ||
+    event === null ||
+    !("type" in event) ||
+    (event as any).type !== "anomaly"
+  ) {
+    return null;
+  }
+
+  return {
+    type: "anomaly"
+  };
+}
+
 
 export function parseWalletActivityEvent(event: any): WalletActivityEvent | null {
   if (
