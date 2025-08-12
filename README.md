@@ -2,9 +2,13 @@
 
 ![Eremos](docs/banner2.png)
 
-[![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
-![TypeScript](https://img.shields.io/badge/TypeScript-5.x-3178C6?logo=typescript&logoColor=white)
+![License](https://img.shields.io/github/license/EremosCore/Eremos)
+![GitHub Repo stars](https://img.shields.io/github/stars/EremosCore/Eremos?style=social)
+![GitHub forks](https://img.shields.io/github/forks/EremosCore/Eremos?style=social)
+![GitHub last commit](https://img.shields.io/github/last-commit/EremosCore/Eremos)
 ![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)
+![Built for Solana](https://img.shields.io/badge/Built%20for-Solana-purple)
+![TypeScript](https://img.shields.io/badge/TypeScript-5.x-3178C6?logo=typescript&logoColor=white)
 
 **Autonomous swarm agents for early on-chain signal detection**
 
