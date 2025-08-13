@@ -115,7 +115,13 @@ If you are experienced in TypeScript and like agent-based systems, check `exampl
 If you're a designer, artist, or just have ideas that fit the mythos - send us a DM on Twitter. [@EremosCore](https://x.com/EremosCore)
 
 ---
+## Quick Start
 
+1. **Clone Repository**
+   ```bash
+   git clone https://github.com/Ibnu3456787/Eremos.git
+   cd Eremos
+   
 ## License
 
 MIT © Eremos LLC
