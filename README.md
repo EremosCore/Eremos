@@ -1,8 +1,4 @@
-Here’s your **ready-to-use improved README.md** — just copy this and replace the current one in your forked Eremos repo:
 
----
-
-````markdown
 # Eremos — Modular Swarm Agents for Early On-Chain Insights
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
