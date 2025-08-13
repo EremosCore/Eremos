@@ -3,5 +3,5 @@ export interface AgentConfig {
   id: string;
   triggerThreshold: number;
   passive?: boolean;
-  logLevel?: "info" | "warn" | "debug";
+  logLevel?: 'info' | 'warn' | 'debug';
 }
