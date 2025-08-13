@@ -1,5 +1,5 @@
 export type WalletActivityEvent = {
-  type: "wallet_activity";
+  type: 'wallet_activity';
   address: string;
   timestamp: number;
   cluster?: string[];

@@ -1,4 +1,4 @@
-import { agents } from "../agents";
+import { agents } from "../agents/index";
 
 const exportMemory = (id: string) => {
   const agent = agents.find((a) => a.id === id);

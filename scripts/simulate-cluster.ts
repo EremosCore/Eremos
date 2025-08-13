@@ -1,10 +1,10 @@
-import { Theron } from "../agents/theron";
+import { Theron } from '../agents/theron'
 
 const mockEvent = {
-  type: "wallet_activity",
-  wallet: "Bc4f2...o18",
+  type: 'wallet_activity',
+  wallet: 'Bc4f2...o18',
   txCount: 6,
   timestamp: new Date().toISOString(),
-};
+}
 
-Theron.observe(mockEvent);
+Theron.observe(mockEvent)
