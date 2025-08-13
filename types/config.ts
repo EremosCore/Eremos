@@ -5,3 +5,16 @@ export interface AgentConfig {
   passive?: boolean;
   logLevel?: "info" | "warn" | "debug";
 }
+
+export interface RippleConfig {
+  windowMs: number;
+  minOps: number;
+  minUniqueWallets: number;
+  bandGap: number;
+  bandMaxWidth: number;
+  minLpSize: number;
+  maxLpSize: number;
+  debounceMs: number;
+  triggerResonance: number;
+  analysisInterval: number;
+}

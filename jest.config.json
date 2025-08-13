@@ -1,0 +1,13 @@
+{
+  "preset": "ts-jest",
+  "testEnvironment": "node",
+  "roots": ["<rootDir>/tests", "<rootDir>/agents", "<rootDir>/utils", "<rootDir>/types"],
+  "testMatch": ["**/*.test.ts"],
+  "collectCoverageFrom": [
+    "agents/**/*.ts",
+    "utils/**/*.ts",
+    "!**/*.d.ts"
+  ],
+  "coverageDirectory": "coverage",
+  "coverageReporters": ["text", "lcov", "html"]
+}

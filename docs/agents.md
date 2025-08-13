@@ -32,4 +32,9 @@ You can test agents using `/scripts/dev-agent.ts` or create your own mock.
 - Glyph: λ  
 - Watches: mint_activity  
 
+### Ripple (new)
+- Role: lp_activity_monitor  
+- Glyph: ≈  
+- Watches: liquidity_operations  
+
 //pending adjustments + adding more agents ^
