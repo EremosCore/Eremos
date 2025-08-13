@@ -120,5 +120,6 @@ If you want to contribute:
                 npm run lint
                 npm run test
 
-Detailed contribution instructions can be found in docs/CONTRIBUTING.md.
+ Visual Detailed contribution instructions can be found in https://github.com/praise-bit/Eremos-MarkZ/blob/main/docs/31D1925E-E5D9-43F0-BBAC-24A4E8A1C926.png
+           Thanks.
 
