@@ -78,6 +78,40 @@ Confidence is computed via agent-side scoring and logged alongside the signal.
 - **Backend:** Node.js (TypeScript-based agent runner)
 - **Language:** TypeScript (typed logic across agents, utils, and infra)
 - **Chain Layer:** RPC watchers, mempool filters, native triggers
+- 
+
+Architecture design 
+  [Chain Layer]
+   ├─ RPC Watchers
+   ├─ Mempool Filters
+   └─ Native Triggers
+        |
+        v
+[Ingest & Normalize]
+   ├─ Event Normalizer
+   ├─ Deduper / Sequencer
+   └─ Feature Tagger
+        |
+        v
+[Event Bus] ---> [Entity Graph / Feature Store / Token Metadata Cache]
+        |
+        v
+[Agent Swarm]
+   ├─ Launch Wallet Detector
+   ├─ Ghost Watcher
+   └─ (Custom Agents)
+        |
+        v
+[Signal Engine]
+   ├─ Confidence Scorer
+   ├─ Router
+   └─ Storage
+        |
+        v
+[Outputs]
+   ├─ Slack / Telegram / Webhooks
+   ├─ Downstream Systems
+   └─ Audit Ledger
 
 ---
 
