@@ -136,10 +136,15 @@ npm install
 
 To provide more context, here's a brief explanation of each layer:
 Chain Layer: The entry point for real-time blockchain data. This layer uses various watchers and triggers to gather events as they happen.
+
 Ingest & Normalize: Raw data is processed here. This layer cleans, deduplicates, and adds a Feature Tagger to prepare the data for the swarm.
+
 Event Bus: The central nervous system. It routes normalized events to the agents and updates the data caches like the Entity Graph and Token Metadata.
+
 Agent Swarm: The core of Eremos. This is where your custom-built agents live, each with its own logic for detecting specific patterns.
+
 Signal Engine: Takes the raw signals from the agents, assigns a confidence score, and routes them to their final destination.
+
 Outputs: The final layer where signals are delivered to external systems like messaging apps, custom dashboards, or audit logs
 
 
