@@ -31,6 +31,22 @@ Modular and extendable by design.*
 
 ---
 
+## Table of Contents
+- [Features](#features)
+- [Highlights](#highlights)
+- [Use cases](#use-cases)
+- [Example Signal](#example-signal)
+- [Signal Confidence](#signal-confidence)
+- [Tech Stack](#tech-stack)
+- [Getting Started](#getting-started)
+- [Quickstart](#quickstart-optional)
+- [Key Folders](#key-folders)
+- [Contributing](#contributing)
+- [License](#license)
+- [Links](#links)
+
+---
+
 ## Features
 
 - **Modular Agents** - Scoped logic for detecting wallet activity, contract spawns, and anomalies  
@@ -140,25 +156,18 @@ _Maintained by the Eremos Core team 💛._
 
 ---
 
-## Additional
-
-### Table of Contents
-- [Highlights](#highlights)
-- [Use cases](#use-cases)
-- [Try it quickly](#try-it-quickly)
-
-### Highlights
+## Highlights
 - Modular swarm agents, structured signals, confidence scoring
 - Quiet‑until‑necessary philosophy (low noise)
 - Extensible design for adding watchers, memory, or inference modules
 
-### Use cases
+## Use cases
 - Launch wallet tracing (CEX‑funded wallets that deploy quickly)
 - Bundling behavior across linked wallets
 - Dormant wallet reactivation
 - Contract irregularities and anomalies
 
-### Try it quickly (optional)
+## Quickstart (optional)
 
 Requirements: Node.js 18+ and `npx`.
 
