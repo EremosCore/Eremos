@@ -152,14 +152,24 @@ Outputs: The final layer where signals are delivered to external systems like me
 FEATURES
 
 Modular Agents - Scoped logic for detecting wallet activity, contract spawns, and anomalies.
+
 Signal Emission - Structured signals for logging, alerting, or downstream use.
+
 Swarm Design - Each agent operates independently with shared utilities.
+
 Extensible Core - Plug in watchers, inference layers, or custom triggers.
+
 Minimal Output - Log only what matters.
-Launch Wallet Detection - Agents can trace freshly funded wallets (e.g. from CEXs), track their contract interactions, and flag high-confidence deploys in real time.
+
+Launch Wallet Detection - Agents can trace freshly funded wallets (e.g. from CEXs), track their contract interactions, 
+and flag high-confidence deploys in real time.
+
 Ghost Watcher - Monitors long-dormant wallets that suddenly become active again. Useful for tracing old dev wallets or rug setups.
+
 Advanced Analytic Dashboards - Provides users with a visual interface to explore historical signals, agent performance, and on-chain trends.
+
 Enhanced AI/ML Integration - Integrates machine learning models to detect more complex and subtle patterns that are difficult to define with rule-based logic alone.
+
 Cross-Chain and Sidechain Support - Expands the framework to monitor and detect signals across multiple blockchains, not just the primary chain
 
 
