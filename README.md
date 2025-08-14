@@ -1,8 +1,7 @@
 # Eremos
 
-<p align="center">
-  <img alt="Eremos banner" src="./docs/banner2.png" width="900">
-</p>
+![Eremos](docs/banner2.png)
+
 <p align="center">
   <a href="https://www.eremos.io/"><strong>Website</strong></a> ·
   <a href="./docs/README.md"><strong>Docs</strong></a> ·
@@ -13,65 +12,56 @@
 
 **Autonomous swarm agents for early on-chain signal detection**
 
-Eremos is a lightweight framework for deploying modular agents that monitor blockchain activity—tracking wallet clusters, mint patterns, launches, and contract anomalies. Designed for developers and analysts who need low‑noise, early signals embedded into their workflows.
-
-> If this project helps you, please Star ⭐ and Watch 👀 the repo.
+Eremos is a lightweight framework for deploying modular agents that monitor blockchain activity - tracking wallet clusters, mint patterns, and contract anomalies.
+Designed for devs who want low-noise, early signals embedded into their workflows.
 
 ---
 
 <p align="center">
-  <img src="./docs/therontphd2.png" alt="Agent Theron illustration" width="155"/><br/>
-  <em>Theron — Agent (000)</em>
+  <img src="docs/therontphd2.png" alt="Agent Theron" width="155"/><br/>
+  <em>Theron - Agent (000)</em>
 </p>
 
-## Table of Contents
-- [Highlights](#highlights)
-- [Use cases](#use-cases)
-- [Example Signal](#example-signal)
-- [Signal Confidence](#signal-confidence)
-- [Tech Stack](#tech-stack)
-- [Try it quickly](#try-it-quickly)
-- [Key Folders](#key-folders)
-- [Contributing](#contributing)
-- [License](#license)
-- [Links](#links)
+**Meet Theron - Agent-000**  
+*The first deployed agent in the swarm. Passive. Pattern-sensitive.  
+Modular and extendable by design.*
+
+
+**Agent-001 Coming Soon** [Teaser](https://x.com/EremosCore/status/1949154939923833239)
 
 ---
 
-## Highlights
+## Features
 
-- **Modular swarm agents** — Scoped logic for wallet activity, deploy patterns, and anomalies
-- **Structured signal emission** — JSON signals for logging, alerting, or downstream automations
-- **Confidence scoring** — Behavior‑driven confidence attached to important signals
-- **Quiet until necessary** — Designed to avoid noise; throttle and thresholds built in
-- **Extensible core** — Plug in watchers, memory, or inference modules as needed
+- **Modular Agents** - Scoped logic for detecting wallet activity, contract spawns, and anomalies  
+- **Signal Emission** - Structured signals for logging, alerting, or downstream use  
+- **Swarm Design** - Each agent operates independently with shared utilities  
+- **Extensible Core** - Plug in watchers, inference layers, or custom triggers  
+- **Minimal Output** - Log only what matters
+- **Launch Wallet Detection** - Agents can trace freshly funded wallets (e.g. from CEXs), track their contract interactions, and flag high-confidence deploys in real time
+- **Ghost Watcher** - Monitors long-dormant wallets that suddenly become active again. Useful for tracing old dev wallets or rug setups.
 
-## Use cases
-
-- **Launch wallet tracing**: Detect CEX‑funded wallets that probe and deploy rapidly
-- **Bundling behavior**: Catch coordinated interactions across linked wallets
-- **Dormant wallet reactivation**: Surface long‑silent wallets that awaken
-- **Contract irregularities**: Flag suspicious call patterns or metadata anomalies
 
 ---
 
 ## Example Signal
 
-An example signal emitted by LaunchTracker when a high-confidence launch pattern is detected:
+An example signal emitted by an agent detecting a live token deployment:
 
 ```ts
-[launch-tracker] → fresh funding detected from kraken (wallet: 6Yxk...P2M8) at 04:41:12Z
-[launch-tracker] → contract probing detected within 4s (pump.fun interaction traced)
-[launch-tracker] → token created at 04:41:17Z (tx: 5gW...pump)
-[launch-tracker] → 5 bundle-linked wallets interacted within 8s of deploy
-[launch-tracker] → launch confidence spike (0.91) - emitting signal (elapsed: 13s)
+[agent-observer] → fresh funding detected from kraken (wallet: 6Yxk...P2M8) at 04:41:12Z
+[agent-observer] → contract probing detected within 4s (pump.fun interaction traced)
+[agent-observer] → token created at 04:41:17Z (tx: 5gW...pump)
+[agent-observer] → 5 bundle-linked wallets interacted within 8s of deploy
+[agent-observer] → launch confidence spike (0.91) - emitting signal (elapsed: 13s)
 
 {
-  agent: "LaunchTracker",
+  agent: "Observer",
   type: "launch_detected",
-  glyph: "Σ",
+  glyph: "Δ",
   hash: "sig_c7f9a3d2bc",
   timestamp: "2025-06-12T04:41:25Z",
+  source: "agent-observer",
   confidence: 0.91
 }
 ```
@@ -80,57 +70,57 @@ An example signal emitted by LaunchTracker when a high-confidence launch pattern
 
 ## Signal Confidence
 
-Each emitted signal can include a `confidence` score (0–1) based on behavioral heuristics, such as:
-- CEX‑origin funding (e.g., Kraken, Coinbase)
-- Time from funding → deploy
-- Linkage density (bundled wallet activity)
-- Token/contract metadata validation
+Each emitted signal includes a `confidence` score (0-1) based on behavioral heuristics:
+- CEX-origin funding (e.g. Kraken, Coinbase)
+- Time between funding → deploy
+- Wallet linkage density (bundled activity)
+- Token metadata validation
 
-Confidence is computed agent‑side and logged alongside the signal.
+Confidence is computed via agent-side scoring and logged alongside the signal.
 
 ---
 
 ## Tech Stack
 
-- **Language/Runtime:** TypeScript on Node.js
-- **This repository is headless.** The public website/UI lives at `eremos.io` and is not part of this codebase.
-- **Chain Layer:** RPC watchers, lightweight filters, and agent‑side triggers
+- **Frontend:** Next.js, Tailwind CSS
+- **Backend:** Node.js (TypeScript-based agent runner)
+- **Language:** TypeScript (typed logic across agents, utils, and infra)
+- **Chain Layer:** RPC watchers, mempool filters, native triggers
 
 ---
 
-## Try it quickly
-
-Requirements: Node.js 18+ and `npx`.
+## Getting Started
 
 ```bash
+git clone https://github.com/EremosCore/Eremos.git
+cd Eremos
 npm install
-
-# Run the example agent in-place with TypeScript support
-npx tsx scripts/dev-agent.ts
-
-# Alternative (if you prefer ts-node)
-# npx ts-node --transpile-only scripts/dev-agent.ts
 ```
 
-Expected output: a sample agent action and/or a logged signal hash.
+Set up your environment:
 
-> Tip: Explore `/scripts` for additional dev helpers like `generate-signal.ts`, `simulate-cluster.ts`, or `validate-agent.ts`.
+```bash
+cp .env.example .env.local
+npm run dev
+```
 
 ---
 
 ## Key Folders
 
-- `/agents` — Agent templates and logic
-- `/utils` — Shared signal/logging utilities
-- `/types` — TypeScript interfaces and definitions
-- `/scripts` — Bootstrap and dev scripts
-- `/docs` — Architecture, agent guide, specs, and whitepaper
+- `/agents` - Agent templates + logic  
+- `/utils` - Shared signal/logging utilities  
+- `/types` - TypeScript interfaces + definitions  
+- `/scripts` - Bootstrap and dev scripts  
+- `/docs` - Swarm structure, architecture, & our artwork/official whitepaper
 
 ---
 
 ## Contributing
 
-We welcome contributions—especially new agents and documentation. See [`docs/contributing.md`](./docs/contributing.md) for guidelines.
+We’re open to contributors.  
+If you are experienced in TypeScript and like agent-based systems, check `example.ts` and build your own observer.
+If you're a designer, artist, or just have ideas that fit the mythos - send us a DM on Twitter. [@EremosCore](https://x.com/EremosCore)
 
 ---
 
@@ -142,8 +132,39 @@ MIT © Eremos LLC
 
 ## Links
 
-- **X (Twitter):** [@EremosCore](https://x.com/EremosCore)
+- **Twitter/X:** [@EremosCore](https://x.com/EremosCore)
 - **Website:** [Eremos.io](https://www.eremos.io/)
-- **Whitepaper:** [v1.0 PDF](./docs/whitepaper.pdf)
+- **Whitepaper:** [v1.0 PDF](docs/whitepaper.pdf)
 
-_Maintained by the Eremos Core team._
+_Maintained by the Eremos Core team 💛._
+
+---
+
+## Additional
+
+### Table of Contents
+- [Highlights](#highlights)
+- [Use cases](#use-cases)
+- [Try it quickly](#try-it-quickly)
+
+### Highlights
+- Modular swarm agents, structured signals, confidence scoring
+- Quiet‑until‑necessary philosophy (low noise)
+- Extensible design for adding watchers, memory, or inference modules
+
+### Use cases
+- Launch wallet tracing (CEX‑funded wallets that deploy quickly)
+- Bundling behavior across linked wallets
+- Dormant wallet reactivation
+- Contract irregularities and anomalies
+
+### Try it quickly (optional)
+
+Requirements: Node.js 18+ and `npx`.
+
+```bash
+npm install
+npx tsx scripts/dev-agent.ts
+# or
+# npx ts-node --transpile-only scripts/dev-agent.ts
+```
