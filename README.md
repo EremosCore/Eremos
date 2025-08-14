@@ -57,19 +57,19 @@ Eremos is a lightweight framework for deploying modular agents that monitor bloc
 
 ## Example Signal
 
-An example signal emitted by an agent detecting a live token deployment:
+An example signal emitted by LaunchTracker when a high-confidence launch pattern is detected:
 
 ```ts
-[agent-observer] → fresh funding detected from kraken (wallet: 6Yxk...P2M8) at 04:41:12Z
-[agent-observer] → contract probing detected within 4s (pump.fun interaction traced)
-[agent-observer] → token created at 04:41:17Z (tx: 5gW...pump)
-[agent-observer] → 5 bundle-linked wallets interacted within 8s of deploy
-[agent-observer] → launch confidence spike (0.91) - emitting signal (elapsed: 13s)
+[launch-tracker] → fresh funding detected from kraken (wallet: 6Yxk...P2M8) at 04:41:12Z
+[launch-tracker] → contract probing detected within 4s (pump.fun interaction traced)
+[launch-tracker] → token created at 04:41:17Z (tx: 5gW...pump)
+[launch-tracker] → 5 bundle-linked wallets interacted within 8s of deploy
+[launch-tracker] → launch confidence spike (0.91) - emitting signal (elapsed: 13s)
 
 {
-  agent: "Observer",
+  agent: "LaunchTracker",
   type: "launch_detected",
-  glyph: "Δ",
+  glyph: "Σ",
   hash: "sig_c7f9a3d2bc",
   timestamp: "2025-06-12T04:41:25Z",
   confidence: 0.91
