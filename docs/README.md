@@ -4,19 +4,24 @@ Welcome to the Eremos documentation. This section covers the swarm architecture,
 
 ## Index
 
-- [Architecture](./architecture.md)
-- [Agents](./agents.md)
-- [Signals](./signals.md)
-- [Events](./events.md)
-- [Memory](./memory.md)
-- [Runtime](./runtime.md)
-- [Metrics](./metrics.md)
-- [Signal Throttling](./throttle.md)
-- [Deployment](./deployment.md)
-- [Glyphs](./glyphs.md)
-- [Contributing](./contributing.md)
-- [Roadmap](./ROADMAP.md)
-- [Whitepaper (PDF)](./whitepaper.pdf)
+- Concepts
+  - [Architecture](./concepts/architecture.md)
+  - [Memory](./concepts/memory.md)
+  - [Metrics](./concepts/metrics.md)
+  - [Signal Throttling](./concepts/throttle.md)
+  - [Glyphs](./concepts/glyphs.md)
+- Guides
+  - [Agents](./guides/agents.md)
+  - [Runtime](./guides/runtime.md)
+  - [Deployment](./guides/deployment.md)
+- Specs
+  - [Signals](./specs/signals.md)
+  - [Events](./specs/events.md)
+- Meta
+  - [Roadmap](./meta/ROADMAP.md)
+  - [Contributing](./meta/contributing.md)
+- Assets
+  - [Whitepaper (PDF)](./assets/papers/whitepaper.pdf)
 
 ## Conventions
 

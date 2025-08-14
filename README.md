@@ -1,13 +1,13 @@
 # Eremos
 
-![Eremos](docs/banner2.png)
+![Eremos](docs/assets/images/banner2.png)
 
 <p align="center">
   <a href="https://www.eremos.io/"><strong>Website</strong></a> ·
   <a href="./docs/README.md"><strong>Docs</strong></a> ·
-  <a href="./docs/agents.md#theron-agent-000"><strong>Agent‑000: Theron</strong></a> ·
-  <a href="./docs/ROADMAP.md"><strong>Roadmap</strong></a> ·
-  <a href="./docs/whitepaper.pdf"><strong>Whitepaper</strong></a>
+  <a href="./docs/guides/agents.md#theron-agent-000"><strong>Agent‑000: Theron</strong></a> ·
+  <a href="./docs/meta/ROADMAP.md"><strong>Roadmap</strong></a> ·
+  <a href="./docs/assets/papers/whitepaper.pdf"><strong>Whitepaper</strong></a>
 </p>
 
 **Autonomous swarm agents for early on-chain signal detection**
@@ -18,7 +18,7 @@ Designed for devs who want low-noise, early signals embedded into their workflow
 ---
 
 <p align="center">
-  <img src="docs/therontphd2.png" alt="Agent Theron" width="155"/><br/>
+  <img src="docs/assets/images/therontphd2.png" alt="Agent Theron" width="155"/><br/>
   <em>Theron - Agent (000)</em>
 </p>
 
@@ -134,7 +134,7 @@ MIT © Eremos LLC
 
 - **Twitter/X:** [@EremosCore](https://x.com/EremosCore)
 - **Website:** [Eremos.io](https://www.eremos.io/)
-- **Whitepaper:** [v1.0 PDF](docs/whitepaper.pdf)
+- **Whitepaper:** [v1.0 PDF](docs/assets/papers/whitepaper.pdf)
 
 _Maintained by the Eremos Core team 💛._
 
