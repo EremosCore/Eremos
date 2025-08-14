@@ -148,7 +148,9 @@ Signal Engine: Takes the raw signals from the agents, assigns a confidence score
 Outputs: The final layer where signals are delivered to external systems like messaging apps, custom dashboards, or audit logs
 
 
-Features
+
+FEATURES
+
 Modular Agents - Scoped logic for detecting wallet activity, contract spawns, and anomalies.
 Signal Emission - Structured signals for logging, alerting, or downstream use.
 Swarm Design - Each agent operates independently with shared utilities.
