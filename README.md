@@ -80,8 +80,7 @@ Confidence is computed via agent-side scoring and logged alongside the signal.
 - **Chain Layer:** RPC watchers, mempool filters, native triggers
 - 
 
-Architecture design 
-  [Chain Layer]
+[Chain Layer]
    ├─ RPC Watchers
    ├─ Mempool Filters
    └─ Native Triggers
@@ -112,7 +111,6 @@ Architecture design
    ├─ Slack / Telegram / Webhooks
    ├─ Downstream Systems
    └─ Audit Ledger
-
 ---
 
 ## Getting Started
