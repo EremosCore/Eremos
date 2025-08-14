@@ -1,6 +1,6 @@
 # Contributing to Eremos
 
-We're open to signal logic, new agents, and utility extensions.
+We're open to `signal logic`, `new agents`, and `utility extensions`.
 
 - Fork the repo
 - Work on a new agent in `/agents`
