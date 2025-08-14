@@ -39,11 +39,10 @@ Modular and extendable by design.*
 - [Signal Confidence](#signal-confidence)
 - [Tech Stack](#tech-stack)
 - [Getting Started](#getting-started)
-- [Quickstart](#quickstart-optional)
 - [Key Folders](#key-folders)
-- [Contributing](#contributing)
-- [License](#license)
 - [Links](#links)
+- [License](#license)
+- [Contributing](#contributing)
 
 ---
 
@@ -57,6 +56,18 @@ Modular and extendable by design.*
 - **Launch Wallet Detection** - Agents can trace freshly funded wallets (e.g. from CEXs), track their contract interactions, and flag high-confidence deploys in real time
 - **Ghost Watcher** - Monitors long-dormant wallets that suddenly become active again. Useful for tracing old dev wallets or rug setups.
 
+---
+
+## Highlights
+- Modular swarm agents, structured signals, confidence scoring
+- Quiet‑until‑necessary philosophy (low noise)
+- Extensible design for adding watchers, memory, or inference modules
+
+## Use cases
+- Launch wallet tracing (CEX‑funded wallets that deploy quickly)
+- Bundling behavior across linked wallets
+- Dormant wallet reactivation
+- Contract irregularities and anomalies
 
 ---
 
@@ -132,20 +143,6 @@ npm run dev
 
 ---
 
-## Contributing
-
-We’re open to contributors.  
-If you are experienced in TypeScript and like agent-based systems, check `example.ts` and build your own observer.
-If you're a designer, artist, or just have ideas that fit the mythos - send us a DM on Twitter. [@EremosCore](https://x.com/EremosCore)
-
----
-
-## License
-
-MIT © Eremos LLC
-
----
-
 ## Links
 
 - **Twitter/X:** [@EremosCore](https://x.com/EremosCore)
@@ -156,24 +153,14 @@ _Maintained by the Eremos Core team 💛._
 
 ---
 
-## Highlights
-- Modular swarm agents, structured signals, confidence scoring
-- Quiet‑until‑necessary philosophy (low noise)
-- Extensible design for adding watchers, memory, or inference modules
+## License
 
-## Use cases
-- Launch wallet tracing (CEX‑funded wallets that deploy quickly)
-- Bundling behavior across linked wallets
-- Dormant wallet reactivation
-- Contract irregularities and anomalies
+MIT © Eremos LLC
 
-## Quickstart (optional)
+---
 
-Requirements: Node.js 18+ and `npx`.
+## Contributing
 
-```bash
-npm install
-npx tsx scripts/dev-agent.ts
-# or
-# npx ts-node --transpile-only scripts/dev-agent.ts
-```
+We’re open to contributors.  
+If you are experienced in TypeScript and like agent-based systems, check `example.ts` and build your own observer.
+If you're a designer, artist, or just have ideas that fit the mythos - send us a DM on Twitter. [@EremosCore](https://x.com/EremosCore)
