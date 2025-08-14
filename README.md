@@ -4,7 +4,7 @@
 
 **Autonomous swarm agents for early on-chain signal detection**
 
-Eremos is a lightweight framework for deploying modular agents that monitor blockchain activity - tracking wallet clusters, mint patterns, and contract anomalies.
+`Eremos` is a lightweight framework for deploying modular agents that monitor blockchain activity - tracking wallet clusters, mint patterns, and contract anomalies.
 Designed for devs who want low-noise, early signals embedded into their workflows.
 
 ---
@@ -74,10 +74,10 @@ Confidence is computed via agent-side scoring and logged alongside the signal.
 
 ## Tech Stack
 
-- **Frontend:** Next.js, Tailwind CSS
-- **Backend:** Node.js (TypeScript-based agent runner)
-- **Language:** TypeScript (typed logic across agents, utils, and infra)
-- **Chain Layer:** RPC watchers, mempool filters, native triggers
+- **Frontend:** `Next.js`, `Tailwind CSS`
+- **Backend:** `Node.js` (`TypeScript-based agent runner`)
+- **Language:** `TypeScript` (`typed logic across agents, utils, and infra`)
+- **Chain Layer:** `RPC watchers`, `mempool filters`, `native triggers`
 
 ---
 
@@ -92,8 +92,7 @@ npm install
 Set up your environment:
 
 ```bash
-cp .env.example .env.local
-npm run dev
+cp .env.example .env.local && npm run dev
 ```
 
 ---

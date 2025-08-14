@@ -1,6 +1,6 @@
 # Events in Eremos
 
-Events are the core unit of observation for Eremos agents.  
+`Events` are the core unit of observation for `Eremos` agents.  
 Each event represents a blockchain occurrence like a wallet transfer, mint, or contract call.
 
 ### Event Example
