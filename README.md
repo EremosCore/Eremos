@@ -78,7 +78,10 @@ Confidence is computed via agent-side scoring and logged alongside the signal.
 - **Backend:** Node.js (TypeScript-based agent runner)
 - **Language:** TypeScript (typed logic across agents, utils, and infra)
 - **Chain Layer:** RPC watchers, mempool filters, native triggers
-- 
+
+
+Key Components & Architecture
+The Eremos architecture is a layered system that processes on-chain data to produce actionable signals. The flow begins with raw blockchain data and culminates in structured outputs
 ## Architecture
 
 ```text
