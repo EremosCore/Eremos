@@ -2,28 +2,52 @@
 
 We welcome contributions—especially new agents and documentation improvements.
 
-## How to contribute
+## Overview
+- Small, focused PRs are easiest to review.
+- Docs‑only PRs are encouraged for clarity, onboarding, and polish.
+- Keep original wording where requested; additively enhance structure and navigation.
+
+## Prerequisites
+- GitHub account with a fork of the repo
+- Node.js 18+ (for running scripts locally, if needed)
+
+## Branching
 1. Fork the repo and create a branch from `main`.
-2. Use a short, meaningful branch name (e.g., `lore`, `docs-signals`, `agent-observer-tuning`).
-3. Make focused changes and keep edits small and cohesive.
-4. Open a Pull Request with a clear title and description.
+2. Use a short, meaningful branch name (e.g., `lore`, `docs-signals`, `agents-harvester-notes`).
+3. Keep commits small and descriptive.
 
 ## Commit style
-- Use concise, imperative commit messages: `docs: expand signal schema examples`, `agents: add launch tracker confidence notes`.
+- Use concise, imperative commit messages:
+  - `docs: expand signals spec examples`
+  - `guides: add agent catalog schema`
+  - `meta: add roadmap phase checkboxes`
 - Prefer multiple small commits over one large commit.
 
-## PR expectations
-- Scope: keep PRs focused (docs‑only PRs are welcome and encouraged).
-- Include context on why the change helps users or contributors.
-- Link to related docs or issues when relevant.
+## What to include in your PR
+- A clear title and description of what changed and why
+- Affected files list (e.g., `README.md`, `docs/specs/signals.md`)
+- Screenshots for README visuals (if applicable)
+- Link any related issues or discussions
 
-## Docs checks
-- Headings are consistent (`#`, `##`, etc.).
-- Tables render correctly on GitHub.
-- Code fences use proper languages (e.g., `ts`, `json`, `bash`).
-- Images have alt text and reasonable width in README.
+## Submission checklist
+- [ ] Markdown headings and tables render correctly on GitHub
+- [ ] Code fences have the right language hints (`ts`, `json`, `bash`)
+- [ ] Images include alt text and reasonable width
+- [ ] Links are relative and valid after any file moves
+- [ ] No unrelated reformatting or mixed indentation
+
+## Docs‑only contributions
+- Safe areas to improve include:
+  - `README.md` (structure, navigation, badges)
+  - `docs/README.md` (index), `docs/concepts/*`, `docs/guides/*`, `docs/specs/*`, `docs/meta/*`
+  - `.env.example` clarity and comments
+- Avoid changing code unless absolutely necessary for documentation accuracy.
 
 ## Development helpers
 - Explore `/scripts` for dev aids like `dev-agent.ts`, `generate-signal.ts`, and `validate-agent.ts`.
+
+## Code of Conduct & Security
+- Be respectful and constructive in discussions and reviews.
+- For security concerns, please open a private report or follow the repository’s security policy if provided.
 
 Thank you for contributing to the swarm.

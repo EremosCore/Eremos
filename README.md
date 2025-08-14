@@ -161,6 +161,6 @@ MIT License — see [LICENSE](./LICENSE)
 
 ## Contributing
 
-We’re open to contributors.  
-If you are experienced in TypeScript and like agent-based systems, check `example.ts` and build your own observer.
-If you're a designer, artist, or just have ideas that fit the mythos - send us a DM on Twitter. [@EremosCore](https://x.com/EremosCore)
+We’re open to contributors. See the full guide in [docs/meta/contributing.md](./docs/meta/contributing.md).
+
+If you are experienced in TypeScript and like agent-based systems, check `example.ts` and build your own observer. If you're a designer, artist, or just have ideas that fit the mythos - send us a DM on Twitter. [@EremosCore](https://x.com/EremosCore)
