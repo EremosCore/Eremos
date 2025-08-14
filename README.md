@@ -155,7 +155,7 @@ _Maintained by the Eremos Core team 💛._
 
 ## License
 
-MIT © Eremos LLC
+MIT License — see [LICENSE](./LICENSE)
 
 ---
 
