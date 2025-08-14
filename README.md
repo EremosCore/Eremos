@@ -129,3 +129,41 @@ MIT © Eremos LLC
 - **Whitepaper:** [v1.0 PDF](docs/whitepaper.pdf)
 
 _Maintained by the Eremos Core team 💛._
+
+
+## Accessibility & Retail Potential
+Eremos is a sharp, lightweight framework for detecting early blockchain signals. But right now, it’s mostly built for developers—people who already know how to navigate RPCs, mempools, and agent logic. That’s fine for now, but it’s also a missed opportunity.
+
+There’s a huge audience of retail users—traders, investors, and crypto-curious folks—who could benefit from the insights Eremos agents provide. The problem is, they’ll never touch it in its current form. No UI, no onboarding, no way to interpret signals unless you’re already deep in the weeds.
+
+## What’s Holding It Back
+The CLI setup is intimidating for non-technical users.
+
+Signals are powerful but hard to interpret without context.
+
+There’s no visual layer—no dashboard, no alerts, no mobile experience.
+
+## Why This Matters
+Retail users make up the bulk of crypto activity. If Eremos were easier to use, it could:
+
+Reach a much wider audience
+
+Generate more signals and data
+
+Create new monetization paths (subscriptions, analytics, integrations)
+
+## What Could Help
+Here are a few ideas that could make Eremos more accessible and scalable:
+
+A simple web interface with wallet login and signal visualization
+
+Real-time dashboards showing confidence scores and wallet activity
+
+Push notifications for key events like contract deployments or wallet funding
+
+Guided onboarding with presets and tooltips
+
+Integration with swap protocols so users can act on signals directly
+
+## The Bigger Picture
+Eremos has the potential to be more than a dev tool. With the right UX layer, it could become a go-to intelligence platform for everyday crypto users—helping them make smarter decisions and stay ahead of the curve.
