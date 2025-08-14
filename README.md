@@ -80,37 +80,40 @@ Confidence is computed via agent-side scoring and logged alongside the signal.
 - **Chain Layer:** RPC watchers, mempool filters, native triggers
 - 
 
-[Chain Layer]
-   ├─ RPC Watchers
-   ├─ Mempool Filters
-   └─ Native Triggers
-        |
-        v
-[Ingest & Normalize]
-   ├─ Event Normalizer
-   ├─ Deduper / Sequencer
-   └─ Feature Tagger
-        |
-        v
-[Event Bus] ---> [Entity Graph / Feature Store / Token Metadata Cache]
-        |
-        v
-[Agent Swarm]
-   ├─ Launch Wallet Detector
-   ├─ Ghost Watcher
-   └─ (Custom Agents)
-        |
-        v
-[Signal Engine]
-   ├─ Confidence Scorer
-   ├─ Router
-   └─ Storage
-        |
-        v
-[Outputs]
-   ├─ Slack / Telegram / Webhooks
-   ├─ Downstream Systems
-   └─ Audit Ledger
+| Layers |
+| :--- |
+| `[Chain Layer]` |
+| `&nbsp;&nbsp;&nbsp;├─ RPC Watchers` |
+| `&nbsp;&nbsp;&nbsp;├─ Mempool Filters` |
+| `&nbsp;&nbsp;&nbsp;└─ Native Triggers` |
+| `&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|` |
+| `&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;v` |
+| `[Ingest & Normalize]` |
+| `&nbsp;&nbsp;&nbsp;├─ Event Normalizer` |
+| `&nbsp;&nbsp;&nbsp;├─ Deduper / Sequencer` |
+| `&nbsp;&nbsp;&nbsp;└─ Feature Tagger` |
+| `&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|` |
+| `&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;v` |
+| `[Event Bus] ---> [Entity Graph / Feature Store / Token Metadata Cache]` |
+| `&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|` |
+| `&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;v` |
+| `[Agent Swarm]` |
+| `&nbsp;&nbsp;&nbsp;├─ Launch Wallet Detector` |
+| `&nbsp;&nbsp;&nbsp;├─ Ghost Watcher` |
+| `&nbsp;&nbsp;&nbsp;└─ (Custom Agents)` |
+| `&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|` |
+| `&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;v` |
+| `[Signal Engine]` |
+| `&nbsp;&nbsp;&nbsp;├─ Confidence Scorer` |
+| `&nbsp;&nbsp;&nbsp;├─ Router` |
+| `&nbsp;&nbsp;&nbsp;└─ Storage` |
+| `&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|` |
+| `&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;v` |
+| `[Outputs]` |
+| `&nbsp;&nbsp;&nbsp;├─ Slack / Telegram / Webhooks` |
+| `&nbsp;&nbsp;&nbsp;├─ Downstream Systems` |
+| `&nbsp;&nbsp;&nbsp;└─ Audit Ledger` |
+
 ---
 
 ## Getting Started
