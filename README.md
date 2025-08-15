@@ -1,5 +1,10 @@
 # Eremos
 
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=flat&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
+[![GitHub stars](https://img.shields.io/github/stars/EremosCore/Eremos?style=social)](https://github.com/EremosCore/Eremos)
+[![Twitter Follow](https://img.shields.io/twitter/follow/EremosCore?style=social)](https://twitter.com/EremosCore)
+
 ![Eremos](docs/banner2.png)
 
 **Autonomous swarm agents for early on-chain signal detection**
@@ -81,7 +86,9 @@ Confidence is computed via agent-side scoring and logged alongside the signal.
 
 ---
 
-## Getting Started
+## Quick Start
+
+Clone and set up the project:
 
 ```bash
 git clone https://github.com/EremosCore/Eremos.git
@@ -89,11 +96,27 @@ cd Eremos
 npm install
 ```
 
-Set up your environment:
+See agents in action immediately:
 
 ```bash
-cp .env.example .env.local
-npm run dev
+# Run a live agent demo
+npm run demo
+
+# Try the example agent  
+npm run example
+
+# Validate all agents are healthy
+npm run agent:health
+```
+
+### Development Commands
+
+```bash
+npm run dev              # Start development mode with example agent
+npm run demo             # Run Theron agent simulation  
+npm run example          # Test example agent with mock data
+npm run agent:health     # Check all agents for issues
+npm run agent:validate   # Validate a specific agent
 ```
 
 ---

@@ -4,7 +4,13 @@
   "description": "Modular agent framework for on-chain activity monitoring.",
   "main": "index.js",
   "scripts": {
-    "dev": "echo 'Running dev mode...'"
+    "dev": "npx ts-node scripts/dev-agent.ts",
+    "demo": "npx ts-node scripts/simulate-cluster.ts",
+    "example": "npx ts-node scripts/dev-agent.ts",
+    "agent:health": "npx ts-node scripts/agent-health.ts",
+    "agent:validate": "npx ts-node scripts/validate-agent.ts",
+    "agent:theron": "npx ts-node scripts/simulate-cluster.ts",
+    "scripts:list": "ls scripts/ | grep .ts"
   },
   "keywords": [
     "agent",

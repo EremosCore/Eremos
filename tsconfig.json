@@ -1,11 +1,20 @@
 {
   "compilerOptions": {
-    "target": "es6",
+    "target": "es2018",
+    "lib": ["es2018"],
     "module": "commonjs",
     "strict": true,
     "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
     "forceConsistentCasingInFileNames": true,
-    "skipLibCheck": true
+    "skipLibCheck": true,
+    "moduleResolution": "node",
+    "types": ["node"]
   },
-  "include": ["./agents", "./types", "./utils"]
+  "include": ["./agents", "./types", "./utils", "./scripts"],
+  "ts-node": {
+    "compilerOptions": {
+      "types": ["node"]
+    }
+  }
 }
