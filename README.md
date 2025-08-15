@@ -92,24 +92,24 @@ graph TD
     P --> Q[Cross-Agent Analysis]
     Q --> R[Composite Signals]
     
-    style A fill:#2196f3
-    style B fill:#1976d2
-    style C fill:#ffc107
-    style D fill:#9c27b0
-    style E fill:#673ab7
-    style F fill:#3f51b5
-    style G fill:#2196f3
-    style H fill:#00bcd4
-    style I fill:#4caf50
-    style J fill:#ff5722
-    style K fill:#e91e63
-    style L fill:#795548
-    style M fill:#607d8b
-    style N fill:#37474f
-    style O fill:#263238
-    style P fill:#ff9800
-    style Q fill:#ff5722
-    style R fill:#4caf50
+    style A fill:#1a237e
+    style B fill:#0d47a1
+    style C fill:#e65100
+    style D fill:#4a148c
+    style E fill:#311b92
+    style F fill:#1a237e
+    style G fill:#0277bd
+    style H fill:#006064
+    style I fill:#1b5e20
+    style J fill:#bf360c
+    style K fill:#880e4f
+    style L fill:#3e2723
+    style M fill:#263238
+    style N fill:#212121
+    style O fill:#1a1a1a
+    style P fill:#e65100
+    style Q fill:#bf360c
+    style R fill:#1b5e20
 ```
 
 The architecture follows a modular event-driven design:
