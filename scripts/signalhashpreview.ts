@@ -7,5 +7,5 @@ const sampleEvent = {
   notes: "debug preview",
 };
 
-const hash = generateSignalHash(sampleEvent);
+const hash = generateSignalHash(sampleEvent.type);
 console.log("Generated Signal Hash:", hash);
