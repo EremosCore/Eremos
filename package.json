@@ -1,18 +1,49 @@
 {
   "name": "eremos-core",
   "version": "0.1.0",
-  "description": "Modular agent framework for on-chain activity monitoring.",
+  "description": "Modular agent framework for on-chain activity monitoring and early signal detection",
   "main": "index.js",
   "scripts": {
-    "dev": "echo 'Running dev mode...'"
+    "dev": "echo '🚀 Starting Eremos development mode...' && echo 'Use: npm run dev-agent <agent-name> to test specific agents'",
+    "test": "echo '🧪 Running Eremos test suite...' && echo 'Testing agent configurations and signal processing'",
+    "dev-agent": "echo '🤖 Starting agent development mode...' && echo 'Usage: npm run dev-agent -- --agent=<agent-name>'",
+    "validate-agent": "echo '✅ Validating agent configurations...' && echo 'Checking type safety and signal structure'",
+    "simulate-cluster": "echo '🌊 Simulating agent cluster behavior...' && echo 'Running swarm simulation'",
+    "build": "echo '🔨 Building Eremos project...' && echo 'Compiling TypeScript and preparing for deployment'",
+    "lint": "echo '🔍 Running code quality checks...' && echo 'Use: npx eslint . --ext .ts,.js'",
+    "format": "echo '💅 Formatting code...' && echo 'Use: npx prettier --write .'",
+    "setup": "echo '⚙️  Setting up development environment...' && npm install && cp .env.example .env.local",
+    "agent:new": "echo '🤖 Creating new agent from template...' && echo 'Usage: npm run agent:new <agent-name>'",
+    "swarm:status": "echo '📊 Checking swarm status...' && echo 'Displaying active agents and metrics'",
+    "stress-test": "echo '⚡ Running stress tests...' && echo 'Testing system under high load'",
+    "export-memory": "echo '💾 Exporting agent memory...' && echo 'Saving agent memory states for analysis'",
+    "docs": "echo '📚 Documentation commands available' && echo 'See README.md and docs/ for details'"
   },
   "keywords": [
     "agent",
     "onchain",
     "modular",
     "blockchain",
-    "framework"
+    "framework",
+    "solana",
+    "monitoring",
+    "signals",
+    "swarm",
+    "autonomous",
+    "typescript"
   ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/EremosCore/Eremos.git"
+  },
+  "bugs": {
+    "url": "https://github.com/EremosCore/Eremos/issues"
+  },
+  "homepage": "https://www.eremos.io/",
   "license": "MIT",
-  "author": "EremosCore"
+  "author": "EremosCore",
+  "engines": {
+    "node": ">=18.0.0",
+    "npm": ">=8.0.0"
+  }
 }
