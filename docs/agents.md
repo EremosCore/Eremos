@@ -1,4 +1,5 @@
 # Agent Guide
+Eremos is a swarm-style framework for passive blockchain observation, where agents monitor specific events and emit structured signals. This guide covers how to develop and test agents within the Eremos framework.
 
 ## Base Requirements
 Each agent must include:
