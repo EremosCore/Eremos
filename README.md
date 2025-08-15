@@ -94,7 +94,7 @@ graph TD
     
     style A fill:#1a237e
     style B fill:#0d47a1
-    style C fill:#e65100
+    style C fill:#bf360c
     style D fill:#4a148c
     style E fill:#311b92
     style F fill:#1a237e
@@ -107,8 +107,8 @@ graph TD
     style M fill:#263238
     style N fill:#212121
     style O fill:#1a1a1a
-    style P fill:#e65100
-    style Q fill:#bf360c
+    style P fill:#b71c1c
+    style Q fill:#4e342e
     style R fill:#1b5e20
 ```
 
