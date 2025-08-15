@@ -1,6 +1,14 @@
 # Eremos
 
-![Eremos](docs/banner2.png)
+![Eremos](docs/assets/images/banner2.png)
+
+<p align="center">
+  <a href="https://www.eremos.io/"><strong>Website</strong></a> ·
+  <a href="./docs/README.md"><strong>Docs</strong></a> ·
+  <a href="./docs/guides/agents.md#theron-agent-000"><strong>Agent‑000: Theron</strong></a> ·
+  <a href="./docs/meta/ROADMAP.md"><strong>Roadmap</strong></a> ·
+  <a href="./docs/assets/papers/whitepaper.pdf"><strong>Whitepaper</strong></a>
+</p>
 
 **Autonomous swarm agents for early on-chain signal detection**
 
@@ -10,7 +18,7 @@ Designed for devs who want low-noise, early signals embedded into their workflow
 ---
 
 <p align="center">
-  <img src="docs/therontphd2.png" alt="Agent Theron" width="155"/><br/>
+  <img src="docs/assets/images/therontphd2.png" alt="Agent Theron" width="155"/><br/>
   <em>Theron - Agent (000)</em>
 </p>
 
@@ -20,6 +28,21 @@ Modular and extendable by design.*
 
 
 **Agent-001 Coming Soon** [Teaser #1](https://x.com/EremosCore/status/1949154939923833239), [Teaser #2](https://x.com/EremosCore/status/1954856345284567218)
+
+---
+
+## Table of Contents
+- [Features](#features)
+- [Highlights](#highlights)
+- [Use cases](#use-cases)
+- [Example Signal](#example-signal)
+- [Signal Confidence](#signal-confidence)
+- [Tech Stack](#tech-stack)
+- [Getting Started](#getting-started)
+- [Key Folders](#key-folders)
+- [Links](#links)
+- [License](#license)
+- [Contributing](#contributing)
 
 ---
 
@@ -34,6 +57,18 @@ Modular and extendable by design.*
 - **Ghost Watcher** - Monitors long-dormant wallets that suddenly become active again. Useful for tracing old dev wallets or rug setups.
 - *+ More to come.*
 
+---
+
+## Highlights
+- Modular swarm agents, structured signals, confidence scoring
+- Quiet‑until‑necessary philosophy (low noise)
+- Extensible design for adding watchers, memory, or inference modules
+
+## Use cases
+- Launch wallet tracing (CEX‑funded wallets that deploy quickly)
+- Bundling behavior across linked wallets
+- Dormant wallet reactivation
+- Contract irregularities and anomalies
 
 ---
 
@@ -109,24 +144,24 @@ npm run dev
 
 ---
 
-## Contributing
+## Links
 
-We’re open to contributors.  
-If you are experienced in TypeScript and like agent-based systems, check `example.ts` and build your own observer.
-If you're a designer, artist, or just have ideas that fit the mythos - send us a DM on Twitter. [@EremosCore](https://x.com/EremosCore)
+- **Twitter/X:** [@EremosCore](https://x.com/EremosCore)
+- **Website:** [Eremos.io](https://www.eremos.io/)
+- **Whitepaper:** [v1.0 PDF](docs/assets/papers/whitepaper.pdf)
+
+_Maintained by the Eremos Core team 💛._
 
 ---
 
 ## License
 
-MIT © Eremos LLC
+MIT License — see [LICENSE](./LICENSE)
 
 ---
 
-## Links
+## Contributing
 
-- **Twitter/X:** [@EremosCore](https://x.com/EremosCore)
-- **Website:** [Eremos.io](https://www.eremos.io/)
-- **Whitepaper:** [v1.0 PDF](docs/whitepaper.pdf)
+We’re open to contributors. See the full guide in [docs/meta/contributing.md](./docs/meta/contributing.md).
 
-_Maintained by the Eremos Core team 💛._
+If you are experienced in TypeScript and like agent-based systems, check `example.ts` and build your own observer. If you're a designer, artist, or just have ideas that fit the mythos - send us a DM on Twitter. [@EremosCore](https://x.com/EremosCore)
