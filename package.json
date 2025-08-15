@@ -4,15 +4,43 @@
   "description": "Modular agent framework for on-chain activity monitoring.",
   "main": "index.js",
   "scripts": {
-    "dev": "echo 'Running dev mode...'"
+    "dev": "ts-node scripts/dev.ts",
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "test": "jest",
+    "lint": "eslint . --ext .ts,.tsx",
+    "format": "prettier --write ."
   },
   "keywords": [
     "agent",
     "onchain",
     "modular",
     "blockchain",
-    "framework"
+    "framework",
+    "solana",
+    "web3",
+    "typescript"
   ],
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "typescript": "^5.0.0",
+    "ts-node": "^10.9.0",
+    "jest": "^29.0.0",
+    "@types/jest": "^29.0.0",
+    "eslint": "^8.0.0",
+    "prettier": "^3.0.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
   "license": "MIT",
-  "author": "EremosCore"
+  "author": "EremosCore",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/EremosCore/Eremos.git"
+  },
+  "bugs": {
+    "url": "https://github.com/EremosCore/Eremos/issues"
+  },
+  "homepage": "https://www.eremos.io/"
 }

@@ -1,11 +1,28 @@
 # Eremos
 
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![GitHub stars](https://img.shields.io/github/stars/EremosCore/Eremos.svg)](https://github.com/EremosCore/Eremos/stargazers)
+[![GitHub forks](https://img.shields.io/github/forks/EremosCore/Eremos.svg)](https://github.com/EremosCore/Eremos/network)
+[![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
+
 ![Eremos](docs/banner2.png)
 
 **Autonomous swarm agents for early on-chain signal detection**
 
 Eremos is a lightweight framework for deploying modular agents that monitor blockchain activity - tracking wallet clusters, mint patterns, and contract anomalies.
 Designed for devs who want low-noise, early signals embedded into their workflows.
+
+## Table of Contents
+
+- [Features](#features)
+- [Example Signal](#example-signal)
+- [Signal Confidence](#signal-confidence)
+- [Tech Stack](#tech-stack)
+- [Getting Started](#getting-started)
+- [Key Folders](#key-folders)
+- [Contributing](#contributing)
+- [License](#license)
+- [Links](#links)
 
 ---
 
@@ -84,11 +101,21 @@ Confidence is computed via agent-side scoring and logged alongside the signal.
 
 ## Getting Started
 
+### Prerequisites
+
+- Node.js >= 18.0.0
+- npm or yarn
+- Basic understanding of TypeScript
+
+### Installation
+
 ```bash
 git clone https://github.com/EremosCore/Eremos.git
 cd Eremos
 npm install
 ```
+
+### Setup
 
 Set up your environment:
 
@@ -96,6 +123,13 @@ Set up your environment:
 cp .env.example .env.local
 npm run dev
 ```
+
+### Available Scripts
+
+- `npm run dev` - Start development mode
+- `npm run build` - Build the project  
+- `npm run test` - Run tests
+- `npm run lint` - Check code style
 
 ---
 
