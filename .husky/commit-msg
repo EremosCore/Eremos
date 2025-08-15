@@ -1,0 +1,9 @@
+npx commitlint --edit "$1" || {
+  echo ""
+  echo "❌ Commit message format is invalid."
+  echo "✅ Example: feat(auth): add login endpoint"
+  echo "Format: <type>(<scope>): <description>"
+  echo "Types: feat, fix, docs, style, refactor, perf, test, chore"
+  echo "\n"
+  exit 1
+}

@@ -1,0 +1,50 @@
+name: '🛠 Maintenance'
+description: For refactoring, dependency updates, or non-feature changes.
+title: '[Maintenance]: '
+labels: ['maintenance']
+assignees: []
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## 🛠 Maintenance Request
+        Use this template for tasks that keep the project healthy but don’t add new features or fix bugs.
+
+  - type: input
+    id: summary
+    attributes:
+      label: Summary
+      description: A short summary of the maintenance task.
+      placeholder: 'E.g., Update dependencies, remove unused code...'
+    validations:
+      required: true
+
+  - type: textarea
+    id: details
+    attributes:
+      label: Details
+      description: Provide more context about what needs to be done.
+      placeholder: 'Explain what needs maintenance and why.'
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: Suggested Approach
+      description: If you have ideas on how to do this, outline them here.
+      placeholder: 'E.g., Update package.json to latest versions and run tests.'
+    validations:
+      required: false
+
+  - type: dropdown
+    id: priority
+    attributes:
+      label: Priority
+      options:
+        - Low
+        - Medium
+        - High
+    validations:
+      required: false
