@@ -99,7 +99,7 @@ graph TD
     style G fill:#f3e5f5
     style H fill:#f3e5f5
     style P fill:#fff3e0
-    style R fill:#e8f5e8
+    style R fill:#4caf50
 ```
 
 The architecture follows a modular event-driven design:
