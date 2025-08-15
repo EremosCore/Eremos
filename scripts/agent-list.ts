@@ -1,10 +1,14 @@
-import * as fs from "fs";
-import * as path from "path";
+import { agents } from "../agents/index";
 
-const agentsPath = path.join(__dirname, "../agents");
-const agentFiles = fs.readdirSync(agentsPath);
+console.log("📋 Available Agents:\n");
 
-agentFiles.forEach(file => {
-  const agent = require(path.join(agentsPath, file));
-  console.log(`${agent.name || file.replace(".ts", "")} (${agent.id}) - ${agent.description}`);
+agents.forEach(agent => {
+  console.log(`🧠 ${agent.name} (${agent.id})`);
+  console.log(`   Glyph: ${agent.glyph}`);
+  console.log(`   Role: ${agent.role}`);
+  console.log(`   Watch: ${agent.watchType}`);
+  console.log(`   Description: ${agent.description}`);
+  console.log("");
 });
+
+console.log(`Total agents: ${agents.length}`);

@@ -1,7 +1,7 @@
+import { test, expect } from "vitest";
 import { Theron } from '../agents/theron';
 
-test('Theron emits signal on wallet cluster', () => {
-  const event = { type: "wallet_activity", ... };
-  const signals = Theron.observe(event);
-  expect(signals).toBeDefined();
+test('Theron handles anomaly events without throwing', () => {
+  const event = { type: "anomaly", id: "evt-1" } as any;
+  expect(() => Theron.observe(event)).not.toThrow();
 });
