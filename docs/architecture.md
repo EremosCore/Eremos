@@ -1,14 +1,14 @@
 # Eremos Architecture
+![Agent Workflow](./architecture.png "Eremos agent processing Solana events")
 
-Eremos is a swarm-style agent framework for passive blockchain observation.
+Each agent has a specialized role:  
+- `observer`: Monitors specific blockchain events.  
+- `memory`: Stores event data or state. 
+- `trigger`: Emits signals to external systems (e.g., alerts) based on observed events.  
 
-Each agent:
-- Has a role (`observer`, `memory`, `trigger`, `+ more to come`)
-- Watches a specific event type
-- Emits structured signals
-- Optionally stores memory
+More roles may be added for extensibility.
 
-Shared utilities and types define common structure across agents.  
+Shared utilities and types define a common structure across agents.  
 Signals are deterministic and lightweight — not reactive.
 
 > Agent communication and orchestration are coming soon.

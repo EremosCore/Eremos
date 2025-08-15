@@ -83,16 +83,27 @@ Confidence is computed via agent-side scoring and logged alongside the signal.
 
 ## Getting Started
 
+**Clone the Repository**:
+   ```bash
+   git clone https://github.com/EremosCore/Eremos.git
+   cd Eremos
+   ```
+**Install Dependencies**
+
 ```bash
-git clone https://github.com/EremosCore/Eremos.git
-cd Eremos
 npm install
 ```
 
-Set up your environment:
+**Configure Environment**
+Copy the example environment file and update it with your settings:
 
 ```bash
 cp .env.example .env.local
+```
+
+ **Run the Development Server**
+
+```bash
 npm run dev
 ```
 
@@ -111,7 +122,7 @@ npm run dev
 ## Contributing
 
 We’re open to contributors.  
-If you are experienced in TypeScript and like agent-based systems, check `example.ts` and build your own observer.
+If you are experienced in TypeScript and enjoy agent-based systems, take a look at `example.ts` and build your own observer.
 If you're a designer, artist, or just have ideas that fit the mythos - send us a DM on Twitter. [@EremosCore](https://x.com/EremosCore)
 
 ---
@@ -123,7 +134,7 @@ MIT © Eremos LLC
 ---
 
 ## Links
-
+Want to learn more? 
 - **Twitter/X:** [@EremosCore](https://x.com/EremosCore)
 - **Website:** [Eremos.io](https://www.eremos.io/)
 - **Whitepaper:** [v1.0 PDF](docs/whitepaper.pdf)
