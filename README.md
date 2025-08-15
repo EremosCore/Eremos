@@ -93,12 +93,22 @@ graph TD
     Q --> R[Composite Signals]
     
     style A fill:#e1f5fe
+    style B fill:#e3f2fd
+    style C fill:#ffecb3
     style D fill:#f3e5f5
     style E fill:#f3e5f5
     style F fill:#f3e5f5
     style G fill:#f3e5f5
     style H fill:#f3e5f5
-    style P fill:#fff3e0
+    style I fill:#f1f8e9
+    style J fill:#fce4ec
+    style K fill:#fce4ec
+    style L fill:#fce4ec
+    style M fill:#e8eaf6
+    style N fill:#e8eaf6
+    style O fill:#e8eaf6
+    style P fill:#ff9800
+    style Q fill:#ffcc80
     style R fill:#4caf50
 ```
 
