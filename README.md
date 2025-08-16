@@ -1,3 +1,9 @@
+	![GitHub stars](https://img.shields.io/github/stars/EremosCore/Eremos)
+	![GitHub issues](https://img.shields.io/github/issues/EremosCore/Eremos)
+	![GitHub forks](https://img.shields.io/github/forks/EremosCore/Eremos)
+	![License](https://img.shields.io/github/license/EremosCore/Eremos)
+
+
 Project Contribution – Sample Agent & Documentation Improvements
 
 This update enhances the developer onboarding experience for the Eremos project by introducing a functional sample agent, improving documentation, and providing a clearer, step-by-step setup process.
