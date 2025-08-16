@@ -4,7 +4,11 @@
   "description": "Modular agent framework for on-chain activity monitoring.",
   "main": "index.js",
   "scripts": {
-    "dev": "echo 'Running dev mode...'"
+    "dev": "tsx scripts/dev-agent.ts",
+    "agents:list": "tsx scripts/agent-list.ts",
+    "agent:dev": "tsx scripts/dev-agent.ts",
+    "agent:generate": "tsx scripts/generate-agent.ts",
+    "agent:validate": "tsx scripts/validate-agent.ts || echo 'validate script not yet implemented'"
   },
   "keywords": [
     "agent",
@@ -14,5 +18,9 @@
     "framework"
   ],
   "license": "MIT",
-  "author": "EremosCore"
+  "author": "EremosCore",
+  "devDependencies": {
+    "tsx": "^4.19.0",
+    "typescript": "^5.4.0"
+  }
 }
