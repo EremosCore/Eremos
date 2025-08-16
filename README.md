@@ -2,12 +2,37 @@
 
 ![Eremos](docs/banner2.png)
 
+<p align="center">
+  <a href="https://github.com/chefash/Eremos/stargazers">
+    <img src="https://img.shields.io/github/stars/chefash/Eremos?style=for-the-badge" alt="Stars" />
+  </a>
+  <a href="https://github.com/chefash/Eremos/issues">
+    <img src="https://img.shields.io/github/issues/chefash/Eremos?style=for-the-badge" alt="Open Issues" />
+  </a>
+  <a href="https://github.com/chefash/Eremos/blob/main/LICENSE">
+    <img src="https://img.shields.io/github/license/chefash/Eremos?style=for-the-badge" alt="License" />
+  </a>
+  <a href="https://github.com/chefash/Eremos/pulls">
+    <img src="https://img.shields.io/badge/PRs-Welcome-brightgreen?style=for-the-badge" alt="PRs Welcome" />
+  </a>
+</p>
+
 **Autonomous swarm agents for early on-chain signal detection**
 
 Eremos is a lightweight framework for deploying modular agents that monitor blockchain activity - tracking wallet clusters, mint patterns, and contract anomalies.
 Designed for devs who want low-noise, early signals embedded into their workflows.
 
 ---
+## Table of Contents
+- [Features](#features)
+- [Example Signal](#example-signal)
+- [Signal Confidence](#signal-confidence)
+- [Tech Stack](#tech-stack)
+- [Getting Started](#getting-started)
+- [Key Folders](#key-folders)
+- [Contributing](#contributing)
+- [License](#license)
+- [Links](#links)
 
 <p align="center">
   <img src="docs/therontphd2.png" alt="Agent Theron" width="155"/><br/>
