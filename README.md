@@ -53,6 +53,7 @@ Modular and extendable by design.*
 - **Minimal Output** - Log only what matters
 - **Launch Wallet Detection** - Agents can trace freshly funded wallets (e.g. from CEXs), track their contract interactions, and flag high-confidence deploys in real time
 - **Ghost Watcher** - Monitors long-dormant wallets that suddenly become active again. Useful for tracing old dev wallets or rug setups.
+- *+ More to come.*
 
 ## Σ Meet the Agents
 
