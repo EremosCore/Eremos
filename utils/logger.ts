@@ -4,9 +4,13 @@ export function logSignal(signal: {
   glyph: string;
   hash: string;
   timestamp: string;
+  confidence?: number;
   details?: Record<string, any>;
 }) {
   console.log(`[${signal.agent}] stored signal ${signal.hash} (${signal.type}) at ${signal.timestamp}`);
+  if (signal.confidence !== undefined) {
+    console.log(`├─ confidence: ${signal.confidence}`);
+  }
   if (signal.details) {
     console.log(`├─ context:`, JSON.stringify(signal.details, null, 2));
   }
