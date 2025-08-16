@@ -7,5 +7,5 @@
     "forceConsistentCasingInFileNames": true,
     "skipLibCheck": true
   },
-  "include": ["./agents", "./types", "./utils"]
+  "include": ["./agents", "./types", "./utils", "./scripts"]
 }

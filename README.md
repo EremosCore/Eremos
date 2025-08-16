@@ -1,10 +1,15 @@
 # Eremos
 
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+![TypeScript](https://img.shields.io/badge/language-TypeScript-3178C6?logo=typescript&logoColor=white)
+![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen)
+[![Follow on X](https://img.shields.io/badge/follow-@EremosCore-000000?logo=x)](https://x.com/EremosCore)
+
 ![Eremos](docs/banner2.png)
 
 **Autonomous swarm agents for early on-chain signal detection**
 
-Eremos is a lightweight framework for deploying modular agents that monitor blockchain activity - tracking wallet clusters, mint patterns, and contract anomalies.
+Eremos is a lightweight framework for deploying modular agents that monitor blockchain activity — tracking wallet clusters, mint patterns, and contract anomalies.
 Designed for devs who want low-noise, early signals embedded into their workflows.
 
 ---
@@ -23,6 +28,22 @@ Modular and extendable by design.*
 
 ---
 
+## Table of Contents
+
+- [Features](#features)
+- [Quick Links](#quick-links)
+- [Example Signal](#example-signal)
+- [Signal Confidence](#signal-confidence)
+- [Tech Stack](#tech-stack)
+- [Getting Started](#getting-started)
+- [Key Folders](#key-folders)
+- [Common Commands](#common-commands)
+- [Contributing](#contributing)
+- [License](#license)
+- [Links](#links)
+
+---
+
 ## Features
 
 - **Modular Agents** - Scoped logic for detecting wallet activity, contract spawns, and anomalies  
@@ -34,6 +55,20 @@ Modular and extendable by design.*
 - **Ghost Watcher** - Monitors long-dormant wallets that suddenly become active again. Useful for tracing old dev wallets or rug setups.
 - *+ More to come.*
 
+
+---
+
+## Quick Links
+
+- **Docs**: [`/docs`](./docs)
+- **Architecture**: [`/docs/architecture.md`](./docs/architecture.md)
+- **Agents**: [`/docs/agents.md`](./docs/agents.md)
+- **Signals**: [`/docs/signals.md`](./docs/signals.md)
+- **Metrics**: [`/docs/metrics.md`](./docs/metrics.md)
+- **Events**: [`/docs/events.md`](./docs/events.md)
+- **Deployment**: [`/docs/deployment.md`](./docs/deployment.md)
+- **Contributing**: [`/docs/contributing.md`](./docs/contributing.md)
+- **Whitepaper (v1.0)**: [`/docs/whitepaper.pdf`](./docs/whitepaper.pdf)
 
 ---
 
@@ -75,10 +110,9 @@ Confidence is computed via agent-side scoring and logged alongside the signal.
 
 ## Tech Stack
 
-- **Frontend:** Next.js, Tailwind CSS
-- **Backend:** Node.js (TypeScript-based agent runner)
 - **Language:** TypeScript (typed logic across agents, utils, and infra)
-- **Chain Layer:** RPC watchers, mempool filters, native triggers
+- **Runtime:** Node.js (TypeScript-based agent runner)
+- **Chain Layer:** Solana RPC watchers, mempool filters, native triggers
 
 ---
 
@@ -90,10 +124,9 @@ cd Eremos
 npm install
 ```
 
-Set up your environment:
+Run a local development agent:
 
 ```bash
-cp .env.example .env.local
 npm run dev
 ```
 
@@ -106,6 +139,24 @@ npm run dev
 - `/types` - TypeScript interfaces + definitions  
 - `/scripts` - Bootstrap and dev scripts  
 - `/docs` - Swarm structure, architecture, & our artwork/official whitepaper
+
+---
+
+## Common Commands
+
+```bash
+# List available agents
+npm run agents:list
+
+# Run the example dev agent
+npm run agent:dev
+
+# Generate a new agent scaffold
+npm run agent:generate MyAgent
+
+# Validate an agent implementation
+npm run agent:validate
+```
 
 ---
 
