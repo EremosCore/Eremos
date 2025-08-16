@@ -1,8 +1,3 @@
-	![GitHub stars](https://img.shields.io/github/stars/EremosCore/Eremos)
-	![GitHub issues](https://img.shields.io/github/issues/EremosCore/Eremos)
-	![GitHub forks](https://img.shields.io/github/forks/EremosCore/Eremos)
-	![License](https://img.shields.io/github/license/EremosCore/Eremos)
-
 
 Project Contribution – Sample Agent & Documentation Improvements
 
