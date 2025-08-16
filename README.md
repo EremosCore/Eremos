@@ -18,8 +18,28 @@ Designed for devs who want low-noise, early signals embedded into their workflow
 *The first deployed agent in the swarm. Passive. Pattern-sensitive.  
 Modular and extendable by design.*
 
-
 **Agent-001 Coming Soon** [Teaser #1](https://x.com/EremosCore/status/1949154939923833239), [Teaser #2](https://x.com/EremosCore/status/1954856345284567218)
+
+---
+
+<p align="center">
+  <a href="https://github.com/lucadavid075/Eremos/actions" target="_blank"><img alt="CI" src="https://img.shields.io/github/actions/workflow/status/lucadavid075/Eremos/ci.yml?branch=main&label=CI&logo=github" /></a>
+  <a href="https://github.com/lucadavid075/Eremos/Eremos/blob/main/LICENSE" target="_blank"><img alt="License" src="https://img.shields.io/badge/License-MIT-yellow.svg" /></a>
+  <a href="https://x.com/EremosCore" target="_blank"><img alt="Follow on X" src="https://img.shields.io/badge/Follow-@EremosCore-1DA1F2?logo=x" /></a>
+</p>
+
+## Table of Contents
+
+- [Features](#features)
+- [Example Signal](#example-signal)
+- [Signal Confidence](#signal-confidence)
+- [Tech Stack](#tech-stack)
+- [Getting Started](#getting-started)
+- [Key Folders](#key-folders)
+- [Docs](#docs)
+- [Contributing](#contributing)
+- [License](#license)
+- [Links](#links)
 
 ---
 
@@ -33,7 +53,6 @@ Modular and extendable by design.*
 - **Launch Wallet Detection** - Agents can trace freshly funded wallets (e.g. from CEXs), track their contract interactions, and flag high-confidence deploys in real time
 - **Ghost Watcher** - Monitors long-dormant wallets that suddenly become active again. Useful for tracing old dev wallets or rug setups.
 - *+ More to come.*
-
 
 ---
 
@@ -85,15 +104,20 @@ Confidence is computed via agent-side scoring and logged alongside the signal.
 ## Getting Started
 
 ```bash
-git clone https://github.com/EremosCore/Eremos.git
+git clone https://github.com/lucadavid075/Eremos.git
 cd Eremos
 npm install
 ```
 
-Set up your environment:
+Run a quick type check:
 
 ```bash
-cp .env.example .env.local
+npm run typecheck
+```
+
+Start a local dev loop (scaffold script placeholder):
+
+```bash
 npm run dev
 ```
 
@@ -109,11 +133,28 @@ npm run dev
 
 ---
 
+## Docs
+
+- `docs/agents.md` — Agent structure and lifecycle
+- `docs/signals.md` — Signal format and hashing
+- `docs/events.md` — Event parsing
+- `docs/memory.md` — Memory and persistence
+- `docs/metrics.md` — Metrics and counters
+- `docs/architecture.md` — High-level architecture
+- `docs/deployment.md` — Deployment notes
+
+---
+
 ## Contributing
 
 We’re open to contributors.  
 If you are experienced in TypeScript and like agent-based systems, check `example.ts` and build your own observer.
 If you're a designer, artist, or just have ideas that fit the mythos - send us a DM on Twitter. [@EremosCore](https://x.com/EremosCore)
+
+When opening a PR, please:
+- Keep edits focused and documented in the description
+- Run `npm run typecheck` and ensure it passes
+- Use our PR template (pre-filled when you open a PR)
 
 ---
 
