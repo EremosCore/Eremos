@@ -4,7 +4,9 @@
   "description": "Modular agent framework for on-chain activity monitoring.",
   "main": "index.js",
   "scripts": {
-    "dev": "echo 'Running dev mode...'"
+    "dev": "nodemon --exec npx ts-node scripts/dev-agent.ts",
+    "test": "echo 'No test runner configured. Add one (e.g. jest, mocha) to run tests.'",
+    "coverage": "nyc npm test"
   },
   "keywords": [
     "agent",
@@ -14,5 +16,8 @@
     "framework"
   ],
   "license": "MIT",
-  "author": "EremosCore"
+  "author": "EremosCore",
+  "devDependencies": {
+    "nodemon": "^3.1.10"
+  }
 }
