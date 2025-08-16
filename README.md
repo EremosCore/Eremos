@@ -3,16 +3,16 @@
 ![Eremos](docs/banner2.png)
 
 <p align="center">
-  <a href="https://github.com/chefash/Eremos/stargazers">
-    <img src="https://img.shields.io/github/stars/chefash/Eremos?style=for-the-badge" alt="Stars" />
+  <a href="https://github.com/EremosCore/Eremos/stargazers">
+    <img src="https://img.shields.io/github/stars/EremosCore/Eremos?style=for-the-badge" alt="Stars" />
   </a>
-  <a href="https://github.com/chefash/Eremos/issues">
-    <img src="https://img.shields.io/github/issues/chefash/Eremos?style=for-the-badge" alt="Open Issues" />
+  <a href="https://github.com/EremosCore/Eremos/issues">
+    <img src="https://img.shields.io/github/issues/EremosCore/Eremos?style=for-the-badge" alt="Open Issues" />
   </a>
-  <a href="https://github.com/chefash/Eremos/blob/main/LICENSE">
-    <img src="https://img.shields.io/github/license/chefash/Eremos?style=for-the-badge" alt="License" />
+  <a href="https://github.com/EremosCore/Eremos/blob/main/LICENSE">
+    <img src="https://img.shields.io/github/license/EremosCore/Eremos?style=for-the-badge" alt="License" />
   </a>
-  <a href="https://github.com/chefash/Eremos/pulls">
+  <a href="https://github.com/EremosCore/Eremos/pulls">
     <img src="https://img.shields.io/badge/PRs-Welcome-brightgreen?style=for-the-badge" alt="PRs Welcome" />
   </a>
 </p>
@@ -137,8 +137,10 @@ npm run dev
 ## Contributing
 
 We’re open to contributors.  
-If you are experienced in TypeScript and like agent-based systems, check `example.ts` and build your own observer.
+If you are experienced in TypeScript and like agent-based systems, check example.ts and build your own observer.
 If you're a designer, artist, or just have ideas that fit the mythos - send us a DM on Twitter. [@EremosCore](https://x.com/EremosCore)
+
+👉 See our [Contributing Guide](CONTRIBUTING.md) for details.
 
 ---
 
