@@ -1,0 +1,7 @@
+{
+  "extends": "@istanbuljs/nyc-config-typescript",
+  "all": true,
+  "reporter": ["text", "lcov"],
+  "include": ["agents/**/*.ts", "utils/**/*.ts", "types/**/*.ts"],
+  "exclude": ["**/*.test.ts", "scripts/**", "docs/**"]
+}

@@ -15,9 +15,8 @@ Designed for devs who want low-noise, early signals embedded into their workflow
 </p>
 
 **Meet Theron - Agent-000**  
-*The first deployed agent in the swarm. Passive. Pattern-sensitive.  
-Modular and extendable by design.*
-
+_The first deployed agent in the swarm. Passive. Pattern-sensitive.  
+Modular and extendable by design._
 
 **Agent-001 Coming Soon** [Teaser #1](https://x.com/EremosCore/status/1949154939923833239), [Teaser #2](https://x.com/EremosCore/status/1954856345284567218)
 
@@ -25,15 +24,14 @@ Modular and extendable by design.*
 
 ## Features
 
-- **Modular Agents** - Scoped logic for detecting wallet activity, contract spawns, and anomalies  
-- **Signal Emission** - Structured signals for logging, alerting, or downstream use  
-- **Swarm Design** - Each agent operates independently with shared utilities  
-- **Extensible Core** - Plug in watchers, inference layers, or custom triggers  
+- **Modular Agents** - Scoped logic for detecting wallet activity, contract spawns, and anomalies
+- **Signal Emission** - Structured signals for logging, alerting, or downstream use
+- **Swarm Design** - Each agent operates independently with shared utilities
+- **Extensible Core** - Plug in watchers, inference layers, or custom triggers
 - **Minimal Output** - Log only what matters
 - **Launch Wallet Detection** - Agents can trace freshly funded wallets (e.g. from CEXs), track their contract interactions, and flag high-confidence deploys in real time
 - **Ghost Watcher** - Monitors long-dormant wallets that suddenly become active again. Useful for tracing old dev wallets or rug setups.
-- *+ More to come.*
-
+- _+ More to come._
 
 ---
 
@@ -64,6 +62,7 @@ An example signal emitted by an agent detecting a live token deployment:
 ## Signal Confidence
 
 Each emitted signal includes a `confidence` score (0-1) based on behavioral heuristics:
+
 - CEX-origin funding (e.g. Kraken, Coinbase)
 - Time between funding → deploy
 - Wallet linkage density (bundled activity)
@@ -101,10 +100,10 @@ npm run dev
 
 ## Key Folders
 
-- `/agents` - Agent templates + logic  
-- `/utils` - Shared signal/logging utilities  
-- `/types` - TypeScript interfaces + definitions  
-- `/scripts` - Bootstrap and dev scripts  
+- `/agents` - Agent templates + logic
+- `/utils` - Shared signal/logging utilities
+- `/types` - TypeScript interfaces + definitions
+- `/scripts` - Bootstrap and dev scripts
 - `/docs` - Swarm structure, architecture, & our artwork/official whitepaper
 
 ---
@@ -130,3 +129,19 @@ MIT © Eremos LLC
 - **Whitepaper:** [v1.0 PDF](docs/whitepaper.pdf)
 
 _Maintained by the Eremos Core team 💛._
+
+---
+
+## Code Coverage
+
+Code coverage is tracked using [nyc](https://github.com/istanbuljs/nyc).
+
+To run coverage:
+
+```bash
+npm run coverage
+```
+
+Coverage reports are output in the terminal and as an lcov file for badge integration.
+
+---
