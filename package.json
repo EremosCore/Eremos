@@ -4,15 +4,42 @@
   "description": "Modular agent framework for on-chain activity monitoring.",
   "main": "index.js",
   "scripts": {
-    "dev": "echo 'Running dev mode...'"
+    "dev": "echo 'Running dev mode...'",
+    "build": "tsc",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "test:coverage": "jest --coverage",
+    "lint": "eslint . --ext .ts,.js --ignore-path .gitignore",
+    "lint:fix": "eslint . --ext .ts,.js --ignore-path .gitignore --fix",
+    "prettier": "prettier --write \"**/*.{ts,js,json,md,yml,yaml}\"",
+    "prettier:check": "prettier --check \"**/*.{ts,js,json,md,yml,yaml}\"",
+    "type-check": "tsc --noEmit",
+    "validate-agent": "npx ts-node scripts/validate-agent.ts",
+    "generate-agent": "npx ts-node scripts/generate-agent.ts",
+    "export-agent-memory": "npx ts-node scripts/export-agent-memory.ts",
+    "simulate-cluster": "npx ts-node scripts/simulate-cluster.ts",
+    "stress-test": "npx ts-node scripts/stress-test.ts",
+    "precommit": "npm run lint:fix && npm run prettier && npm run type-check && npm test"
   },
   "keywords": [
     "agent",
     "onchain",
     "modular",
     "blockchain",
-    "framework"
+    "framework",
+    "solana",
+    "autonomous",
+    "swarm",
+    "signals"
   ],
   "license": "MIT",
-  "author": "EremosCore"
+  "author": "EremosCore",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AJibolaOnaneye/Eremos.git"
+  },
+  "bugs": {
+    "url": "https://github.com/AJibolaOnaneye/Eremos/issues"
+  },
+  "homepage": "https://github.com/AJibolaOnaneye/Eremos#readme"
 }
