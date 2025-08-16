@@ -1,0 +1,240 @@
+name: Agent Proposal
+description: Propose a new agent for the Eremos ecosystem
+title: "[AGENT] "
+labels: ["agent", "proposal", "needs-review"]
+assignees: []
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for proposing a new agent! Agents are the core of the Eremos ecosystem. Please provide detailed technical specifications to help us evaluate and integrate your proposal.
+
+  - type: input
+    id: agent-name
+    attributes:
+      label: Agent Name
+      description: What is the name of your proposed agent?
+      placeholder: e.g., "DeFiMonitor", "NFTTracker", "GovernanceWatcher"
+    validations:
+      required: true
+
+  - type: textarea
+    id: purpose
+    attributes:
+      label: Agent Purpose
+      description: What is the primary purpose and functionality of this agent?
+      placeholder: |
+        Describe what this agent does, what blockchain activities it monitors,
+        and what value it provides to users.
+    validations:
+      required: true
+
+  - type: dropdown
+    id: category
+    attributes:
+      label: Agent Category
+      description: Which category best describes this agent?
+      options:
+        - DeFi Monitoring
+        - NFT Tracking
+        - Governance
+        - Security & Risk
+        - Wallet Analysis
+        - Contract Deployment
+        - Market Analysis
+        - Cross-chain
+        - Custom/Other
+    validations:
+      required: true
+
+  - type: textarea
+    id: signals
+    attributes:
+      label: Signal Types
+      description: What types of signals will this agent emit?
+      placeholder: |
+        List the specific signal types this agent will generate:
+        - Signal name 1: Description of when it's emitted
+        - Signal name 2: Description of when it's emitted
+        - etc.
+    validations:
+      required: true
+
+  - type: textarea
+    id: data-sources
+    attributes:
+      label: Data Sources
+      description: What blockchain data sources will this agent monitor?
+      placeholder: |
+        - Transaction pools
+        - Smart contract events
+        - Wallet activities
+        - Token transfers
+        - DEX activities
+        - etc.
+    validations:
+      required: true
+
+  - type: textarea
+    id: technical-specs
+    attributes:
+      label: Technical Specifications
+      description: Provide detailed technical specifications for the agent
+      placeholder: |
+        ## Configuration Parameters
+        - Parameter 1: [type] - Description
+        - Parameter 2: [type] - Description
+        
+        ## Memory Requirements
+        - What data needs to be stored/tracked
+        - Memory cleanup strategies
+        
+        ## Performance Considerations
+        - Expected signal frequency
+        - Resource usage estimates
+        - Scalability considerations
+    validations:
+      required: true
+
+  - type: textarea
+    id: integration-points
+    attributes:
+      label: Integration Points
+      description: How will this agent integrate with existing Eremos components?
+      placeholder: |
+        - Dependencies on other agents
+        - Shared signal types
+        - Integration with existing utilities
+        - Required modifications to core system
+    validations:
+      required: true
+
+  - type: textarea
+    id: use-cases
+    attributes:
+      label: Use Cases
+      description: Provide specific use cases and scenarios where this agent would be valuable
+      placeholder: |
+        1. Use Case 1: [Detailed scenario]
+           - User: [Who would use this]
+           - Trigger: [What causes the signal]
+           - Action: [What happens as a result]
+        
+        2. Use Case 2: [Detailed scenario]
+           - User: [Who would use this]
+           - Trigger: [What causes the signal]
+           - Action: [What happens as a result]
+    validations:
+      required: true
+
+  - type: textarea
+    id: implementation-approach
+    attributes:
+      label: Implementation Approach
+      description: Outline your proposed implementation approach
+      placeholder: |
+        ## Architecture
+        - High-level design approach
+        - Key components and their responsibilities
+        
+        ## Development Plan
+        - Phase 1: [Core functionality]
+        - Phase 2: [Enhanced features]
+        - Phase 3: [Optimization and polish]
+        
+        ## Testing Strategy
+        - Unit testing approach
+        - Integration testing requirements
+        - Mock data requirements
+    validations:
+      required: true
+
+  - type: textarea
+    id: code-sample
+    attributes:
+      label: Code Sample (Optional)
+      description: Provide a basic code sample or pseudocode if available
+      placeholder: |
+        // Basic agent structure or key logic
+        class YourAgent extends BaseAgent {
+          // Implementation sample
+        }
+      render: typescript
+
+  - type: dropdown
+    id: complexity
+    attributes:
+      label: Implementation Complexity
+      description: How complex do you estimate this agent to be?
+      options:
+        - Simple - Basic monitoring with straightforward signals
+        - Moderate - Multiple data sources or complex logic
+        - Complex - Advanced algorithms or extensive integrations
+        - Very Complex - Requires significant architectural changes
+    validations:
+      required: true
+
+  - type: dropdown
+    id: timeline
+    attributes:
+      label: Proposed Timeline
+      description: What timeline do you envision for implementation?
+      options:
+        - 1-2 weeks - Simple implementation
+        - 3-4 weeks - Moderate complexity
+        - 1-2 months - Complex implementation
+        - 3+ months - Very complex or phased approach
+    validations:
+      required: true
+
+  - type: textarea
+    id: testing-requirements
+    attributes:
+      label: Testing Requirements
+      description: What specific testing will be needed for this agent?
+      placeholder: |
+        - Mock data requirements
+        - Test scenarios to cover
+        - Integration testing needs
+        - Performance testing considerations
+
+  - type: textarea
+    id: documentation-needs
+    attributes:
+      label: Documentation Needs
+      description: What documentation will need to be created or updated?
+      placeholder: |
+        - Agent-specific documentation
+        - Configuration examples
+        - Integration guides
+        - API documentation updates
+
+  - type: checkboxes
+    id: contribution
+    attributes:
+      label: Contribution Intent
+      description: How do you plan to contribute to this agent's development?
+      options:
+        - label: I plan to implement this agent myself
+        - label: I can provide technical guidance and review
+        - label: I can help with testing and validation
+        - label: I can contribute to documentation
+        - label: This is a suggestion for others to implement
+
+  - type: checkboxes
+    id: checklist
+    attributes:
+      label: Pre-submission Checklist
+      description: Please confirm the following before submitting
+      options:
+        - label: I have searched existing agents and issues to ensure this is not a duplicate
+          required: true
+        - label: I have provided detailed technical specifications
+          required: true
+        - label: I have considered integration with existing Eremos components
+          required: true
+        - label: I have outlined specific use cases and value proposition
+          required: true
+        - label: I understand the Eremos agent architecture and patterns
+          required: true

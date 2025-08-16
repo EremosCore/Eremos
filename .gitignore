@@ -2,8 +2,29 @@ node_modules
 dist
 .env
 
+# Kiro IDE configuration
+.kiro
+
 # macOS system file
 .DS_Store
 
 # logs
 *.log
+
+# Coverage reports
+coverage/
+.nyc_output/
+
+# Test results
+test-results.json
+
+# Build artifacts
+*.tsbuildinfo
+
+# IDE files
+.vscode/
+.idea/
+
+# Temporary files
+*.tmp
+*.temp

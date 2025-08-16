@@ -4,7 +4,30 @@
   "description": "Modular agent framework for on-chain activity monitoring.",
   "main": "index.js",
   "scripts": {
-    "dev": "echo 'Running dev mode...'"
+    "dev": "tsx watch scripts/dev-agent.ts",
+    "build": "tsc",
+    "build:watch": "tsc --watch",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:coverage": "vitest run --coverage",
+    "test:ui": "vitest --ui",
+    "lint": "eslint . --ext .ts,.js --fix",
+    "lint:check": "eslint . --ext .ts,.js",
+    "format": "prettier --write \"**/*.{ts,js,json,md}\"",
+    "format:check": "prettier --check \"**/*.{ts,js,json,md}\"",
+    "type-check": "tsc --noEmit",
+    "validate": "npm run type-check && npm run lint:check && npm run format:check && npm run test",
+    "generate:agent": "tsx scripts/interactive-agent-generator.ts",
+    "validate:agent": "tsx scripts/validate-agent.ts",
+    "validate:all-agents": "tsx scripts/validate-agent.ts",
+    "stress-test": "tsx scripts/stress-test.ts",
+    "simulate": "tsx scripts/simulate-cluster.ts",
+    "export:memory": "tsx scripts/export-agent-memory.ts",
+    "agent:list": "tsx scripts/agent-list.ts",
+    "setup": "npm install && npm run build",
+    "clean": "rimraf dist coverage .nyc_output",
+    "precommit": "lint-staged",
+    "prepare": "husky install || true"
   },
   "keywords": [
     "agent",
@@ -14,5 +37,35 @@
     "framework"
   ],
   "license": "MIT",
-  "author": "EremosCore"
+  "author": "EremosCore",
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "@typescript-eslint/eslint-plugin": "^6.0.0",
+    "@typescript-eslint/parser": "^6.0.0",
+    "@vitest/coverage-v8": "^1.0.0",
+    "@vitest/ui": "^1.0.0",
+    "eslint": "^8.0.0",
+    "eslint-config-prettier": "^9.0.0",
+    "eslint-plugin-prettier": "^5.0.0",
+    "husky": "^8.0.0",
+    "lint-staged": "^15.0.0",
+    "prettier": "^3.0.0",
+    "rimraf": "^5.0.0",
+    "tsx": "^4.0.0",
+    "typescript": "^5.0.0",
+    "vitest": "^1.0.0"
+  },
+  "lint-staged": {
+    "*.{ts,js}": [
+      "eslint --fix",
+      "prettier --write"
+    ],
+    "*.{json,md}": [
+      "prettier --write"
+    ]
+  },
+  "engines": {
+    "node": ">=18.0.0",
+    "npm": ">=8.0.0"
+  }
 }

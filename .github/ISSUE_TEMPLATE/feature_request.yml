@@ -1,0 +1,145 @@
+name: Feature Request
+description: Suggest a new feature or enhancement for Eremos
+title: "[FEATURE] "
+labels: ["enhancement", "needs-review"]
+assignees: []
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for suggesting a new feature! Please provide detailed information to help us understand and evaluate your request.
+
+  - type: textarea
+    id: summary
+    attributes:
+      label: Feature Summary
+      description: A clear and concise summary of the feature you'd like to see added.
+      placeholder: Briefly describe the feature...
+    validations:
+      required: true
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem Statement
+      description: What problem does this feature solve? What use case does it address?
+      placeholder: |
+        As a [user type], I want [feature] so that [benefit/outcome].
+        
+        Current situation: [describe current limitations]
+        Desired outcome: [describe what you want to achieve]
+    validations:
+      required: true
+
+  - type: textarea
+    id: solution
+    attributes:
+      label: Proposed Solution
+      description: Describe your preferred solution or approach
+      placeholder: |
+        How would you like this feature to work?
+        What would the user experience look like?
+        Are there any specific technical approaches you have in mind?
+    validations:
+      required: true
+
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternative Solutions
+      description: Describe any alternative solutions or features you've considered
+      placeholder: |
+        Have you considered other approaches?
+        Are there existing tools or workarounds?
+        What are the pros/cons of different approaches?
+
+  - type: dropdown
+    id: category
+    attributes:
+      label: Feature Category
+      description: Which area of Eremos does this feature relate to?
+      options:
+        - Agent Development
+        - Signal Processing
+        - Documentation
+        - Developer Tools
+        - Testing & Debugging
+        - Performance
+        - Security
+        - User Interface
+        - API/Integration
+        - Other
+    validations:
+      required: true
+
+  - type: dropdown
+    id: priority
+    attributes:
+      label: Priority Level
+      description: How important is this feature to you?
+      options:
+        - Low - Nice to have
+        - Medium - Would improve workflow
+        - High - Blocking current work
+        - Critical - Essential for adoption
+    validations:
+      required: true
+
+  - type: textarea
+    id: acceptance-criteria
+    attributes:
+      label: Acceptance Criteria
+      description: What specific criteria must be met for this feature to be considered complete?
+      placeholder: |
+        - [ ] Criterion 1: [specific, measurable outcome]
+        - [ ] Criterion 2: [specific, measurable outcome]
+        - [ ] Criterion 3: [specific, measurable outcome]
+    validations:
+      required: true
+
+  - type: textarea
+    id: technical-considerations
+    attributes:
+      label: Technical Considerations
+      description: Any technical details, constraints, or considerations for implementation
+      placeholder: |
+        - Performance requirements
+        - Compatibility considerations
+        - Security implications
+        - Integration points
+        - Breaking changes
+
+  - type: textarea
+    id: examples
+    attributes:
+      label: Examples or Mockups
+      description: Provide examples, code snippets, or mockups if applicable
+      placeholder: |
+        Code examples, configuration samples, or descriptions of how the feature would be used
+      render: typescript
+
+  - type: textarea
+    id: additional
+    attributes:
+      label: Additional Context
+      description: Any other context, screenshots, or references that would help understand this request
+      placeholder: |
+        Links to similar features in other projects
+        Screenshots or mockups
+        Related issues or discussions
+
+  - type: checkboxes
+    id: checklist
+    attributes:
+      label: Pre-submission Checklist
+      description: Please confirm the following before submitting
+      options:
+        - label: I have searched existing issues to ensure this is not a duplicate
+          required: true
+        - label: I have provided a clear problem statement and use case
+          required: true
+        - label: I have included specific acceptance criteria
+          required: true
+        - label: I have considered the impact and scope of this feature
+          required: true

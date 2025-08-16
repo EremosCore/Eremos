@@ -1,0 +1,26 @@
+#!/usr/bin/env sh
+. "$(dirname -- "$0")/_/husky.sh"
+
+# Validate commit message format
+# Expected format: type(scope): description
+# Examples: feat(agents): add new DeFi monitoring agent
+#           fix(validation): resolve agent loading issue
+#           docs(readme): update installation instructions
+
+commit_regex='^(feat|fix|docs|style|refactor|test|chore|perf|ci|build)(\(.+\))?: .{1,50}'
+
+if ! grep -qE "$commit_regex" "$1"; then
+    echo "❌ Invalid commit message format!"
+    echo ""
+    echo "Expected format: type(scope): description"
+    echo ""
+    echo "Types: feat, fix, docs, style, refactor, test, chore, perf, ci, build"
+    echo "Scope: agents, validation, scripts, utils, etc."
+    echo ""
+    echo "Examples:"
+    echo "  feat(agents): add new DeFi monitoring agent"
+    echo "  fix(validation): resolve agent loading issue"
+    echo "  docs(readme): update installation instructions"
+    echo ""
+    exit 1
+fi

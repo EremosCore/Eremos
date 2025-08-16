@@ -1,43 +1,101 @@
+<div align="center">
+
 # Eremos
 
 ![Eremos](docs/banner2.png)
 
 **Autonomous swarm agents for early on-chain signal detection**
 
-Eremos is a lightweight framework for deploying modular agents that monitor blockchain activity - tracking wallet clusters, mint patterns, and contract anomalies.
-Designed for devs who want low-noise, early signals embedded into their workflows.
+[![Version](https://img.shields.io/badge/version-0.1.0-blue.svg?style=flat-square)](https://github.com/EremosCore/Eremos/releases)
+[![License](https://img.shields.io/badge/license-MIT-green.svg?style=flat-square)](LICENSE)
+[![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=flat-square&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
+[![Node.js](https://img.shields.io/badge/Node.js-43853D?style=flat-square&logo=node.js&logoColor=white)](https://nodejs.org/)
+
+[![GitHub stars](https://img.shields.io/github/stars/EremosCore/Eremos?style=flat-square&logo=github)](https://github.com/EremosCore/Eremos/stargazers)
+[![GitHub forks](https://img.shields.io/github/forks/EremosCore/Eremos?style=flat-square&logo=github)](https://github.com/EremosCore/Eremos/network)
+[![GitHub issues](https://img.shields.io/github/issues/EremosCore/Eremos?style=flat-square&logo=github)](https://github.com/EremosCore/Eremos/issues)
+[![Twitter Follow](https://img.shields.io/twitter/follow/EremosCore?style=flat-square&logo=twitter)](https://twitter.com/EremosCore)
+
+*A lightweight framework for deploying modular agents that monitor blockchain activity - tracking wallet clusters, mint patterns, and contract anomalies. Designed for developers who want low-noise, early signals embedded into their workflows.*
+
+</div>
 
 ---
 
-<p align="center">
+## 📋 Table of Contents
+
+- [🚀 Quick Start](#-quick-start)
+- [✨ Features](#-features)
+- [🔍 How It Works](#-how-it-works)
+- [📊 Example Signal](#-example-signal)
+- [🎯 Signal Confidence](#-signal-confidence)
+- [🛠️ Tech Stack](#️-tech-stack)
+- [📁 Project Structure](#-project-structure)
+- [🤝 Contributing](#-contributing)
+- [📄 License](#-license)
+- [🔗 Links](#-links)
+
+## 🚀 Quick Start
+
+Get up and running with Eremos in minutes:
+
+```bash
+# Clone the repository
+git clone https://github.com/EremosCore/Eremos.git
+cd Eremos
+
+# Install dependencies
+npm install
+
+# Set up your environment
+cp .env.example .env.local
+
+# Start development mode
+npm run dev
+```
+
+> **💡 New to Eremos?** Check out our [Agent Development Guide](docs/agents.md) to learn how to create your first agent.
+
+---
+
+## ✨ Features
+
+### 🤖 Agent System
+- **Modular Architecture** - Scoped logic for detecting wallet activity, contract spawns, and anomalies
+- **Swarm Design** - Each agent operates independently with shared utilities
+- **Extensible Core** - Plug in watchers, inference layers, or custom triggers
+
+### 🎯 Detection Capabilities
+- **Launch Wallet Detection** - Trace freshly funded wallets from CEXs and track contract interactions
+- **Ghost Watcher** - Monitor long-dormant wallets that suddenly become active
+- **Pattern Recognition** - Identify wallet clusters, mint patterns, and behavioral anomalies
+
+### 📡 Signal Processing
+- **Structured Signals** - Clean, actionable data for logging, alerting, or downstream use
+- **Confidence Scoring** - AI-powered confidence metrics for signal reliability
+- **Minimal Noise** - Log only what matters with intelligent filtering
+
+### 🔧 Developer Experience
+- **TypeScript First** - Full type safety across agents, utilities, and infrastructure
+- **Hot Reloading** - Rapid development with instant feedback
+- **Comprehensive Testing** - Built-in testing utilities for agent validation
+
+---
+
+## 🔍 How It Works
+
+<div align="center">
   <img src="docs/therontphd2.png" alt="Agent Theron" width="155"/><br/>
-  <em>Theron - Agent (000)</em>
-</p>
+  <em>Meet Theron - Agent 000</em>
+</div>
 
-**Meet Theron - Agent-000**  
-*The first deployed agent in the swarm. Passive. Pattern-sensitive.  
-Modular and extendable by design.*
+**Theron** is the first deployed agent in the swarm - passive, pattern-sensitive, and modular by design. Each agent in the Eremos ecosystem operates independently while sharing core utilities for maximum efficiency.
 
-
-**Agent-001 Coming Soon** [Teaser #1](https://x.com/EremosCore/status/1949154939923833239), [Teaser #2](https://x.com/EremosCore/status/1954856345284567218)
+> **🔥 Coming Soon:** Agent-001 is in development! Follow our progress: [Teaser #1](https://x.com/EremosCore/status/1949154939923833239) | [Teaser #2](https://x.com/EremosCore/status/1954856345284567218)
 
 ---
 
-## Features
-
-- **Modular Agents** - Scoped logic for detecting wallet activity, contract spawns, and anomalies  
-- **Signal Emission** - Structured signals for logging, alerting, or downstream use  
-- **Swarm Design** - Each agent operates independently with shared utilities  
-- **Extensible Core** - Plug in watchers, inference layers, or custom triggers  
-- **Minimal Output** - Log only what matters
-- **Launch Wallet Detection** - Agents can trace freshly funded wallets (e.g. from CEXs), track their contract interactions, and flag high-confidence deploys in real time
-- **Ghost Watcher** - Monitors long-dormant wallets that suddenly become active again. Useful for tracing old dev wallets or rug setups.
-- *+ More to come.*
-
-
----
-
-## Example Signal
+## 📊 Example Signal
 
 An example signal emitted by an agent detecting a live token deployment:
 
@@ -61,7 +119,7 @@ An example signal emitted by an agent detecting a live token deployment:
 
 ---
 
-## Signal Confidence
+## 🎯 Signal Confidence
 
 Each emitted signal includes a `confidence` score (0-1) based on behavioral heuristics:
 - CEX-origin funding (e.g. Kraken, Coinbase)
@@ -73,60 +131,90 @@ Confidence is computed via agent-side scoring and logged alongside the signal.
 
 ---
 
-## Tech Stack
+## 🛠️ Tech Stack
 
-- **Frontend:** Next.js, Tailwind CSS
-- **Backend:** Node.js (TypeScript-based agent runner)
-- **Language:** TypeScript (typed logic across agents, utils, and infra)
-- **Chain Layer:** RPC watchers, mempool filters, native triggers
+| Component | Technology | Purpose |
+|-----------|------------|---------|
+| **Core Runtime** | Node.js + TypeScript | Agent execution and orchestration |
+| **Frontend** | Next.js + Tailwind CSS | Dashboard and monitoring interface |
+| **Chain Integration** | RPC watchers, mempool filters | Real-time blockchain monitoring |
+| **Signal Processing** | Custom TypeScript framework | Structured data emission and filtering |
+| **Testing** | Jest + Custom utilities | Agent validation and behavior testing |
 
 ---
 
-## Getting Started
+## 📁 Project Structure
 
-```bash
-git clone https://github.com/EremosCore/Eremos.git
-cd Eremos
-npm install
+```
+eremos/
+├── 📁 agents/          # Agent implementations and templates
+│   ├── example.ts      # Sample agent for learning
+│   ├── theron.ts       # Agent-000: Pattern detection
+│   └── observer.ts     # Launch detection specialist
+├── 📁 utils/           # Shared utilities and frameworks
+│   ├── signal.ts       # Signal emission and processing
+│   ├── logger.ts       # Structured logging system
+│   └── metrics.ts      # Performance and health metrics
+├── 📁 types/           # TypeScript definitions
+│   ├── agent.ts        # Agent interfaces and contracts
+│   ├── signal.ts       # Signal type definitions
+│   └── event.ts        # Event system types
+├── 📁 scripts/         # Development and deployment tools
+│   ├── generate-agent.ts    # Agent scaffolding utility
+│   └── validate-agent.ts    # Agent compliance checker
+├── 📁 tests/           # Comprehensive test suite
+└── 📁 docs/            # Documentation and resources
+    ├── agents.md       # Agent development guide
+    ├── architecture.md # System architecture overview
+    └── whitepaper.pdf  # Official project whitepaper
 ```
 
-Set up your environment:
-
-```bash
-cp .env.example .env.local
-npm run dev
-```
+> **📖 Documentation:** Explore our comprehensive guides in the [`/docs`](docs/) directory
 
 ---
 
-## Key Folders
+## 🤝 Contributing
 
-- `/agents` - Agent templates + logic  
-- `/utils` - Shared signal/logging utilities  
-- `/types` - TypeScript interfaces + definitions  
-- `/scripts` - Bootstrap and dev scripts  
-- `/docs` - Swarm structure, architecture, & our artwork/official whitepaper
+We welcome contributions from developers, designers, and blockchain enthusiasts! Here's how you can get involved:
+
+### 🧑‍💻 For Developers
+- **Start with [`example.ts`](agents/example.ts)** - Learn the agent pattern
+- **Read our [Contributing Guide](docs/contributing.md)** - Development workflow and standards
+- **Check [open issues](https://github.com/EremosCore/Eremos/issues)** - Find tasks that match your skills
+
+### 🎨 For Designers & Artists
+- **Visual Identity** - Help evolve the Eremos aesthetic
+- **Documentation Design** - Improve our guides and diagrams
+- **Agent Personas** - Design characters for new agents
+
+### 💡 For Everyone
+- **Feature Ideas** - Share your vision for new agent capabilities
+- **Bug Reports** - Help us improve reliability and performance
+- **Community Building** - Spread the word about Eremos
+
+> **Get Started:** Fork the repo, make your changes, and submit a PR. We review all contributions promptly!
 
 ---
 
-## Contributing
+## 📄 License
 
-We’re open to contributors.  
-If you are experienced in TypeScript and like agent-based systems, check `example.ts` and build your own observer.
-If you're a designer, artist, or just have ideas that fit the mythos - send us a DM on Twitter. [@EremosCore](https://x.com/EremosCore)
+MIT © [Eremos LLC](https://www.eremos.io/)
 
 ---
 
-## License
+## 🔗 Links
 
-MIT © Eremos LLC
+<div align="center">
+
+[![Website](https://img.shields.io/badge/Website-eremos.io-blue?style=flat-square&logo=globe)](https://www.eremos.io/)
+[![Twitter](https://img.shields.io/badge/Twitter-@EremosCore-1DA1F2?style=flat-square&logo=twitter)](https://x.com/EremosCore)
+[![Whitepaper](https://img.shields.io/badge/Whitepaper-v1.0-red?style=flat-square&logo=adobe-acrobat-reader)](docs/whitepaper.pdf)
+[![Documentation](https://img.shields.io/badge/Docs-Architecture-green?style=flat-square&logo=gitbook)](docs/)
+
+</div>
 
 ---
 
-## Links
-
-- **Twitter/X:** [@EremosCore](https://x.com/EremosCore)
-- **Website:** [Eremos.io](https://www.eremos.io/)
-- **Whitepaper:** [v1.0 PDF](docs/whitepaper.pdf)
-
-_Maintained by the Eremos Core team 💛._
+<div align="center">
+  <sub>Built with ❤️ by the <a href="https://www.eremos.io/">Eremos Core</a> team</sub>
+</div>
