@@ -23,25 +23,61 @@ Modular and extendable by design.*
 
 ---
 
-## Features
+## 🚀 Quick Start
 
-- **Modular Agents** - Scoped logic for detecting wallet activity, contract spawns, and anomalies  
-- **Signal Emission** - Structured signals for logging, alerting, or downstream use  
-- **Swarm Design** - Each agent operates independently with shared utilities  
-- **Extensible Core** - Plug in watchers, inference layers, or custom triggers  
-- **Minimal Output** - Log only what matters
-- **Launch Wallet Detection** - Agents can trace freshly funded wallets (e.g. from CEXs), track their contract interactions, and flag high-confidence deploys in real time
-- **Ghost Watcher** - Monitors long-dormant wallets that suddenly become active again. Useful for tracing old dev wallets or rug setups.
-- *+ More to come.*
+### Prerequisites
 
+- Node.js 18+ and npm 8+
+- TypeScript knowledge recommended
+
+### Installation
+
+```bash
+# Clone the repository
+git clone https://github.com/EremosCore/Eremos.git
+cd Eremos
+
+# Install dependencies
+npm install
+
+# Set up your environment
+cp .env.example .env.local
+
+# Start development
+npm run dev
+```
+
+### Available Scripts
+
+```bash
+npm run dev          # Run a development agent
+npm run build        # Build the project
+npm run test         # Run test suite
+npm run lint         # Lint the codebase
+npm run agent:list   # List all available agents
+npm run simulate     # Run agent simulation
+```
 
 ---
 
-## Example Signal
+## ✨ Features
+
+- **🤖 Modular Agents** - Scoped logic for detecting wallet activity, contract spawns, and anomalies  
+- **📡 Signal Emission** - Structured signals for logging, alerting, or downstream use  
+- **🐝 Swarm Design** - Each agent operates independently with shared utilities  
+- **🔧 Extensible Core** - Plug in watchers, inference layers, or custom triggers  
+- **📊 Minimal Output** - Log only what matters
+- **💰 Launch Wallet Detection** - Agents can trace freshly funded wallets (e.g. from CEXs), track their contract interactions, and flag high-confidence deploys in real time
+- **👻 Ghost Watcher** - Monitors long-dormant wallets that suddenly become active again. Useful for tracing old dev wallets or rug setups.
+- *+ More to come.*
+
+---
+
+## 📊 Example Signal
 
 An example signal emitted by an agent detecting a live token deployment:
 
-```ts
+```typescript
 [agent-observer] → fresh funding detected from kraken (wallet: 6Yxk...P2M8) at 04:41:12Z
 [agent-observer] → contract probing detected within 4s (pump.fun interaction traced)
 [agent-observer] → token created at 04:41:17Z (tx: 5gW...pump)
@@ -61,7 +97,7 @@ An example signal emitted by an agent detecting a live token deployment:
 
 ---
 
-## Signal Confidence
+## 🎯 Signal Confidence
 
 Each emitted signal includes a `confidence` score (0-1) based on behavioral heuristics:
 - CEX-origin funding (e.g. Kraken, Coinbase)
@@ -73,7 +109,7 @@ Confidence is computed via agent-side scoring and logged alongside the signal.
 
 ---
 
-## Tech Stack
+## 🛠 Tech Stack
 
 - **Frontend:** Next.js, Tailwind CSS
 - **Backend:** Node.js (TypeScript-based agent runner)
@@ -82,51 +118,62 @@ Confidence is computed via agent-side scoring and logged alongside the signal.
 
 ---
 
-## Getting Started
+## 📁 Project Structure
 
-```bash
-git clone https://github.com/EremosCore/Eremos.git
-cd Eremos
-npm install
+```
+Eremos/
+├── agents/          # Agent templates + logic
+├── utils/           # Shared signal/logging utilities
+├── types/           # TypeScript interfaces + definitions
+├── scripts/         # Bootstrap and dev scripts
+├── tests/           # Test suite
+├── docs/            # Documentation & whitepaper
+├── package.json     # Project configuration
+├── tsconfig.json    # TypeScript configuration
+└── README.md        # This file
 ```
 
-Set up your environment:
+### Key Folders
 
-```bash
-cp .env.example .env.local
-npm run dev
-```
-
----
-
-## Key Folders
-
-- `/agents` - Agent templates + logic  
-- `/utils` - Shared signal/logging utilities  
-- `/types` - TypeScript interfaces + definitions  
-- `/scripts` - Bootstrap and dev scripts  
-- `/docs` - Swarm structure, architecture, & our artwork/official whitepaper
+- **`/agents`** - Agent templates + logic  
+- **`/utils`** - Shared signal/logging utilities  
+- **`/types`** - TypeScript interfaces + definitions  
+- **`/scripts`** - Bootstrap and dev scripts  
+- **`/docs`** - Swarm structure, architecture, & our artwork/official whitepaper
 
 ---
 
-## Contributing
+## 🤝 Contributing
 
-We’re open to contributors.  
-If you are experienced in TypeScript and like agent-based systems, check `example.ts` and build your own observer.
-If you're a designer, artist, or just have ideas that fit the mythos - send us a DM on Twitter. [@EremosCore](https://x.com/EremosCore)
+We're open to contributors!
+
+- If you are experienced in TypeScript and like agent-based systems, check `agents/example.ts` and build your own observer
+- If you're a designer, artist, or just have ideas that fit the mythos - send us a DM on Twitter [@EremosCore](https://x.com/EremosCore)
+
+### Development Workflow
+
+1. Fork the repository
+2. Create a feature branch: `git checkout -b feature/my-new-agent`
+3. Make your changes and test: `npm test`
+4. Lint your code: `npm run lint`
+5. Submit a pull request
 
 ---
 
-## License
+## 📄 License
 
 MIT © Eremos LLC
 
 ---
 
-## Links
+## 🔗 Links
 
 - **Twitter/X:** [@EremosCore](https://x.com/EremosCore)
 - **Website:** [Eremos.io](https://www.eremos.io/)
 - **Whitepaper:** [v1.0 PDF](docs/whitepaper.pdf)
 
-_Maintained by the Eremos Core team 💛._
+---
+
+*Maintained by the Eremos Core team 💛*
+
+> **Note**: Eremos is a decentralized observer system built for Solana - designed to detect early signals from the edges of on-chain noise. Use it, fork it, fragment it, build your own swarm.
