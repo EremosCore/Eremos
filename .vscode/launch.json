@@ -1,0 +1,44 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Run Dev Agent",
+      "type": "node",
+      "request": "launch",
+      "program": "${workspaceFolder}/scripts/dev-agent.ts",
+      "console": "integratedTerminal",
+      "internalConsoleOptions": "neverOpen",
+      "runtimeArgs": ["-r", "ts-node/register"],
+      "env": {
+        "NODE_ENV": "development"
+      }
+    },
+    {
+      "name": "Validate Agent",
+      "type": "node", 
+      "request": "launch",
+      "program": "${workspaceFolder}/scripts/validate-agent.ts",
+      "console": "integratedTerminal",
+      "internalConsoleOptions": "neverOpen",
+      "runtimeArgs": ["-r", "ts-node/register"],
+      "args": ["${input:agentPath}"]
+    },
+    {
+      "name": "Simulate Cluster",
+      "type": "node",
+      "request": "launch", 
+      "program": "${workspaceFolder}/scripts/simulate-cluster.ts",
+      "console": "integratedTerminal",
+      "internalConsoleOptions": "neverOpen",
+      "runtimeArgs": ["-r", "ts-node/register"]
+    }
+  ],
+  "inputs": [
+    {
+      "id": "agentPath",
+      "description": "Path to agent file",
+      "default": "agents/example.ts",
+      "type": "promptString"
+    }
+  ]
+}

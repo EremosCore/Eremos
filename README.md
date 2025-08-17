@@ -1,11 +1,76 @@
 # Eremos
 
+<div align="center">
+
 ![Eremos](docs/banner2.png)
 
 **Autonomous swarm agents for early on-chain signal detection**
 
+[![MIT License](https://im---
+
+## 📚 Documentation
+
+| Document | Description |
+|----------|-------------|
+| [🏗️ Architecture](docs/architecture.md) | System design and agent patterns |
+| [🤖 Agent Guide](docs/agents.md) | Creating and managing agents |
+| [🔧 Development](docs/development.md) | Development setup and workflows |
+| [🎯 Events](docs/events.md) | Event types and processing |
+| [🔤 Glyphs](docs/glyphs.md) | Agent symbols and meanings |
+| [💾 Memory](docs/memory.md) | Agent memory system |
+| [📊 Metrics](docs/metrics.md) | Performance tracking |
+| [🚀 Runtime](docs/runtime.md) | Runtime coordination |
+| [📡 Signals](docs/signals.md) | Signal types and taxonomy |
+| [⏱️ Throttling](docs/throttle.md) | Rate limiting and cooldowns |
+| [🚀 Deployment](docs/deployment.md) | Production deployment |
+
+---
+
+## 🤝 Contributing
+
+We're open to contributors! Whether you're experienced in TypeScript, passionate about agent-based systems, or have ideas that fit the mythos - we'd love to have you contribute.
+
+**Quick contribution ideas:**
+- 🐛 Fix bugs or improve existing agents
+- 🤖 Create new agents for different detection patterns  
+- 📚 Improve documentation and examples
+- 🔧 Add development tooling and utilities
+- 🎨 Enhance visual design and repo structure
+
+**Get started:**
+1. ⭐ Star and 👀 Watch this repository
+2. 🍴 Fork the repo and create your feature branch
+3. 📖 Read our [Contributing Guide](docs/contributing.md)
+4. 🚀 Submit a pull request with your improvements
+
+**Need ideas?** Check out our [issues](https://github.com/EremosCore/Eremos/issues) or suggest new features!
+
+For design, artwork, or mythos contributions: [@EremosCore](https://x.com/EremosCore)
+
+---.io/badge/License-MIT-green.svg)](https://choosealicense.com/licenses/mit/)
+[![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
+[![Node.js](https://img.shields.io/badge/Node.js-43853D?logo=node.js&logoColor=white)](https://nodejs.org/)
+[![Solana](https://img.shields.io/badge/Solana-9945FF?logo=solana&logoColor=white)](https://solana.com/)
+
+[🌐 Website](https://www.eremos.io/) • [📖 Whitepaper](docs/whitepaper.pdf) • [🐦 Twitter](https://x.com/EremosCore) • [📚 Docs](docs/)
+
+</div>
+
 Eremos is a lightweight framework for deploying modular agents that monitor blockchain activity - tracking wallet clusters, mint patterns, and contract anomalies.
 Designed for devs who want low-noise, early signals embedded into their workflows.
+
+## 📋 Table of Contents
+
+- [Features](#-features)
+- [Example Signal](#-example-signal)
+- [Signal Confidence](#-signal-confidence)
+- [Tech Stack](#-tech-stack)
+- [Quick Start](#-quick-start)
+- [Project Structure](#-project-structure)
+- [Documentation](#-documentation)
+- [Contributing](#-contributing)
+- [License](#-license)
+- [Links](#-links)
 
 ---
 
@@ -82,7 +147,7 @@ Confidence is computed via agent-side scoring and logged alongside the signal.
 
 ---
 
-## Getting Started
+## 🚀 Quick Start
 
 ```bash
 git clone https://github.com/EremosCore/Eremos.git
@@ -90,22 +155,41 @@ cd Eremos
 npm install
 ```
 
-Set up your environment:
+### Development Setup
 
+1. **Copy the environment template:**
 ```bash
 cp .env.example .env.local
+```
+
+2. **Run development mode:**
+```bash
 npm run dev
+```
+
+3. **Test an agent:**
+```bash
+npm run test:agent example
+```
+
+4. **Validate agent config:**
+```bash
+npm run validate agents/example.ts
 ```
 
 ---
 
-## Key Folders
+## 📁 Project Structure
 
-- `/agents` - Agent templates + logic  
-- `/utils` - Shared signal/logging utilities  
-- `/types` - TypeScript interfaces + definitions  
-- `/scripts` - Bootstrap and dev scripts  
-- `/docs` - Swarm structure, architecture, & our artwork/official whitepaper
+```
+Eremos/
+├── agents/          # Agent implementations
+├── types/           # TypeScript definitions  
+├── utils/           # Shared utilities
+├── scripts/         # Development & testing tools
+├── tests/           # Unit tests
+└── docs/            # Documentation & assets
+```
 
 ---
 
