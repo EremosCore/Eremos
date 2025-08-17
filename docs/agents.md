@@ -42,4 +42,9 @@ You can test agents using `/scripts/dev-agent.ts` or create your own mock.
 - Glyph: Σ
 - Watches: wallet_activity
 
+### Maelstrom (Agent-Maelstrom)
+- Role: liquidity_drain_monitor
+- Glyph: ⟲
+- Watches: liquidity_pools
+
 //pending adjustments + adding more agents ^
