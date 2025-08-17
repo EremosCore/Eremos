@@ -1,41 +1,3 @@
-# 🐝 Eremos
-
-![License](https://img.shields.io/badge/license-MIT-blue.svg)
-![Contributions Welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg)
-![Stars](https://img.shields.io/github/stars/EremosCore/Eremos?style=social)
-[![Twitter Follow](https://img.shields.io/twitter/follow/EremosCore?style=social)](https://twitter.com/EremosCore)
-
-> A modular framework for deploying autonomous **swarm agents** that monitor on-chain activity across the Solana ecosystem.  
-> Built as a **public good**, open-source and extendable.
-
----
-
-## 📑 Table of Contents
-1. [Quick Start](#quick-start)
-2. [Overview](#overview)
-3. [Architecture](#architecture)
-4. [Usage](#usage)
-5. [Contributing](#contributing)
-6. [License](#license)
-
----
-
-## ⚡ Quick Start
-
-```bash
-# Clone your fork
-git clone https://github.com/YOUR-USERNAME/Eremos.git
-cd Eremos
-
-# Install dependencies
-npm install
-
-# Copy env file
-cp .env.example .env.local
-
-# Start dev mode
-npm run dev
-
 # Eremos
 
 ![Eremos](docs/banner2.png)
@@ -168,3 +130,4 @@ MIT © Eremos LLC
 - **Whitepaper:** [v1.0 PDF](docs/whitepaper.pdf)
 
 _Maintained by the Eremos Core team 💛._
+
