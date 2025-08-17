@@ -22,7 +22,7 @@ export const Maelstrom: Agent = {
       logSignal({
         agent: "Maelstrom",
         type: "liquidity_drain",
-        glyph: "∇",
+        glyph: "⟲",
         hash,
         timestamp: new Date().toISOString(),
         confidence: 0.92,
