@@ -23,19 +23,20 @@
 ---
 
 ## Quick Start
+```ts
 Clone your fork
 git clone https://github.com/YOUR-USERNAME/Eremos.git
 cd Eremos
 
-## Install dependencies
+Install dependencies
 npm install
 
-## Copy env file
+Copy env file
 cp .env.example .env.local
 
-## Start dev mode
+Start dev mode
 npm run dev
-
+```
 
 ---
 
