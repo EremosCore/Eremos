@@ -1,0 +1,152 @@
+name: New Agent Request
+description: Request a new type of monitoring agent for Eremos
+title: "[AGENT] "
+labels: ["agent-request", "enhancement"]
+assignees:
+  - EremosCore/maintainers
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Request a new monitoring agent for the Eremos framework. This template helps us understand what type of on-chain activity you want to monitor.
+
+  - type: input
+    id: agent-name
+    attributes:
+      label: Agent Name
+      description: What would you call this agent?
+      placeholder: e.g., "Token Launch Monitor", "Whale Activity Tracker"
+    validations:
+      required: true
+
+  - type: textarea
+    id: monitoring-target
+    attributes:
+      label: What to Monitor
+      description: What specific on-chain activity should this agent monitor?
+      placeholder: |
+        - Transaction patterns
+        - Account balances
+        - Program interactions
+        - Token transfers
+        etc.
+    validations:
+      required: true
+
+  - type: textarea
+    id: detection-criteria
+    attributes:
+      label: Detection Criteria
+      description: What conditions should trigger an alert or data capture?
+      placeholder: |
+        - When transaction volume exceeds X SOL
+        - When new tokens are created
+        - When large transfers occur
+        - When specific programs are called
+        etc.
+    validations:
+      required: true
+
+  - type: textarea
+    id: data-output
+    attributes:
+      label: Expected Data Output
+      description: What information should this agent capture and report?
+      placeholder: |
+        {
+          "timestamp": "2024-01-01T00:00:00Z",
+          "transaction_signature": "abc123...",
+          "detected_pattern": "large_transfer",
+          "metadata": {
+            // specific data points
+          }
+        }
+    validations:
+      required: true
+
+  - type: dropdown
+    id: frequency
+    attributes:
+      label: Monitoring Frequency
+      description: How often should this agent check for patterns?
+      options:
+        - "Real-time (every block)"
+        - "High frequency (every few seconds)"
+        - "Medium frequency (every minute)"
+        - "Low frequency (every few minutes)"
+        - "Periodic (hourly/daily)"
+    validations:
+      required: true
+
+  - type: textarea
+    id: use-cases
+    attributes:
+      label: Use Cases
+      description: How would this agent be used? Who would benefit from it?
+      placeholder: |
+        - MEV researchers tracking arbitrage opportunities
+        - DeFi protocols monitoring liquidity
+        - Traders tracking whale movements
+        - Researchers studying market patterns
+    validations:
+      required: true
+
+  - type: textarea
+    id: existing-solutions
+    attributes:
+      label: Existing Solutions
+      description: Are there existing tools that do something similar? How would this be different/better?
+      placeholder: Current tools like X do Y, but they lack Z...
+    validations:
+      required: false
+
+  - type: dropdown
+    id: complexity
+    attributes:
+      label: Implementation Complexity
+      description: How complex do you think this agent would be to implement?
+      options:
+        - "Simple - Basic transaction filtering"
+        - "Medium - Some data analysis required"
+        - "Complex - Advanced pattern recognition"
+        - "Very Complex - Machine learning or heavy computation"
+        - "Unknown"
+    validations:
+      required: true
+
+  - type: textarea
+    id: technical-considerations
+    attributes:
+      label: Technical Considerations
+      description: Any specific technical requirements or challenges?
+      placeholder: |
+        - Needs access to historical data
+        - Requires specific RPC methods
+        - High computational requirements
+        - Integration with external APIs
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: contribution
+    attributes:
+      label: Contribution Interest
+      options:
+        - label: I'm willing to help implement this agent
+          required: false
+        - label: I can provide test data or scenarios
+          required: false
+        - label: I can help with documentation
+          required: false
+        - label: I would be an active user of this agent
+          required: false
+
+  - type: textarea
+    id: additional
+    attributes:
+      label: Additional Context
+      description: Any other relevant information about this agent request
+      placeholder: Links to research, similar projects, or other context...
+    validations:
+      required: false
