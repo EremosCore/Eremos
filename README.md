@@ -11,7 +11,7 @@
 
 ---
 
-## 🚀 Overview
+## Overview
 
 Eremos is a modular, open-source framework for deploying **autonomous swarm agents** that monitor on-chain activity across the Solana ecosystem.
 
@@ -25,7 +25,7 @@ The framework is **lightweight, extensible, and designed for early signals** —
 
 ---
 
-## 📂 Repo Structure
+## Repo Structure
 
 ```
 src/                     # Main codebase
@@ -60,7 +60,7 @@ CONTRIBUTING.md
 
 ---
 
-## ⚡ Quickstart
+## Quickstart
 
 Clone and install dependencies:
 
@@ -90,7 +90,7 @@ npm test
 
 ---
 
-## 🔍 Example Signal
+## Example Signal
 
 When an agent detects a suspicious deployment:
 
@@ -112,7 +112,7 @@ When an agent detects a suspicious deployment:
 
 ---
 
-## 🧠 Key Features
+## Key Features
 
 - **Modular Agents** – Scoped logic for wallets, deploys, anomalies
 - **Signal Emission** – Structured JSON signals for downstream use
@@ -122,7 +122,7 @@ When an agent detects a suspicious deployment:
 
 ---
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 - **Language:** TypeScript
 - **Runtime:** Node.js
@@ -131,7 +131,7 @@ When an agent detects a suspicious deployment:
 
 ---
 
-## 🤝 Contributing
+## Contributing
 
 We welcome contributions!
 
@@ -145,13 +145,13 @@ See [CONTRIBUTING.md](CONTRIBUTING.md) for details.
 
 ---
 
-## 📜 License
+## License
 
 MIT © [Eremos LLC](LICENSE)
 
 ---
 
-## 🌐 Links
+## Links
 
 - **Twitter/X:** [@EremosCore](https://x.com/EremosCore)
 - **Website:** [eremos.io](https://www.eremos.io/)
