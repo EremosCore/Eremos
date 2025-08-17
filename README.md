@@ -16,7 +16,7 @@
 [![GitHub issues](https://img.shields.io/github/issues/EremosCore/Eremos?style=flat-square&logo=github)](https://github.com/EremosCore/Eremos/issues)
 [![Twitter Follow](https://img.shields.io/twitter/follow/EremosCore?style=flat-square&logo=twitter)](https://twitter.com/EremosCore)
 
-*A lightweight framework for deploying modular agents that monitor blockchain activity - tracking wallet clusters, mint patterns, and contract anomalies. Designed for developers who want low-noise, early signals embedded into their workflows.*
+_A lightweight framework for deploying modular agents that monitor blockchain activity - tracking wallet clusters, mint patterns, and contract anomalies. Designed for developers who want low-noise, early signals embedded into their workflows._
 
 </div>
 
@@ -61,21 +61,25 @@ npm run dev
 ## ✨ Features
 
 ### 🤖 Agent System
+
 - **Modular Architecture** - Scoped logic for detecting wallet activity, contract spawns, and anomalies
 - **Swarm Design** - Each agent operates independently with shared utilities
 - **Extensible Core** - Plug in watchers, inference layers, or custom triggers
 
 ### 🎯 Detection Capabilities
+
 - **Launch Wallet Detection** - Trace freshly funded wallets from CEXs and track contract interactions
 - **Ghost Watcher** - Monitor long-dormant wallets that suddenly become active
 - **Pattern Recognition** - Identify wallet clusters, mint patterns, and behavioral anomalies
 
 ### 📡 Signal Processing
+
 - **Structured Signals** - Clean, actionable data for logging, alerting, or downstream use
 - **Confidence Scoring** - AI-powered confidence metrics for signal reliability
 - **Minimal Noise** - Log only what matters with intelligent filtering
 
 ### 🔧 Developer Experience
+
 - **TypeScript First** - Full type safety across agents, utilities, and infrastructure
 - **Hot Reloading** - Rapid development with instant feedback
 - **Comprehensive Testing** - Built-in testing utilities for agent validation
@@ -122,6 +126,7 @@ An example signal emitted by an agent detecting a live token deployment:
 ## 🎯 Signal Confidence
 
 Each emitted signal includes a `confidence` score (0-1) based on behavioral heuristics:
+
 - CEX-origin funding (e.g. Kraken, Coinbase)
 - Time between funding → deploy
 - Wallet linkage density (bundled activity)
@@ -133,13 +138,13 @@ Confidence is computed via agent-side scoring and logged alongside the signal.
 
 ## 🛠️ Tech Stack
 
-| Component | Technology | Purpose |
-|-----------|------------|---------|
-| **Core Runtime** | Node.js + TypeScript | Agent execution and orchestration |
-| **Frontend** | Next.js + Tailwind CSS | Dashboard and monitoring interface |
-| **Chain Integration** | RPC watchers, mempool filters | Real-time blockchain monitoring |
-| **Signal Processing** | Custom TypeScript framework | Structured data emission and filtering |
-| **Testing** | Jest + Custom utilities | Agent validation and behavior testing |
+| Component             | Technology                    | Purpose                                |
+| --------------------- | ----------------------------- | -------------------------------------- |
+| **Core Runtime**      | Node.js + TypeScript          | Agent execution and orchestration      |
+| **Frontend**          | Next.js + Tailwind CSS        | Dashboard and monitoring interface     |
+| **Chain Integration** | RPC watchers, mempool filters | Real-time blockchain monitoring        |
+| **Signal Processing** | Custom TypeScript framework   | Structured data emission and filtering |
+| **Testing**           | Jest + Custom utilities       | Agent validation and behavior testing  |
 
 ---
 
@@ -178,16 +183,19 @@ eremos/
 We welcome contributions from developers, designers, and blockchain enthusiasts! Here's how you can get involved:
 
 ### 🧑‍💻 For Developers
+
 - **Start with [`example.ts`](agents/example.ts)** - Learn the agent pattern
 - **Read our [Contributing Guide](docs/contributing.md)** - Development workflow and standards
 - **Check [open issues](https://github.com/EremosCore/Eremos/issues)** - Find tasks that match your skills
 
 ### 🎨 For Designers & Artists
+
 - **Visual Identity** - Help evolve the Eremos aesthetic
 - **Documentation Design** - Improve our guides and diagrams
 - **Agent Personas** - Design characters for new agents
 
 ### 💡 For Everyone
+
 - **Feature Ideas** - Share your vision for new agent capabilities
 - **Bug Reports** - Help us improve reliability and performance
 - **Community Building** - Spread the word about Eremos

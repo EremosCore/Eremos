@@ -28,11 +28,13 @@
 <!-- Describe the specific changes made in this PR -->
 
 ### Core Changes
+
 - [ ] Change 1: Description
 - [ ] Change 2: Description
 - [ ] Change 3: Description
 
 ### Files Modified
+
 <!-- List the main files that were modified -->
 
 - `path/to/file1.ts` - Description of changes
@@ -43,11 +45,13 @@
 <!-- Complete this section if your PR involves agent development -->
 
 ### Agent Details
-- **Agent Name**: 
+
+- **Agent Name**:
 - **Agent Type**: [ ] New Agent [ ] Existing Agent Modification
-- **Category**: [ ] DeFi [ ] NFT [ ] Governance [ ] Security [ ] Other: ___
+- **Category**: [ ] DeFi [ ] NFT [ ] Governance [ ] Security [ ] Other: \_\_\_
 
 ### Agent Implementation Checklist
+
 - [ ] Agent follows established patterns and conventions
 - [ ] Agent implements proper signal emission
 - [ ] Agent includes appropriate memory management
@@ -56,6 +60,7 @@
 - [ ] Agent integrates with existing utility functions
 
 ### Signal Implementation
+
 - [ ] New signals are properly defined in types
 - [ ] Signal emission follows established patterns
 - [ ] Signal data structures are documented
@@ -64,6 +69,7 @@
 ## Testing
 
 ### Test Coverage
+
 - [ ] Unit tests added/updated for new functionality
 - [ ] Integration tests added/updated where applicable
 - [ ] Agent-specific tests implemented (if applicable)
@@ -71,12 +77,14 @@
 - [ ] Test coverage maintained or improved
 
 ### Manual Testing
+
 - [ ] Tested locally with sample data
 - [ ] Verified agent behavior in development environment (if applicable)
 - [ ] Tested edge cases and error conditions
 - [ ] Verified performance impact is acceptable
 
 ### Test Commands Run
+
 <!-- List the test commands you ran -->
 
 ```bash
@@ -89,6 +97,7 @@ npm run lint
 ## Code Quality
 
 ### Code Standards
+
 - [ ] Code follows TypeScript best practices
 - [ ] Code follows established project conventions
 - [ ] ESLint passes without errors
@@ -97,6 +106,7 @@ npm run lint
 - [ ] Appropriate error handling implemented
 
 ### Documentation
+
 - [ ] Code is properly commented where necessary
 - [ ] Complex logic is explained with comments
 - [ ] Public APIs are documented
@@ -104,6 +114,7 @@ npm run lint
 - [ ] Agent documentation added/updated (if applicable)
 
 ### Performance & Security
+
 - [ ] No obvious performance regressions
 - [ ] No security vulnerabilities introduced
 - [ ] Memory usage is reasonable
@@ -114,6 +125,7 @@ npm run lint
 <!-- If this PR introduces breaking changes, describe them here -->
 
 ### Breaking Change Details
+
 - [ ] No breaking changes
 - [ ] Breaking changes documented below
 
@@ -123,16 +135,19 @@ npm run lint
 <!-- - How users should migrate -->
 
 ### Migration Guide
+
 <!-- Provide migration instructions if breaking changes exist -->
 
 ## Documentation Updates
 
 ### Documentation Changes
+
 - [ ] No documentation changes needed
 - [ ] Documentation updated in this PR
 - [ ] Documentation updates needed in separate PR
 
 ### Updated Documentation
+
 - [ ] README.md updated
 - [ ] API documentation updated
 - [ ] Agent development guide updated (if applicable)
@@ -142,12 +157,14 @@ npm run lint
 ## Deployment Considerations
 
 ### Environment Impact
+
 - [ ] No environment changes required
 - [ ] New dependencies added (listed below)
 - [ ] Configuration changes required
 - [ ] Database/storage changes required
 
 ### New Dependencies
+
 <!-- List any new dependencies added -->
 
 - `package-name@version` - Purpose/justification
@@ -155,6 +172,7 @@ npm run lint
 ## Review Checklist
 
 ### For Reviewers
+
 - [ ] Code review completed
 - [ ] Architecture and design reviewed
 - [ ] Security implications considered
@@ -163,6 +181,7 @@ npm run lint
 - [ ] Test coverage verified
 
 ### Agent Review (if applicable)
+
 - [ ] Agent logic and algorithms reviewed
 - [ ] Signal emission patterns verified
 - [ ] Memory management reviewed
@@ -174,9 +193,11 @@ npm run lint
 <!-- Any additional information that reviewers should know -->
 
 ### Screenshots/Examples
+
 <!-- Include screenshots, code examples, or output samples if helpful -->
 
 ### Future Work
+
 <!-- Mention any follow-up work or related PRs -->
 
 ---
@@ -195,6 +216,7 @@ npm run lint
 - [ ] Any dependent changes have been merged and published
 
 ### Agent-Specific Pre-Submission (if applicable)
+
 - [ ] Agent follows the established agent development patterns
 - [ ] Agent has been tested with realistic data scenarios
 - [ ] Agent performance has been evaluated

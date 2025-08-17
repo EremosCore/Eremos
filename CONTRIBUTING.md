@@ -59,22 +59,25 @@ Before you begin, ensure you have the following installed:
 ### Environment Configuration
 
 1. **Copy the environment template**:
+
    ```bash
    cp .env.example .env
    ```
 
 2. **Configure your environment variables** in `.env`:
+
    ```env
    # Development settings
    NODE_ENV=development
    LOG_LEVEL=debug
-   
+
    # Add any blockchain RPC endpoints or API keys as needed
    ```
 
 ### IDE Setup
 
 We recommend using **Visual Studio Code** with the following extensions:
+
 - TypeScript and JavaScript Language Features
 - ESLint
 - Prettier
@@ -83,6 +86,7 @@ We recommend using **Visual Studio Code** with the following extensions:
 ### Verification
 
 Verify your setup by running:
+
 ```bash
 # Run all tests
 npm test
@@ -130,6 +134,7 @@ eremos/
 ### 2. Create a Branch
 
 Create a descriptive branch name:
+
 ```bash
 git checkout -b feature/agent-defi-monitor
 git checkout -b fix/signal-emission-bug
@@ -171,6 +176,7 @@ npm run lint:fix
 ### 5. Commit Your Changes
 
 Follow our [commit guidelines](#commit-guidelines):
+
 ```bash
 git add .
 git commit -m "feat(agents): add DeFi liquidity monitoring agent"
@@ -226,6 +232,7 @@ export class YourAgent extends BaseAgent {
    - `cleanup()`: Resource cleanup
 
 3. **Signal Emission**:
+
    ```typescript
    const signal: Signal = {
      type: 'WALLET_ACTIVITY',
@@ -233,13 +240,13 @@ export class YourAgent extends BaseAgent {
      data: {
        address: walletAddress,
        activity: 'large_transfer',
-       amount: transferAmount
+       amount: transferAmount,
      },
      confidence: 0.95,
      metadata: {
        source: 'blockchain_monitor',
-       version: '1.0.0'
-     }
+       version: '1.0.0',
+     },
    };
    ```
 
@@ -311,33 +318,35 @@ npm run lint:fix
 ### Code Organization
 
 1. **Import Order**:
+
    ```typescript
    // 1. Node modules
    import fs from 'fs';
    import path from 'path';
-   
+
    // 2. Internal modules
    import { BaseAgent } from '../types/agent';
    import { logger } from '../utils/logger';
-   
+
    // 3. Relative imports
    import './styles.css';
    ```
 
 2. **Class Structure**:
+
    ```typescript
    class YourClass {
      // 1. Properties
      private config: Config;
-     
+
      // 2. Constructor
      constructor(config: Config) {
        this.config = config;
      }
-     
+
      // 3. Public methods
      public async process(): Promise<void> {}
-     
+
      // 4. Private methods
      private validateInput(): boolean {}
    }
@@ -346,6 +355,7 @@ npm run lint:fix
 ### Documentation Standards
 
 1. **Use JSDoc comments** for public APIs:
+
    ```typescript
    /**
     * Processes blockchain data and emits relevant signals
@@ -374,7 +384,7 @@ describe('Component/Feature', () => {
     it('should do something specific', () => {
       // Test implementation
     });
-    
+
     it('should handle edge case', () => {
       // Edge case test
     });
@@ -548,6 +558,7 @@ refactor(utils): improve signal processing performance
 ### Issue Types
 
 Use our issue templates:
+
 - **Bug Report**: For reporting bugs
 - **Feature Request**: For suggesting new features
 - **Agent Proposal**: For proposing new agents
@@ -578,6 +589,7 @@ Use our issue templates:
 ### Recognition
 
 We appreciate all contributions! Contributors will be:
+
 - **Listed in our contributors** section
 - **Mentioned in release notes** for significant contributions
 - **Invited to join** our contributor community
@@ -587,12 +599,14 @@ We appreciate all contributions! Contributors will be:
 ### Debugging
 
 1. **Use the built-in logger**:
+
    ```typescript
    import { logger } from '../utils/logger';
    logger.debug('Processing data', { data });
    ```
 
 2. **Enable debug mode**:
+
    ```bash
    LOG_LEVEL=debug npm run dev
    ```
@@ -618,29 +632,32 @@ We appreciate all contributions! Contributors will be:
 ### Common Issues
 
 1. **Installation Problems**:
+
    ```bash
    # Clear npm cache
    npm cache clean --force
-   
+
    # Delete node_modules and reinstall
    rm -rf node_modules package-lock.json
    npm install
    ```
 
 2. **TypeScript Errors**:
+
    ```bash
    # Check TypeScript configuration
    npm run type-check
-   
+
    # Rebuild type definitions
    npm run build:types
    ```
 
 3. **Test Failures**:
+
    ```bash
    # Run tests in verbose mode
    npm test -- --verbose
-   
+
    # Run specific test file
    npm test -- yourTest.test.ts
    ```
@@ -648,6 +665,7 @@ We appreciate all contributions! Contributors will be:
 ### Getting Support
 
 If you encounter issues:
+
 1. Check this troubleshooting section
 2. Search existing GitHub issues
 3. Create a new issue with detailed information
