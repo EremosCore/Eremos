@@ -59,17 +59,32 @@ graph TD
   A3 -- Uses --> U
 ```
 
+ main
 Agents independently monitor on-chain events, emit structured signals, and share core utilities. The architecture is designed for extensibility and minimal output noise.
+=======
+**Agent-001 Coming Soon** [Teaser #1](https://x.com/EremosCore/status/1949154939923833239), [Teaser #2](https://x.com/EremosCore/status/1954856345284567218)
+ main
 
 ---
 
 ## 🤖 Swarm Agents
 
+ main
 | Agent      | Glyph | Role           | Watches           |
 |------------|:-----:|:--------------:|:-----------------:|
 | **Theron** | Ϸ     | memory_vault   | anomaly_detection |
 | **Observer** | Δ   | surveillance   | wallet_activity   |
 | **Harvester** | λ  | indexing       | mint_activity     |
+=======
+- **Modular Agents** - Scoped logic for detecting wallet activity, contract spawns, and anomalies  
+- **Signal Emission** - Structured signals for logging, alerting, or downstream use  
+- **Swarm Design** - Each agent operates independently with shared utilities  
+- **Extensible Core** - Plug in watchers, inference layers, or custom triggers  
+- **Minimal Output** - Log only what matters
+- **Launch Wallet Detection** - Agents can trace freshly funded wallets (e.g. from CEXs), track their contract interactions, and flag high-confidence deploys in real time
+- **Ghost Watcher** - Monitors long-dormant wallets that suddenly become active again. Useful for tracing old dev wallets or rug setups.
+- *+ More to come.*
+main
 
 ---
 
