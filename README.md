@@ -11,7 +11,7 @@
 ## 📑 Table of Contents
 1. [Quick Start](#⚡-quick-start)
 2. [Features](#features)
-3. [Architecture](#🧩-Architecture)
+3. [Architecture](#🧩Architecture)
 4. [Example Signal](#Example-Signal)
 5. [Signal Confidence](#Signal-Confidence)
 6. [Tech Stack](#Tech-Stack)
