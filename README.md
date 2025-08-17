@@ -90,7 +90,16 @@ cd Eremos
 npm install
 ```
 
-Set up your environment:
+### Analytics Dashboard
+
+View real-time agent performance:
+
+```bash
+npm run dashboard
+# Visit http://localhost:3001
+```
+
+### Development
 
 ```bash
 cp .env.example .env.local
@@ -105,6 +114,7 @@ npm run dev
 - `/utils` - Shared signal/logging utilities  
 - `/types` - TypeScript interfaces + definitions  
 - `/scripts` - Bootstrap and dev scripts  
+- `/dashboard` - Analytics dashboard interface
 - `/docs` - Swarm structure, architecture, & our artwork/official whitepaper
 
 ---

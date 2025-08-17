@@ -4,7 +4,11 @@
   "description": "Modular agent framework for on-chain activity monitoring.",
   "main": "index.js",
   "scripts": {
-    "dev": "echo 'Running dev mode...'"
+    "dev": "echo 'Running dev mode...'",
+    "dashboard": "ts-node scripts/start-dashboard.ts",
+    "analytics:demo": "ts-node scripts/analytics-demo.ts",
+    "analytics:populate": "ts-node scripts/populate-dashboard.ts",
+    "analytics:clear": "rm -rf data/analytics.json"
   },
   "keywords": [
     "agent",
@@ -14,5 +18,10 @@
     "framework"
   ],
   "license": "MIT",
-  "author": "EremosCore"
+  "author": "EremosCore",
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "ts-node": "^10.9.0",
+    "typescript": "^5.0.0"
+  }
 }

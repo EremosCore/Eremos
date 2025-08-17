@@ -7,3 +7,6 @@ dist
 
 # logs
 *.log
+
+# analytics data
+data/
