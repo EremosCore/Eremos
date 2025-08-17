@@ -98,9 +98,9 @@ High-level swarm flow (GitHub supports Mermaid):
 ```mermaid
 flowchart TD
     A[RPC/Mempool Watchers] --> B[Agent Swarm]
-    B -->|Independent Processing| C[Theron (000)]
+    B -->|Independent Processing| C["Theron 000"]
     B -->|Independent Processing| D[Observer]
-    B -->|Independent Processing| E[Future Agents (001+)]
+    B -->|Independent Processing| E["Future Agents 001+"]
     C --> F[Signal Emission]
     D --> F
     E --> F
