@@ -97,6 +97,25 @@ cp .env.example .env.local
 npm run dev
 ```
 
+### Performance Monitoring & Testing
+
+Monitor agent performance and test signal detection:
+
+```bash
+# Start performance monitoring with agent simulation
+npm run performance
+
+# Launch real-time dashboard (separate terminal)
+npm run dashboard
+# Visit http://localhost:8080
+```
+
+The performance monitor simulates realistic Solana scam sequences and tracks:
+- Agent execution times
+- Signal detection rates  
+- Confidence scoring patterns
+- CEX funding flows and PumpFun interactions
+
 ---
 
 ## Key Folders

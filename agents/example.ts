@@ -1,6 +1,7 @@
 import { Agent } from "../types/agent";
 import { generateSignalHash } from "../utils/signal";
 import { logSignal } from "../utils/logger";
+import { startPerformanceTracking, endPerformanceTracking } from "../utils/metrics";
 
 export const ExampleAgent: Agent = {
   id: "agent-xxx",
@@ -16,6 +17,9 @@ export const ExampleAgent: Agent = {
     "Template agent used as a reference for custom swarm agent creation. Replace fields and logic to define your own behavior.",
 
   observe: (event) => {
+    const startTime = startPerformanceTracking("agent-xxx");
+    let signalEmitted = false;
+    
     if (event?.type === "wallet_activity") {
       const hash = generateSignalHash(event);
       logSignal({
@@ -25,7 +29,10 @@ export const ExampleAgent: Agent = {
         hash,
         timestamp: new Date().toISOString(),
       });
+      signalEmitted = true;
     }
+    
+    endPerformanceTracking("agent-xxx", startTime, signalEmitted);
   },
 
   getMemory: () => {

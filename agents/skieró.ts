@@ -23,7 +23,7 @@ export const GhostWatcher: Agent = {
         glyph: "ψ",
         hash: generateSignalHash(event),
         timestamp: new Date().toISOString(),
-        confidence: 0.78,
+        details: { confidence: 0.78 }
       });
     }
   },

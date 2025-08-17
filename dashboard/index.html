@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eremos Signal Analytics Dashboard</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Courier New', monospace;
+            background: linear-gradient(135deg, #32261B 0%, #695342 100%);
+            color: #FEFEFD;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 30px;
+            padding: 20px;
+            border: 2px solid #7B5D41;
+            border-radius: 10px;
+            background: rgba(123, 93, 65, 0.15);
+        }
+
+        .header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            color: #694E35;
+        }
+
+        .header p {
+            opacity: 0.8;
+            font-size: 1.1em;
+        }
+
+        .dashboard {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+
+        .panel {
+            background: rgba(123, 93, 65, 0.2);
+            border: 1px solid #7B5D41;
+            border-radius: 8px;
+            padding: 20px;
+            backdrop-filter: blur(10px);
+        }
+
+        .panel h3 {
+            margin-bottom: 15px;
+            color: #694E35;
+        }
+
+        .signal-item {
+            background: rgba(50, 38, 27, 0.4);
+            border-left: 3px solid #694E35;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 4px;
+            transition: all 0.3s ease;
+        }
+
+        .signal-item:hover {
+            background: rgba(123, 93, 65, 0.3);
+            transform: translateX(5px);
+        }
+
+        .signal-meta {
+            font-size: 0.9em;
+            opacity: 0.7;
+            margin-top: 5px;
+        }
+
+        .agent-stat {
+            display: flex;
+            justify-content: space-between;
+            padding: 8px 0;
+            border-bottom: 1px solid rgba(123, 93, 65, 0.3);
+        }
+
+        .agent-stat:last-child {
+            border-bottom: none;
+        }
+
+        .confidence-bar {
+            width: 100%;
+            height: 10px;
+            background: rgba(123, 93, 65, 0.3);
+            border-radius: 5px;
+            overflow: hidden;
+            margin-top: 5px;
+        }
+
+        .confidence-fill {
+            height: 100%;
+            background: linear-gradient(90deg, #694E35, #7B5D41, #695342);
+            transition: width 0.3s ease;
+        }
+
+        .controls {
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        .btn {
+            background: transparent;
+            border: 2px solid #7B5D41;
+            color: #FEFEFD;
+            padding: 10px 20px;
+            margin: 0 10px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-family: inherit;
+            transition: all 0.3s ease;
+        }
+
+        .btn:hover {
+            background: rgba(123, 93, 65, 0.2);
+            box-shadow: 0 0 10px rgba(123, 93, 65, 0.4);
+        }
+
+        .status {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            padding: 10px 15px;
+            background: rgba(123, 93, 65, 0.2);
+            border: 1px solid #7B5D41;
+            border-radius: 5px;
+            font-size: 0.9em;
+            color: #FEFEFD;
+        }
+
+        @keyframes pulse {
+            0% { opacity: 1; }
+            50% { opacity: 0.5; }
+            100% { opacity: 1; }
+        }
+
+        .pulse {
+            animation: pulse 2s infinite;
+        }
+
+        @media (max-width: 768px) {
+            .dashboard {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="status pulse" id="status">🔍 Monitoring...</div>
+    
+    <div class="header">
+        <h1>⚡ EREMOS SIGNAL ANALYTICS</h1>
+        <p>Real-time agent signal monitoring & performance dashboard</p>
+    </div>
+
+    <div class="controls">
+        <button class="btn" onclick="startSolanaSimulation()">🚀 Start Solana Simulation</button>
+        <button class="btn" onclick="refreshData()">🔄 Refresh Data</button>
+        <button class="btn" onclick="clearDashboard()">🗑️ Clear Dashboard</button>
+        <button class="btn" onclick="exportData()">📊 Export Data</button>
+    </div>
+
+    <div class="dashboard">
+        <div class="panel">
+            <h3>📡 Recent Signals</h3>
+            <div id="signals-list">
+                <div class="signal-item">
+                    <strong>🎯 launch_detected</strong> - Agent Observer
+                    <div class="signal-meta">Hash: sig_abc123 | Confidence: 0.91 | 2 mins ago</div>
+                    <div class="confidence-bar">
+                        <div class="confidence-fill" style="width: 91%"></div>
+                    </div>
+                </div>
+                <div class="signal-item">
+                    <strong>👁️ wallet_activity</strong> - Agent Watcher  
+                    <div class="signal-meta">Hash: sig_def456 | Confidence: 0.73 | 5 mins ago</div>
+                    <div class="confidence-bar">
+                        <div class="confidence-fill" style="width: 73%"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="panel">
+            <h3>⚡ Agent Performance</h3>
+            <div id="performance-stats">
+                <div class="agent-stat">
+                    <span>🎯 Agent Observer</span>
+                    <span>152 signals (avg: 2.3ms)</span>
+                </div>
+                <div class="agent-stat">
+                    <span>👁️ Agent Watcher</span>
+                    <span>89 signals (avg: 1.8ms)</span>
+                </div>
+                <div class="agent-stat">
+                    <span>🔍 Agent Scanner</span>
+                    <span>203 signals (avg: 3.1ms)</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Real data dashboard functionality
+        let signalCount = 0;
+        let isAutoRefresh = false;
+
+        // Fetch real signals from the API
+        async function fetchRealSignals() {
+            try {
+                const response = await fetch('/api/signals');
+                const signals = await response.json();
+                displaySignals(signals);
+            } catch (error) {
+                console.error('Error fetching signals:', error);
+                updateStatus('Error fetching signals');
+            }
+        }
+
+        // Fetch real performance data from the API
+        async function fetchRealPerformance() {
+            try {
+                const response = await fetch('/api/performance');
+                const performance = await response.json();
+                displayPerformance(performance);
+            } catch (error) {
+                console.error('Error fetching performance:', error);
+                updateStatus('Error fetching performance data');
+            }
+        }
+
+        // Display signals in the UI
+        function displaySignals(signals) {
+            const signalsList = document.getElementById('signals-list');
+            signalsList.innerHTML = '';
+            
+            signals.forEach(signal => {
+                const timeAgo = getTimeAgo(new Date(signal.timestamp));
+                const confidence = signal.confidence || signal.details?.confidence || 0;
+                
+                const signalHtml = `
+                    <div class="signal-item" style="animation: fadeIn 0.5s ease;">
+                        <strong>${signal.glyph} ${signal.type}</strong> - ${signal.agent}
+                        <div class="signal-meta">Hash: ${signal.hash} | Confidence: ${confidence.toFixed(2)} | ${timeAgo}</div>
+                        <div class="confidence-bar">
+                            <div class="confidence-fill" style="width: ${confidence * 100}%"></div>
+                        </div>
+                    </div>
+                `;
+                signalsList.insertAdjacentHTML('afterbegin', signalHtml);
+            });
+            
+            signalCount = signals.length;
+        }
+
+        // Display performance metrics
+        function displayPerformance(performance) {
+            const performanceStats = document.getElementById('performance-stats');
+            performanceStats.innerHTML = '';
+            
+            Object.entries(performance).forEach(([agentId, metrics]) => {
+                const agentName = agentId.replace(/-/g, ' ').replace(/\b\w/g, l => l.toUpperCase());
+                const efficiency = metrics.calls > 0 ? (1000 / metrics.averageExecutionTime).toFixed(0) : '0';
+                
+                const statHtml = `
+                    <div class="agent-stat">
+                        <span>🤖 ${agentName}</span>
+                        <span>${metrics.signalsEmitted} signals (${metrics.averageExecutionTime.toFixed(1)}ms avg)</span>
+                    </div>
+                `;
+                performanceStats.insertAdjacentHTML('beforeend', statHtml);
+            });
+        }
+
+        // Start Solana simulation
+        async function startSolanaSimulation() {
+            updateStatus('Starting Solana simulation...');
+            try {
+                const response = await fetch('/api/simulate', { method: 'POST' });
+                const result = await response.json();
+                
+                if (result.status === 'simulation_started') {
+                    updateStatus('Simulation running! Refreshing data...');
+                    startAutoRefresh();
+                } else {
+                    updateStatus('Simulation failed to start');
+                }
+            } catch (error) {
+                console.error('Error starting simulation:', error);
+                updateStatus('Error starting simulation');
+            }
+        }
+
+        // Start auto-refresh of data
+        function startAutoRefresh() {
+            if (isAutoRefresh) return;
+            isAutoRefresh = true;
+            
+            const refreshInterval = setInterval(async () => {
+                await fetchRealSignals();
+                await fetchRealPerformance();
+            }, 2000); // Refresh every 2 seconds
+            
+            // Stop auto-refresh after 30 seconds
+            setTimeout(() => {
+                clearInterval(refreshInterval);
+                isAutoRefresh = false;
+                updateStatus('Auto-refresh stopped');
+            }, 30000);
+        }
+
+        // Manual refresh
+        async function refreshData() {
+            updateStatus('Refreshing data...');
+            await fetchRealSignals();
+            await fetchRealPerformance();
+            updateStatus('Data refreshed');
+        }
+
+        // Helper function to get time ago
+        function getTimeAgo(date) {
+            const now = new Date();
+            const diffMs = now - date;
+            const diffSecs = Math.floor(diffMs / 1000);
+            const diffMins = Math.floor(diffSecs / 60);
+            
+            if (diffSecs < 60) return `${diffSecs}s ago`;
+            if (diffMins < 60) return `${diffMins}m ago`;
+            return `${Math.floor(diffMins / 60)}h ago`;
+        }
+
+        function clearDashboard() {
+            document.getElementById('signals-list').innerHTML = '';
+            updateStatus('Dashboard cleared');
+        }
+
+        function exportData() {
+            const signals = Array.from(document.querySelectorAll('.signal-item')).map(item => ({
+                text: item.textContent.trim(),
+                timestamp: new Date().toISOString()
+            }));
+            
+            const data = JSON.stringify(signals, null, 2);
+            const blob = new Blob([data], { type: 'application/json' });
+            const url = URL.createObjectURL(blob);
+            
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = 'eremos-signals.json';
+            a.click();
+            
+            updateStatus('Data exported');
+        }
+
+        function updateStatus(message) {
+            const status = document.getElementById('status');
+            status.textContent = `📊 ${message}`;
+            setTimeout(() => {
+                status.textContent = '🔍 Monitoring...';
+            }, 2000);
+        }
+
+        // Initialize dashboard on load
+        window.addEventListener('load', async () => {
+            updateStatus('Dashboard loaded - Ready for simulation');
+            await refreshData(); // Load any existing data
+        });
+
+        // Add CSS animation
+        const style = document.createElement('style');
+        style.textContent = `
+            @keyframes fadeIn {
+                from { opacity: 0; transform: translateY(-10px); }
+                to { opacity: 1; transform: translateY(0); }
+            }
+        `;
+        document.head.appendChild(style);
+    </script>
+</body>
+</html>
