@@ -10,3 +10,4 @@
 - timestamp
 - source agent
 - hashed event ID
+- glyph
