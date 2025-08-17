@@ -56,7 +56,6 @@ npm run dev
 ---
 ## Architecture
 
-[Eremos](arch-diagram.png)
 **Eremos swarm agents follow a simple lifecycle:**
 - **Observe** — watch Solana programs, wallets, and flows
 - **Detect** — flag bundling behavior, deploys, funding anomalies
