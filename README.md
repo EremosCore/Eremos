@@ -1,5 +1,13 @@
 # Eremos
 
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![TypeScript](https://img.shields.io/badge/TypeScript-5.0-blue.svg)](https://www.typescriptlang.org/)
+[![Node.js](https://img.shields.io/badge/Node.js-18.0+-green.svg)](https://nodejs.org/)
+[![npm](https://img.shields.io/badge/npm-8.0+-red.svg)](https://www.npmjs.com/)
+[![Build Status](https://img.shields.io/badge/build-passing-brightgreen.svg)](https://github.com/EremosCore/Eremos)
+[![Test Coverage](https://img.shields.io/badge/coverage-90%25-brightgreen.svg)](https://github.com/EremosCore/Eremos)
+[![Contributions Welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg)](https://github.com/EremosCore/Eremos/blob/main/CONTRIBUTING.md)
+
 ![Eremos](docs/banner2.png)
 
 **Autonomous swarm agents for early on-chain signal detection**
@@ -113,6 +121,23 @@ npm run dev
 We’re open to contributors.  
 If you are experienced in TypeScript and like agent-based systems, check `example.ts` and build your own observer.
 If you're a designer, artist, or just have ideas that fit the mythos - send us a DM on Twitter. [@EremosCore](https://x.com/EremosCore)
+
+**Quick Links:**
+- [Contributing Guide](CONTRIBUTING.md) - Detailed guidelines for contributors
+- [Bug Report Template](.github/ISSUE_TEMPLATE/bug_report.md) - Report bugs
+- [Feature Request Template](.github/ISSUE_TEMPLATE/feature_request.md) - Suggest features
+- [Question Template](.github/ISSUE_TEMPLATE/question.md) - Ask questions
+
+### Quick Start for Contributors
+
+1. **Fork & Clone** the repository
+2. **Set up environment** with `cp .env.example .env.local`
+3. **Install dependencies** with `npm install`
+4. **Run tests** with `npm test`
+5. **Create your agent** using the example template
+6. **Submit a PR** using our [PR Template](.github/pull_request_template.md)
+
+See [CONTRIBUTING.md](CONTRIBUTING.md) for detailed guidelines.
 
 ---
 

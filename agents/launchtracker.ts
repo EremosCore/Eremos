@@ -32,8 +32,9 @@ export const LaunchTracker: Agent = {
         glyph: "Σ",
         hash,
         timestamp: new Date().toISOString(),
-        confidence,
+        details: { confidence },
       });
     }
   },
+  getMemory: () => ["launch.signal.001", "funding.detected"],
 };
