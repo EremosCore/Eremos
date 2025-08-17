@@ -1,4 +1,5 @@
- 🐝 Eremos
+ # 🐝 Eremos
+![Eremos](docs/banner2.png)
 
 ![License](https://img.shields.io/badge/license-MIT-blue.svg)
 ![Contributions Welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg)
@@ -13,12 +14,13 @@
 2. [Features](#features)
 3. [Architecture](#Architecture)
 4. [Example Signal](#Example-Signal)
-5. [Signal Confidence](#Signal-Confidence)
-6. [Tech Stack](#Tech-Stack)
-7. [Key Folders](#Key-Folders)
-8. [Contributing](#Contributing)
-9. [License](#License)
-10. [Links](#links)
+5. [Meet Theron - Agent-000](#Meet-Theron-Agent-000)
+6. [Signal Confidence](#Signal-Confidence)
+7. [Tech Stack](#Tech-Stack)
+8. [Key Folders](#Key-Folders)
+9. [Contributing](#Contributing)
+10. [License](#License)
+11. [Links](#links)
 
 ---
 
@@ -81,6 +83,20 @@ An example signal emitted by an agent detecting a live token deployment:
   confidence: 0.91
 }
 ```
+
+---
+## Meet Theron - Agent-000
+
+<p align="center">
+  <img src="docs/therontphd2.png" alt="Agent Theron" width="155"/><br/>
+  <em>Theron - Agent (000)</em>
+</p>
+
+*The first deployed agent in the swarm. Passive. Pattern-sensitive.  
+Modular and extendable by design.*
+
+
+**Agent-001 Coming Soon** [Teaser](https://x.com/EremosCore/status/1949154939923833239)
 
 ---
 
