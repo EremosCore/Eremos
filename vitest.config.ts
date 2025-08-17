@@ -18,16 +18,16 @@ export default defineConfig({
         'scripts/',
         '**/*.d.ts',
         '**/*.config.*',
-        '**/index.ts'
+        '**/index.ts',
       ],
       thresholds: {
         global: {
           branches: 70,
           functions: 70,
           lines: 70,
-          statements: 70
-        }
-      }
+          statements: 70,
+        },
+      },
     },
     testTimeout: 10000,
     hookTimeout: 10000,
@@ -38,13 +38,13 @@ export default defineConfig({
       threads: {
         singleThread: false,
         minThreads: 1,
-        maxThreads: 4
-      }
+        maxThreads: 4,
+      },
     },
-    reporter: ['verbose', 'json'],
+    reporters: ['verbose', 'json'],
     outputFile: {
-      json: './coverage/test-results.json'
-    }
+      json: './coverage/test-results.json',
+    },
   },
   resolve: {
     alias: {
@@ -53,7 +53,7 @@ export default defineConfig({
       '@types': path.resolve(__dirname, './types'),
       '@utils': path.resolve(__dirname, './utils'),
       '@scripts': path.resolve(__dirname, './scripts'),
-      '@tests': path.resolve(__dirname, './tests')
-    }
-  }
+      '@tests': path.resolve(__dirname, './tests'),
+    },
+  },
 });

@@ -1,4 +1,4 @@
-let lastEmitted: Record<string, number> = {};
+const lastEmitted: Record<string, number> = {};
 
 export function shouldEmit(agentId: string, cooldown: number): boolean {
   const now = Date.now();

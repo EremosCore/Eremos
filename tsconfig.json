@@ -3,6 +3,7 @@
     "target": "ES2022",
     "module": "commonjs",
     "lib": ["ES2022"],
+    "types": ["vitest/globals"],
     "outDir": "./dist",
     "rootDir": "./",
     "strict": true,
@@ -37,15 +38,12 @@
   },
   "include": [
     "./agents/**/*",
-    "./types/**/*", 
+    "./types/**/*",
     "./utils/**/*",
     "./scripts/**/*",
-    "./tests/**/*"
+    "./tests/**/*",
+    "./*.ts",
+    "./*.js"
   ],
-  "exclude": [
-    "node_modules",
-    "dist",
-    "coverage",
-    "**/*.test.ts"
-  ]
+  "exclude": ["node_modules", "dist", "coverage"]
 }

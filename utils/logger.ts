@@ -22,6 +22,6 @@ export function logSignal(signal: {
     console.log(`├─ confidence: ${signal.confidence}`);
   }
   if (signal.details) {
-    console.log(`├─ context:`, JSON.stringify(signal.details, null, 2));
+    console.log('├─ context:', JSON.stringify(signal.details, null, 2));
   }
 }

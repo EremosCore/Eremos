@@ -248,7 +248,7 @@ export const ${agentName}: Agent = {
       const defaultDesc =
         selectedTemplate?.description || 'Custom agent for monitoring blockchain activity';
       const description =
-        (await this.question(`Enter description (or press Enter for default): `)) || defaultDesc;
+        (await this.question('Enter description (or press Enter for default): ')) || defaultDesc;
 
       // Watch type
       const defaultWatchType = selectedTemplate?.watchType || 'wallet_activity';
@@ -327,7 +327,7 @@ export const ${agentName}: Agent = {
 
       fs.writeFileSync(filepath, agentCode);
 
-      console.log(`\n✅ Agent generated successfully!`);
+      console.log('\n✅ Agent generated successfully!');
       console.log(`📁 File: ${filepath}`);
       console.log(`🤖 Agent ID: ${agentId}`);
       console.log(`🔮 Glyph: ${glyph}`);

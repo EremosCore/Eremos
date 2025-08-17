@@ -170,7 +170,7 @@ class AgentDevServer {
         try {
           this.agent!.observe(event);
         } catch (error) {
-          console.error(`❌ Agent observe error:`, error);
+          console.error('❌ Agent observe error:', error);
         }
       });
 
