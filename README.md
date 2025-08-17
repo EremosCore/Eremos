@@ -9,12 +9,12 @@
 > Built as a **public good**, open-source and extendable.
 
 ## 📑 Table of Contents
-1. [Quick Start](quick-start)
-2. [Features](features)
+1. [Quick Start](#quick-start)
+2. [Features](#features)
 3. [Architecture](architecture)
-4. [Example Signal](ExampleSignal)
-5. [Contributing](contributing)
-6. [License](license)
+4. [Example Signal](#ExampleSignal)
+5. [Contributing](#contributing)
+6. [License](#license)
 
 ---
 
