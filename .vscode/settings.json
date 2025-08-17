@@ -1,0 +1,24 @@
+{
+  "editor.formatOnSave": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll": "explicit",
+    "source.organizeImports": "explicit"
+  },
+  "typescript.preferences.includePackageJsonAutoImports": "off",
+  "files.associations": {
+    "*.ts": "typescript"
+  },
+  "files.exclude": {
+    "**/node_modules": true,
+    "**/dist": true,
+    "**/.git": true
+  },
+  "typescript.suggest.paths": false,
+  "search.exclude": {
+    "**/node_modules": true,
+    "**/dist": true
+  },
+  "emmet.includeLanguages": {
+    "typescript": "javascript"
+  }
+}

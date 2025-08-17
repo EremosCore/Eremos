@@ -1,0 +1,10 @@
+{
+  "recommendations": [
+    "ms-vscode.vscode-typescript-next",
+    "bradlc.vscode-tailwindcss",
+    "esbenp.prettier-vscode",
+    "ms-vscode.vscode-json",
+    "yzhang.markdown-all-in-one",
+    "streetsidesoftware.code-spell-checker"
+  ]
+}
