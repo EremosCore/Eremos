@@ -32,4 +32,19 @@ You can test agents using `/scripts/dev-agent.ts` or create your own mock.
 - Glyph: λ  
 - Watches: mint_activity  
 
+### Skieró (Agent-022)
+- Role: dormant_wallet_monitor
+- Glyph: ψ
+- Watches: wallet_activity
+
+### LaunchTracker (Agent-Launch)
+- Role: launch_monitor
+- Glyph: Σ
+- Watches: wallet_activity
+
+### Maelstrom (Agent-Maelstrom)
+- Role: liquidity_drain_monitor
+- Glyph: ⟲
+- Watches: liquidity_pools
+
 //pending adjustments + adding more agents ^
