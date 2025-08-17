@@ -1,18 +1,65 @@
 {
   "name": "eremos-core",
   "version": "0.1.0",
-  "description": "Modular agent framework for on-chain activity monitoring.",
-  "main": "index.js",
+  "description": "Autonomous swarm agents for early on-chain signal detection on Solana",
+  "main": "dist/index.js",
   "scripts": {
-    "dev": "echo 'Running dev mode...'"
+    "dev": "ts-node scripts/dev-agent.ts",
+    "build": "tsc",
+    "build:watch": "tsc --watch",
+    "test": "echo 'Tests coming soon - framework ready for Jest integration'",
+    "lint": "eslint . --ext .ts,.tsx",
+    "lint:fix": "eslint . --ext .ts,.tsx --fix",
+    "start": "node dist/index.js",
+    "clean": "rimraf dist",
+    "agent:list": "ts-node scripts/agent-list.ts",
+    "agent:memory": "ts-node scripts/export-agent-memory.ts",
+    "agent:generate": "ts-node scripts/generate-agent.ts",
+    "simulate": "ts-node scripts/simulate-cluster.ts",
+    "stress-test": "ts-node scripts/stress-test.ts",
+    "signal:preview": "ts-node scripts/signalhashpreview.ts",
+    "signal:generate": "ts-node scripts/generate-signal.ts",
+    "validate": "ts-node scripts/validate-agent.ts",
+    "thresholds": "ts-node scripts/test-signal-thresholds.ts"
   },
   "keywords": [
     "agent",
-    "onchain",
+    "onchain", 
     "modular",
     "blockchain",
-    "framework"
+    "framework",
+    "solana",
+    "swarm",
+    "signal-detection",
+    "cryptocurrency",
+    "defi",
+    "typescript"
   ],
   "license": "MIT",
-  "author": "EremosCore"
+  "author": "EremosCore",
+  "homepage": "https://eremos.io",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/EremosCore/Eremos.git"
+  },
+  "bugs": {
+    "url": "https://github.com/EremosCore/Eremos/issues"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "@typescript-eslint/eslint-plugin": "^6.0.0",
+    "@typescript-eslint/parser": "^6.0.0",
+    "eslint": "^8.45.0",
+    "eslint-config-standard": "^17.0.0",
+    "rimraf": "^5.0.0",
+    "ts-node": "^10.9.0",
+    "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "@solana/web3.js": "^1.87.0"
+  },
+  "engines": {
+    "node": ">=18.0.0",
+    "npm": ">=8.0.0"
+  }
 }
