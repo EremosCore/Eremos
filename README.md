@@ -37,6 +37,80 @@ Modular and extendable by design.*
 
 ---
 
+
+## Agents
+
+The Eremos framework ships with several modular agents. Each one runs independently, watches a chain or activity type, and emits structured signals when something notable happens.
+
+### SolanaWatcher (◎)
+- **Role:** Blockchain Monitor  
+- **WatchType:** `onchain_activity`  
+- **Description:** Monitors Solana activity using **HTTP polling** (instead of WebSocket subscriptions for broader RPC compatibility).  
+- **Behavior:** Emits `high_activity_detected` when a transaction logs at least `N` messages (default: 5).  
+- **Configurable:** `SOLANA_RPC_URL`, `POLL_INTERVAL`, `ACTIVITY_THRESHOLD`  
+
+### EthereumWatcher (Ξ)
+- **Role:** Blockchain Monitor  
+- **WatchType:** `onchain_activity`  
+- **Description:** Polls Ethereum L1 blocks via ethers.js HTTP provider.  
+- **Behavior:** Emits `high_block_activity` if a block has more than `N` transactions (default: 50).  
+- **Configurable:** `ETH_RPC_URL`, `POLL_INTERVAL`, `ACTIVITY_THRESHOLD`
+
+
+## Example Agent Output
+
+With the new EthereumWatcher (Ξ) and SolanaWatcher (◎), signals are emitted in a clean narrative form followed by a structured JSON object for downstream use.
+
+```ts
+[SolanaWatcher] → emitting signal (high_activity_detected) at 2025-08-17T21:38:23.592Z
+[SolanaWatcher] → signature: 5KdisD3hSpxfFvFvqrr9DwycJifiEkkmB25Wnx88DdNviaE8yA5Et7WqVPEceSCkKddNnhiXsGk6z4D6vokK6j2S
+[SolanaWatcher] → logCount: 2
+[SolanaWatcher] → slot: 360742065
+[SolanaWatcher] → preview: ["Program 11111111111111111111111111111111 invoke [1]","Program 11111111111111111111111111111111 success"]
+
+{
+  "type": "high_activity_detected",
+  "hash": "sig_eyJ0eXBlIj",
+  "timestamp": "2025-08-17T21:38:23.592Z",
+  "source": "SolanaWatcher",
+  "details": {
+    "signature": "5KdisD3hSpxfFvFvqrr9DwycJifiEkkmB25Wnx88DdNviaE8yA5Et7WqVPEceSCkKddNnhiXsGk6z4D6vokK6j2S",
+    "logCount": 2,
+    "slot": 360742065,
+    "preview": [
+      "Program 11111111111111111111111111111111 invoke [1]",
+      "Program 11111111111111111111111111111111 success"
+    ]
+  },
+  "agent": "SolanaWatcher",
+  "glyph": "◎"
+}
+
+[EthereumWatcher] → emitting signal (high_block_activity) at 2025-08-17T21:39:43.933Z
+[EthereumWatcher] → blockNumber: 23163521
+[EthereumWatcher] → blockHash: 0xb2b47d3b60c24b2ea83cb3d51301be1d25fdd19451b48b1cf5272db016accaf0
+[EthereumWatcher] → txCount: 241
+
+{
+  "type": "high_block_activity",
+  "hash": "sig_eyJ0eXBlIj",
+  "timestamp": "2025-08-17T21:39:43.933Z",
+  "source": "EthereumWatcher",
+  "details": {
+    "blockNumber": 23163521,
+    "blockHash": "0xb2b47d3b60c24b2ea83cb3d51301be1d25fdd19451b48b1cf5272db016accaf0",
+    "txCount": 241
+  },
+  "agent": "EthereumWatcher",
+  "glyph": "Ξ"
+}
+```
+
+---
+
+
+
+
 ## Example Signal
 
 An example signal emitted by an agent detecting a live token deployment:
@@ -94,7 +168,23 @@ Set up your environment:
 
 ```bash
 cp .env.example .env.local
-npm run dev
+
+Edit .env.local 
+
+# Solana RPC endpoint
+SOLANA_RPC_URL=""
+
+# Ethereum RPC endpoint
+ETH_RPC_URL=""
+
+# Run all agents (default)
+npm run dev     
+
+# Run only the Solana watcher (◎)
+npm run dev sol
+
+# Run only the Ethereum watcher (Ξ)
+npm run dev eth
 ```
 
 ---
