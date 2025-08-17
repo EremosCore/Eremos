@@ -1,11 +1,87 @@
 {
   "compilerOptions": {
-    "target": "es6",
+    /* Language and Environment */
+    "target": "ES2022",
+    "lib": ["ES2022", "DOM"],
     "module": "commonjs",
-    "strict": true,
+    "moduleResolution": "node",
+    "allowJs": false,
+    "checkJs": false,
+
+    /* Bundler mode */
     "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
     "forceConsistentCasingInFileNames": true,
-    "skipLibCheck": true
+
+    /* Type Checking */
+    "strict": true,
+    "noImplicitAny": true,
+    "strictNullChecks": true,
+    "strictFunctionTypes": true,
+    "strictBindCallApply": true,
+    "strictPropertyInitialization": true,
+    "noImplicitReturns": true,
+    "noFallthroughCasesInSwitch": true,
+    "noUncheckedIndexedAccess": true,
+    "noImplicitOverride": true,
+    "exactOptionalPropertyTypes": true,
+
+    /* Modules */
+    "baseUrl": "./",
+    "paths": {
+      "@/*": ["src/*"],
+      "@agents/*": ["agents/*"],
+      "@utils/*": ["utils/*"],
+      "@types/*": ["types/*"],
+      "@tests/*": ["tests/*"]
+    },
+    "resolveJsonModule": true,
+
+    /* Emit */
+    "declaration": true,
+    "declarationMap": true,
+    "sourceMap": true,
+    "outDir": "./dist",
+    "removeComments": false,
+    "importHelpers": true,
+    "downlevelIteration": true,
+    "isolatedModules": true,
+
+    /* Interop Constraints */
+    "verbatimModuleSyntax": false,
+
+    /* Completeness */
+    "skipLibCheck": true,
+
+    /* Advanced Options */
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "incremental": true,
+    "tsBuildInfoFile": "./dist/.tsbuildinfo"
   },
-  "include": ["./agents", "./types", "./utils"]
+  "include": [
+    "src/**/*",
+    "agents/**/*",
+    "utils/**/*",
+    "types/**/*",
+    "tests/**/*",
+    "scripts/**/*"
+  ],
+  "exclude": [
+    "node_modules",
+    "dist",
+    "coverage",
+    "**/*.spec.ts",
+    "**/*.test.ts"
+  ],
+  "ts-node": {
+    "esm": false,
+    "experimentalSpecifierResolution": "node",
+    "transpileOnly": true,
+    "files": true,
+    "compilerOptions": {
+      "module": "commonjs",
+      "target": "ES2022"
+    }
+  }
 }

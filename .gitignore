@@ -1,9 +1,303 @@
-node_modules
-dist
+# Dependencies
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+.pnpm-debug.log*
+
+# Runtime data
+pids
+*.pid
+*.seed
+*.pid.lock
+
+# Coverage directory used by tools like istanbul
+coverage/
+*.lcov
+.nyc_output
+.coverage/
+
+# Compiled binary addons (https://nodejs.org/api/addons.html)
+build/Release
+
+# Dependency directories
+jspm_packages/
+
+# TypeScript cache
+*.tsbuildinfo
+
+# Optional npm cache directory
+.npm
+
+# Optional eslint cache
+.eslintcache
+
+# Optional stylelint cache
+.stylelintcache
+
+# Microbundle cache
+.rpt2_cache/
+.rts2_cache_cjs/
+.rts2_cache_es/
+.rts2_cache_umd/
+
+# Optional REPL history
+.node_repl_history
+
+# Output of 'npm pack'
+*.tgz
+
+# Yarn Integrity file
+.yarn-integrity
+
+# Environment variables
 .env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+.env.*.local
 
-# macOS system file
-.DS_Store
-
-# logs
+# Logs
+logs
 *.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+.pnpm-debug.log*
+
+# Diagnostic reports (https://nodejs.org/api/report.html)
+report.[0-9]*.[0-9]*.[0-9]*.[0-9]*.json
+
+# Runtime data
+pids
+*.pid
+*.seed
+*.pid.lock
+
+# Nyc test coverage
+.nyc_output
+
+# Grunt intermediate storage (https://gruntjs.com/creating-plugins#storing-task-files)
+.grunt
+
+# Bower dependency directory (https://bower.io/)
+bower_components
+
+# node-waf configuration
+.lock-wscript
+
+# Compiled TypeScript
+dist/
+build/
+lib/
+types/generated/
+*.d.ts.map
+
+# Next.js build output
+.next/
+out/
+
+# Nuxt.js build / generate output
+.nuxt
+dist
+
+# Storybook build outputs
+.out
+.storybook-out
+storybook-static
+
+# Vuepress build output
+.vuepress/dist
+
+# Temporary folders
+tmp/
+temp/
+
+# Runtime data
+pids
+*.pid
+*.seed
+*.pid.lock
+
+# IDE and Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*.sublime-project
+*.sublime-workspace
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Windows image file caches
+Thumbs.db
+ehthumbs.db
+
+# Folder config file
+Desktop.ini
+
+# Recycle Bin used on file shares
+$RECYCLE.BIN/
+
+# Windows Installer files
+*.cab
+*.msi
+*.msm
+*.msp
+
+# Windows shortcuts
+*.lnk
+
+# Solana specific
+.anchor/
+target/
+Anchor.toml
+test-ledger/
+.solana/
+
+# Testing
+test-results/
+playwright-report/
+coverage/
+.nyc_output/
+
+# Docker
+.dockerignore
+Dockerfile.dev
+
+# Kubernetes
+k8s/secrets/
+*.kubeconfig
+
+# Terraform
+*.tfstate
+*.tfstate.*
+.terraform/
+.terraform.lock.hcl
+
+# AWS
+.aws/
+
+# Security
+*.pem
+*.key
+*.crt
+*.p12
+*.pfx
+secrets/
+credentials/
+
+# Database
+*.db
+*.sqlite
+*.sqlite3
+
+# Backup files
+*.bak
+*.backup
+*.old
+
+# Cache directories
+.cache/
+.parcel-cache/
+.vite/
+
+# Local development
+local/
+dev/
+.local/
+
+# Documentation builds
+docs/.vitepress/cache/
+docs/.vitepress/dist/
+docs/generated/
+
+# Performance monitoring
+.clinic/
+clinic.html
+
+# Package lock files (if using npm)
+# Uncomment if you want to ignore package-lock.json
+# package-lock.json
+
+# Yarn v2
+.yarn/cache
+.yarn/unplugged
+.yarn/build-state.yml
+.yarn/install-state.gz
+.pnp.*
+
+# ESLint and Prettier cache
+.eslintcache
+.prettiercache
+
+# Stylelint cache
+.stylelintcache
+
+# Jest
+jest-coverage/
+
+# Husky
+.husky/_
+
+# Sentry
+.sentryclirc
+
+# Bundle analyzer
+bundle-report.html
+.bundle-analyzer/
+
+# GraphQL
+schema.json
+schema.graphql
+generated/
+
+# Monitoring and analytics
+analytics/
+monitoring/
+
+# Local configuration
+config/local.json
+config/development.json
+config/production.json
+!config/default.json
+
+# API keys and tokens
+.apikeys
+tokens.json
+
+# Blockchain data
+blockchain-data/
+chain-data/
+ledger-data/
+
+# Agent logs
+agent-logs/
+monitoring-logs/
+
+# Development tools
+.devtools/
+tools/tmp/
+
+# Benchmarks
+benchmarks/results/
+perf/
+
+# AI/ML models (if any)
+models/
+*.model
+*.h5
+*.pkl
+
+# Jupyter notebooks checkpoints
+.ipynb_checkpoints/
