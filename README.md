@@ -9,9 +9,9 @@
 > Built as a **public good**, open-source and extendable.
 
 ## 📑 Table of Contents
-1. [Quick Start](#⚡-quick-start)
+1. [Quick Start](#quick-start)
 2. [Features](#features)
-3. [Architecture](#🧩-Architecture)
+3. [Architecture](#Architecture)
 4. [Example Signal](#Example-Signal)
 5. [Signal Confidence](#Signal-Confidence)
 6. [Tech Stack](#Tech-Stack)
@@ -22,7 +22,7 @@
 
 ---
 
-## ⚡ Quick Start
+## Quick Start
 Clone your fork
 git clone https://github.com/YOUR-USERNAME/Eremos.git
 cd Eremos
@@ -51,7 +51,7 @@ npm run dev
 - *+ More to come.*
 
 ---
-## 🧩 Architecture
+## Architecture
 
 **Eremos swarm agents follow a simple lifecycle:**
 - **Observe** — watch Solana programs, wallets, and flows
