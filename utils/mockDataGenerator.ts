@@ -64,12 +64,12 @@ export interface MockAnomalyEvent {
   metadata: Record<string, any>;
 }
 
-export type MockEvent = 
-  | MockWalletActivity 
-  | MockMintActivity 
-  | MockLiquidityActivity 
-  | MockGovernanceActivity 
-  | MockSecurityEvent 
+export type MockEvent =
+  | MockWalletActivity
+  | MockMintActivity
+  | MockLiquidityActivity
+  | MockGovernanceActivity
+  | MockSecurityEvent
   | MockAnomalyEvent;
 
 export class MockDataGenerator {
@@ -78,7 +78,7 @@ export class MockDataGenerator {
     '0x8ba1f109551bD432803012645Hac136c22C501e',
     '0x1f9840a85d5aF5bf1D1762F925BDADdC4201F984',
     '0xA0b86a33E6441E8e5c3ecE5c3E5c5c5c5c5c5c5c',
-    '0xd8dA6BF26964aF9D7eEd9e03E53415D37aA96045'
+    '0xd8dA6BF26964aF9D7eEd9e03E53415D37aA96045',
   ];
 
   private readonly COLLECTION_ADDRESSES = [
@@ -86,7 +86,7 @@ export class MockDataGenerator {
     '0x60E4d786628Fea6478F785A6d7e704777c86a7c6', // MAYC
     '0x49cF6f5d44E70224e2E23fDcdd2C053F30aDA28B', // CloneX
     '0x8a90CAb2b38dba80c64b7734e58Ee1dB38B8992e', // Doodles
-    '0x23581767a106ae21c074b2276D25e5C3e136a68b'  // Moonbirds
+    '0x23581767a106ae21c074b2276D25e5C3e136a68b', // Moonbirds
   ];
 
   private readonly POOL_ADDRESSES = [
@@ -94,7 +94,7 @@ export class MockDataGenerator {
     '0x8ad599c3A0ff1De082011EFDDc58f1908eb6e6D8', // USDC/ETH 0.3%
     '0x4e68Ccd3E89f51C3074ca5072bbAC773960dFa36', // ETH/USDT
     '0x11b815efB8f581194ae79006d24E0d814B7697F6', // WETH/USDT
-    '0x60594a405d53811d3BC4766596EFD80fd545A270'  // ETH/DAI
+    '0x60594a405d53811d3BC4766596EFD80fd545A270', // ETH/DAI
   ];
 
   private readonly DAO_NAMES = [
@@ -105,31 +105,27 @@ export class MockDataGenerator {
     'Curve',
     'Yearn',
     'SushiSwap',
-    'Balancer'
+    'Balancer',
   ];
 
-  private readonly CEX_SOURCES = [
-    'binance',
-    'coinbase',
-    'kraken',
-    'okx',
-    'bybit',
-    'kucoin'
-  ];
+  private readonly CEX_SOURCES = ['binance', 'coinbase', 'kraken', 'okx', 'bybit', 'kucoin'];
 
   /**
    * Generate mock wallet activity events
    */
-  generateWalletActivity(count: number = 10, options: Partial<MockWalletActivity> = {}): MockWalletActivity[] {
+  generateWalletActivity(
+    count: number = 10,
+    options: Partial<MockWalletActivity> = {}
+  ): MockWalletActivity[] {
     const events: MockWalletActivity[] = [];
-    
+
     for (let i = 0; i < count; i++) {
       const baseEvent: MockWalletActivity = {
         type: 'wallet_activity',
         timestamp: this.randomTimestamp(),
         address: this.randomChoice(this.WALLET_ADDRESSES),
         amount: this.randomAmount(100, 100000),
-        ...options
+        ...options,
       };
 
       // Add random additional properties
@@ -141,7 +137,10 @@ export class MockDataGenerator {
       }
 
       if (Math.random() > 0.8) {
-        baseEvent.cluster = this.randomChoice(this.WALLET_ADDRESSES, Math.floor(Math.random() * 5) + 2);
+        baseEvent.cluster = this.randomChoice(
+          this.WALLET_ADDRESSES,
+          Math.floor(Math.random() * 5) + 2
+        );
       }
 
       events.push(baseEvent);
@@ -153,9 +152,12 @@ export class MockDataGenerator {
   /**
    * Generate mock mint activity events
    */
-  generateMintActivity(count: number = 10, options: Partial<MockMintActivity> = {}): MockMintActivity[] {
+  generateMintActivity(
+    count: number = 10,
+    options: Partial<MockMintActivity> = {}
+  ): MockMintActivity[] {
     const events: MockMintActivity[] = [];
-    
+
     for (let i = 0; i < count; i++) {
       const event: MockMintActivity = {
         type: 'mint_activity',
@@ -165,7 +167,7 @@ export class MockDataGenerator {
         minter: this.randomChoice(this.WALLET_ADDRESSES),
         price: this.randomAmount(0.01, 5),
         gasUsed: Math.floor(Math.random() * 200000) + 50000,
-        ...options
+        ...options,
       };
 
       events.push(event);
@@ -177,10 +179,13 @@ export class MockDataGenerator {
   /**
    * Generate mock liquidity activity events
    */
-  generateLiquidityActivity(count: number = 10, options: Partial<MockLiquidityActivity> = {}): MockLiquidityActivity[] {
+  generateLiquidityActivity(
+    count: number = 10,
+    options: Partial<MockLiquidityActivity> = {}
+  ): MockLiquidityActivity[] {
     const events: MockLiquidityActivity[] = [];
     const actions: Array<'add' | 'remove' | 'swap'> = ['add', 'remove', 'swap'];
-    
+
     for (let i = 0; i < count; i++) {
       const event: MockLiquidityActivity = {
         type: 'liquidity_activity',
@@ -191,7 +196,7 @@ export class MockDataGenerator {
         token1: 'ETH',
         action: this.randomChoice(actions),
         priceImpact: Math.random() * 10,
-        ...options
+        ...options,
       };
 
       events.push(event);
@@ -203,11 +208,18 @@ export class MockDataGenerator {
   /**
    * Generate mock governance activity events
    */
-  generateGovernanceActivity(count: number = 10, options: Partial<MockGovernanceActivity> = {}): MockGovernanceActivity[] {
+  generateGovernanceActivity(
+    count: number = 10,
+    options: Partial<MockGovernanceActivity> = {}
+  ): MockGovernanceActivity[] {
     const events: MockGovernanceActivity[] = [];
-    const proposalTypes: Array<'standard' | 'critical' | 'emergency'> = ['standard', 'critical', 'emergency'];
+    const proposalTypes: Array<'standard' | 'critical' | 'emergency'> = [
+      'standard',
+      'critical',
+      'emergency',
+    ];
     const actions: Array<'created' | 'voted' | 'executed'> = ['created', 'voted', 'executed'];
-    
+
     for (let i = 0; i < count; i++) {
       const event: MockGovernanceActivity = {
         type: 'governance_activity',
@@ -217,7 +229,7 @@ export class MockDataGenerator {
         proposalType: this.randomChoice(proposalTypes),
         votingPower: this.randomAmount(1000, 100000),
         action: this.randomChoice(actions),
-        ...options
+        ...options,
       };
 
       events.push(event);
@@ -229,12 +241,21 @@ export class MockDataGenerator {
   /**
    * Generate mock security events
    */
-  generateSecurityEvents(count: number = 10, options: Partial<MockSecurityEvent> = {}): MockSecurityEvent[] {
+  generateSecurityEvents(
+    count: number = 10,
+    options: Partial<MockSecurityEvent> = {}
+  ): MockSecurityEvent[] {
     const events: MockSecurityEvent[] = [];
-    const riskLevels: Array<'low' | 'medium' | 'high' | 'critical'> = ['low', 'medium', 'high', 'critical'];
-    const eventTypes: Array<'suspicious_pattern' | 'large_transfer' | 'contract_interaction' | 'exploit_detected'> = 
-      ['suspicious_pattern', 'large_transfer', 'contract_interaction', 'exploit_detected'];
-    
+    const riskLevels: Array<'low' | 'medium' | 'high' | 'critical'> = [
+      'low',
+      'medium',
+      'high',
+      'critical',
+    ];
+    const eventTypes: Array<
+      'suspicious_pattern' | 'large_transfer' | 'contract_interaction' | 'exploit_detected'
+    > = ['suspicious_pattern', 'large_transfer', 'contract_interaction', 'exploit_detected'];
+
     for (let i = 0; i < count; i++) {
       const event: MockSecurityEvent = {
         type: 'security_event',
@@ -245,9 +266,9 @@ export class MockDataGenerator {
         details: {
           transactionHash: `0x${Math.random().toString(16).substr(2, 64)}`,
           gasPrice: Math.floor(Math.random() * 100) + 20,
-          value: this.randomAmount(0.1, 1000)
+          value: this.randomAmount(0.1, 1000),
         },
-        ...options
+        ...options,
       };
 
       events.push(event);
@@ -259,7 +280,10 @@ export class MockDataGenerator {
   /**
    * Generate mock anomaly events
    */
-  generateAnomalyEvents(count: number = 10, options: Partial<MockAnomalyEvent> = {}): MockAnomalyEvent[] {
+  generateAnomalyEvents(
+    count: number = 10,
+    options: Partial<MockAnomalyEvent> = {}
+  ): MockAnomalyEvent[] {
     const events: MockAnomalyEvent[] = [];
     const patterns = [
       'unusual_gas_pattern',
@@ -267,22 +291,25 @@ export class MockDataGenerator {
       'flash_loan_pattern',
       'sandwich_attack',
       'mev_extraction',
-      'wash_trading'
+      'wash_trading',
     ];
-    
+
     for (let i = 0; i < count; i++) {
       const event: MockAnomalyEvent = {
         type: 'anomaly',
         timestamp: this.randomTimestamp(),
         pattern: this.randomChoice(patterns),
         confidence: Math.random() * 0.4 + 0.6, // 0.6 to 1.0
-        affectedAddresses: this.randomChoice(this.WALLET_ADDRESSES, Math.floor(Math.random() * 5) + 1),
+        affectedAddresses: this.randomChoice(
+          this.WALLET_ADDRESSES,
+          Math.floor(Math.random() * 5) + 1
+        ),
         metadata: {
           blockNumber: Math.floor(Math.random() * 1000000) + 18000000,
           networkId: 1,
-          severity: Math.random() > 0.5 ? 'high' : 'medium'
+          severity: Math.random() > 0.5 ? 'high' : 'medium',
         },
-        ...options
+        ...options,
       };
 
       events.push(event);
@@ -298,16 +325,16 @@ export class MockDataGenerator {
     const events: MockEvent[] = [];
     const eventTypes = [
       'wallet_activity',
-      'mint_activity', 
+      'mint_activity',
       'liquidity_activity',
       'governance_activity',
       'security_event',
-      'anomaly'
+      'anomaly',
     ];
 
     for (let i = 0; i < count; i++) {
       const eventType = this.randomChoice(eventTypes);
-      
+
       switch (eventType) {
         case 'wallet_activity':
           events.push(...this.generateWalletActivity(1));
@@ -337,7 +364,9 @@ export class MockDataGenerator {
   /**
    * Generate scenario-specific test data
    */
-  generateScenario(scenario: 'launch_detection' | 'mint_surge' | 'liquidity_drain' | 'governance_attack'): MockEvent[] {
+  generateScenario(
+    scenario: 'launch_detection' | 'mint_surge' | 'liquidity_drain' | 'governance_attack'
+  ): MockEvent[] {
     switch (scenario) {
       case 'launch_detection':
         return this.generateLaunchDetectionScenario();
@@ -354,59 +383,65 @@ export class MockDataGenerator {
 
   private generateLaunchDetectionScenario(): MockEvent[] {
     const events: MockEvent[] = [];
-    const launchWallet = this.WALLET_ADDRESSES[0];
-    
+    const launchWallet = this.WALLET_ADDRESSES[0]!;
+
     // Funding from CEX
-    events.push(...this.generateWalletActivity(3, {
-      address: launchWallet,
-      source: 'kraken',
-      fundingDetected: true,
-      amount: this.randomAmount(50000, 100000)
-    }));
+    events.push(
+      ...this.generateWalletActivity(3, {
+        address: launchWallet,
+        source: 'kraken',
+        fundingDetected: true,
+        amount: this.randomAmount(50000, 100000),
+      })
+    );
 
     // Contract deployment
-    events.push(...this.generateWalletActivity(1, {
-      address: launchWallet,
-      deployDetected: true,
-      bundleCount: 5
-    }));
+    events.push(
+      ...this.generateWalletActivity(1, {
+        address: launchWallet,
+        deployDetected: true,
+        bundleCount: 5,
+      })
+    );
 
     return events;
   }
 
   private generateMintSurgeScenario(): MockEvent[] {
-    const collection = this.COLLECTION_ADDRESSES[0];
+    const collection = this.COLLECTION_ADDRESSES[0]!;
     return this.generateMintActivity(20, {
       collection,
-      mintCount: this.randomAmount(15, 50)
+      mintCount: this.randomAmount(15, 50),
     });
   }
 
   private generateLiquidityDrainScenario(): MockEvent[] {
-    const pool = this.POOL_ADDRESSES[0];
+    const pool = this.POOL_ADDRESSES[0]!;
     return this.generateLiquidityActivity(10, {
       poolAddress: pool,
       action: 'remove',
-      amount: this.randomAmount(500000, 2000000)
+      amount: this.randomAmount(500000, 2000000),
     });
   }
 
   private generateGovernanceAttackScenario(): MockEvent[] {
-    const dao = this.DAO_NAMES[0];
+    const dao = this.DAO_NAMES[0]!;
     return this.generateGovernanceActivity(5, {
       dao,
       proposalType: 'critical',
-      votingPower: this.randomAmount(100000, 500000)
+      votingPower: this.randomAmount(100000, 500000),
     });
   }
 
   // Utility methods
+  private randomChoice<T>(array: T[]): T;
+  private randomChoice<T>(array: T[], count: number): T[];
   private randomChoice<T>(array: T[], count?: number): T | T[] {
     if (count !== undefined) {
       const shuffled = [...array].sort(() => 0.5 - Math.random());
       return shuffled.slice(0, count);
     }
-    return array[Math.floor(Math.random() * array.length)];
+    return array[Math.floor(Math.random() * array.length)]!;
   }
 
   private randomAmount(min: number, max: number): number {

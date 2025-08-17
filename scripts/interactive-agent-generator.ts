@@ -39,7 +39,7 @@ const AGENT_TEMPLATES: AgentTemplate[] = [
       "pool_change_{{timestamp}}",
       "liquidity_event_{{hash}}",
       "swap_volume_{{amount}}"
-    ];`
+    ];`,
   },
   {
     id: 'nft-mint-tracker',
@@ -64,7 +64,7 @@ const AGENT_TEMPLATES: AgentTemplate[] = [
       "mint_event_{{collection}}",
       "surge_detected_{{timestamp}}",
       "collection_{{hash}}"
-    ];`
+    ];`,
   },
   {
     id: 'governance-proposal-monitor',
@@ -89,7 +89,7 @@ const AGENT_TEMPLATES: AgentTemplate[] = [
       "proposal_{{proposalId}}",
       "dao_activity_{{dao}}",
       "vote_pattern_{{hash}}"
-    ];`
+    ];`,
   },
   {
     id: 'security-anomaly-detector',
@@ -114,8 +114,8 @@ const AGENT_TEMPLATES: AgentTemplate[] = [
       "security_event_{{timestamp}}",
       "risk_pattern_{{hash}}",
       "wallet_flag_{{walletAddress}}"
-    ];`
-  }
+    ];`,
+  },
 ];
 
 const GLYPHS = ['Ω', 'Ψ', 'Δ', 'Γ', 'Λ', 'Π', 'Σ', 'Φ', 'Χ', 'Ξ', '∆', '∇', '∞', '∑', '∏', '∫'];
@@ -126,12 +126,12 @@ class AgentGenerator {
   constructor() {
     this.rl = readline.createInterface({
       input: process.stdin,
-      output: process.stdout
+      output: process.stdout,
     });
   }
 
   private question(prompt: string): Promise<string> {
-    return new Promise((resolve) => {
+    return new Promise(resolve => {
       this.rl.question(prompt, resolve);
     });
   }
@@ -150,7 +150,7 @@ class AgentGenerator {
   }
 
   private selectRandomGlyph(): string {
-    return GLYPHS[Math.floor(Math.random() * GLYPHS.length)];
+    return GLYPHS[Math.floor(Math.random() * GLYPHS.length)]!;
   }
 
   private generateAgentCode(
@@ -165,9 +165,12 @@ class AgentGenerator {
     const observeLogic = template.observeLogic
       .replace(/{{agentName}}/g, agentName)
       .replace(/{{glyph}}/g, glyph);
-    
-    const memoryLogic = template.memoryPattern 
-      ? template.memoryPattern.replace(/{{timestamp}}/g, 'timestamp').replace(/{{hash}}/g, 'hash').replace(/{{amount}}/g, 'amount')
+
+    const memoryLogic = template.memoryPattern
+      ? template.memoryPattern
+          .replace(/{{timestamp}}/g, 'timestamp')
+          .replace(/{{hash}}/g, 'hash')
+          .replace(/{{amount}}/g, 'amount')
       : `return ["${template.category}_event_001", "${agentName.toLowerCase()}_signal"];`;
 
     return `import { Agent } from "../types/agent";
@@ -208,18 +211,22 @@ export const ${agentName}: Agent = {
 
   async generate(): Promise<void> {
     console.log('🚀 Welcome to the Eremos Agent Generator!\n');
-    
+
     try {
       // Display available templates
       this.displayTemplates();
-      
+
       // Template selection
-      const templateChoice = await this.question('Select a template (1-4) or press Enter for custom: ');
+      const templateChoice = await this.question(
+        'Select a template (1-4) or press Enter for custom: '
+      );
       let selectedTemplate: AgentTemplate | null = null;
-      
+
       if (templateChoice && parseInt(templateChoice) >= 1 && parseInt(templateChoice) <= 4) {
-        selectedTemplate = AGENT_TEMPLATES[parseInt(templateChoice) - 1];
-        console.log(`\n✅ Selected: ${selectedTemplate.name}\n`);
+        selectedTemplate = AGENT_TEMPLATES[parseInt(templateChoice) - 1] || null;
+        if (selectedTemplate) {
+          console.log(`\n✅ Selected: ${selectedTemplate.name}\n`);
+        }
       } else {
         console.log('\n🛠️  Creating custom agent...\n');
       }
@@ -231,35 +238,50 @@ export const ${agentName}: Agent = {
         if (this.validateAgentName(name)) {
           agentName = name;
         } else {
-          console.log('❌ Invalid name. Use PascalCase, 3-50 characters, letters and numbers only.');
+          console.log(
+            '❌ Invalid name. Use PascalCase, 3-50 characters, letters and numbers only.'
+          );
         }
       }
 
       // Agent description
-      const defaultDesc = selectedTemplate?.description || 'Custom agent for monitoring blockchain activity';
-      const description = await this.question(`Enter description (or press Enter for default): `) || defaultDesc;
+      const defaultDesc =
+        selectedTemplate?.description || 'Custom agent for monitoring blockchain activity';
+      const description =
+        (await this.question(`Enter description (or press Enter for default): `)) || defaultDesc;
 
       // Watch type
       const defaultWatchType = selectedTemplate?.watchType || 'wallet_activity';
-      const watchType = await this.question(`Enter watch type (default: ${defaultWatchType}): `) || defaultWatchType;
+      const watchType =
+        (await this.question(`Enter watch type (default: ${defaultWatchType}): `)) ||
+        defaultWatchType;
 
       // Trigger threshold
       let threshold = selectedTemplate?.defaultThreshold || 3;
-      const thresholdInput = await this.question(`Enter trigger threshold (default: ${threshold}): `);
+      const thresholdInput = await this.question(
+        `Enter trigger threshold (default: ${threshold}): `
+      );
       if (thresholdInput && this.validateThreshold(thresholdInput)) {
         threshold = parseInt(thresholdInput);
       }
 
       // Glyph selection
       const randomGlyph = this.selectRandomGlyph();
-      const glyph = await this.question(`Enter glyph (default: ${randomGlyph}): `) || randomGlyph;
+      const glyph = (await this.question(`Enter glyph (default: ${randomGlyph}): `)) || randomGlyph;
 
       // Generate agent
       const agentId = this.generateAgentId(agentName);
-      
+
       let agentCode: string;
       if (selectedTemplate) {
-        agentCode = this.generateAgentCode(selectedTemplate, agentName, agentId, glyph, threshold, description);
+        agentCode = this.generateAgentCode(
+          selectedTemplate,
+          agentName,
+          agentId,
+          glyph,
+          threshold,
+          description
+        );
       } else {
         // Custom agent template
         agentCode = `import { Agent } from "../types/agent";
@@ -302,27 +324,26 @@ export const ${agentName}: Agent = {
       // Save agent file
       const filename = `${agentName.toLowerCase()}.ts`;
       const filepath = path.join('agents', filename);
-      
+
       fs.writeFileSync(filepath, agentCode);
-      
+
       console.log(`\n✅ Agent generated successfully!`);
       console.log(`📁 File: ${filepath}`);
       console.log(`🤖 Agent ID: ${agentId}`);
       console.log(`🔮 Glyph: ${glyph}`);
       console.log(`⚡ Threshold: ${threshold}`);
-      
+
       // Generate test file
       const testCode = this.generateTestCode(agentName, agentId, watchType);
       const testFilepath = path.join('tests', `${agentName.toLowerCase()}.test.ts`);
       fs.writeFileSync(testFilepath, testCode);
       console.log(`🧪 Test file: ${testFilepath}`);
-      
+
       console.log('\n🎉 Your agent is ready! Remember to:');
       console.log('1. Review and customize the observe() logic');
       console.log('2. Update the getMemory() method if needed');
       console.log('3. Run the tests to validate your agent');
       console.log('4. Add your agent to the main export if needed');
-
     } catch (error) {
       console.error('❌ Error generating agent:', error);
     } finally {

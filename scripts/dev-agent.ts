@@ -25,7 +25,7 @@ class AgentDevServer {
 
   async start(): Promise<void> {
     console.log('🚀 Starting Eremos Agent Development Server...\n');
-    
+
     try {
       // Load agent if specified
       if (this.config.agentPath) {
@@ -56,7 +56,6 @@ class AgentDevServer {
 
       console.log('🎯 Development server running. Press Ctrl+C to stop.\n');
       console.log('📈 Event simulation started...\n');
-
     } catch (error) {
       console.error('❌ Failed to start development server:', error);
     }
@@ -65,7 +64,7 @@ class AgentDevServer {
   private async loadAgent(agentPath: string): Promise<void> {
     try {
       const absolutePath = path.resolve(agentPath);
-      
+
       if (!fs.existsSync(absolutePath)) {
         throw new Error(`Agent file not found: ${agentPath}`);
       }
@@ -73,16 +72,15 @@ class AgentDevServer {
       // Clear require cache for hot reloading
       delete require.cache[absolutePath];
       const module = require(absolutePath);
-      
+
       // Find the agent export
-      this.agent = Object.values(module).find((exp: any) => 
-        exp && typeof exp === 'object' && exp.id && exp.name && exp.observe
+      this.agent = Object.values(module).find(
+        (exp: any) => exp && typeof exp === 'object' && exp.id && exp.name && exp.observe
       ) as Agent;
 
       if (!this.agent) {
         throw new Error('No valid agent found in the specified file');
       }
-
     } catch (error) {
       console.error(`❌ Failed to load agent from ${agentPath}:`, error);
       throw error;
@@ -91,12 +89,13 @@ class AgentDevServer {
 
   private async selectAgent(): Promise<void> {
     const agentsDir = path.join(process.cwd(), 'agents');
-    
+
     if (!fs.existsSync(agentsDir)) {
       throw new Error('Agents directory not found');
     }
 
-    const agentFiles = fs.readdirSync(agentsDir)
+    const agentFiles = fs
+      .readdirSync(agentsDir)
       .filter(file => file.endsWith('.ts') && !file.endsWith('.test.ts'));
 
     if (agentFiles.length === 0) {
@@ -110,6 +109,9 @@ class AgentDevServer {
 
     // For development, just load the first agent
     const selectedFile = agentFiles[0];
+    if (!selectedFile) {
+      throw new Error('No agent files found');
+    }
     const agentPath = path.join(agentsDir, selectedFile);
     await this.loadAgent(agentPath);
   }
@@ -125,7 +127,7 @@ class AgentDevServer {
 
     try {
       let events;
-      
+
       if (this.config.scenario) {
         events = mockDataGenerator.generateScenario(this.config.scenario);
       } else {
@@ -157,7 +159,7 @@ class AgentDevServer {
       // Process each event
       events.forEach(event => {
         this.eventCounter++;
-        
+
         if (this.config.verbose) {
           console.log(`📨 Event ${this.eventCounter}:`, JSON.stringify(event, null, 2));
         } else {
@@ -177,7 +179,6 @@ class AgentDevServer {
         console.log(`\n✅ Completed ${this.config.eventCount} events. Stopping simulation.`);
         this.stop();
       }
-
     } catch (error) {
       console.error('❌ Error simulating event:', error);
     }
@@ -194,29 +195,32 @@ class AgentDevServer {
 // CLI interface
 async function main() {
   const args = process.argv.slice(2);
-  
+
   const config: DevServerConfig = {
     eventInterval: 2000, // 2 seconds
     eventCount: 50,
-    verbose: false
+    verbose: false,
   };
 
   // Parse command line arguments
   for (let i = 0; i < args.length; i++) {
     const arg = args[i];
-    
+
     switch (arg) {
       case '--agent':
       case '-a':
-        config.agentPath = args[++i];
+        const agentArg = args[++i];
+        if (agentArg) config.agentPath = agentArg;
         break;
       case '--interval':
       case '-i':
-        config.eventInterval = parseInt(args[++i]) || 2000;
+        const intervalArg = args[++i];
+        config.eventInterval = intervalArg ? parseInt(intervalArg) || 2000 : 2000;
         break;
       case '--count':
       case '-c':
-        config.eventCount = parseInt(args[++i]) || 50;
+        const countArg = args[++i];
+        config.eventCount = countArg ? parseInt(countArg) || 50 : 50;
         break;
       case '--scenario':
       case '-s':

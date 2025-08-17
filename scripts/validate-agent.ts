@@ -33,20 +33,40 @@ interface MockEvent {
 
 class AgentValidator {
   private readonly REQUIRED_FIELDS = [
-    'id', 'name', 'role', 'glyph', 'watchType', 
-    'triggerThreshold', 'lastSignal', 'originTimestamp', 
-    'description', 'observe'
+    'id',
+    'name',
+    'role',
+    'glyph',
+    'watchType',
+    'triggerThreshold',
+    'lastSignal',
+    'originTimestamp',
+    'description',
+    'observe',
   ];
 
   private readonly VALID_ROLES = [
-    'memory_vault', 'surveillance', 'indexing', 'launch_monitor',
-    'defi_monitor', 'nft_monitor', 'governance_monitor', 'security_monitor',
-    'custom_monitor', 'template'
+    'memory_vault',
+    'surveillance',
+    'indexing',
+    'launch_monitor',
+    'defi_monitor',
+    'nft_monitor',
+    'governance_monitor',
+    'security_monitor',
+    'custom_monitor',
+    'template',
   ];
 
   private readonly VALID_WATCH_TYPES = [
-    'wallet_activity', 'anomaly_detection', 'mint_activity', 'liquidity_activity',
-    'governance_activity', 'security_event', 'contract_deployment', 'token_transfer'
+    'wallet_activity',
+    'anomaly_detection',
+    'mint_activity',
+    'liquidity_activity',
+    'governance_activity',
+    'security_event',
+    'contract_deployment',
+    'token_transfer',
   ];
 
   async validateAgent(agentPath: string): Promise<ValidationResult> {
@@ -54,7 +74,7 @@ class AgentValidator {
       isValid: true,
       errors: [],
       warnings: [],
-      score: 100
+      score: 100,
     };
 
     try {
@@ -64,7 +84,7 @@ class AgentValidator {
           code: 'FILE_NOT_FOUND',
           message: `Agent file not found: ${agentPath}`,
           severity: 'error',
-          suggestion: 'Ensure the file path is correct and the file exists'
+          suggestion: 'Ensure the file path is correct and the file exists',
         });
         result.isValid = false;
         result.score = 0;
@@ -77,7 +97,7 @@ class AgentValidator {
 
       // Validate file structure
       this.validateFileStructure(fileContent, result);
-      
+
       // Validate agent object
       if (agent) {
         this.validateAgentObject(agent, result);
@@ -88,7 +108,7 @@ class AgentValidator {
           code: 'AGENT_LOAD_FAILED',
           message: 'Failed to load agent from file',
           severity: 'error',
-          suggestion: 'Check for syntax errors and ensure the agent is properly exported'
+          suggestion: 'Check for syntax errors and ensure the agent is properly exported',
         });
         result.isValid = false;
       }
@@ -96,12 +116,11 @@ class AgentValidator {
       // Calculate final score
       result.score = this.calculateScore(result);
       result.isValid = result.errors.filter(e => e.severity === 'error').length === 0;
-
     } catch (error) {
       result.errors.push({
         code: 'VALIDATION_ERROR',
         message: `Validation failed: ${error instanceof Error ? error.message : 'Unknown error'}`,
-        severity: 'error'
+        severity: 'error',
       });
       result.isValid = false;
       result.score = 0;
@@ -116,10 +135,10 @@ class AgentValidator {
       const absolutePath = path.resolve(agentPath);
       delete require.cache[absolutePath];
       const module = require(absolutePath);
-      
+
       // Find the agent export
-      const agentExport = Object.values(module).find((exp: any) => 
-        exp && typeof exp === 'object' && exp.id && exp.name && exp.observe
+      const agentExport = Object.values(module).find(
+        (exp: any) => exp && typeof exp === 'object' && exp.id && exp.name && exp.observe
       ) as Agent;
 
       return agentExport || null;
@@ -134,7 +153,7 @@ class AgentValidator {
     const requiredImports = [
       'import.*Agent.*from.*types/agent',
       'import.*generateSignalHash.*from.*utils/signal',
-      'import.*logSignal.*from.*utils/logger'
+      'import.*logSignal.*from.*utils/logger',
     ];
 
     requiredImports.forEach((importPattern, index) => {
@@ -143,7 +162,7 @@ class AgentValidator {
         result.warnings.push({
           code: 'MISSING_IMPORT',
           message: `Missing recommended import: ${importNames[index]}`,
-          suggestion: 'Add the missing import for better functionality'
+          suggestion: 'Add the missing import for better functionality',
         });
       }
     });
@@ -154,7 +173,7 @@ class AgentValidator {
         code: 'NO_EXPORT',
         message: 'Agent must be exported',
         severity: 'error',
-        suggestion: 'Add "export const YourAgent: Agent = { ... }"'
+        suggestion: 'Add "export const YourAgent: Agent = { ... }"',
       });
     }
 
@@ -163,7 +182,7 @@ class AgentValidator {
       result.warnings.push({
         code: 'MISSING_TYPE_ANNOTATION',
         message: 'Agent should have explicit type annotation',
-        suggestion: 'Add ": Agent" type annotation to your agent constant'
+        suggestion: 'Add ": Agent" type annotation to your agent constant',
       });
     }
   }
@@ -176,7 +195,7 @@ class AgentValidator {
           code: 'MISSING_FIELD',
           message: `Required field missing: ${field}`,
           severity: 'error',
-          suggestion: `Add the ${field} field to your agent object`
+          suggestion: `Add the ${field} field to your agent object`,
         });
       }
     });
@@ -191,7 +210,7 @@ class AgentValidator {
       result.warnings.push({
         code: 'ID_FORMAT',
         message: 'Agent ID should start with "agent-"',
-        suggestion: 'Use format: "agent-yourname"'
+        suggestion: 'Use format: "agent-yourname"',
       });
     }
 
@@ -200,7 +219,7 @@ class AgentValidator {
       result.warnings.push({
         code: 'NAME_FORMAT',
         message: 'Agent name should be PascalCase',
-        suggestion: 'Use PascalCase format like "MyAgent"'
+        suggestion: 'Use PascalCase format like "MyAgent"',
       });
     }
 
@@ -209,7 +228,7 @@ class AgentValidator {
       result.warnings.push({
         code: 'INVALID_ROLE',
         message: `Unknown role: ${agent.role}`,
-        suggestion: `Use one of: ${this.VALID_ROLES.join(', ')}`
+        suggestion: `Use one of: ${this.VALID_ROLES.join(', ')}`,
       });
     }
 
@@ -218,7 +237,7 @@ class AgentValidator {
       result.warnings.push({
         code: 'INVALID_WATCH_TYPE',
         message: `Unknown watch type: ${agent.watchType}`,
-        suggestion: `Use one of: ${this.VALID_WATCH_TYPES.join(', ')}`
+        suggestion: `Use one of: ${this.VALID_WATCH_TYPES.join(', ')}`,
       });
     }
 
@@ -229,14 +248,14 @@ class AgentValidator {
           code: 'INVALID_THRESHOLD_TYPE',
           message: 'triggerThreshold must be a number',
           severity: 'error',
-          suggestion: 'Set triggerThreshold to a numeric value'
+          suggestion: 'Set triggerThreshold to a numeric value',
         });
       } else if (agent.triggerThreshold < 0) {
         result.errors.push({
           code: 'NEGATIVE_THRESHOLD',
           message: 'triggerThreshold cannot be negative',
           severity: 'error',
-          suggestion: 'Set triggerThreshold to a positive number or Infinity'
+          suggestion: 'Set triggerThreshold to a positive number or Infinity',
         });
       }
     }
@@ -246,7 +265,7 @@ class AgentValidator {
       result.warnings.push({
         code: 'INVALID_GLYPH',
         message: 'Glyph should be a single character',
-        suggestion: 'Use a single Unicode character as the glyph'
+        suggestion: 'Use a single Unicode character as the glyph',
       });
     }
 
@@ -256,7 +275,7 @@ class AgentValidator {
         code: 'INVALID_TIMESTAMP',
         message: 'originTimestamp must be a valid ISO date string',
         severity: 'error',
-        suggestion: 'Use new Date().toISOString() format'
+        suggestion: 'Use new Date().toISOString() format',
       });
     }
 
@@ -265,7 +284,7 @@ class AgentValidator {
       result.warnings.push({
         code: 'SHORT_DESCRIPTION',
         message: 'Description should be more descriptive',
-        suggestion: 'Provide a detailed description of what the agent does'
+        suggestion: 'Provide a detailed description of what the agent does',
       });
     }
   }
@@ -277,7 +296,7 @@ class AgentValidator {
         code: 'INVALID_OBSERVE',
         message: 'observe must be a function',
         severity: 'error',
-        suggestion: 'Implement observe as a function that takes an event parameter'
+        suggestion: 'Implement observe as a function that takes an event parameter',
       });
     }
 
@@ -287,7 +306,7 @@ class AgentValidator {
         code: 'INVALID_GET_MEMORY',
         message: 'getMemory must be a function if provided',
         severity: 'error',
-        suggestion: 'Implement getMemory as a function that returns an array of strings'
+        suggestion: 'Implement getMemory as a function that returns an array of strings',
       });
     }
   }
@@ -296,7 +315,7 @@ class AgentValidator {
     try {
       // Test observe function with mock events
       const mockEvents = this.generateMockEvents(agent.watchType);
-      
+
       for (const event of mockEvents) {
         try {
           agent.observe(event);
@@ -305,7 +324,7 @@ class AgentValidator {
             code: 'OBSERVE_RUNTIME_ERROR',
             message: `observe() threw an error: ${error instanceof Error ? error.message : 'Unknown error'}`,
             severity: 'error',
-            suggestion: 'Add error handling to your observe function'
+            suggestion: 'Add error handling to your observe function',
           });
         }
       }
@@ -319,13 +338,13 @@ class AgentValidator {
               code: 'INVALID_MEMORY_RETURN',
               message: 'getMemory() must return an array',
               severity: 'error',
-              suggestion: 'Return an array of strings from getMemory()'
+              suggestion: 'Return an array of strings from getMemory()',
             });
           } else if (memory.length === 0) {
             result.warnings.push({
               code: 'EMPTY_MEMORY',
               message: 'getMemory() returns empty array',
-              suggestion: 'Consider returning some default memory entries'
+              suggestion: 'Consider returning some default memory entries',
             });
           }
         } catch (error) {
@@ -333,16 +352,15 @@ class AgentValidator {
             code: 'MEMORY_RUNTIME_ERROR',
             message: `getMemory() threw an error: ${error instanceof Error ? error.message : 'Unknown error'}`,
             severity: 'error',
-            suggestion: 'Add error handling to your getMemory function'
+            suggestion: 'Add error handling to your getMemory function',
           });
         }
       }
-
     } catch (error) {
       result.errors.push({
         code: 'FUNCTIONALITY_TEST_FAILED',
         message: `Failed to test agent functionality: ${error instanceof Error ? error.message : 'Unknown error'}`,
-        severity: 'error'
+        severity: 'error',
       });
     }
   }
@@ -350,32 +368,38 @@ class AgentValidator {
   private generateMockEvents(watchType: string): MockEvent[] {
     const baseEvent = {
       timestamp: new Date().toISOString(),
-      data: { test: true }
+      data: { test: true },
     };
 
     const eventTypes: Record<string, MockEvent[]> = {
-      'wallet_activity': [
+      wallet_activity: [
         { ...baseEvent, type: 'wallet_activity', data: { address: '0x123', amount: 1000 } },
-        { ...baseEvent, type: 'wallet_activity', data: { address: '0x456', amount: 500 } }
+        { ...baseEvent, type: 'wallet_activity', data: { address: '0x456', amount: 500 } },
       ],
-      'mint_activity': [
+      mint_activity: [
         { ...baseEvent, type: 'mint_activity', data: { collection: '0xabc', mintCount: 10 } },
-        { ...baseEvent, type: 'mint_activity', data: { collection: '0xdef', mintCount: 5 } }
+        { ...baseEvent, type: 'mint_activity', data: { collection: '0xdef', mintCount: 5 } },
       ],
-      'liquidity_activity': [
-        { ...baseEvent, type: 'liquidity_activity', data: { poolAddress: '0x789', amount: 50000 } }
+      liquidity_activity: [
+        { ...baseEvent, type: 'liquidity_activity', data: { poolAddress: '0x789', amount: 50000 } },
       ],
-      'governance_activity': [
-        { ...baseEvent, type: 'governance_activity', data: { proposalId: 'prop-1', dao: 'TestDAO' } }
+      governance_activity: [
+        {
+          ...baseEvent,
+          type: 'governance_activity',
+          data: { proposalId: 'prop-1', dao: 'TestDAO' },
+        },
       ],
-      'security_event': [
-        { ...baseEvent, type: 'security_event', data: { riskLevel: 'high', walletAddress: '0x999' } }
-      ]
+      security_event: [
+        {
+          ...baseEvent,
+          type: 'security_event',
+          data: { riskLevel: 'high', walletAddress: '0x999' },
+        },
+      ],
     };
 
-    return eventTypes[watchType] || [
-      { ...baseEvent, type: watchType }
-    ];
+    return eventTypes[watchType] || [{ ...baseEvent, type: watchType }];
   }
 
   private isValidISODate(dateString: string): boolean {
@@ -385,7 +409,7 @@ class AgentValidator {
 
   private calculateScore(result: ValidationResult): number {
     let score = 100;
-    
+
     // Deduct points for errors
     result.errors.forEach(error => {
       if (error.severity === 'error') {
@@ -403,13 +427,14 @@ class AgentValidator {
 
   async validateAllAgents(agentsDir: string = 'agents'): Promise<Record<string, ValidationResult>> {
     const results: Record<string, ValidationResult> = {};
-    
+
     if (!fs.existsSync(agentsDir)) {
       console.error(`Agents directory not found: ${agentsDir}`);
       return results;
     }
 
-    const files = fs.readdirSync(agentsDir)
+    const files = fs
+      .readdirSync(agentsDir)
       .filter(file => file.endsWith('.ts') && !file.endsWith('.test.ts'))
       .map(file => path.join(agentsDir, file));
 
@@ -424,7 +449,7 @@ class AgentValidator {
   printValidationReport(result: ValidationResult, agentName: string): void {
     console.log(`\n🤖 Validation Report for ${agentName}`);
     console.log('='.repeat(50));
-    
+
     if (result.isValid) {
       console.log(`✅ Status: VALID (Score: ${result.score}/100)`);
     } else {
@@ -463,7 +488,7 @@ async function main() {
   if (args.length === 0) {
     console.log('🔍 Validating all agents...\n');
     const results = await validator.validateAllAgents();
-    
+
     Object.entries(results).forEach(([name, result]) => {
       validator.printValidationReport(result, name);
     });
@@ -477,10 +502,13 @@ async function main() {
     console.log(`Total agents: ${totalAgents}`);
     console.log(`Valid agents: ${validAgents}`);
     console.log(`Average score: ${avgScore.toFixed(1)}/100`);
-
   } else {
     // Validate specific agent
     const agentPath = args[0];
+    if (!agentPath) {
+      console.error('❌ Please provide an agent path');
+      return;
+    }
     const result = await validator.validateAgent(agentPath);
     const agentName = path.basename(agentPath, '.ts');
     validator.printValidationReport(result, agentName);
