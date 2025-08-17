@@ -14,8 +14,11 @@
 3. [Architecture](#Architecture)
 4. [Example Signal](#Example-Signal)
 5. [Signal Confidence](#Signal-Confidence)
-6. [Contributing](#Contributing)
-7. [License](#License)
+6. [Tech Stack](#Tech-Stack)
+7. [Key Folders](#Key-Folders)
+8. [Contributing](#Contributing)
+9. [License](#License)
+10. [Links](#links)
 
 ---
 
@@ -98,23 +101,6 @@ Confidence is computed via agent-side scoring and logged alongside the signal.
 - **Backend:** Node.js (TypeScript-based agent runner)
 - **Language:** TypeScript (typed logic across agents, utils, and infra)
 - **Chain Layer:** RPC watchers, mempool filters, native triggers
-
----
-
-## Getting Started
-
-```bash
-git clone https://github.com/EremosCore/Eremos.git
-cd Eremos
-npm install
-```
-
-Set up your environment:
-
-```bash
-cp .env.example .env.local
-npm run dev
-```
 
 ---
 
