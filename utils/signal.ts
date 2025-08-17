@@ -3,3 +3,5 @@ export function generateSignalHash(event: any): string {
   const hash = Buffer.from(base).toString("base64").slice(0, 10);
   return "sig_" + hash;
 }
+
+
