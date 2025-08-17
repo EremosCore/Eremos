@@ -1,25 +1,37 @@
-# Eremos
+ 🐝 Eremos
 
-![Eremos](docs/banner2.png)
+![License](https://img.shields.io/badge/license-MIT-blue.svg)
+![Contributions Welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg)
+![Stars](https://img.shields.io/github/stars/EremosCore/Eremos?style=social)
+[![Twitter Follow](https://img.shields.io/twitter/follow/EremosCore?style=social)](https://twitter.com/EremosCore)
 
-**Autonomous swarm agents for early on-chain signal detection**
+> A modular framework for deploying autonomous **swarm agents** that monitor on-chain activity across the Solana ecosystem.  
+> Built as a **public good**, open-source and extendable.
 
-Eremos is a lightweight framework for deploying modular agents that monitor blockchain activity - tracking wallet clusters, mint patterns, and contract anomalies.
-Designed for devs who want low-noise, early signals embedded into their workflows.
+## 📑 Table of Contents
+1. [Quick Start](quick-start)
+2. [Features](features)
+3. [Architecture](architecture)
+4. [Example Signal](ExampleSignal)
+5. [Contributing](contributing)
+6. [License](license)
 
 ---
 
-<p align="center">
-  <img src="docs/therontphd2.png" alt="Agent Theron" width="155"/><br/>
-  <em>Theron - Agent (000)</em>
-</p>
+## ⚡ Quick Start
+Clone your fork
+git clone https://github.com/YOUR-USERNAME/Eremos.git
+cd Eremos
 
-**Meet Theron - Agent-000**  
-*The first deployed agent in the swarm. Passive. Pattern-sensitive.  
-Modular and extendable by design.*
+## Install dependencies
+npm install
 
+## Copy env file
+cp .env.example .env.local
 
-**Agent-001 Coming Soon** [Teaser #1](https://x.com/EremosCore/status/1949154939923833239), [Teaser #2](https://x.com/EremosCore/status/1954856345284567218)
+## Start dev mode
+npm run dev
+
 
 ---
 
@@ -34,7 +46,13 @@ Modular and extendable by design.*
 - **Ghost Watcher** - Monitors long-dormant wallets that suddenly become active again. Useful for tracing old dev wallets or rug setups.
 - *+ More to come.*
 
+---
+## 🧩 Architecture
 
+**Eremos swarm agents follow a simple lifecycle:**
+- **Observe** — watch Solana programs, wallets, and flows
+- **Detect** — flag bundling behavior, deploys, funding anomalies
+- **Signal** — emit structured alerts and insights
 ---
 
 ## Example Signal
