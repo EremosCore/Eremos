@@ -1,9 +1,21 @@
-node_modules
-dist
-.env
+# dependencies
+node_modules/
 
-# macOS system file
-.DS_Store
+# builds
+dist/
+build/
+coverage/
+
+# env files
+.env
+.env.local
 
 # logs
-*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# editors / OS junk
+.DS_Store
+.vscode/
+.idea/
