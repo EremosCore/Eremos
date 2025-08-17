@@ -14,7 +14,7 @@
 2. [Features](#features)
 3. [Architecture](#Architecture)
 4. [Example Signal](#Example-Signal)
-5. [Meet Theron - Agent-000](#Meet-Theron-Agent-000)
+5. [Meet Theron Agent 000](#Meet-Theron-Agent-000)
 6. [Signal Confidence](#Signal-Confidence)
 7. [Tech Stack](#Tech-Stack)
 8. [Key Folders](#Key-Folders)
@@ -85,7 +85,7 @@ An example signal emitted by an agent detecting a live token deployment:
 ```
 
 ---
-## Meet Theron - Agent-000
+## Meet Theron Agent 000
 
 <p align="center">
   <img src="docs/therontphd2.png" alt="Agent Theron" width="155"/><br/>
