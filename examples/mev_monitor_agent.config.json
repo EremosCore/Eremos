@@ -1,0 +1,5 @@
+{
+  "name": "MEVMonitor",
+  "adapters": ["solana"],
+  "monitorMEV": true
+}

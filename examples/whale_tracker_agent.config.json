@@ -1,0 +1,5 @@
+{
+  "name": "WhaleTracker",
+  "adapters": ["solana"],
+  "threshold": 100000
+}
