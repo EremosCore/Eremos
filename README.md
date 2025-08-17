@@ -14,8 +14,9 @@
 
 Eremos is a lightweight framework for deploying modular agents that monitor blockchain activity - tracking wallet clusters, mint patterns, and contract anomalies. Designed for devs who want low-noise, early signals embedded into their workflows.
 
-## Table of Contents
+## Table of Contents 📚
 - [Features](#features)
+- [Architecture](#architecture)
 - [Example Signal](#example-signal)
 - [Signal Confidence](#signal-confidence)
 - [Tech Stack](#tech-stack)
@@ -24,7 +25,6 @@ Eremos is a lightweight framework for deploying modular agents that monitor bloc
 - [Contributing](#contributing)
 - [License](#license)
 - [Links](#links)
-
 ---
 
 <p align="center">
@@ -111,7 +111,7 @@ An example signal emitted by an agent detecting a live token deployment:
 
 ---
 
-## Signal Confidence
+## Signal Confidence 💡
 
 Each emitted signal includes a `confidence` score (0-1) based on behavioral heuristics:
 - CEX-origin funding (e.g. Kraken, Coinbase)
@@ -152,7 +152,7 @@ npm run dev
 
 ---
 
-## Key Folders
+## Key Folders 
 
 - `/agents` - Agent templates + logic  
 - `/utils` - Shared signal/logging utilities  
