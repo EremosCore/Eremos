@@ -11,11 +11,11 @@
 ## 📑 Table of Contents
 1. [Quick Start](#⚡-quick-start)
 2. [Features](#features)
-3. [Architecture](#architecture)
+3. [Architecture](#Architecture)
 4. [Example Signal](#Example-Signal)
-5. [Signal Confidence](Signal-Confidence)
-6. [Contributing](#contributing)
-7. [License](#license)
+5. [Signal Confidence](#Signal-Confidence)
+6. [Contributing](#Contributing)
+7. [License](#License)
 
 ---
 
