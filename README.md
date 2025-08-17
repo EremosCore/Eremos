@@ -1,6 +1,6 @@
 # Eremos
 
-![Eremos](docs/assets/banner2.png)
+![Eremos](https://github.com/EremosCore/Eremos/blob/main/docs/banner2.png?raw=true)
 
 **Autonomous swarm agents for early on-chain signal detection**
 
