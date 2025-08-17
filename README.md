@@ -93,7 +93,7 @@ Rule-based for reliability which is expandable via contributions.
 
 ## Architecture
 
-High-level swarm flow (GitHub supports Mermaid):
+High-level swarm flow:
 
 ```mermaid
 flowchart TD
