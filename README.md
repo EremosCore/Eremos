@@ -129,10 +129,8 @@ npm run dev
 
 ## Contributing
 
-We’re open to contributors.  
-If you are experienced in TypeScript and like agent-based systems, check `example.ts` and build your own observer.
-If you're a designer, artist, or just have ideas that fit the mythos - send us a DM on Twitter. [@EremosCore](https://x.com/EremosCore)
-
+We welcome small, thoughtful contributions!
+See CONTRIBUTING.md for full guidelines.
 ---
 
 ## License
