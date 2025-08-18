@@ -1,3 +1,11 @@
+# Eremos
+
+[![Build](https://img.shields.io/github/actions/workflow/status/praise-bit/Eremos/ci.yml?branch=main)](https://github.com/praise-bit/Eremos/actions)
+[![Lint](https://img.shields.io/github/actions/workflow/status/praise-bit/Eremos/lint.yml?branch=main&label=lint)](https://github.com/praise-bit/Eremos/actions)
+[![License](https://img.shields.io/github/license/praise-bit/Eremos)](./LICENSE)
+[![Node](https://img.shields.io/badge/node-%3E%3D18-green)](https://nodejs.org)
+[![Contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)](#-contribution-guidelines)
+
 
 Project Contribution – Sample Agent & Documentation Improvements
 
@@ -35,7 +43,6 @@ Execution Flow:
 # 1. Fork the repository on GitHub
 # 2. Clone your fork
 git clone https://github.com/<your-username>/Eremos.git
-
 # 3. Navigate to the project folder
 cd Eremos
 
@@ -68,7 +75,7 @@ These updates:
 	•	Official Documentation
 	•	Issue Tracker
 	•	Pull Request Guidelines
-                    SAMPlE AGENT GUIDELINES
+                        SAMPlE AGENT GUIDELINES
 Eremos Sample Agent
 
 This repository contains the Eremos Sample Agent, a reference implementation demonstrating how to interact with the Eremos platform.
