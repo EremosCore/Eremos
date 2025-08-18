@@ -1,4 +1,4 @@
-import { Agent } from "../types/agent"
+import { Agent } from "../types/agent";
 
 export const Harvester: Agent = {
   id: "agent-harvester",
@@ -13,7 +13,7 @@ export const Harvester: Agent = {
 
   observe: (event) => {
     if (event?.type === "mint_activity" && event.amount > 10) {
-      console.log("Mint spike detected:", event.amount)
+      console.log("Mint spike detected:", event.amount);
     }
-  }
-}
+  },
+};

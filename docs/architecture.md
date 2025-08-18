@@ -3,6 +3,7 @@
 Eremos is a swarm-style agent framework for passive blockchain observation.
 
 Each agent:
+
 - Has a role (`observer`, `memory`, `trigger`, `+ more to come`)
 - Watches a specific event type
 - Emits structured signals

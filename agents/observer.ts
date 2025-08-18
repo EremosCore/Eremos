@@ -1,4 +1,4 @@
-import { Agent } from "../types/agent"
+import { Agent } from "../types/agent";
 
 export const Observer: Agent = {
   id: "agent-observer",
@@ -13,7 +13,7 @@ export const Observer: Agent = {
 
   observe: (event) => {
     if (event?.type === "wallet_activity" && event.cluster?.length > 3) {
-      console.log("Observed cluster:", event.cluster)
+      console.log("Observed cluster:", event.cluster);
     }
-  }
-}
+  },
+};
