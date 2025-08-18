@@ -2,6 +2,9 @@
 
 ![Eremos](docs/banner2.png)
 
+[![MIT License](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+[![Twitter](https://img.shields.io/twitter/follow/EremosCore?style=social)](https://x.com/EremosCore)
+
 **Autonomous swarm agents for early on-chain signal detection**
 
 Eremos is a lightweight framework for deploying modular agents that monitor blockchain activity - tracking wallet clusters, mint patterns, and contract anomalies.
@@ -21,6 +24,20 @@ Modular and extendable by design._
 **Agent-001 Coming Soon** [Teaser #1](https://x.com/EremosCore/status/1949154939923833239), [Teaser #2](https://x.com/EremosCore/status/1954856345284567218)
 
 ---
+
+## Table of Contents
+
+- [Features](#features)
+- [Example Signal](#example-signal)
+- [Signal Confidence](#signal-confidence)
+- [Getting Started](#getting-started)
+- [Quick Start](#quick-start)
+- [Key Folders](#key-folders)
+- [Documentation Index](#documentation-index)
+- [Roadmap](#roadmap)
+- [Contributing](#contributing)
+- [License](#license)
+- [Links](#links)
 
 ## Features
 
@@ -77,11 +94,15 @@ Confidence is computed via agent-side scoring and logged alongside the signal.
 - **Frontend:** Next.js, Tailwind CSS
 - **Backend:** Node.js (TypeScript-based agent runner)
 - **Language:** TypeScript (typed logic across agents, utils, and infra)
+- **Runtime:** Node.js (for agent execution and scripting)
 - **Chain Layer:** RPC watchers, mempool filters, native triggers
+- **Utilities:** Shared modules for signals, metrics, event parsing, and throttling
 
 ---
 
 ## Getting Started
+
+Requires Node.js v18+ and TypeScript.
 
 ```bash
 git clone https://github.com/EremosCore/Eremos.git
@@ -129,14 +150,8 @@ Quickly navigate to core concepts and additional resources for building and exte
 ## Contributing
 
 We’re open to contributors.  
-If you are experienced in TypeScript and like agent-based systems, check `example.ts` and build your own observer.
+If you are experienced in TypeScript and like agent-based systems, check `agents/example.ts` and build your own observer. See [Contributing Guide](docs/contributing.md) for details.
 If you're a designer, artist, or just have ideas that fit the mythos - send us a DM on Twitter. [@EremosCore](https://x.com/EremosCore)
-
----
-
-## License
-
-MIT © Eremos LLC
 
 ---
 
