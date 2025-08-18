@@ -1,0 +1,772 @@
+[
+  {
+    "type": "wallet_behavior_anomaly",
+    "confidence": 0.85,
+    "data": {
+      "address": "0x1234567890123456789012345678901234567890",
+      "transactionCount": 93,
+      "timeWindow": 133
+    },
+    "discoveredAt": "2025-08-18T02:18:31.694Z"
+  },
+  {
+    "type": "wallet_behavior_anomaly",
+    "confidence": 0.85,
+    "data": {
+      "address": "0x1234567890123456789012345678901234567890",
+      "transactionCount": 119,
+      "timeWindow": 2145
+    },
+    "discoveredAt": "2025-08-18T02:18:33.673Z"
+  },
+  {
+    "type": "wallet_behavior_anomaly",
+    "confidence": 0.85,
+    "data": {
+      "address": "0x742d35Cc6634C0532925a3b8D4C9db96C4b4d8b6",
+      "transactionCount": 79,
+      "timeWindow": 655
+    },
+    "discoveredAt": "2025-08-18T02:18:34.125Z"
+  },
+  {
+    "type": "contract_activity_spike",
+    "confidence": 0.95,
+    "data": {
+      "contractAddress": "0x6B175474E89094C44Da98b954EedeAC495271d0F",
+      "interactionCount": 3,
+      "timeWindow": "recent"
+    },
+    "discoveredAt": "2025-08-18T02:18:35.038Z"
+  },
+  {
+    "type": "wallet_behavior_anomaly",
+    "confidence": 0.85,
+    "data": {
+      "address": "0x742d35Cc6634C0532925a3b8D4C9db96C4b4d8b6",
+      "transactionCount": 107,
+      "timeWindow": 2482
+    },
+    "discoveredAt": "2025-08-18T02:18:36.004Z"
+  },
+  {
+    "type": "contract_activity_spike",
+    "confidence": 0.95,
+    "data": {
+      "contractAddress": "0x2910543Af39abA0Cd09dBb2D50200b3E800A63D2",
+      "interactionCount": 3,
+      "timeWindow": "recent"
+    },
+    "discoveredAt": "2025-08-18T02:18:36.808Z"
+  },
+  {
+    "type": "contract_activity_spike",
+    "confidence": 0.95,
+    "data": {
+      "contractAddress": "0x6B175474E89094C44Da98b954EedeAC495271d0F",
+      "interactionCount": 4,
+      "timeWindow": "recent"
+    },
+    "discoveredAt": "2025-08-18T02:18:37.855Z"
+  },
+  {
+    "type": "wallet_behavior_anomaly",
+    "confidence": 0.85,
+    "data": {
+      "address": "0x742d35Cc6634C0532925a3b8D4C9db96C4b4d8b6",
+      "transactionCount": 164,
+      "timeWindow": 5448
+    },
+    "discoveredAt": "2025-08-18T02:18:38.922Z"
+  },
+  {
+    "type": "wallet_behavior_anomaly",
+    "confidence": 0.85,
+    "data": {
+      "address": "0x8ba1f109551bD432803012645Hac136c772c3c7c",
+      "transactionCount": 59,
+      "timeWindow": 3479
+    },
+    "discoveredAt": "2025-08-18T02:18:39.346Z"
+  },
+  {
+    "type": "wallet_behavior_anomaly",
+    "confidence": 0.85,
+    "data": {
+      "address": "0x742d35Cc6634C0532925a3b8D4C9db96C4b4d8b6",
+      "transactionCount": 233,
+      "timeWindow": 6640
+    },
+    "discoveredAt": "2025-08-18T02:18:40.164Z"
+  },
+  {
+    "type": "contract_activity_spike",
+    "confidence": 0.95,
+    "data": {
+      "contractAddress": "0x6B175474E89094C44Da98b954EedeAC495271d0F",
+      "interactionCount": 5,
+      "timeWindow": "recent"
+    },
+    "discoveredAt": "2025-08-18T02:18:40.908Z"
+  },
+  {
+    "type": "wallet_behavior_anomaly",
+    "confidence": 0.85,
+    "data": {
+      "address": "0x1234567890123456789012345678901234567890",
+      "transactionCount": 202,
+      "timeWindow": 10209
+    },
+    "discoveredAt": "2025-08-18T02:18:41.954Z"
+  },
+  {
+    "type": "rapid_transaction_sequence",
+    "confidence": 0.8,
+    "data": {
+      "timeDiff": 3840,
+      "sender": "0x8ba1f109551bD432803012645Hac136c772c3c7c",
+      "txCount": 8
+    },
+    "discoveredAt": "2025-08-18T02:18:43.077Z"
+  },
+  {
+    "type": "contract_activity_spike",
+    "confidence": 0.95,
+    "data": {
+      "contractAddress": "0x6B175474E89094C44Da98b954EedeAC495271d0F",
+      "interactionCount": 6,
+      "timeWindow": "recent"
+    },
+    "discoveredAt": "2025-08-18T02:18:43.395Z"
+  },
+  {
+    "type": "rapid_transaction_sequence",
+    "confidence": 0.8,
+    "data": {
+      "timeDiff": 197,
+      "sender": "0xabcdef1234567890abcdef1234567890abcdef12",
+      "txCount": 13
+    },
+    "discoveredAt": "2025-08-18T02:18:43.486Z"
+  },
+  {
+    "type": "wallet_behavior_anomaly",
+    "confidence": 0.85,
+    "data": {
+      "address": "0x8ba1f109551bD432803012645Hac136c772c3c7c",
+      "transactionCount": 146,
+      "timeWindow": 7784
+    },
+    "discoveredAt": "2025-08-18T02:18:43.616Z"
+  },
+  {
+    "type": "wallet_behavior_anomaly",
+    "confidence": 0.85,
+    "data": {
+      "address": "0x1234567890123456789012345678901234567890",
+      "transactionCount": 248,
+      "timeWindow": 12600
+    },
+    "discoveredAt": "2025-08-18T02:18:44.137Z"
+  },
+  {
+    "type": "contract_activity_spike",
+    "confidence": 0.95,
+    "data": {
+      "contractAddress": "0x2910543Af39abA0Cd09dBb2D50200b3E800A63D2",
+      "interactionCount": 4,
+      "timeWindow": "recent"
+    },
+    "discoveredAt": "2025-08-18T02:18:44.411Z"
+  },
+  {
+    "type": "wallet_behavior_anomaly",
+    "confidence": 0.85,
+    "data": {
+      "address": "0x1234567890123456789012345678901234567890",
+      "transactionCount": 274,
+      "timeWindow": 13314
+    },
+    "discoveredAt": "2025-08-18T02:18:44.843Z"
+  },
+  {
+    "type": "wallet_behavior_anomaly",
+    "confidence": 0.85,
+    "data": {
+      "address": "0x1234567890123456789012345678901234567890",
+      "transactionCount": 293,
+      "timeWindow": 13735
+    },
+    "discoveredAt": "2025-08-18T02:18:45.267Z"
+  },
+  {
+    "type": "rapid_transaction_sequence",
+    "confidence": 0.8,
+    "data": {
+      "timeDiff": 932,
+      "sender": "0x1234567890123456789012345678901234567890",
+      "txCount": 17
+    },
+    "discoveredAt": "2025-08-18T02:18:45.488Z"
+  },
+  {
+    "type": "rapid_transaction_sequence",
+    "confidence": 0.8,
+    "data": {
+      "timeDiff": 404,
+      "sender": "0x8ba1f109551bD432803012645Hac136c772c3c7c",
+      "txCount": 19
+    },
+    "discoveredAt": "2025-08-18T02:18:46.683Z"
+  },
+  {
+    "type": "wallet_behavior_anomaly",
+    "confidence": 0.85,
+    "data": {
+      "address": "0x8ba1f109551bD432803012645Hac136c772c3c7c",
+      "transactionCount": 205,
+      "timeWindow": 11595
+    },
+    "discoveredAt": "2025-08-18T02:18:47.235Z"
+  },
+  {
+    "type": "wallet_behavior_anomaly",
+    "confidence": 0.85,
+    "data": {
+      "address": "0x8ba1f109551bD432803012645Hac136c772c3c7c",
+      "transactionCount": 273,
+      "timeWindow": 12748
+    },
+    "discoveredAt": "2025-08-18T02:18:48.356Z"
+  },
+  {
+    "type": "wallet_behavior_anomaly",
+    "confidence": 0.85,
+    "data": {
+      "address": "0x8ba1f109551bD432803012645Hac136c772c3c7c",
+      "transactionCount": 355,
+      "timeWindow": 12968
+    },
+    "discoveredAt": "2025-08-18T02:18:48.574Z"
+  },
+  {
+    "type": "wallet_behavior_anomaly",
+    "confidence": 0.85,
+    "data": {
+      "address": "0x8ba1f109551bD432803012645Hac136c772c3c7c",
+      "transactionCount": 398,
+      "timeWindow": 13076
+    },
+    "discoveredAt": "2025-08-18T02:18:48.683Z"
+  },
+  {
+    "type": "rapid_transaction_sequence",
+    "confidence": 0.8,
+    "data": {
+      "timeDiff": 657,
+      "sender": "0x742d35Cc6634C0532925a3b8D4C9db96C4b4d8b6",
+      "txCount": 21
+    },
+    "discoveredAt": "2025-08-18T02:18:48.904Z"
+  },
+  {
+    "type": "wallet_behavior_anomaly",
+    "confidence": 0.85,
+    "data": {
+      "address": "0x8ba1f109551bD432803012645Hac136c772c3c7c",
+      "transactionCount": 463,
+      "timeWindow": 13620
+    },
+    "discoveredAt": "2025-08-18T02:18:49.228Z"
+  },
+  {
+    "type": "wallet_behavior_anomaly",
+    "confidence": 0.85,
+    "data": {
+      "address": "0x1234567890123456789012345678901234567890",
+      "transactionCount": 296,
+      "timeWindow": 17826
+    },
+    "discoveredAt": "2025-08-18T02:18:49.337Z"
+  },
+  {
+    "type": "wallet_behavior_anomaly",
+    "confidence": 0.85,
+    "data": {
+      "address": "0x1234567890123456789012345678901234567890",
+      "transactionCount": 377,
+      "timeWindow": 18264
+    },
+    "discoveredAt": "2025-08-18T02:18:49.774Z"
+  },
+  {
+    "type": "contract_activity_spike",
+    "confidence": 0.95,
+    "data": {
+      "contractAddress": "0x6B175474E89094C44Da98b954EedeAC495271d0F",
+      "interactionCount": 7,
+      "timeWindow": "recent"
+    },
+    "discoveredAt": "2025-08-18T02:18:49.992Z"
+  },
+  {
+    "type": "wallet_behavior_anomaly",
+    "confidence": 0.85,
+    "data": {
+      "address": "0x8ba1f109551bD432803012645Hac136c772c3c7c",
+      "transactionCount": 528,
+      "timeWindow": 14562
+    },
+    "discoveredAt": "2025-08-18T02:18:50.208Z"
+  },
+  {
+    "type": "contract_activity_spike",
+    "confidence": 0.95,
+    "data": {
+      "contractAddress": "0x2910543Af39abA0Cd09dBb2D50200b3E800A63D2",
+      "interactionCount": 5,
+      "timeWindow": "recent"
+    },
+    "discoveredAt": "2025-08-18T02:18:50.322Z"
+  },
+  {
+    "type": "contract_activity_spike",
+    "confidence": 0.95,
+    "data": {
+      "contractAddress": "0x2260FAC5E5542a773Aa44fBCfeDf7C193bc2C599",
+      "interactionCount": 3,
+      "timeWindow": "recent"
+    },
+    "discoveredAt": "2025-08-18T02:18:50.422Z"
+  },
+  {
+    "type": "rapid_transaction_sequence",
+    "confidence": 0.8,
+    "data": {
+      "timeDiff": 964,
+      "sender": "0x1234567890123456789012345678901234567890",
+      "txCount": 23
+    },
+    "discoveredAt": "2025-08-18T02:18:50.521Z"
+  },
+  {
+    "type": "wallet_behavior_anomaly",
+    "confidence": 0.85,
+    "data": {
+      "address": "0x742d35Cc6634C0532925a3b8D4C9db96C4b4d8b6",
+      "transactionCount": 332,
+      "timeWindow": 17296
+    },
+    "discoveredAt": "2025-08-18T02:18:50.738Z"
+  },
+  {
+    "type": "rapid_transaction_sequence",
+    "confidence": 0.8,
+    "data": {
+      "timeDiff": 109,
+      "sender": "0x8ba1f109551bD432803012645Hac136c772c3c7c",
+      "txCount": 27
+    },
+    "discoveredAt": "2025-08-18T02:18:51.410Z"
+  },
+  {
+    "type": "rapid_transaction_sequence",
+    "confidence": 0.8,
+    "data": {
+      "timeDiff": 89,
+      "sender": "0x1234567890123456789012345678901234567890",
+      "txCount": 29
+    },
+    "discoveredAt": "2025-08-18T02:18:51.614Z"
+  },
+  {
+    "type": "wallet_behavior_anomaly",
+    "confidence": 0.85,
+    "data": {
+      "address": "0x8ba1f109551bD432803012645Hac136c772c3c7c",
+      "transactionCount": 626,
+      "timeWindow": 16151
+    },
+    "discoveredAt": "2025-08-18T02:18:51.834Z"
+  },
+  {
+    "type": "contract_activity_spike",
+    "confidence": 0.95,
+    "data": {
+      "contractAddress": "0xA090e606E30bD747d4E6245a1517EbE430F0057e",
+      "interactionCount": 3,
+      "timeWindow": "recent"
+    },
+    "discoveredAt": "2025-08-18T02:18:51.984Z"
+  },
+  {
+    "type": "wallet_behavior_anomaly",
+    "confidence": 0.85,
+    "data": {
+      "address": "0x8ba1f109551bD432803012645Hac136c772c3c7c",
+      "transactionCount": 713,
+      "timeWindow": 16482
+    },
+    "discoveredAt": "2025-08-18T02:18:52.090Z"
+  },
+  {
+    "type": "wallet_behavior_anomaly",
+    "confidence": 0.85,
+    "data": {
+      "address": "0x742d35Cc6634C0532925a3b8D4C9db96C4b4d8b6",
+      "transactionCount": 344,
+      "timeWindow": 18759
+    },
+    "discoveredAt": "2025-08-18T02:18:52.226Z"
+  },
+  {
+    "type": "contract_activity_spike",
+    "confidence": 0.95,
+    "data": {
+      "contractAddress": "0xA0b86a33E6441b8c4C32714C5C7441C01F3A602E5",
+      "interactionCount": 3,
+      "timeWindow": "recent"
+    },
+    "discoveredAt": "2025-08-18T02:18:52.335Z"
+  },
+  {
+    "type": "contract_activity_spike",
+    "confidence": 0.95,
+    "data": {
+      "contractAddress": "0xA0b86a33E6441b8c4C32714C5C7441C01F3A602E5",
+      "interactionCount": 4,
+      "timeWindow": "recent"
+    },
+    "discoveredAt": "2025-08-18T02:18:52.887Z"
+  },
+  {
+    "type": "wallet_behavior_anomaly",
+    "confidence": 0.85,
+    "data": {
+      "address": "0x8ba1f109551bD432803012645Hac136c772c3c7c",
+      "transactionCount": 777,
+      "timeWindow": 17340
+    },
+    "discoveredAt": "2025-08-18T02:18:52.938Z"
+  },
+  {
+    "type": "wallet_behavior_anomaly",
+    "confidence": 0.85,
+    "data": {
+      "address": "0x742d35Cc6634C0532925a3b8D4C9db96C4b4d8b6",
+      "transactionCount": 409,
+      "timeWindow": 19715
+    },
+    "discoveredAt": "2025-08-18T02:18:53.156Z"
+  },
+  {
+    "type": "wallet_behavior_anomaly",
+    "confidence": 0.85,
+    "data": {
+      "address": "0x742d35Cc6634C0532925a3b8D4C9db96C4b4d8b6",
+      "transactionCount": 480,
+      "timeWindow": 19823
+    },
+    "discoveredAt": "2025-08-18T02:18:53.266Z"
+  },
+  {
+    "type": "wallet_behavior_anomaly",
+    "confidence": 0.85,
+    "data": {
+      "address": "0x1234567890123456789012345678901234567890",
+      "transactionCount": 386,
+      "timeWindow": 21875
+    },
+    "discoveredAt": "2025-08-18T02:18:53.389Z"
+  },
+  {
+    "type": "contract_activity_spike",
+    "confidence": 0.95,
+    "data": {
+      "contractAddress": "0x6B175474E89094C44Da98b954EedeAC495271d0F",
+      "interactionCount": 8,
+      "timeWindow": "recent"
+    },
+    "discoveredAt": "2025-08-18T02:18:53.620Z"
+  },
+  {
+    "type": "wallet_behavior_anomaly",
+    "confidence": 0.85,
+    "data": {
+      "address": "0x742d35Cc6634C0532925a3b8D4C9db96C4b4d8b6",
+      "transactionCount": 532,
+      "timeWindow": 20275
+    },
+    "discoveredAt": "2025-08-18T02:18:53.715Z"
+  },
+  {
+    "type": "contract_activity_spike",
+    "confidence": 0.95,
+    "data": {
+      "contractAddress": "0x165CD37b4C644C2921454429E7F9358d18A45e14",
+      "interactionCount": 3,
+      "timeWindow": "recent"
+    },
+    "discoveredAt": "2025-08-18T02:18:54.215Z"
+  },
+  {
+    "type": "contract_activity_spike",
+    "confidence": 0.95,
+    "data": {
+      "contractAddress": "0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2",
+      "interactionCount": 3,
+      "timeWindow": "recent"
+    },
+    "discoveredAt": "2025-08-18T02:18:54.616Z"
+  },
+  {
+    "type": "wallet_behavior_anomaly",
+    "confidence": 0.85,
+    "data": {
+      "address": "0x1234567890123456789012345678901234567890",
+      "transactionCount": 468,
+      "timeWindow": 23302
+    },
+    "discoveredAt": "2025-08-18T02:18:54.817Z"
+  },
+  {
+    "type": "contract_activity_spike",
+    "confidence": 0.95,
+    "data": {
+      "contractAddress": "0x2260FAC5E5542a773Aa44fBCfeDf7C193bc2C599",
+      "interactionCount": 4,
+      "timeWindow": "recent"
+    },
+    "discoveredAt": "2025-08-18T02:18:55.035Z"
+  },
+  {
+    "type": "wallet_behavior_anomaly",
+    "confidence": 0.85,
+    "data": {
+      "address": "0x742d35Cc6634C0532925a3b8D4C9db96C4b4d8b6",
+      "transactionCount": 571,
+      "timeWindow": 21933
+    },
+    "discoveredAt": "2025-08-18T02:18:55.377Z"
+  },
+  {
+    "type": "wallet_behavior_anomaly",
+    "confidence": 0.85,
+    "data": {
+      "address": "0x1234567890123456789012345678901234567890",
+      "transactionCount": 473,
+      "timeWindow": 23971
+    },
+    "discoveredAt": "2025-08-18T02:18:55.482Z"
+  },
+  {
+    "type": "wallet_behavior_anomaly",
+    "confidence": 0.85,
+    "data": {
+      "address": "0x742d35Cc6634C0532925a3b8D4C9db96C4b4d8b6",
+      "transactionCount": 573,
+      "timeWindow": 22149
+    },
+    "discoveredAt": "2025-08-18T02:18:55.595Z"
+  },
+  {
+    "type": "wallet_behavior_anomaly",
+    "confidence": 0.85,
+    "data": {
+      "address": "0x742d35Cc6634C0532925a3b8D4C9db96C4b4d8b6",
+      "transactionCount": 638,
+      "timeWindow": 22253
+    },
+    "discoveredAt": "2025-08-18T02:18:55.706Z"
+  },
+  {
+    "type": "wallet_behavior_anomaly",
+    "confidence": 0.85,
+    "data": {
+      "address": "0x1234567890123456789012345678901234567890",
+      "transactionCount": 487,
+      "timeWindow": 24297
+    },
+    "discoveredAt": "2025-08-18T02:18:55.810Z"
+  },
+  {
+    "type": "wallet_behavior_anomaly",
+    "confidence": 0.85,
+    "data": {
+      "address": "0x1234567890123456789012345678901234567890",
+      "transactionCount": 515,
+      "timeWindow": 24405
+    },
+    "discoveredAt": "2025-08-18T02:18:55.915Z"
+  },
+  {
+    "type": "wallet_behavior_anomaly",
+    "confidence": 0.85,
+    "data": {
+      "address": "0x742d35Cc6634C0532925a3b8D4C9db96C4b4d8b6",
+      "transactionCount": 640,
+      "timeWindow": 22587
+    },
+    "discoveredAt": "2025-08-18T02:18:56.032Z"
+  },
+  {
+    "type": "contract_activity_spike",
+    "confidence": 0.95,
+    "data": {
+      "contractAddress": "0xE592427A0AEce92De3Edee1F18E0157C05861564",
+      "interactionCount": 3,
+      "timeWindow": "recent"
+    },
+    "discoveredAt": "2025-08-18T02:18:56.258Z"
+  },
+  {
+    "type": "contract_activity_spike",
+    "confidence": 0.95,
+    "data": {
+      "contractAddress": "0xA0b86a33E6441b8c4C32714C5C7441C01F3A602E5",
+      "interactionCount": 5,
+      "timeWindow": "recent"
+    },
+    "discoveredAt": "2025-08-18T02:18:56.585Z"
+  },
+  {
+    "type": "wallet_behavior_anomaly",
+    "confidence": 0.85,
+    "data": {
+      "address": "0x8ba1f109551bD432803012645Hac136c772c3c7c",
+      "transactionCount": 843,
+      "timeWindow": 21086
+    },
+    "discoveredAt": "2025-08-18T02:18:56.694Z"
+  },
+  {
+    "type": "wallet_behavior_anomaly",
+    "confidence": 0.85,
+    "data": {
+      "address": "0x8ba1f109551bD432803012645Hac136c772c3c7c",
+      "transactionCount": 843,
+      "timeWindow": 21524
+    },
+    "discoveredAt": "2025-08-18T02:18:57.131Z"
+  },
+  {
+    "type": "wallet_behavior_anomaly",
+    "confidence": 0.85,
+    "data": {
+      "address": "0x742d35Cc6634C0532925a3b8D4C9db96C4b4d8b6",
+      "transactionCount": 690,
+      "timeWindow": 23908
+    },
+    "discoveredAt": "2025-08-18T02:18:57.351Z"
+  },
+  {
+    "type": "contract_activity_spike",
+    "confidence": 0.95,
+    "data": {
+      "contractAddress": "0x2260FAC5E5542a773Aa44fBCfeDf7C193bc2C599",
+      "interactionCount": 5,
+      "timeWindow": "recent"
+    },
+    "discoveredAt": "2025-08-18T02:18:57.572Z"
+  },
+  {
+    "type": "wallet_behavior_anomaly",
+    "confidence": 0.85,
+    "data": {
+      "address": "0x1234567890123456789012345678901234567890",
+      "transactionCount": 518,
+      "timeWindow": 26167
+    },
+    "discoveredAt": "2025-08-18T02:18:57.678Z"
+  },
+  {
+    "type": "contract_activity_spike",
+    "confidence": 0.95,
+    "data": {
+      "contractAddress": "0x6B175474E89094C44Da98b954EedeAC495271d0F",
+      "interactionCount": 9,
+      "timeWindow": "recent"
+    },
+    "discoveredAt": "2025-08-18T02:18:57.787Z"
+  },
+  {
+    "type": "contract_activity_spike",
+    "confidence": 0.95,
+    "data": {
+      "contractAddress": "0x6B175474E89094C44Da98b954EedeAC495271d0F",
+      "interactionCount": 10,
+      "timeWindow": "recent"
+    },
+    "discoveredAt": "2025-08-18T02:18:57.897Z"
+  },
+  {
+    "type": "contract_activity_spike",
+    "confidence": 0.95,
+    "data": {
+      "contractAddress": "0x165CD37b4C644C2921454429E7F9358d18A45e14",
+      "interactionCount": 4,
+      "timeWindow": "recent"
+    },
+    "discoveredAt": "2025-08-18T02:18:58.347Z"
+  },
+  {
+    "type": "wallet_behavior_anomaly",
+    "confidence": 0.85,
+    "data": {
+      "address": "0x1234567890123456789012345678901234567890",
+      "transactionCount": 556,
+      "timeWindow": 27254
+    },
+    "discoveredAt": "2025-08-18T02:18:58.785Z"
+  },
+  {
+    "type": "wallet_behavior_anomaly",
+    "confidence": 0.85,
+    "data": {
+      "address": "0x8ba1f109551bD432803012645Hac136c772c3c7c",
+      "transactionCount": 844,
+      "timeWindow": 23764
+    },
+    "discoveredAt": "2025-08-18T02:18:59.384Z"
+  },
+  {
+    "type": "wallet_behavior_anomaly",
+    "confidence": 0.85,
+    "data": {
+      "address": "0x8ba1f109551bD432803012645Hac136c772c3c7c",
+      "transactionCount": 880,
+      "timeWindow": 23915
+    },
+    "discoveredAt": "2025-08-18T02:18:59.521Z"
+  },
+  {
+    "type": "wallet_behavior_anomaly",
+    "confidence": 0.85,
+    "data": {
+      "address": "0x8ba1f109551bD432803012645Hac136c772c3c7c",
+      "transactionCount": 903,
+      "timeWindow": 24467
+    },
+    "discoveredAt": "2025-08-18T02:19:00.528Z"
+  },
+  {
+    "type": "wallet_behavior_anomaly",
+    "confidence": 0.85,
+    "data": {
+      "address": "0x1234567890123456789012345678901234567890",
+      "transactionCount": 558,
+      "timeWindow": 29031
+    },
+    "discoveredAt": "2025-08-18T02:19:01.292Z"
+  },
+  {
+    "type": "wallet_behavior_anomaly",
+    "confidence": 0.85,
+    "data": {
+      "address": "0x8ba1f109551bD432803012645Hac136c772c3c7c",
+      "transactionCount": 929,
+      "timeWindow": 25895
+    },
+    "discoveredAt": "2025-08-18T02:19:01.486Z"
+  }
+]
