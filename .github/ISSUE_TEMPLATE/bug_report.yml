@@ -1,69 +1,34 @@
 name: 🐛 Bug Report
-description: Report a bug or unexpected behavior in Eremos
+description: Report a bug in Eremos
 title: "[Bug]: "
-labels: ["bug", "triage"]
-assignees: []
+labels: ["bug"]
 body:
-  - type: markdown
-    attributes:
-      value: |
-        Thanks for taking the time to report a bug! Please fill out the form below to help us understand and reproduce the issue.
-
   - type: textarea
-    id: bug-description
+    id: description
     attributes:
-      label: 🐛 Bug Description
-      description: A clear and concise description of what the bug is
-      placeholder: Describe what happened and what you expected to happen
+      label: What happened?
+      description: Describe the bug
     validations:
       required: true
 
   - type: textarea
-    id: steps-to-reproduce
+    id: steps
     attributes:
-      label: 🔄 Steps to Reproduce
-      description: Steps to reproduce the behavior
+      label: Steps to reproduce
       placeholder: |
-        1. Go to '...'
-        2. Run command '...'
-        3. See error
-    validations:
-      required: true
-
-  - type: textarea
-    id: expected-behavior
-    attributes:
-      label: ✅ Expected Behavior
-      description: A clear and concise description of what you expected to happen
-      placeholder: What should have happened instead?
-    validations:
-      required: true
-
-  - type: textarea
-    id: actual-behavior
-    attributes:
-      label: ❌ Actual Behavior
-      description: What actually happened?
-      placeholder: What went wrong?
+        1. Run command...
+        2. See error...
     validations:
       required: true
 
   - type: dropdown
     id: component
     attributes:
-      label: 🎯 Component
-      description: Which component is affected?
+      label: Component
       options:
-        - Agent (Theron)
-        - Agent (Observer)
-        - Agent (Harvester)
-        - Agent (Skieró)
-        - Agent (Other/Custom)
-        - Utils/Signal Processing
-        - Event Parser
-        - Metrics/Logging
-        - Scripts/CLI Tools
-        - Documentation
+        - Agent
+        - Utils
+        - Scripts
         - Other
     validations:
       required: true
@@ -71,50 +36,11 @@ body:
   - type: textarea
     id: environment
     attributes:
-      label: 🌍 Environment
-      description: Please provide your environment details
-      value: |
-        - OS: [e.g. macOS 13.0, Ubuntu 20.04, Windows 11]
-        - Node.js version: [e.g. 18.17.0]
-        - npm version: [e.g. 9.6.7]
-        - Eremos version: [e.g. 0.1.0]
-      render: markdown
-    validations:
-      required: true
+      label: Environment
+      placeholder: OS, Node.js version, etc.
 
   - type: textarea
     id: logs
     attributes:
-      label: 📋 Error Logs
-      description: If applicable, add error logs or stack traces
-      placeholder: Paste any relevant error messages or logs here
+      label: Error logs
       render: shell
-
-  - type: textarea
-    id: agent-config
-    attributes:
-      label: 🤖 Agent Configuration (if applicable)
-      description: If this is agent-related, please share relevant configuration
-      placeholder: |
-        Agent settings, signal thresholds, or other configuration that might be relevant
-      render: typescript
-
-  - type: textarea
-    id: additional-context
-    attributes:
-      label: 📝 Additional Context
-      description: Add any other context about the problem here
-      placeholder: Screenshots, related issues, workarounds, etc.
-
-  - type: checkboxes
-    id: terms
-    attributes:
-      label: ✅ Checklist
-      description: Please confirm the following
-      options:
-        - label: I have searched existing issues to avoid duplicates
-          required: true
-        - label: I have provided all the requested information
-          required: true
-        - label: I am willing to help test the fix
-          required: false

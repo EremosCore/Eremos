@@ -1,226 +1,53 @@
 name: 🤖 Agent Proposal
-description: Propose a new agent for the Eremos swarm
+description: Propose a new agent for Eremos
 title: "[Agent]: "
-labels: ["agent", "proposal", "enhancement"]
-assignees: []
+labels: ["agent", "proposal"]
 body:
-  - type: markdown
-    attributes:
-      value: |
-        🎯 **Agent Proposal Template**
-        
-        Propose a new agent to join the Eremos swarm! This template helps structure agent ideas with the technical details needed for implementation.
-
   - type: input
-    id: agent-name
+    id: name
     attributes:
-      label: 🤖 Agent Name
-      description: What should this agent be called?
-      placeholder: "e.g., Artemis, Sentinel, Tracker"
-    validations:
-      required: true
-
-  - type: input
-    id: agent-number
-    attributes:
-      label: 🔢 Proposed Agent Number
-      description: What agent number should this be? (Check existing agents first)
-      placeholder: "e.g., Agent-002, Agent-003"
+      label: Agent name
+      placeholder: "e.g., Artemis, Sentinel"
     validations:
       required: true
 
   - type: textarea
-    id: agent-purpose
+    id: purpose
     attributes:
-      label: 🎯 Agent Purpose
-      description: What is the primary purpose of this agent?
-      placeholder: |
-        A clear, concise description of what this agent does.
-        e.g., "Monitors cross-chain bridge transactions for suspicious activity patterns"
+      label: Purpose
+      description: What does this agent do?
     validations:
       required: true
 
   - type: textarea
-    id: detection-patterns
+    id: patterns
     attributes:
-      label: 🔍 Detection Patterns
-      description: What specific patterns or behaviors will this agent detect?
-      placeholder: |
-        List the specific patterns, behaviors, or signals this agent will look for:
-        - Pattern 1: Description
-        - Pattern 2: Description
-        - Pattern 3: Description
+      label: Detection patterns
+      description: What patterns will it detect?
     validations:
       required: true
 
   - type: textarea
-    id: signal-types
+    id: signals
     attributes:
-      label: 📡 Signal Types
-      description: What types of signals will this agent emit?
-      placeholder: |
-        List the signal types this agent will generate:
-        - signal_type_1: When this happens
-        - signal_type_2: When that happens
-        
-        Include the glyph symbols you'd like to use (e.g., Δ, Ω, ∑)
-    validations:
-      required: true
-
-  - type: textarea
-    id: data-sources
-    attributes:
-      label: 📊 Data Sources
-      description: What data sources will this agent monitor?
-      placeholder: |
-        e.g., 
-        - On-chain transactions
-        - Mempool activity
-        - DEX events
-        - Contract deployments
-        - Social signals
-        - External APIs
-    validations:
-      required: true
-
-  - type: textarea
-    id: confidence-scoring
-    attributes:
-      label: 🎲 Confidence Scoring Logic
-      description: How will this agent calculate confidence scores?
-      placeholder: |
-        Describe the factors that contribute to confidence scoring:
-        - Factor 1: Weight/importance
-        - Factor 2: Weight/importance
-        - Scoring algorithm approach
-    validations:
-      required: true
-
-  - type: dropdown
-    id: agent-type
-    attributes:
-      label: 🏷️ Agent Type
-      description: What category does this agent fall into?
-      options:
-        - Passive Monitor (observes and reports)
-        - Active Scanner (searches for patterns)
-        - Hybrid (both passive and active)
-        - Specialized Detector (specific use case)
-        - Cross-chain Monitor
-        - Social Signal Processor
-        - Other
+      label: Signal types
+      description: What signals will it emit?
     validations:
       required: true
 
   - type: dropdown
     id: complexity
     attributes:
-      label: ⚡ Implementation Complexity
-      description: How complex would this agent be to implement?
+      label: Complexity
       options:
-        - Simple - Basic pattern matching
-        - Medium - Moderate logic and state management
-        - Complex - Advanced algorithms and multiple data sources
-        - Expert - Requires specialized knowledge or external integrations
+        - Simple
+        - Medium
+        - Complex
     validations:
       required: true
 
   - type: textarea
-    id: example-signals
+    id: example
     attributes:
-      label: 📋 Example Signal Output
-      description: Provide examples of what signals this agent would emit
-      placeholder: |
-        Show 1-2 example signals with realistic data:
-        
-        ```json
-        {
-          "agent": "YourAgentName",
-          "type": "signal_type",
-          "glyph": "Δ",
-          "hash": "sig_example123",
-          "timestamp": "2025-01-15T10:30:00Z",
-          "source": "agent-yourname",
-          "confidence": 0.85,
-          "data": {
-            // relevant data fields
-          }
-        }
-        ```
+      label: Example signal
       render: json
-    validations:
-      required: true
-
-  - type: textarea
-    id: technical-requirements
-    attributes:
-      label: 🛠️ Technical Requirements
-      description: What technical requirements or dependencies does this agent need?
-      placeholder: |
-        - External APIs needed
-        - Special libraries or tools
-        - Performance considerations
-        - Storage requirements
-        - Network/bandwidth needs
-
-  - type: textarea
-    id: use-cases
-    attributes:
-      label: 🔍 Use Cases
-      description: What are the primary use cases for this agent?
-      placeholder: |
-        Who would use this agent and for what purposes?
-        - Use case 1: Description
-        - Use case 2: Description
-        - Target audience
-    validations:
-      required: true
-
-  - type: textarea
-    id: integration
-    attributes:
-      label: 🔗 Integration with Existing Agents
-      description: How would this agent work with existing agents in the swarm?
-      placeholder: |
-        - Does it complement existing agents?
-        - Would it share data with other agents?
-        - Any potential conflicts or overlaps?
-
-  - type: textarea
-    id: mythology
-    attributes:
-      label: 🏛️ Agent Mythology/Backstory
-      description: What's the mythological or thematic backstory for this agent?
-      placeholder: |
-        Eremos agents often have mythological or thematic names and backstories.
-        What's the inspiration for this agent's name and character?
-
-  - type: checkboxes
-    id: implementation
-    attributes:
-      label: 🤝 Implementation Commitment
-      description: Are you willing to help implement this agent?
-      options:
-        - label: I am willing to implement this agent myself
-          required: false
-        - label: I can help with the design and specification
-          required: false
-        - label: I can help with testing and validation
-          required: false
-        - label: I am proposing this for someone else to implement
-          required: false
-
-  - type: checkboxes
-    id: terms
-    attributes:
-      label: ✅ Checklist
-      description: Please confirm the following
-      options:
-        - label: I have checked that this agent doesn't duplicate existing functionality
-          required: true
-        - label: I have provided sufficient technical detail for implementation
-          required: true
-        - label: This agent aligns with Eremos' goals of early signal detection
-          required: true
-        - label: I understand this is a proposal and may require discussion/refinement
-          required: true

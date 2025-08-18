@@ -1,26 +1,16 @@
 name: 💬 General Issue
-description: General questions, discussions, or other topics
+description: General questions or discussions
 title: "[General]: "
-labels: ["question", "triage"]
-assignees: []
+labels: ["question"]
 body:
-  - type: markdown
-    attributes:
-      value: |
-        Thanks for reaching out! Use this template for general questions, discussions, or topics that don't fit the other categories.
-
   - type: dropdown
-    id: issue-type
+    id: type
     attributes:
-      label: 📋 Issue Type
-      description: What type of issue is this?
+      label: Type
       options:
         - Question
         - Discussion
-        - Documentation Request
-        - Configuration Help
-        - Performance Question
-        - Integration Help
+        - Documentation
         - Other
     validations:
       required: true
@@ -28,36 +18,13 @@ body:
   - type: textarea
     id: description
     attributes:
-      label: 📝 Description
-      description: Please describe your question or topic
-      placeholder: What would you like to discuss or ask about?
+      label: Description
+      description: What would you like to discuss?
     validations:
       required: true
 
   - type: textarea
     id: context
     attributes:
-      label: 🌍 Context
-      description: Provide any relevant context
-      placeholder: |
-        - What are you trying to achieve?
-        - What have you tried so far?
-        - Any relevant background information
-
-  - type: textarea
-    id: additional-info
-    attributes:
-      label: 📋 Additional Information
-      description: Any other information that might be helpful
-      placeholder: Links, references, examples, etc.
-
-  - type: checkboxes
-    id: terms
-    attributes:
-      label: ✅ Checklist
-      description: Please confirm the following
-      options:
-        - label: I have searched existing issues and discussions
-          required: true
-        - label: This doesn't fit better in another issue template
-          required: true
+      label: Context
+      description: Any relevant background
