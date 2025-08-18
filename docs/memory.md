@@ -1,29 +1,52 @@
-# Memory System
+# Memory
 
-Eremos agents can expose internal memory using the `getMemory()` method.  
-This allows agents to retain lightweight state or emit recognizable signals across time.
+_Design and usage of per-agent memory and caching._
 
-## Purpose
+---
 
-Memory helps agents:
-- Track previously seen patterns
-- Share known tags or identifiers
-- Enable external tools to interpret their state
+## At a Glance
 
-## Format
+- Scope: Short-term and persistent memory strategies.
+- Audience: Agent authors and operators.
+- Prereqs: Redis basics (optional).
 
-Memory is returned as an array of string tokens:
+---
+
+## Memory Types
+
+- In-process cache — LRU or small maps for ephemeral state.
+- Redis — shared, short-term state across processes.
+- Persistent DB — Postgres/Timescale for long-term artifacts and history.
+
+---
+
+## Recommended Patterns
+
+- Keep memory minimal; store only what’s needed for heuristics (e.g., recent tx hashes, wallet clustering).
+- Use TTLs for ephemeral entries.
+- Checkpoint important state periodically to Redis/Postgres.
+
+---
+
+## Example (pseudo)
 
 ```ts
-getMemory: () => ["cluster:001", "mint:phantom_batch", "flag:volatile"]
+// memory usage pattern
+const recentTxs = memory.get('recentTxs') ?? new Map();
+recentTxs.set(txHash, Date.now());
+memory.set('recentTxs', recentTxs, { ttl: 600_000 });
 ```
 
-These tokens can represent tags, signal IDs, or abstract state cues.
+---
 
-## Notes
+## Failure & Recovery
 
-- Keep memory declarative and interpretable.
+- On restart, rehydrate necessary state from Redis or DB.
+- Accept eventual consistency for non-critical memory.
 
-- Avoid storing raw data or full event payloads.
+---
 
-- Memory is optional - use it when the agent benefits from context or history.
+## Related Docs
+
+- [Agents](./agents.md)
+- [Architecture](./architecture.md)

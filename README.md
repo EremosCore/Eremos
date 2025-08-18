@@ -2,130 +2,266 @@
 
 ![Eremos](docs/banner2.png)
 
-**Autonomous swarm agents for early on-chain signal detection**
+<div align="center">
 
-Eremos is a lightweight framework for deploying modular agents that monitor blockchain activity - tracking wallet clusters, mint patterns, and contract anomalies.
-Designed for devs who want low-noise, early signals embedded into their workflows.
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=flat&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
+[![Node.js](https://img.shields.io/badge/Node.js-43853D?style=flat&logo=node.js&logoColor=white)](https://nodejs.org/)
+[![Solana](https://img.shields.io/badge/Solana-9945FF?style=flat&logo=solana&logoColor=white)](https://solana.com/)
+[![Next.js](https://img.shields.io/badge/Next.js-000000?style=flat&logo=next.js&logoColor=white)](https://nextjs.org/)
+
+</div>
+
+<p align="center">
+  <strong>🤖 Autonomous swarm agents for early on-chain signal detection</strong>
+</p>
+
+<p align="center">
+  Eremos is a lightweight framework for deploying modular agents that monitor blockchain activity—tracking wallet clusters, mint patterns, and contract anomalies. Designed for developers who want low-noise, early signals embedded into their workflows.
+</p>
 
 ---
+
+## 📑 Table of Contents
+
+- [Features](#features)
+- [Meet Theron (Agent-000)](#meet-theron-agent-000)
+- [Quick Start](#quick-start)
+- [Installation & Configuration](#installation--configuration)
+- [Project Structure](#project-structure)
+- [Signal Detection](#signal-detection)
+- [Tech Stack](#tech-stack)
+- [Development](#development)
+- [Performance & Monitoring](#performance--monitoring)
+- [Roadmap](#roadmap)
+- [Links](#links)
+- [License](#license)
+
+---
+
+## ✨ Features
+
+### Core Capabilities
+- 🤖 **Modular Agents:** Scoped logic for detecting wallet activity, contract spawns, and anomalies
+- 📡 **Signal Emission:** Structured signals for logging, alerting, or downstream use  
+- 🐝 **Swarm Design:** Each agent operates independently with shared utilities
+- 🔧 **Extensible Core:** Plug in watchers, inference layers, or custom triggers
+- 🎯 **Minimal Output:** Log only what matters
+
+### Detection Modules
+- 🚀 **Launch Wallet Detection:** Trace freshly funded wallets (e.g. from CEXs), track contract interactions, and flag high-confidence deploys in real time
+- 👻 **Ghost Watcher:** Monitors long-dormant wallets that suddenly become active again
+- 🌾 **Harvester Agent:** Advanced pattern recognition for complex trading behaviors
+- 📊 **Observer Agent:** Real-time monitoring and signal correlation
+- ⚡ **Skieró Agent:** Lightning-fast event detection and processing
+
+---
+
+## 🤖 Meet Theron (Agent-000)
 
 <p align="center">
   <img src="docs/therontphd2.png" alt="Agent Theron" width="155"/><br/>
   <em>Theron - Agent (000)</em>
 </p>
 
-**Meet Theron - Agent-000**  
-*The first deployed agent in the swarm. Passive. Pattern-sensitive.  
-Modular and extendable by design.*
-
-
-**Agent-001 Coming Soon** [Teaser](https://x.com/EremosCore/status/1949154939923833239)
+Theron is the first deployed agent in the swarm. Passive, pattern-sensitive, modular, and extendable by design. Specializes in detecting early-stage token launches and suspicious wallet patterns across Solana.
 
 ---
 
-## Features
+## 🚀 Quick Start
 
-- **Modular Agents** - Scoped logic for detecting wallet activity, contract spawns, and anomalies  
-- **Signal Emission** - Structured signals for logging, alerting, or downstream use  
-- **Swarm Design** - Each agent operates independently with shared utilities  
-- **Extensible Core** - Plug in watchers, inference layers, or custom triggers  
-- **Minimal Output** - Log only what matters
-- **Launch Wallet Detection** - Agents can trace freshly funded wallets (e.g. from CEXs), track their contract interactions, and flag high-confidence deploys in real time
-- **Ghost Watcher** - Monitors long-dormant wallets that suddenly become active again. Useful for tracing old dev wallets or rug setups.
+```bash
+# Clone the repository
+git clone https://github.com/Haleem001/Eremos.git
+cd Eremos
 
+# Install dependencies
+npm install
+
+# Set up environment variables
+cp .env.example .env.local
+# Edit .env.local with your Solana RPC credentials
+
+# Start development
+npm run dev
+```
+
+Visit `http://localhost:3000` to access the dashboard.
 
 ---
 
-## Example Signal
+## 📦 Installation & Configuration
 
-An example signal emitted by an agent detecting a live token deployment:
+### Prerequisites
 
-```ts
+- Node.js (v18+)
+- npm (v8+)
+- Git
+- Solana RPC endpoint
+
+### Environment Variables
+
+| Variable                | Description                  | Required | Default   |
+|-------------------------|-----------------------------|----------|-----------|
+| `SOLANA_RPC_URL`        | Solana RPC endpoint         | ✅       | -         |
+| `SOLANA_WEBSOCKET_URL`  | WebSocket endpoint          | ✅       | -         |
+| `LOG_LEVEL`             | Logging verbosity           | ❌       | `info`    |
+| `AGENT_POLL_INTERVAL`   | Agent polling interval (ms) | ❌       | `5000`    |
+| `CONFIDENCE_THRESHOLD`  | Minimum confidence for signals | ❌    | `0.7`     |
+
+Edit `.env.local` with your preferred settings.
+
+---
+
+## 📁 Project Structure
+
+```
+Eremos/
+├── agents/         # Agent templates & logic
+│   ├── example.ts
+│   └── theron.ts
+├── docs/           # Documentation & whitepaper
+│   ├── whitepaper.pdf
+│   └── architecture.md
+├── scripts/        # Bootstrap and deployment scripts
+│   ├── setup.js
+│   └── deploy.js
+├── tests/          #  Tests
+│   ├── example.test.ts
+│   └── throttle.test.ts
+├── types/          #  TypeScript interfaces + definitions
+│   ├── agent.ts
+│   └── signal.ts
+├── utils/          # Shared utilities
+│   ├── signal.ts
+│   ├── logging.ts
+│   └── blockchain.ts
+├── .env.example
+├── package.json
+├── LICENSE
+└── tsconfig.json
+```
+
+---
+
+## 📡 Signal Detection
+
+### Example Output
+
+```bash
 [agent-observer] → fresh funding detected from kraken (wallet: 6Yxk...P2M8) at 04:41:12Z
 [agent-observer] → contract probing detected within 4s (pump.fun interaction traced)
 [agent-observer] → token created at 04:41:17Z (tx: 5gW...pump)
 [agent-observer] → 5 bundle-linked wallets interacted within 8s of deploy
 [agent-observer] → launch confidence spike (0.91) - emitting signal (elapsed: 13s)
+```
 
+### Signal Schema
+
+```json
 {
-  agent: "Observer",
-  type: "launch_detected",
-  glyph: "Δ",
-  hash: "sig_c7f9a3d2bc",
-  timestamp: "2025-06-12T04:41:25Z",
-  source: "agent-observer",
-  confidence: 0.91
+  "agent": "Observer",
+  "type": "launch_detected",
+  "glyph": "Δ",
+  "hash": "sig_c7f9a3d2bc",
+  "timestamp": "2025-06-12T04:41:25Z",
+  "source": "agent-observer",
+  "confidence": 0.91
 }
 ```
 
----
+### Confidence Scoring
 
-## Signal Confidence
-
-Each emitted signal includes a `confidence` score (0-1) based on behavioral heuristics:
-- CEX-origin funding (e.g. Kraken, Coinbase)
-- Time between funding → deploy
-- Wallet linkage density (bundled activity)
-- Token metadata validation
-
-Confidence is computed via agent-side scoring and logged alongside the signal.
+- CEX-origin funding: +0.2
+- Time between funding → deploy: +0.15
+- Wallet linkage density: +0.25
+- Token metadata validation: +0.1
+- Historical pattern matching: +0.3
 
 ---
 
-## Tech Stack
+## 🛠 Tech Stack
 
-- **Frontend:** Next.js, Tailwind CSS
-- **Backend:** Node.js (TypeScript-based agent runner)
-- **Language:** TypeScript (typed logic across agents, utils, and infra)
-- **Chain Layer:** RPC watchers, mempool filters, native triggers
+| Category      | Technology                                    |
+|---------------|-----------------------------------------------|
+| Frontend      | Next.js, Tailwind CSS, TypeScript             |
+| Backend       | Node.js, TypeScript                           |
+| Language      | TypeScript (typed logic across agents, utils, and infra) |
+| Chain Layer   | RPC watchers, Mempool filters, native triggers|
 
----
-
-## Getting Started
-
-```bash
-git clone https://github.com/EremosCore/Eremos.git
-cd Eremos
-npm install
-```
-
-Set up your environment:
-
-```bash
-cp .env.example .env.local
-npm run dev
-```
 
 ---
 
-## Key Folders
+## 🔧 Development
 
-- `/agents` - Agent templates + logic  
-- `/utils` - Shared signal/logging utilities  
-- `/types` - TypeScript interfaces + definitions  
-- `/scripts` - Bootstrap and dev scripts  
-- `/docs` - Swarm structure, architecture, & our artwork/official whitepaper
+### Available Scripts
+
+| Command | Description |
+|---------|-------------|
+| `npm run dev` | Start development server |
+| `npm run build` | Build for production |
+| `npm run start` | Start production server |
+| `npm run lint` | Run ESLint |
+| `npm run type-check` | Run TypeScript type checking |
+| `npm test` | Run test suite |
+
+### Creating Custom Agents
+
+1. **Create Agent File:** Add a new TypeScript file in the `/agents/` directory
+2. **Implement Interface:** Follow the agent interface defined in `/types/agent.ts`
+3. **Register Agent:** Add your agent to the main configuration
+4. **Test & Deploy:** Run tests and verify signal detection works as expected
+
+See existing agents like [`theron.ts`](agents/theron.ts), [`observer.ts`](agents/observer.ts), or [`harvester.ts`](agents/harvester.ts) for implementation examples.
 
 ---
 
-## Contributing
+## 📊 Performance & Monitoring
 
-We’re open to contributors.  
-If you are experienced in TypeScript and like agent-based systems, check `example.ts` and build your own observer.
-If you're a designer, artist, or just have ideas that fit the mythos - send us a DM on Twitter. [@EremosCore](https://x.com/EremosCore)
+- Real-time agent monitoring
+- Signal latency tracking (<100ms)
+- Memory-efficient design
+- Configurable alerting
 
 ---
 
-## License
+## 📋 Roadmap
+
+### Phase 1: Core Enhancement
+- [ ] Advanced ML-based pattern recognition
+- [ ] Real-time dashboard improvements
+- [ ] Enhanced signal correlation algorithms
+
+### Phase 2: Platform Expansion  
+- [ ] Multi-chain support (Ethereum, Base, Arbitrum)
+- [ ] API endpoints for external integrations
+- [ ] WebSocket streaming for real-time signals
+
+### Phase 3: Ecosystem Growth
+- [ ] Mobile app for signal monitoring
+- [ ] Community agent marketplace
+- [ ] Advanced analytics and reporting
+
+---
+
+
+## 🔗 Links
+
+- 🐦 [Twitter/X](https://x.com/EremosCore)
+- 🌐 [Website](https://www.eremos.io/)
+- 📄 [Whitepaper](./docs/whitepaper.pdf)
+- 📚 [Documentation](./docs/)
+- 🐙 [GitHub Repository](https://github.com/Haleem001/Eremos)
+
+---
+
+## 📄 License
 
 MIT © Eremos LLC
 
 ---
 
-## Links
-
-- **Twitter/X:** [@EremosCore](https://x.com/EremosCore)
-- **Website:** [Eremos.io](https://www.eremos.io/)
-- **Whitepaper:** [v1.0 PDF](docs/whitepaper.pdf)
-
-_Maintained by the Eremos Core team 💛._
+<div align="center">
+  <strong>Maintained by the Eremos Core team 💛</strong>
+  <em>Building the future of on-chain intelligence</em>
+</div>

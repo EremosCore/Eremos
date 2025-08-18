@@ -1,15 +1,47 @@
 # Glyphs
 
-Each Eremos agent uses a symbolic glyph to identify its signature in logs and signals.
+_Explanation of glyphs used in logs, UI, and signals to give quick visual cues._
 
-| Glyph | Agent     | Meaning             |
-|-------|-----------|---------------------|
-| Ϸ     | Theron    | Memory / Echo       |
-| Δ     | Observer  | Detection / Signal  |
-| λ     | Harvester | Flow / Indexing     |
+---
 
-Glyphs are used in:
-- `logSignal()`
-- visualizations
-- agent memory logs
-- + more to come
+## At a Glance
+
+- Scope: Glyph meanings and recommended uses.
+- Audience: UI designers, analysts, and operators.
+
+---
+
+## Common Glyphs
+
+- Δ — Launch / New token detected
+- ⚑ — Flag / Suspicious activity
+- ✓ — Validation passed
+- ✖ — Validation failed
+- ⚡ — High-confidence / urgent
+
+---
+
+## Usage Guidelines
+
+- Use glyphs sparingly; they are visual shorthand, not a replacement for metadata.
+- Combine glyph with structured fields: glyph + type + confidence.
+- Keep glyph set small and documented so UIs and integrators stay consistent.
+
+---
+
+## Example Signal (with glyph)
+```json
+{
+  "agent": "theron",
+  "type": "launch_detected",
+  "glyph": "Δ",
+  "confidence": 0.91
+}
+```
+
+---
+
+## Related Docs
+
+- [Signals](./signals.md)
+- [README](../README.md)
