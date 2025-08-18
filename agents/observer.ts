@@ -15,5 +15,13 @@ export const Observer: Agent = {
     if (event?.type === "wallet_activity" && event.cluster?.length > 3) {
       console.log("Observed cluster:", event.cluster)
     }
+  },
+
+  getMemory: (): string[] => {
+    return [
+      "cluster_observations",
+      "wallet_activity_logs",
+      "surveillance_data"
+    ];
   }
 }

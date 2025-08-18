@@ -1,0 +1,1157 @@
+[
+  {
+    "agent": "Intelligence",
+    "type": "pattern_detected",
+    "glyph": "Ω",
+    "hash": "sig_eyJpZCI6Im",
+    "timestamp": "2025-08-18T02:18:31.864Z",
+    "details": {
+      "confidence": 0.85,
+      "patterns": [
+        "wallet_behavior_anomaly"
+      ]
+    },
+    "storedAt": "2025-08-18T02:18:31.869Z",
+    "id": "sig_eyJpZCI6Im"
+  },
+  {
+    "agent": "Intelligence",
+    "type": "pattern_detected",
+    "glyph": "Ω",
+    "hash": "sig_eyJpZCI6Im",
+    "timestamp": "2025-08-18T02:18:33.696Z",
+    "details": {
+      "confidence": 0.85,
+      "patterns": [
+        "wallet_behavior_anomaly"
+      ]
+    },
+    "storedAt": "2025-08-18T02:18:33.704Z",
+    "id": "sig_eyJpZCI6Im"
+  },
+  {
+    "agent": "Intelligence",
+    "type": "pattern_detected",
+    "glyph": "Ω",
+    "hash": "sig_eyJpZCI6Im",
+    "timestamp": "2025-08-18T02:18:34.172Z",
+    "details": {
+      "confidence": 0.85,
+      "patterns": [
+        "wallet_behavior_anomaly"
+      ]
+    },
+    "storedAt": "2025-08-18T02:18:34.174Z",
+    "id": "sig_eyJpZCI6Im"
+  },
+  {
+    "agent": "Intelligence",
+    "type": "pattern_detected",
+    "glyph": "Ω",
+    "hash": "sig_eyJpZCI6Im",
+    "timestamp": "2025-08-18T02:18:35.489Z",
+    "details": {
+      "confidence": 1,
+      "patterns": [
+        "contract_activity_spike"
+      ]
+    },
+    "storedAt": "2025-08-18T02:18:35.576Z",
+    "id": "sig_eyJpZCI6Im"
+  },
+  {
+    "agent": "Intelligence",
+    "type": "pattern_detected",
+    "glyph": "Ω",
+    "hash": "sig_eyJpZCI6Im",
+    "timestamp": "2025-08-18T02:18:36.506Z",
+    "details": {
+      "confidence": 0.85,
+      "patterns": [
+        "wallet_behavior_anomaly"
+      ]
+    },
+    "storedAt": "2025-08-18T02:18:36.786Z",
+    "id": "sig_eyJpZCI6Im"
+  },
+  {
+    "agent": "Intelligence",
+    "type": "pattern_detected",
+    "glyph": "Ω",
+    "hash": "sig_eyJpZCI6Im",
+    "timestamp": "2025-08-18T02:18:36.819Z",
+    "details": {
+      "confidence": 1,
+      "patterns": [
+        "contract_activity_spike"
+      ]
+    },
+    "storedAt": "2025-08-18T02:18:36.821Z",
+    "id": "sig_eyJpZCI6Im"
+  },
+  {
+    "agent": "Intelligence",
+    "type": "pattern_detected",
+    "glyph": "Ω",
+    "hash": "sig_eyJpZCI6Im",
+    "timestamp": "2025-08-18T02:18:38.373Z",
+    "details": {
+      "confidence": 1,
+      "patterns": [
+        "contract_activity_spike"
+      ]
+    },
+    "storedAt": "2025-08-18T02:18:38.400Z",
+    "id": "sig_eyJpZCI6Im"
+  },
+  {
+    "agent": "Intelligence",
+    "type": "pattern_detected",
+    "glyph": "Ω",
+    "hash": "sig_eyJpZCI6Im",
+    "timestamp": "2025-08-18T02:18:38.964Z",
+    "details": {
+      "confidence": 0.85,
+      "patterns": [
+        "wallet_behavior_anomaly"
+      ]
+    },
+    "storedAt": "2025-08-18T02:18:38.969Z",
+    "id": "sig_eyJpZCI6Im"
+  },
+  {
+    "agent": "Intelligence",
+    "type": "pattern_detected",
+    "glyph": "Ω",
+    "hash": "sig_eyJpZCI6Im",
+    "timestamp": "2025-08-18T02:18:39.393Z",
+    "details": {
+      "confidence": 0.85,
+      "patterns": [
+        "wallet_behavior_anomaly"
+      ]
+    },
+    "storedAt": "2025-08-18T02:18:39.402Z",
+    "id": "sig_eyJpZCI6Im"
+  },
+  {
+    "agent": "Intelligence",
+    "type": "pattern_detected",
+    "glyph": "Ω",
+    "hash": "sig_eyJpZCI6Im",
+    "timestamp": "2025-08-18T02:18:40.616Z",
+    "details": {
+      "confidence": 0.85,
+      "patterns": [
+        "wallet_behavior_anomaly"
+      ]
+    },
+    "storedAt": "2025-08-18T02:18:40.645Z",
+    "id": "sig_eyJpZCI6Im"
+  },
+  {
+    "agent": "Intelligence",
+    "type": "pattern_detected",
+    "glyph": "Ω",
+    "hash": "sig_eyJpZCI6Im",
+    "timestamp": "2025-08-18T02:18:41.342Z",
+    "details": {
+      "confidence": 1,
+      "patterns": [
+        "contract_activity_spike"
+      ]
+    },
+    "storedAt": "2025-08-18T02:18:41.389Z",
+    "id": "sig_eyJpZCI6Im"
+  },
+  {
+    "agent": "Intelligence",
+    "type": "pattern_detected",
+    "glyph": "Ω",
+    "hash": "sig_eyJpZCI6Im",
+    "timestamp": "2025-08-18T02:18:42.087Z",
+    "details": {
+      "confidence": 0.85,
+      "patterns": [
+        "wallet_behavior_anomaly"
+      ]
+    },
+    "storedAt": "2025-08-18T02:18:42.126Z",
+    "id": "sig_eyJpZCI6Im"
+  },
+  {
+    "agent": "Intelligence",
+    "type": "pattern_detected",
+    "glyph": "Ω",
+    "hash": "sig_eyJpZCI6Im",
+    "timestamp": "2025-08-18T02:18:43.161Z",
+    "details": {
+      "confidence": 0.8,
+      "patterns": [
+        "rapid_transaction_sequence"
+      ]
+    },
+    "storedAt": "2025-08-18T02:18:43.177Z",
+    "id": "sig_eyJpZCI6Im"
+  },
+  {
+    "agent": "Intelligence",
+    "type": "pattern_detected",
+    "glyph": "Ω",
+    "hash": "sig_eyJpZCI6Im",
+    "timestamp": "2025-08-18T02:18:43.444Z",
+    "details": {
+      "confidence": 1,
+      "patterns": [
+        "contract_activity_spike"
+      ]
+    },
+    "storedAt": "2025-08-18T02:18:43.464Z",
+    "id": "sig_eyJpZCI6Im"
+  },
+  {
+    "agent": "Intelligence",
+    "type": "pattern_detected",
+    "glyph": "Ω",
+    "hash": "sig_eyJpZCI6Im",
+    "timestamp": "2025-08-18T02:18:43.524Z",
+    "details": {
+      "confidence": 0.8,
+      "patterns": [
+        "rapid_transaction_sequence"
+      ]
+    },
+    "storedAt": "2025-08-18T02:18:43.539Z",
+    "id": "sig_eyJpZCI6Im"
+  },
+  {
+    "agent": "Intelligence",
+    "type": "pattern_detected",
+    "glyph": "Ω",
+    "hash": "sig_eyJpZCI6Im",
+    "timestamp": "2025-08-18T02:18:43.687Z",
+    "details": {
+      "confidence": 0.85,
+      "patterns": [
+        "wallet_behavior_anomaly"
+      ]
+    },
+    "storedAt": "2025-08-18T02:18:43.692Z",
+    "id": "sig_eyJpZCI6Im"
+  },
+  {
+    "agent": "Intelligence",
+    "type": "pattern_detected",
+    "glyph": "Ω",
+    "hash": "sig_eyJpZCI6Im",
+    "timestamp": "2025-08-18T02:18:44.206Z",
+    "details": {
+      "confidence": 0.85,
+      "patterns": [
+        "wallet_behavior_anomaly"
+      ]
+    },
+    "storedAt": "2025-08-18T02:18:44.215Z",
+    "id": "sig_eyJpZCI6Im"
+  },
+  {
+    "agent": "Intelligence",
+    "type": "pattern_detected",
+    "glyph": "Ω",
+    "hash": "sig_eyJpZCI6Im",
+    "timestamp": "2025-08-18T02:18:44.446Z",
+    "details": {
+      "confidence": 1,
+      "patterns": [
+        "contract_activity_spike"
+      ]
+    },
+    "storedAt": "2025-08-18T02:18:44.453Z",
+    "id": "sig_eyJpZCI6Im"
+  },
+  {
+    "agent": "Intelligence",
+    "type": "pattern_detected",
+    "glyph": "Ω",
+    "hash": "sig_eyJpZCI6Im",
+    "timestamp": "2025-08-18T02:18:44.899Z",
+    "details": {
+      "confidence": 0.85,
+      "patterns": [
+        "wallet_behavior_anomaly"
+      ]
+    },
+    "storedAt": "2025-08-18T02:18:44.908Z",
+    "id": "sig_eyJpZCI6Im"
+  },
+  {
+    "agent": "Intelligence",
+    "type": "pattern_detected",
+    "glyph": "Ω",
+    "hash": "sig_eyJpZCI6Im",
+    "timestamp": "2025-08-18T02:18:45.340Z",
+    "details": {
+      "confidence": 0.85,
+      "patterns": [
+        "wallet_behavior_anomaly"
+      ]
+    },
+    "storedAt": "2025-08-18T02:18:45.384Z",
+    "id": "sig_eyJpZCI6Im"
+  },
+  {
+    "agent": "Intelligence",
+    "type": "pattern_detected",
+    "glyph": "Ω",
+    "hash": "sig_eyJpZCI6Im",
+    "timestamp": "2025-08-18T02:18:45.555Z",
+    "details": {
+      "confidence": 0.8,
+      "patterns": [
+        "rapid_transaction_sequence"
+      ]
+    },
+    "storedAt": "2025-08-18T02:18:45.594Z",
+    "id": "sig_eyJpZCI6Im"
+  },
+  {
+    "agent": "Intelligence",
+    "type": "pattern_detected",
+    "glyph": "Ω",
+    "hash": "sig_eyJpZCI6Im",
+    "timestamp": "2025-08-18T02:18:47.120Z",
+    "details": {
+      "confidence": 0.8,
+      "patterns": [
+        "rapid_transaction_sequence"
+      ]
+    },
+    "storedAt": "2025-08-18T02:18:47.136Z",
+    "id": "sig_eyJpZCI6Im"
+  },
+  {
+    "agent": "Intelligence",
+    "type": "pattern_detected",
+    "glyph": "Ω",
+    "hash": "sig_eyJpZCI6Im",
+    "timestamp": "2025-08-18T02:18:47.325Z",
+    "details": {
+      "confidence": 0.85,
+      "patterns": [
+        "wallet_behavior_anomaly"
+      ]
+    },
+    "storedAt": "2025-08-18T02:18:47.334Z",
+    "id": "sig_eyJpZCI6Im"
+  },
+  {
+    "agent": "Intelligence",
+    "type": "pattern_detected",
+    "glyph": "Ω",
+    "hash": "sig_eyJpZCI6Im",
+    "timestamp": "2025-08-18T02:18:48.374Z",
+    "details": {
+      "confidence": 0.85,
+      "patterns": [
+        "wallet_behavior_anomaly"
+      ]
+    },
+    "storedAt": "2025-08-18T02:18:48.377Z",
+    "id": "sig_eyJpZCI6Im"
+  },
+  {
+    "agent": "Intelligence",
+    "type": "pattern_detected",
+    "glyph": "Ω",
+    "hash": "sig_eyJpZCI6Im",
+    "timestamp": "2025-08-18T02:18:48.586Z",
+    "details": {
+      "confidence": 0.85,
+      "patterns": [
+        "wallet_behavior_anomaly"
+      ]
+    },
+    "storedAt": "2025-08-18T02:18:48.588Z",
+    "id": "sig_eyJpZCI6Im"
+  },
+  {
+    "agent": "Intelligence",
+    "type": "pattern_detected",
+    "glyph": "Ω",
+    "hash": "sig_eyJpZCI6Im",
+    "timestamp": "2025-08-18T02:18:48.696Z",
+    "details": {
+      "confidence": 0.85,
+      "patterns": [
+        "wallet_behavior_anomaly"
+      ]
+    },
+    "storedAt": "2025-08-18T02:18:48.699Z",
+    "id": "sig_eyJpZCI6Im"
+  },
+  {
+    "agent": "Intelligence",
+    "type": "pattern_detected",
+    "glyph": "Ω",
+    "hash": "sig_eyJpZCI6Im",
+    "timestamp": "2025-08-18T02:18:48.915Z",
+    "details": {
+      "confidence": 0.8,
+      "patterns": [
+        "rapid_transaction_sequence"
+      ]
+    },
+    "storedAt": "2025-08-18T02:18:48.917Z",
+    "id": "sig_eyJpZCI6Im"
+  },
+  {
+    "agent": "Intelligence",
+    "type": "pattern_detected",
+    "glyph": "Ω",
+    "hash": "sig_eyJpZCI6Im",
+    "timestamp": "2025-08-18T02:18:49.241Z",
+    "details": {
+      "confidence": 0.85,
+      "patterns": [
+        "wallet_behavior_anomaly"
+      ]
+    },
+    "storedAt": "2025-08-18T02:18:49.244Z",
+    "id": "sig_eyJpZCI6Im"
+  },
+  {
+    "agent": "Intelligence",
+    "type": "pattern_detected",
+    "glyph": "Ω",
+    "hash": "sig_eyJpZCI6Im",
+    "timestamp": "2025-08-18T02:18:49.349Z",
+    "details": {
+      "confidence": 0.85,
+      "patterns": [
+        "wallet_behavior_anomaly"
+      ]
+    },
+    "storedAt": "2025-08-18T02:18:49.353Z",
+    "id": "sig_eyJpZCI6Im"
+  },
+  {
+    "agent": "Intelligence",
+    "type": "pattern_detected",
+    "glyph": "Ω",
+    "hash": "sig_eyJpZCI6Im",
+    "timestamp": "2025-08-18T02:18:49.787Z",
+    "details": {
+      "confidence": 0.85,
+      "patterns": [
+        "wallet_behavior_anomaly"
+      ]
+    },
+    "storedAt": "2025-08-18T02:18:49.790Z",
+    "id": "sig_eyJpZCI6Im"
+  },
+  {
+    "agent": "Intelligence",
+    "type": "pattern_detected",
+    "glyph": "Ω",
+    "hash": "sig_eyJpZCI6Im",
+    "timestamp": "2025-08-18T02:18:50.074Z",
+    "details": {
+      "confidence": 1,
+      "patterns": [
+        "contract_activity_spike"
+      ]
+    },
+    "storedAt": "2025-08-18T02:18:50.121Z",
+    "id": "sig_eyJpZCI6Im"
+  },
+  {
+    "agent": "Intelligence",
+    "type": "pattern_detected",
+    "glyph": "Ω",
+    "hash": "sig_eyJpZCI6Im",
+    "timestamp": "2025-08-18T02:18:50.258Z",
+    "details": {
+      "confidence": 0.85,
+      "patterns": [
+        "wallet_behavior_anomaly"
+      ]
+    },
+    "storedAt": "2025-08-18T02:18:50.261Z",
+    "id": "sig_eyJpZCI6Im"
+  },
+  {
+    "agent": "Intelligence",
+    "type": "pattern_detected",
+    "glyph": "Ω",
+    "hash": "sig_eyJpZCI6Im",
+    "timestamp": "2025-08-18T02:18:50.340Z",
+    "details": {
+      "confidence": 1,
+      "patterns": [
+        "contract_activity_spike"
+      ]
+    },
+    "storedAt": "2025-08-18T02:18:50.343Z",
+    "id": "sig_eyJpZCI6Im"
+  },
+  {
+    "agent": "Intelligence",
+    "type": "pattern_detected",
+    "glyph": "Ω",
+    "hash": "sig_eyJpZCI6Im",
+    "timestamp": "2025-08-18T02:18:50.438Z",
+    "details": {
+      "confidence": 1,
+      "patterns": [
+        "contract_activity_spike"
+      ]
+    },
+    "storedAt": "2025-08-18T02:18:50.441Z",
+    "id": "sig_eyJpZCI6Im"
+  },
+  {
+    "agent": "Intelligence",
+    "type": "pattern_detected",
+    "glyph": "Ω",
+    "hash": "sig_eyJpZCI6Im",
+    "timestamp": "2025-08-18T02:18:50.540Z",
+    "details": {
+      "confidence": 0.8,
+      "patterns": [
+        "rapid_transaction_sequence"
+      ]
+    },
+    "storedAt": "2025-08-18T02:18:50.542Z",
+    "id": "sig_eyJpZCI6Im"
+  },
+  {
+    "agent": "Intelligence",
+    "type": "pattern_detected",
+    "glyph": "Ω",
+    "hash": "sig_eyJpZCI6Im",
+    "timestamp": "2025-08-18T02:18:50.759Z",
+    "details": {
+      "confidence": 0.85,
+      "patterns": [
+        "wallet_behavior_anomaly"
+      ]
+    },
+    "storedAt": "2025-08-18T02:18:50.762Z",
+    "id": "sig_eyJpZCI6Im"
+  },
+  {
+    "agent": "Intelligence",
+    "type": "pattern_detected",
+    "glyph": "Ω",
+    "hash": "sig_eyJpZCI6Im",
+    "timestamp": "2025-08-18T02:18:51.436Z",
+    "details": {
+      "confidence": 0.8,
+      "patterns": [
+        "rapid_transaction_sequence"
+      ]
+    },
+    "storedAt": "2025-08-18T02:18:51.439Z",
+    "id": "sig_eyJpZCI6Im"
+  },
+  {
+    "agent": "Intelligence",
+    "type": "pattern_detected",
+    "glyph": "Ω",
+    "hash": "sig_eyJpZCI6Im",
+    "timestamp": "2025-08-18T02:18:51.687Z",
+    "details": {
+      "confidence": 0.8,
+      "patterns": [
+        "rapid_transaction_sequence"
+      ]
+    },
+    "storedAt": "2025-08-18T02:18:51.714Z",
+    "id": "sig_eyJpZCI6Im"
+  },
+  {
+    "agent": "Intelligence",
+    "type": "pattern_detected",
+    "glyph": "Ω",
+    "hash": "sig_eyJpZCI6Im",
+    "timestamp": "2025-08-18T02:18:51.904Z",
+    "details": {
+      "confidence": 0.85,
+      "patterns": [
+        "wallet_behavior_anomaly"
+      ]
+    },
+    "storedAt": "2025-08-18T02:18:51.909Z",
+    "id": "sig_eyJpZCI6Im"
+  },
+  {
+    "agent": "Intelligence",
+    "type": "pattern_detected",
+    "glyph": "Ω",
+    "hash": "sig_eyJpZCI6Im",
+    "timestamp": "2025-08-18T02:18:52.016Z",
+    "details": {
+      "confidence": 1,
+      "patterns": [
+        "contract_activity_spike"
+      ]
+    },
+    "storedAt": "2025-08-18T02:18:52.020Z",
+    "id": "sig_eyJpZCI6Im"
+  },
+  {
+    "agent": "Intelligence",
+    "type": "pattern_detected",
+    "glyph": "Ω",
+    "hash": "sig_eyJpZCI6Im",
+    "timestamp": "2025-08-18T02:18:52.139Z",
+    "details": {
+      "confidence": 0.85,
+      "patterns": [
+        "wallet_behavior_anomaly"
+      ]
+    },
+    "storedAt": "2025-08-18T02:18:52.144Z",
+    "id": "sig_eyJpZCI6Im"
+  },
+  {
+    "agent": "Intelligence",
+    "type": "pattern_detected",
+    "glyph": "Ω",
+    "hash": "sig_eyJpZCI6Im",
+    "timestamp": "2025-08-18T02:18:52.292Z",
+    "details": {
+      "confidence": 0.85,
+      "patterns": [
+        "wallet_behavior_anomaly"
+      ]
+    },
+    "storedAt": "2025-08-18T02:18:52.299Z",
+    "id": "sig_eyJpZCI6Im"
+  },
+  {
+    "agent": "Intelligence",
+    "type": "pattern_detected",
+    "glyph": "Ω",
+    "hash": "sig_eyJpZCI6Im",
+    "timestamp": "2025-08-18T02:18:52.355Z",
+    "details": {
+      "confidence": 1,
+      "patterns": [
+        "contract_activity_spike"
+      ]
+    },
+    "storedAt": "2025-08-18T02:18:52.358Z",
+    "id": "sig_eyJpZCI6Im"
+  },
+  {
+    "agent": "Intelligence",
+    "type": "pattern_detected",
+    "glyph": "Ω",
+    "hash": "sig_eyJpZCI6Im",
+    "timestamp": "2025-08-18T02:18:52.920Z",
+    "details": {
+      "confidence": 1,
+      "patterns": [
+        "contract_activity_spike"
+      ]
+    },
+    "storedAt": "2025-08-18T02:18:52.923Z",
+    "id": "sig_eyJpZCI6Im"
+  },
+  {
+    "agent": "Intelligence",
+    "type": "pattern_detected",
+    "glyph": "Ω",
+    "hash": "sig_eyJpZCI6Im",
+    "timestamp": "2025-08-18T02:18:52.964Z",
+    "details": {
+      "confidence": 0.85,
+      "patterns": [
+        "wallet_behavior_anomaly"
+      ]
+    },
+    "storedAt": "2025-08-18T02:18:52.968Z",
+    "id": "sig_eyJpZCI6Im"
+  },
+  {
+    "agent": "Intelligence",
+    "type": "pattern_detected",
+    "glyph": "Ω",
+    "hash": "sig_eyJpZCI6Im",
+    "timestamp": "2025-08-18T02:18:53.174Z",
+    "details": {
+      "confidence": 0.85,
+      "patterns": [
+        "wallet_behavior_anomaly"
+      ]
+    },
+    "storedAt": "2025-08-18T02:18:53.182Z",
+    "id": "sig_eyJpZCI6Im"
+  },
+  {
+    "agent": "Intelligence",
+    "type": "pattern_detected",
+    "glyph": "Ω",
+    "hash": "sig_eyJpZCI6Im",
+    "timestamp": "2025-08-18T02:18:53.288Z",
+    "details": {
+      "confidence": 0.85,
+      "patterns": [
+        "wallet_behavior_anomaly"
+      ]
+    },
+    "storedAt": "2025-08-18T02:18:53.290Z",
+    "id": "sig_eyJpZCI6Im"
+  },
+  {
+    "agent": "Intelligence",
+    "type": "pattern_detected",
+    "glyph": "Ω",
+    "hash": "sig_eyJpZCI6Im",
+    "timestamp": "2025-08-18T02:18:53.416Z",
+    "details": {
+      "confidence": 0.85,
+      "patterns": [
+        "wallet_behavior_anomaly"
+      ]
+    },
+    "storedAt": "2025-08-18T02:18:53.419Z",
+    "id": "sig_eyJpZCI6Im"
+  },
+  {
+    "agent": "Intelligence",
+    "type": "pattern_detected",
+    "glyph": "Ω",
+    "hash": "sig_eyJpZCI6Im",
+    "timestamp": "2025-08-18T02:18:53.661Z",
+    "details": {
+      "confidence": 1,
+      "patterns": [
+        "contract_activity_spike"
+      ]
+    },
+    "storedAt": "2025-08-18T02:18:53.669Z",
+    "id": "sig_eyJpZCI6Im"
+  },
+  {
+    "agent": "Intelligence",
+    "type": "pattern_detected",
+    "glyph": "Ω",
+    "hash": "sig_eyJpZCI6Im",
+    "timestamp": "2025-08-18T02:18:53.740Z",
+    "details": {
+      "confidence": 0.85,
+      "patterns": [
+        "wallet_behavior_anomaly"
+      ]
+    },
+    "storedAt": "2025-08-18T02:18:53.746Z",
+    "id": "sig_eyJpZCI6Im"
+  },
+  {
+    "agent": "Intelligence",
+    "type": "pattern_detected",
+    "glyph": "Ω",
+    "hash": "sig_eyJpZCI6Im",
+    "timestamp": "2025-08-18T02:18:54.367Z",
+    "details": {
+      "confidence": 1,
+      "patterns": [
+        "contract_activity_spike"
+      ]
+    },
+    "storedAt": "2025-08-18T02:18:54.385Z",
+    "id": "sig_eyJpZCI6Im"
+  },
+  {
+    "agent": "Intelligence",
+    "type": "pattern_detected",
+    "glyph": "Ω",
+    "hash": "sig_eyJpZCI6Im",
+    "timestamp": "2025-08-18T02:18:54.655Z",
+    "details": {
+      "confidence": 1,
+      "patterns": [
+        "contract_activity_spike"
+      ]
+    },
+    "storedAt": "2025-08-18T02:18:54.669Z",
+    "id": "sig_eyJpZCI6Im"
+  },
+  {
+    "agent": "Intelligence",
+    "type": "pattern_detected",
+    "glyph": "Ω",
+    "hash": "sig_eyJpZCI6Im",
+    "timestamp": "2025-08-18T02:18:54.847Z",
+    "details": {
+      "confidence": 0.85,
+      "patterns": [
+        "wallet_behavior_anomaly"
+      ]
+    },
+    "storedAt": "2025-08-18T02:18:54.851Z",
+    "id": "sig_eyJpZCI6Im"
+  },
+  {
+    "agent": "Intelligence",
+    "type": "pattern_detected",
+    "glyph": "Ω",
+    "hash": "sig_eyJpZCI6Im",
+    "timestamp": "2025-08-18T02:18:55.070Z",
+    "details": {
+      "confidence": 1,
+      "patterns": [
+        "contract_activity_spike"
+      ]
+    },
+    "storedAt": "2025-08-18T02:18:55.076Z",
+    "id": "sig_eyJpZCI6Im"
+  },
+  {
+    "agent": "Intelligence",
+    "type": "pattern_detected",
+    "glyph": "Ω",
+    "hash": "sig_eyJpZCI6Im",
+    "timestamp": "2025-08-18T02:18:55.404Z",
+    "details": {
+      "confidence": 0.85,
+      "patterns": [
+        "wallet_behavior_anomaly"
+      ]
+    },
+    "storedAt": "2025-08-18T02:18:55.410Z",
+    "id": "sig_eyJpZCI6Im"
+  },
+  {
+    "agent": "Intelligence",
+    "type": "pattern_detected",
+    "glyph": "Ω",
+    "hash": "sig_eyJpZCI6Im",
+    "timestamp": "2025-08-18T02:18:55.507Z",
+    "details": {
+      "confidence": 0.85,
+      "patterns": [
+        "wallet_behavior_anomaly"
+      ]
+    },
+    "storedAt": "2025-08-18T02:18:55.511Z",
+    "id": "sig_eyJpZCI6Im"
+  },
+  {
+    "agent": "Intelligence",
+    "type": "pattern_detected",
+    "glyph": "Ω",
+    "hash": "sig_eyJpZCI6Im",
+    "timestamp": "2025-08-18T02:18:55.644Z",
+    "details": {
+      "confidence": 0.85,
+      "patterns": [
+        "wallet_behavior_anomaly"
+      ]
+    },
+    "storedAt": "2025-08-18T02:18:55.648Z",
+    "id": "sig_eyJpZCI6Im"
+  },
+  {
+    "agent": "Intelligence",
+    "type": "pattern_detected",
+    "glyph": "Ω",
+    "hash": "sig_eyJpZCI6Im",
+    "timestamp": "2025-08-18T02:18:55.747Z",
+    "details": {
+      "confidence": 0.85,
+      "patterns": [
+        "wallet_behavior_anomaly"
+      ]
+    },
+    "storedAt": "2025-08-18T02:18:55.751Z",
+    "id": "sig_eyJpZCI6Im"
+  },
+  {
+    "agent": "Intelligence",
+    "type": "pattern_detected",
+    "glyph": "Ω",
+    "hash": "sig_eyJpZCI6Im",
+    "timestamp": "2025-08-18T02:18:55.833Z",
+    "details": {
+      "confidence": 0.85,
+      "patterns": [
+        "wallet_behavior_anomaly"
+      ]
+    },
+    "storedAt": "2025-08-18T02:18:55.835Z",
+    "id": "sig_eyJpZCI6Im"
+  },
+  {
+    "agent": "Intelligence",
+    "type": "pattern_detected",
+    "glyph": "Ω",
+    "hash": "sig_eyJpZCI6Im",
+    "timestamp": "2025-08-18T02:18:55.939Z",
+    "details": {
+      "confidence": 0.85,
+      "patterns": [
+        "wallet_behavior_anomaly"
+      ]
+    },
+    "storedAt": "2025-08-18T02:18:55.942Z",
+    "id": "sig_eyJpZCI6Im"
+  },
+  {
+    "agent": "Intelligence",
+    "type": "pattern_detected",
+    "glyph": "Ω",
+    "hash": "sig_eyJpZCI6Im",
+    "timestamp": "2025-08-18T02:18:56.143Z",
+    "details": {
+      "confidence": 0.85,
+      "patterns": [
+        "wallet_behavior_anomaly"
+      ]
+    },
+    "storedAt": "2025-08-18T02:18:56.167Z",
+    "id": "sig_eyJpZCI6Im"
+  },
+  {
+    "agent": "Intelligence",
+    "type": "pattern_detected",
+    "glyph": "Ω",
+    "hash": "sig_eyJpZCI6Im",
+    "timestamp": "2025-08-18T02:18:56.294Z",
+    "details": {
+      "confidence": 1,
+      "patterns": [
+        "contract_activity_spike"
+      ]
+    },
+    "storedAt": "2025-08-18T02:18:56.298Z",
+    "id": "sig_eyJpZCI6Im"
+  },
+  {
+    "agent": "Intelligence",
+    "type": "pattern_detected",
+    "glyph": "Ω",
+    "hash": "sig_eyJpZCI6Im",
+    "timestamp": "2025-08-18T02:18:56.613Z",
+    "details": {
+      "confidence": 1,
+      "patterns": [
+        "contract_activity_spike"
+      ]
+    },
+    "storedAt": "2025-08-18T02:18:56.616Z",
+    "id": "sig_eyJpZCI6Im"
+  },
+  {
+    "agent": "Intelligence",
+    "type": "pattern_detected",
+    "glyph": "Ω",
+    "hash": "sig_eyJpZCI6Im",
+    "timestamp": "2025-08-18T02:18:56.723Z",
+    "details": {
+      "confidence": 0.85,
+      "patterns": [
+        "wallet_behavior_anomaly"
+      ]
+    },
+    "storedAt": "2025-08-18T02:18:56.727Z",
+    "id": "sig_eyJpZCI6Im"
+  },
+  {
+    "agent": "Intelligence",
+    "type": "pattern_detected",
+    "glyph": "Ω",
+    "hash": "sig_eyJpZCI6Im",
+    "timestamp": "2025-08-18T02:18:57.156Z",
+    "details": {
+      "confidence": 0.85,
+      "patterns": [
+        "wallet_behavior_anomaly"
+      ]
+    },
+    "storedAt": "2025-08-18T02:18:57.159Z",
+    "id": "sig_eyJpZCI6Im"
+  },
+  {
+    "agent": "Intelligence",
+    "type": "pattern_detected",
+    "glyph": "Ω",
+    "hash": "sig_eyJpZCI6Im",
+    "timestamp": "2025-08-18T02:18:57.380Z",
+    "details": {
+      "confidence": 0.85,
+      "patterns": [
+        "wallet_behavior_anomaly"
+      ]
+    },
+    "storedAt": "2025-08-18T02:18:57.383Z",
+    "id": "sig_eyJpZCI6Im"
+  },
+  {
+    "agent": "Intelligence",
+    "type": "pattern_detected",
+    "glyph": "Ω",
+    "hash": "sig_eyJpZCI6Im",
+    "timestamp": "2025-08-18T02:18:57.599Z",
+    "details": {
+      "confidence": 1,
+      "patterns": [
+        "contract_activity_spike"
+      ]
+    },
+    "storedAt": "2025-08-18T02:18:57.604Z",
+    "id": "sig_eyJpZCI6Im"
+  },
+  {
+    "agent": "Intelligence",
+    "type": "pattern_detected",
+    "glyph": "Ω",
+    "hash": "sig_eyJpZCI6Im",
+    "timestamp": "2025-08-18T02:18:57.705Z",
+    "details": {
+      "confidence": 0.85,
+      "patterns": [
+        "wallet_behavior_anomaly"
+      ]
+    },
+    "storedAt": "2025-08-18T02:18:57.709Z",
+    "id": "sig_eyJpZCI6Im"
+  },
+  {
+    "agent": "Intelligence",
+    "type": "pattern_detected",
+    "glyph": "Ω",
+    "hash": "sig_eyJpZCI6Im",
+    "timestamp": "2025-08-18T02:18:57.812Z",
+    "details": {
+      "confidence": 1,
+      "patterns": [
+        "contract_activity_spike"
+      ]
+    },
+    "storedAt": "2025-08-18T02:18:57.815Z",
+    "id": "sig_eyJpZCI6Im"
+  },
+  {
+    "agent": "Intelligence",
+    "type": "pattern_detected",
+    "glyph": "Ω",
+    "hash": "sig_eyJpZCI6Im",
+    "timestamp": "2025-08-18T02:18:57.931Z",
+    "details": {
+      "confidence": 1,
+      "patterns": [
+        "contract_activity_spike"
+      ]
+    },
+    "storedAt": "2025-08-18T02:18:57.935Z",
+    "id": "sig_eyJpZCI6Im"
+  },
+  {
+    "agent": "Intelligence",
+    "type": "pattern_detected",
+    "glyph": "Ω",
+    "hash": "sig_eyJpZCI6Im",
+    "timestamp": "2025-08-18T02:18:58.379Z",
+    "details": {
+      "confidence": 1,
+      "patterns": [
+        "contract_activity_spike"
+      ]
+    },
+    "storedAt": "2025-08-18T02:18:58.381Z",
+    "id": "sig_eyJpZCI6Im"
+  },
+  {
+    "agent": "Intelligence",
+    "type": "pattern_detected",
+    "glyph": "Ω",
+    "hash": "sig_eyJpZCI6Im",
+    "timestamp": "2025-08-18T02:18:58.859Z",
+    "details": {
+      "confidence": 0.85,
+      "patterns": [
+        "wallet_behavior_anomaly"
+      ]
+    },
+    "storedAt": "2025-08-18T02:18:58.864Z",
+    "id": "sig_eyJpZCI6Im"
+  },
+  {
+    "agent": "Intelligence",
+    "type": "pattern_detected",
+    "glyph": "Ω",
+    "hash": "sig_eyJpZCI6Im",
+    "timestamp": "2025-08-18T02:18:59.488Z",
+    "details": {
+      "confidence": 0.85,
+      "patterns": [
+        "wallet_behavior_anomaly"
+      ]
+    },
+    "storedAt": "2025-08-18T02:18:59.493Z",
+    "id": "sig_eyJpZCI6Im"
+  },
+  {
+    "agent": "Intelligence",
+    "type": "pattern_detected",
+    "glyph": "Ω",
+    "hash": "sig_eyJpZCI6Im",
+    "timestamp": "2025-08-18T02:18:59.558Z",
+    "details": {
+      "confidence": 0.85,
+      "patterns": [
+        "wallet_behavior_anomaly"
+      ]
+    },
+    "storedAt": "2025-08-18T02:18:59.563Z",
+    "id": "sig_eyJpZCI6Im"
+  },
+  {
+    "agent": "Intelligence",
+    "type": "pattern_detected",
+    "glyph": "Ω",
+    "hash": "sig_eyJpZCI6Im",
+    "timestamp": "2025-08-18T02:19:01.069Z",
+    "details": {
+      "confidence": 0.85,
+      "patterns": [
+        "wallet_behavior_anomaly"
+      ]
+    },
+    "storedAt": "2025-08-18T02:19:01.258Z",
+    "id": "sig_eyJpZCI6Im"
+  },
+  {
+    "agent": "Intelligence",
+    "type": "pattern_detected",
+    "glyph": "Ω",
+    "hash": "sig_eyJpZCI6Im",
+    "timestamp": "2025-08-18T02:19:01.430Z",
+    "details": {
+      "confidence": 0.85,
+      "patterns": [
+        "wallet_behavior_anomaly"
+      ]
+    },
+    "storedAt": "2025-08-18T02:19:01.473Z",
+    "id": "sig_eyJpZCI6Im"
+  },
+  {
+    "agent": "Intelligence",
+    "type": "pattern_detected",
+    "glyph": "Ω",
+    "hash": "sig_eyJpZCI6Im",
+    "timestamp": "2025-08-18T02:19:01.561Z",
+    "details": {
+      "confidence": 0.85,
+      "patterns": [
+        "wallet_behavior_anomaly"
+      ]
+    },
+    "storedAt": "2025-08-18T02:19:01.564Z",
+    "id": "sig_eyJpZCI6Im"
+  }
+]

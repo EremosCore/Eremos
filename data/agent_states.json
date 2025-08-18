@@ -1,0 +1,771 @@
+{
+  "agent-intelligence": {
+    "id": "agent-intelligence",
+    "name": "Intelligence",
+    "role": "pattern_analysis",
+    "watchType": "multi_source",
+    "glyph": "Ω",
+    "triggerThreshold": 0.7,
+    "lastSignal": "sig_eyJpZCI6Im",
+    "originTimestamp": "2025-08-18T02:18:31.291Z",
+    "description": "Advanced pattern recognition agent that coordinates with other agents to detect complex blockchain patterns and anomalies.",
+    "recentTransactions": [
+      {
+        "id": "mock_tx_5",
+        "type": "transaction",
+        "chainId": 1,
+        "timestamp": 1755483512126,
+        "source": "ethereum",
+        "priority": "medium",
+        "data": {
+          "hash": "0xb2b5ba43fa996",
+          "from": "0x742d35Cc6634C0532925a3b8D4C9db96C4b4d8b6",
+          "to": "0x742d35Cc6634C0532925a3b8D4C9db96C4b4d8b6",
+          "value": "957.686406178472907413",
+          "gasPrice": "92.927892994",
+          "gasUsed": "186473",
+          "status": "confirmed",
+          "input": "0x",
+          "nonce": 175440
+        }
+      },
+      {
+        "id": "mock_tx_8",
+        "type": "transaction",
+        "chainId": 1,
+        "timestamp": 1755483512451,
+        "source": "ethereum",
+        "priority": "medium",
+        "data": {
+          "hash": "0xd906372e7c65d",
+          "from": "0xabcdef1234567890abcdef1234567890abcdef12",
+          "to": "0x742d35Cc6634C0532925a3b8D4C9db96C4b4d8b6",
+          "value": "509.362236953607293799",
+          "gasPrice": "6.945100922",
+          "gasUsed": "86743",
+          "status": "confirmed",
+          "input": "0x",
+          "nonce": 640323
+        }
+      },
+      {
+        "id": "mock_tx_11",
+        "type": "transaction",
+        "chainId": 1,
+        "timestamp": 1755483512779,
+        "source": "ethereum",
+        "priority": "medium",
+        "data": {
+          "hash": "0xb6fa76f94257b",
+          "from": "0x1234567890123456789012345678901234567890",
+          "to": "0xabcdef1234567890abcdef1234567890abcdef12",
+          "value": "10.373664938069238062",
+          "gasPrice": "88.848654515",
+          "gasUsed": "452682",
+          "status": "confirmed",
+          "input": "0x",
+          "nonce": 327057
+        }
+      },
+      {
+        "id": "mock_tx_13",
+        "type": "transaction",
+        "chainId": 1,
+        "timestamp": 1755483512996,
+        "source": "ethereum",
+        "priority": "medium",
+        "data": {
+          "hash": "0x6cb6e8088c4c8",
+          "from": "0x8ba1f109551bD432803012645Hac136c772c3c7c",
+          "to": "0x8ba1f109551bD432803012645Hac136c772c3c7c",
+          "value": "732.136233613835770484",
+          "gasPrice": "76.701463177",
+          "gasUsed": "401531",
+          "status": "confirmed",
+          "input": "0x",
+          "nonce": 979442
+        }
+      },
+      {
+        "id": "mock_tx_15",
+        "type": "transaction",
+        "chainId": 1,
+        "timestamp": 1755483513255,
+        "source": "ethereum",
+        "priority": "medium",
+        "data": {
+          "hash": "0xdfd3925304e4d",
+          "from": "0x742d35Cc6634C0532925a3b8D4C9db96C4b4d8b6",
+          "to": "0x8ba1f109551bD432803012645Hac136c772c3c7c",
+          "value": "709.947095502283787027",
+          "gasPrice": "5.378370344",
+          "gasUsed": "60164",
+          "status": "confirmed",
+          "input": "0x",
+          "nonce": 722870
+        }
+      },
+      {
+        "id": "mock_tx_36",
+        "type": "transaction",
+        "chainId": 1,
+        "timestamp": 1755483518581,
+        "source": "ethereum",
+        "priority": "medium",
+        "data": {
+          "hash": "0xc69933d22f8ea",
+          "from": "0xabcdef1234567890abcdef1234567890abcdef12",
+          "to": "0x1234567890123456789012345678901234567890",
+          "value": "730.937710619975064219",
+          "gasPrice": "75.248429046",
+          "gasUsed": "157203",
+          "status": "confirmed",
+          "input": "0x",
+          "nonce": 7034
+        }
+      },
+      {
+        "id": "mock_tx_39",
+        "type": "transaction",
+        "chainId": 1,
+        "timestamp": 1755483519233,
+        "source": "ethereum",
+        "priority": "medium",
+        "data": {
+          "hash": "0xfbe72ed0fa245",
+          "from": "0x8ba1f109551bD432803012645Hac136c772c3c7c",
+          "to": "0x742d35Cc6634C0532925a3b8D4C9db96C4b4d8b6",
+          "value": "292.967565320253470418",
+          "gasPrice": "54.170289436",
+          "gasUsed": "411371",
+          "status": "confirmed",
+          "input": "0x",
+          "nonce": 973328
+        }
+      },
+      {
+        "id": "mock_tx_46",
+        "type": "transaction",
+        "chainId": 1,
+        "timestamp": 1755483523073,
+        "source": "ethereum",
+        "priority": "high",
+        "data": {
+          "hash": "0x8f911747dda48",
+          "from": "0x8ba1f109551bD432803012645Hac136c772c3c7c",
+          "to": "0xabcdef1234567890abcdef1234567890abcdef12",
+          "value": "337.433953754202377695",
+          "gasPrice": "5.802259928",
+          "gasUsed": "433965",
+          "status": "confirmed",
+          "input": "0x",
+          "nonce": 318794
+        }
+      },
+      {
+        "id": "mock_tx_47",
+        "type": "transaction",
+        "chainId": 1,
+        "timestamp": 1755483523217,
+        "source": "ethereum",
+        "priority": "high",
+        "data": {
+          "hash": "0x5bb87276c4554",
+          "from": "0x742d35Cc6634C0532925a3b8D4C9db96C4b4d8b6",
+          "to": "0xabcdef1234567890abcdef1234567890abcdef12",
+          "value": "218.582008275324028546",
+          "gasPrice": "87.456628107",
+          "gasUsed": "489376",
+          "status": "confirmed",
+          "input": "0x",
+          "nonce": 468840
+        }
+      },
+      {
+        "id": "mock_tx_48",
+        "type": "transaction",
+        "chainId": 1,
+        "timestamp": 1755483523269,
+        "source": "ethereum",
+        "priority": "high",
+        "data": {
+          "hash": "0xa944dd29ba00f",
+          "from": "0xabcdef1234567890abcdef1234567890abcdef12",
+          "to": "0xabcdef1234567890abcdef1234567890abcdef12",
+          "value": "973.226156495990494477",
+          "gasPrice": "51.038131993",
+          "gasUsed": "130787",
+          "status": "confirmed",
+          "input": "0x",
+          "nonce": 227430
+        }
+      },
+      {
+        "id": "mock_tx_49",
+        "type": "transaction",
+        "chainId": 1,
+        "timestamp": 1755483523270,
+        "source": "ethereum",
+        "priority": "high",
+        "data": {
+          "hash": "0x69403d13fda47",
+          "from": "0x8ba1f109551bD432803012645Hac136c772c3c7c",
+          "to": "0x8ba1f109551bD432803012645Hac136c772c3c7c",
+          "value": "806.114101955454543713",
+          "gasPrice": "29.088603585",
+          "gasUsed": "386960",
+          "status": "confirmed",
+          "input": "0x",
+          "nonce": 619709
+        }
+      },
+      {
+        "id": "mock_tx_45",
+        "type": "transaction",
+        "chainId": 1,
+        "timestamp": 1755483523073,
+        "source": "ethereum",
+        "priority": "medium",
+        "data": {
+          "hash": "0xb65df2fe7196",
+          "from": "0xabcdef1234567890abcdef1234567890abcdef12",
+          "to": "0x8ba1f109551bD432803012645Hac136c772c3c7c",
+          "value": "229.419003045357783321",
+          "gasPrice": "56.059003034",
+          "gasUsed": "100113",
+          "status": "confirmed",
+          "input": "0x",
+          "nonce": 445525
+        }
+      },
+      {
+        "id": "mock_tx_50",
+        "type": "transaction",
+        "chainId": 1,
+        "timestamp": 1755483523270,
+        "source": "ethereum",
+        "priority": "high",
+        "data": {
+          "hash": "0xe2ab95fbb3891",
+          "from": "0xabcdef1234567890abcdef1234567890abcdef12",
+          "to": "0xabcdef1234567890abcdef1234567890abcdef12",
+          "value": "48.012022677006214622",
+          "gasPrice": "71.401790909",
+          "gasUsed": "435201",
+          "status": "confirmed",
+          "input": "0x",
+          "nonce": 790853
+        }
+      },
+      {
+        "id": "mock_tx_54",
+        "type": "transaction",
+        "chainId": 1,
+        "timestamp": 1755483523727,
+        "source": "ethereum",
+        "priority": "medium",
+        "data": {
+          "hash": "0x0ea11a7876a46",
+          "from": "0x742d35Cc6634C0532925a3b8D4C9db96C4b4d8b6",
+          "to": "0x1234567890123456789012345678901234567890",
+          "value": "236.667125932257704335",
+          "gasPrice": "47.971776546",
+          "gasUsed": "96692",
+          "status": "confirmed",
+          "input": "0x",
+          "nonce": 404125
+        }
+      },
+      {
+        "id": "mock_tx_55",
+        "type": "transaction",
+        "chainId": 1,
+        "timestamp": 1755483523841,
+        "source": "ethereum",
+        "priority": "medium",
+        "data": {
+          "hash": "0x2f74a7765bc23",
+          "from": "0xabcdef1234567890abcdef1234567890abcdef12",
+          "to": "0x1234567890123456789012345678901234567890",
+          "value": "387.040180692574267596",
+          "gasPrice": "63.025533279",
+          "gasUsed": "357860",
+          "status": "confirmed",
+          "input": "0x",
+          "nonce": 659647
+        }
+      },
+      {
+        "id": "mock_tx_60",
+        "type": "transaction",
+        "chainId": 1,
+        "timestamp": 1755483524485,
+        "source": "ethereum",
+        "priority": "medium",
+        "data": {
+          "hash": "0xd1b6d16454a5c",
+          "from": "0x1234567890123456789012345678901234567890",
+          "to": "0xabcdef1234567890abcdef1234567890abcdef12",
+          "value": "731.964320618566830490",
+          "gasPrice": "13.061133573",
+          "gasUsed": "37980",
+          "status": "confirmed",
+          "input": "0x",
+          "nonce": 163389
+        }
+      },
+      {
+        "id": "mock_tx_67",
+        "type": "transaction",
+        "chainId": 1,
+        "timestamp": 1755483525417,
+        "source": "ethereum",
+        "priority": "medium",
+        "data": {
+          "hash": "0xa0f6beb502e38",
+          "from": "0x1234567890123456789012345678901234567890",
+          "to": "0xabcdef1234567890abcdef1234567890abcdef12",
+          "value": "430.757732332279090315",
+          "gasPrice": "72.874754120",
+          "gasUsed": "69799",
+          "status": "confirmed",
+          "input": "0x",
+          "nonce": 336959
+        }
+      },
+      {
+        "id": "mock_tx_71",
+        "type": "transaction",
+        "chainId": 1,
+        "timestamp": 1755483526217,
+        "source": "ethereum",
+        "priority": "medium",
+        "data": {
+          "hash": "0x5be2ecb7bc153",
+          "from": "0x8ba1f109551bD432803012645Hac136c772c3c7c",
+          "to": "0x742d35Cc6634C0532925a3b8D4C9db96C4b4d8b6",
+          "value": "700.128784934524105665",
+          "gasPrice": "98.965967703",
+          "gasUsed": "144480",
+          "status": "confirmed",
+          "input": "0x",
+          "nonce": 627994
+        }
+      },
+      {
+        "id": "mock_tx_73",
+        "type": "transaction",
+        "chainId": 1,
+        "timestamp": 1755483526621,
+        "source": "ethereum",
+        "priority": "medium",
+        "data": {
+          "hash": "0x7ddea26fa6ca4",
+          "from": "0x8ba1f109551bD432803012645Hac136c772c3c7c",
+          "to": "0x8ba1f109551bD432803012645Hac136c772c3c7c",
+          "value": "928.910812377393654060",
+          "gasPrice": "43.734848495",
+          "gasUsed": "432549",
+          "status": "confirmed",
+          "input": "0x",
+          "nonce": 780697
+        }
+      },
+      {
+        "id": "mock_tx_82",
+        "type": "transaction",
+        "chainId": 1,
+        "timestamp": 1755483528230,
+        "source": "ethereum",
+        "priority": "medium",
+        "data": {
+          "hash": "0x8206f46abffdd",
+          "from": "0x742d35Cc6634C0532925a3b8D4C9db96C4b4d8b6",
+          "to": "0x742d35Cc6634C0532925a3b8D4C9db96C4b4d8b6",
+          "value": "157.130626293936700222",
+          "gasPrice": "32.852041635",
+          "gasUsed": "496879",
+          "status": "confirmed",
+          "input": "0x",
+          "nonce": 151291
+        }
+      },
+      {
+        "id": "mock_tx_88",
+        "type": "transaction",
+        "chainId": 1,
+        "timestamp": 1755483528887,
+        "source": "ethereum",
+        "priority": "high",
+        "data": {
+          "hash": "0x3bedd6b08cad",
+          "from": "0x742d35Cc6634C0532925a3b8D4C9db96C4b4d8b6",
+          "to": "0x1234567890123456789012345678901234567890",
+          "value": "110.118623353020694822",
+          "gasPrice": "35.738330922",
+          "gasUsed": "212753",
+          "status": "confirmed",
+          "input": "0x",
+          "nonce": 885076
+        }
+      },
+      {
+        "id": "mock_tx_94",
+        "type": "transaction",
+        "chainId": 1,
+        "timestamp": 1755483529539,
+        "source": "ethereum",
+        "priority": "medium",
+        "data": {
+          "hash": "0x85c616a77ee64",
+          "from": "0x1234567890123456789012345678901234567890",
+          "to": "0x1234567890123456789012345678901234567890",
+          "value": "454.921315753085593769",
+          "gasPrice": "72.787228781",
+          "gasUsed": "373253",
+          "status": "confirmed",
+          "input": "0x",
+          "nonce": 284191
+        }
+      },
+      {
+        "id": "mock_tx_102",
+        "type": "transaction",
+        "chainId": 1,
+        "timestamp": 1755483530503,
+        "source": "ethereum",
+        "priority": "medium",
+        "data": {
+          "hash": "0xc2f400b3cbffc",
+          "from": "0x1234567890123456789012345678901234567890",
+          "to": "0xabcdef1234567890abcdef1234567890abcdef12",
+          "value": "132.620871343983139923",
+          "gasPrice": "59.744459202",
+          "gasUsed": "413555",
+          "status": "confirmed",
+          "input": "0x",
+          "nonce": 174823
+        }
+      },
+      {
+        "id": "mock_tx_106",
+        "type": "transaction",
+        "chainId": 1,
+        "timestamp": 1755483530938,
+        "source": "ethereum",
+        "priority": "medium",
+        "data": {
+          "hash": "0x58438b0cf33b4",
+          "from": "0x742d35Cc6634C0532925a3b8D4C9db96C4b4d8b6",
+          "to": "0xabcdef1234567890abcdef1234567890abcdef12",
+          "value": "975.854950260149848873",
+          "gasPrice": "92.766717678",
+          "gasUsed": "4889",
+          "status": "confirmed",
+          "input": "0x",
+          "nonce": 129477
+        }
+      },
+      {
+        "id": "mock_tx_108",
+        "type": "transaction",
+        "chainId": 1,
+        "timestamp": 1755483531157,
+        "source": "ethereum",
+        "priority": "high",
+        "data": {
+          "hash": "0x3c8154813c525",
+          "from": "0xabcdef1234567890abcdef1234567890abcdef12",
+          "to": "0x1234567890123456789012345678901234567890",
+          "value": "140.697690602171974206",
+          "gasPrice": "43.726080258",
+          "gasUsed": "121351",
+          "status": "confirmed",
+          "input": "0x",
+          "nonce": 419735
+        }
+      },
+      {
+        "id": "mock_tx_109",
+        "type": "transaction",
+        "chainId": 1,
+        "timestamp": 1755483531268,
+        "source": "ethereum",
+        "priority": "medium",
+        "data": {
+          "hash": "0xa0ce7ff18f067",
+          "from": "0x8ba1f109551bD432803012645Hac136c772c3c7c",
+          "to": "0x742d35Cc6634C0532925a3b8D4C9db96C4b4d8b6",
+          "value": "662.913498293684597229",
+          "gasPrice": "37.026504786",
+          "gasUsed": "333393",
+          "status": "confirmed",
+          "input": "0x",
+          "nonce": 601640
+        }
+      },
+      {
+        "id": "mock_tx_110",
+        "type": "transaction",
+        "chainId": 1,
+        "timestamp": 1755483531377,
+        "source": "ethereum",
+        "priority": "medium",
+        "data": {
+          "hash": "0xe23532ddcc693",
+          "from": "0x8ba1f109551bD432803012645Hac136c772c3c7c",
+          "to": "0x1234567890123456789012345678901234567890",
+          "value": "599.170022716266885254",
+          "gasPrice": "14.257292410",
+          "gasUsed": "211236",
+          "status": "confirmed",
+          "input": "0x",
+          "nonce": 451499
+        }
+      },
+      {
+        "id": "mock_tx_113",
+        "type": "transaction",
+        "chainId": 1,
+        "timestamp": 1755483531504,
+        "source": "ethereum",
+        "priority": "high",
+        "data": {
+          "hash": "0x5aee84b8c07aa",
+          "from": "0x1234567890123456789012345678901234567890",
+          "to": "0x1234567890123456789012345678901234567890",
+          "value": "847.383151366850597697",
+          "gasPrice": "39.626895238",
+          "gasUsed": "463092",
+          "status": "confirmed",
+          "input": "0x",
+          "nonce": 788226
+        }
+      },
+      {
+        "id": "mock_tx_114",
+        "type": "transaction",
+        "chainId": 1,
+        "timestamp": 1755483531593,
+        "source": "ethereum",
+        "priority": "medium",
+        "data": {
+          "hash": "0x3dd8515d8c591",
+          "from": "0x1234567890123456789012345678901234567890",
+          "to": "0xabcdef1234567890abcdef1234567890abcdef12",
+          "value": "617.888859645128832199",
+          "gasPrice": "70.258296289",
+          "gasUsed": "64385",
+          "status": "confirmed",
+          "input": "0x",
+          "nonce": 222479
+        }
+      },
+      {
+        "id": "mock_tx_130",
+        "type": "transaction",
+        "chainId": 1,
+        "timestamp": 1755483533915,
+        "source": "ethereum",
+        "priority": "medium",
+        "data": {
+          "hash": "0x519982f5fb80d",
+          "from": "0x8ba1f109551bD432803012645Hac136c772c3c7c",
+          "to": "0x1234567890123456789012345678901234567890",
+          "value": "382.384142192404794969",
+          "gasPrice": "95.268544722",
+          "gasUsed": "498823",
+          "status": "confirmed",
+          "input": "0x",
+          "nonce": 378896
+        }
+      },
+      {
+        "id": "mock_tx_131",
+        "type": "transaction",
+        "chainId": 1,
+        "timestamp": 1755483534022,
+        "source": "ethereum",
+        "priority": "medium",
+        "data": {
+          "hash": "0x89f21833d869",
+          "from": "0x1234567890123456789012345678901234567890",
+          "to": "0xabcdef1234567890abcdef1234567890abcdef12",
+          "value": "363.875577288765612138",
+          "gasPrice": "19.297288623",
+          "gasUsed": "493005",
+          "status": "confirmed",
+          "input": "0x",
+          "nonce": 677592
+        }
+      },
+      {
+        "id": "mock_tx_149",
+        "type": "transaction",
+        "chainId": 1,
+        "timestamp": 1755483536339,
+        "source": "ethereum",
+        "priority": "medium",
+        "data": {
+          "hash": "0x8fa0a1d65a52c",
+          "from": "0x742d35Cc6634C0532925a3b8D4C9db96C4b4d8b6",
+          "to": "0x742d35Cc6634C0532925a3b8D4C9db96C4b4d8b6",
+          "value": "464.672522254151658672",
+          "gasPrice": "59.189765846",
+          "gasUsed": "54786",
+          "status": "confirmed",
+          "input": "0x",
+          "nonce": 201224
+        }
+      },
+      {
+        "id": "mock_tx_150",
+        "type": "transaction",
+        "chainId": 1,
+        "timestamp": 1755483536450,
+        "source": "ethereum",
+        "priority": "medium",
+        "data": {
+          "hash": "0x57fb48a2a0d96",
+          "from": "0x8ba1f109551bD432803012645Hac136c772c3c7c",
+          "to": "0x1234567890123456789012345678901234567890",
+          "value": "530.395078168353734327",
+          "gasPrice": "12.834929717",
+          "gasUsed": "276310",
+          "status": "confirmed",
+          "input": "0x",
+          "nonce": 235124
+        }
+      },
+      {
+        "id": "mock_tx_155",
+        "type": "transaction",
+        "chainId": 1,
+        "timestamp": 1755483537005,
+        "source": "ethereum",
+        "priority": "high",
+        "data": {
+          "hash": "0x2c486b5178193",
+          "from": "0xabcdef1234567890abcdef1234567890abcdef12",
+          "to": "0x8ba1f109551bD432803012645Hac136c772c3c7c",
+          "value": "284.039204752355431083",
+          "gasPrice": "28.378619829",
+          "gasUsed": "462520",
+          "status": "confirmed",
+          "input": "0x",
+          "nonce": 842688
+        }
+      },
+      {
+        "id": "mock_tx_159",
+        "type": "transaction",
+        "chainId": 1,
+        "timestamp": 1755483537442,
+        "source": "ethereum",
+        "priority": "medium",
+        "data": {
+          "hash": "0xca1c82faca221",
+          "from": "0x8ba1f109551bD432803012645Hac136c772c3c7c",
+          "to": "0x1234567890123456789012345678901234567890",
+          "value": "792.709376357646078759",
+          "gasPrice": "79.627427979",
+          "gasUsed": "453326",
+          "status": "confirmed",
+          "input": "0x",
+          "nonce": 594274
+        }
+      },
+      {
+        "id": "mock_tx_169",
+        "type": "transaction",
+        "chainId": 1,
+        "timestamp": 1755483538535,
+        "source": "ethereum",
+        "priority": "medium",
+        "data": {
+          "hash": "0x171f7b64d9134",
+          "from": "0x742d35Cc6634C0532925a3b8D4C9db96C4b4d8b6",
+          "to": "0x1234567890123456789012345678901234567890",
+          "value": "571.369482143080176684",
+          "gasPrice": "95.768731108",
+          "gasUsed": "388182",
+          "status": "confirmed",
+          "input": "0x",
+          "nonce": 966617
+        }
+      },
+      {
+        "id": "mock_tx_170",
+        "type": "transaction",
+        "chainId": 1,
+        "timestamp": 1755483538638,
+        "source": "ethereum",
+        "priority": "medium",
+        "data": {
+          "hash": "0x2513cc08b913f",
+          "from": "0x1234567890123456789012345678901234567890",
+          "to": "0x1234567890123456789012345678901234567890",
+          "value": "82.279744607687277380",
+          "gasPrice": "23.638284788",
+          "gasUsed": "344211",
+          "status": "confirmed",
+          "input": "0x",
+          "nonce": 188531
+        }
+      }
+    ],
+    "contractInteractions": {},
+    "walletBehaviors": {},
+    "correlationCount": 74,
+    "sharedIntelligenceCount": 77,
+    "lastUpdated": "2025-08-18T02:19:01.571Z"
+  },
+  "agent-theron": {
+    "id": "agent-000",
+    "name": "Theron",
+    "role": "memory_vault",
+    "watchType": "anomaly_detection",
+    "glyph": "Ϸ",
+    "triggerThreshold": null,
+    "lastSignal": "ancient",
+    "originTimestamp": "2023-01-01T00:00:00.000Z",
+    "description": "The first observer. Theron archives anomalies but does not emit. All agent heuristics fragment from him - he stores the primordial memory stack.",
+    "lastUpdated": "2025-08-18T02:19:01.621Z"
+  },
+  "agent-observer": {
+    "id": "agent-observer",
+    "name": "Observer",
+    "role": "surveillance",
+    "glyph": "φ",
+    "watchType": "wallet_activity",
+    "triggerThreshold": 3,
+    "lastSignal": null,
+    "originTimestamp": "2025-08-18T02:18:31.327Z",
+    "description": "A passive agent that logs unusual wallet clustering.",
+    "lastUpdated": "2025-08-18T02:19:01.630Z"
+  },
+  "agent-launch": {
+    "id": "agent-launch",
+    "name": "LaunchTracker",
+    "role": "launch_monitor",
+    "watchType": "wallet_activity",
+    "glyph": "Σ",
+    "triggerThreshold": 2,
+    "lastSignal": null,
+    "originTimestamp": "2025-06-12T00:00:00.000Z",
+    "description": "Monitors freshly funded wallets from CEX sources. Emits high-confidence launch signals based on behavior patterns.",
+    "lastUpdated": "2025-08-18T02:19:01.634Z"
+  },
+  "agent-ghost": {
+    "id": "agent-022",
+    "name": "Skieró",
+    "role": "dormant_wallet_monitor",
+    "watchType": "wallet_activity",
+    "glyph": "ψ",
+    "triggerThreshold": 0.7,
+    "lastSignal": "inactive",
+    "originTimestamp": "2024-07-03T00:00:00.000Z",
+    "description": "Tracks long-dormant wallets that suddenly reactivate. Useful for catching old dev or team wallets coming back online.",
+    "lastUpdated": "2025-08-18T02:19:01.641Z"
+  }
+}

@@ -15,5 +15,7 @@ export const Harvester: Agent = {
     if (event?.type === "mint_activity" && event.amount > 10) {
       console.log("Mint spike detected:", event.amount)
     }
-  }
+  },
+
+  getMemory: () => []
 }
