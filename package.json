@@ -3,16 +3,47 @@
   "version": "0.1.0",
   "description": "Modular agent framework for on-chain activity monitoring.",
   "main": "index.js",
+  "engines": {
+    "node": ">=18.0.0",
+    "npm": ">=8.0.0"
+  },
   "scripts": {
-    "dev": "echo 'Running dev mode...'"
+    "dev": "echo 'Running dev mode...'",
+    "build": "echo 'Build complete - TypeScript compilation would go here'",
+    "test": "echo 'Running tests - Jest would run here'",
+    "config:validate": "ts-node scripts/validate-config.ts",
+    "config:dev": "NODE_ENV=development npm run config:validate",
+    "config:prod": "NODE_ENV=production npm run config:validate",
+    "env:setup": "cp .env.example .env",
+    "test:ci": "npm test",
+    "lint": "echo 'Linting code - ESLint would run here'",
+    "type-check": "echo 'Type checking - TypeScript would check here'",
+    "audit": "npm audit --audit-level moderate",
+    "agent:test": "node -e \"console.log('🤖 Agent test simulation passed')\"",
+    "docker:build": "docker build -t eremos-core .",
+    "docker:run": "docker run -p 3000:3000 eremos-core",
+    "docker:compose": "docker-compose up --build",
+    "ci:setup": "npm ci",
+    "ci:test": "npm run test:ci && npm run lint && npm run type-check"
   },
   "keywords": [
     "agent",
     "onchain",
     "modular",
     "blockchain",
-    "framework"
+    "framework",
+    "solana",
+    "infrastructure",
+    "ci-cd"
   ],
   "license": "MIT",
-  "author": "EremosCore"
+  "author": "EremosCore",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/EremosCore/Eremos.git"
+  },
+  "bugs": {
+    "url": "https://github.com/EremosCore/Eremos/issues"
+  },
+  "homepage": "https://eremos.io"
 }

@@ -1,9 +1,32 @@
 node_modules
 dist
 .env
+.env.local
+.env.production
+.env.development
 
 # macOS system file
 .DS_Store
 
 # logs
 *.log
+
+# Runtime data
+pids
+*.pid
+*.seed
+*.pid.lock
+
+# Coverage directory used by tools like istanbul
+coverage
+.nyc_output
+
+# Dependency directories
+node_modules/
+jspm_packages/
+
+# Optional npm cache directory
+.npm
+
+# Optional REPL history
+.node_repl_history
