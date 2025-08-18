@@ -108,6 +108,24 @@ npm run dev
 
 ---
 
+## Documentation Index
+
+Quickly navigate to core concepts and additional resources for building and extending the swarm.
+
+### Core Concepts
+
+- [Architecture](docs/architecture.md) - High-level system design and components
+- [Agents](docs/agents.md) - Detailed agent behaviors and implementations
+- [Events](docs/events.md) - Event handling and parsing mechanisms
+- [Signals](docs/signals.md) - Signal emission and confidence scoring
+- [Memory](docs/memory.md) - Agent memory management and persistence
+- [Metrics](docs/metrics.md) - Performance tracking and analytics
+- [Throttle](docs/throttle.md) - Rate limiting and resource control
+- [Runtime](docs/runtime.md) - Execution environment and lifecycle
+- [Glyphs](docs/glyphs.md) - Symbolic representations and visualizations
+
+---
+
 ## Contributing
 
 We’re open to contributors.  
