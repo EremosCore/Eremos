@@ -1,4 +1,3 @@
-// Export all agents for easy importing
 export { Theron } from './theron';
 export { Observer } from './observer';
 export { Harvester } from './harvester';
