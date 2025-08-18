@@ -1,0 +1,11 @@
+blank_issues_enabled: true
+contact_links:
+  - name: 🐦 Twitter/X Support
+    url: https://x.com/EremosCore
+    about: Follow us on Twitter/X for updates and community discussion
+  - name: 📖 Documentation
+    url: https://github.com/EremosCore/Eremos/tree/main/docs
+    about: Check our documentation for guides and technical details
+  - name: 💬 General Discussion
+    url: https://github.com/EremosCore/Eremos/discussions
+    about: Ask questions and discuss ideas with the community

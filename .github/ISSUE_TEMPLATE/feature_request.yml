@@ -1,0 +1,152 @@
+name: ✨ Feature Request
+description: Suggest a new feature or enhancement for Eremos
+title: "[Feature]: "
+labels: ["enhancement", "triage"]
+assignees: []
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for suggesting a new feature! Please fill out the form below to help us understand your request.
+
+  - type: textarea
+    id: feature-description
+    attributes:
+      label: ✨ Feature Description
+      description: A clear and concise description of the feature you'd like to see
+      placeholder: What feature would you like to be added?
+    validations:
+      required: true
+
+  - type: textarea
+    id: problem-statement
+    attributes:
+      label: 🎯 Problem Statement
+      description: What problem does this feature solve?
+      placeholder: |
+        Is your feature request related to a problem? Please describe.
+        A clear and concise description of what the problem is.
+    validations:
+      required: true
+
+  - type: textarea
+    id: proposed-solution
+    attributes:
+      label: 💡 Proposed Solution
+      description: Describe the solution you'd like
+      placeholder: A clear and concise description of what you want to happen
+    validations:
+      required: true
+
+  - type: dropdown
+    id: feature-category
+    attributes:
+      label: 🏷️ Feature Category
+      description: What type of feature is this?
+      options:
+        - New Agent Type
+        - Agent Enhancement
+        - Signal Processing
+        - Detection Pattern
+        - Utility Function
+        - Performance Improvement
+        - Developer Experience
+        - Documentation
+        - API/Integration
+        - Other
+    validations:
+      required: true
+
+  - type: dropdown
+    id: priority
+    attributes:
+      label: 📊 Priority
+      description: How important is this feature to you?
+      options:
+        - Low - Nice to have
+        - Medium - Would be helpful
+        - High - Important for my use case
+        - Critical - Blocking my workflow
+    validations:
+      required: true
+
+  - type: textarea
+    id: use-cases
+    attributes:
+      label: 🔍 Use Cases
+      description: Describe specific use cases for this feature
+      placeholder: |
+        How would you use this feature? What scenarios would it help with?
+        Be as specific as possible.
+    validations:
+      required: true
+
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: 🔄 Alternatives Considered
+      description: Describe any alternative solutions or workarounds you've considered
+      placeholder: What other approaches have you tried or considered?
+
+  - type: textarea
+    id: implementation-ideas
+    attributes:
+      label: 🛠️ Implementation Ideas
+      description: If you have ideas about how this could be implemented, share them here
+      placeholder: |
+        Any thoughts on how this feature could be built?
+        Technical considerations, API design, etc.
+
+  - type: textarea
+    id: agent-specific
+    attributes:
+      label: 🤖 Agent-Specific Details (if applicable)
+      description: If this relates to agent functionality, provide details
+      placeholder: |
+        - Signal types this would generate
+        - Detection patterns involved
+        - Confidence scoring considerations
+        - Integration with existing agents
+      render: markdown
+
+  - type: textarea
+    id: examples
+    attributes:
+      label: 📋 Examples
+      description: Provide examples of how this feature would work
+      placeholder: |
+        Code snippets, configuration examples, or sample outputs
+      render: typescript
+
+  - type: textarea
+    id: additional-context
+    attributes:
+      label: 📝 Additional Context
+      description: Add any other context, screenshots, or references
+      placeholder: Links to similar features in other projects, mockups, etc.
+
+  - type: checkboxes
+    id: contribution
+    attributes:
+      label: 🤝 Contribution
+      description: Are you willing to contribute to this feature?
+      options:
+        - label: I am willing to help implement this feature
+          required: false
+        - label: I can help with testing this feature
+          required: false
+        - label: I can help with documentation for this feature
+          required: false
+
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: ✅ Checklist
+      description: Please confirm the following
+      options:
+        - label: I have searched existing issues to avoid duplicates
+          required: true
+        - label: I have provided a clear description of the feature
+          required: true
+        - label: This feature aligns with the project's goals
+          required: true
