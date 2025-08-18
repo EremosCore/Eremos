@@ -225,25 +225,6 @@ See existing agents like [`theron.ts`](agents/theron.ts), [`observer.ts`](agents
 
 ---
 
-## 📋 Roadmap
-
-### Phase 1: Core Enhancement
-- [ ] Advanced ML-based pattern recognition
-- [ ] Real-time dashboard improvements
-- [ ] Enhanced signal correlation algorithms
-
-### Phase 2: Platform Expansion  
-- [ ] Multi-chain support (Ethereum, Base, Arbitrum)
-- [ ] API endpoints for external integrations
-- [ ] WebSocket streaming for real-time signals
-
-### Phase 3: Ecosystem Growth
-- [ ] Mobile app for signal monitoring
-- [ ] Community agent marketplace
-- [ ] Advanced analytics and reporting
-
----
-
 
 ## 🔗 Links
 
@@ -251,7 +232,7 @@ See existing agents like [`theron.ts`](agents/theron.ts), [`observer.ts`](agents
 - 🌐 [Website](https://www.eremos.io/)
 - 📄 [Whitepaper](./docs/whitepaper.pdf)
 - 📚 [Documentation](./docs/)
-- 🐙 [GitHub Repository](https://github.com/Haleem001/Eremos)
+- 🐙 [GitHub Repository](https://github.com/EremosCore/Eremos)
 
 ---
 
