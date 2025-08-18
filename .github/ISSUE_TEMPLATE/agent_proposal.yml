@@ -1,0 +1,53 @@
+name: 🤖 Agent Proposal
+description: Propose a new agent for Eremos
+title: "[Agent]: "
+labels: ["agent", "proposal"]
+body:
+  - type: input
+    id: name
+    attributes:
+      label: Agent name
+      placeholder: "e.g., Artemis, Sentinel"
+    validations:
+      required: true
+
+  - type: textarea
+    id: purpose
+    attributes:
+      label: Purpose
+      description: What does this agent do?
+    validations:
+      required: true
+
+  - type: textarea
+    id: patterns
+    attributes:
+      label: Detection patterns
+      description: What patterns will it detect?
+    validations:
+      required: true
+
+  - type: textarea
+    id: signals
+    attributes:
+      label: Signal types
+      description: What signals will it emit?
+    validations:
+      required: true
+
+  - type: dropdown
+    id: complexity
+    attributes:
+      label: Complexity
+      options:
+        - Simple
+        - Medium
+        - Complex
+    validations:
+      required: true
+
+  - type: textarea
+    id: example
+    attributes:
+      label: Example signal
+      render: json
