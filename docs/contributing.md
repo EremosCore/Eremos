@@ -1,9 +1,7 @@
 # Contributing to Eremos
 
-We're open to signal logic, new agents, and utility extensions.
+This document has moved. Please see the root-level guide for the latest details:
 
-- Fork the repo
-- Work on a new agent in `/agents`
-- Use `/scripts/dev-agent.ts` to simulate
+- [CONTRIBUTING.md](../CONTRIBUTING.md)
 
-Push clean commits. Avoid bloat.
+Thanks for helping improve Eremos!
