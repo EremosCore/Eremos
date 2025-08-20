@@ -1,0 +1,18 @@
+version: "3.9"
+
+services:
+  eremos-core:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: eremos-core
+    restart: unless-stopped   # auto-restart if crash or system reboot
+    ports:
+      - "3000:3000"           # host:container
+    env_file:
+      - .env.local            # keep secrets outside the compose file
+    environment:
+      NODE_ENV: production
+    volumes:
+      - /app/node_modules     # avoid mounting host node_modules
+    command: npm run start     # run optimized build, not dev server

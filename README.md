@@ -99,6 +99,28 @@ npm run dev
 
 ---
 
+## Running with Docker 
+
+Run Eremos inside Docker, without installing Node.js locally.
+
+Build the image:
+
+```bash
+docker build -t eremos-core .
+```
+
+Run the container:
+
+```bash
+docker run --rm -it -p 3000:3000 eremos-core
+```
+
+Using Docker Compose:
+
+```bash
+docker compose up
+```
+
 ## Key Folders
 
 - `/agents` - Agent templates + logic  
