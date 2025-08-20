@@ -36,6 +36,22 @@ Modular and extendable by design.*
 ---
 
 ## ✨ Features
+=======
+
+**Agent-001 Coming Soon** [Teaser #1](https://x.com/EremosCore/status/1949154939923833239), [Teaser #2](https://x.com/EremosCore/status/1954856345284567218)
+
+---
+
+## Features
+
+- **Modular Agents** - Scoped logic for detecting wallet activity, contract spawns, and anomalies  
+- **Signal Emission** - Structured signals for logging, alerting, or downstream use  
+- **Swarm Design** - Each agent operates independently with shared utilities  
+- **Extensible Core** - Plug in watchers, inference layers, or custom triggers  
+- **Minimal Output** - Log only what matters
+- **Launch Wallet Detection** - Agents can trace freshly funded wallets (e.g. from CEXs), track their contract interactions, and flag high-confidence deploys in real time
+- **Ghost Watcher** - Monitors long-dormant wallets that suddenly become active again. Useful for tracing old dev wallets or rug setups.
+- *+ More to come.*
 
 - **🤖 Modular Agents** - Scoped logic for detecting wallet activity, contract spawns, and anomalies  
 - **📡 Signal Emission** - Structured signals for logging, alerting, or downstream use  
@@ -79,6 +95,12 @@ Each emitted signal includes a `confidence` score (0–1) based on behavioral he
 - ⏱️ **Time between funding → deploy**
 - 🔗 **Wallet linkage density** (bundled activity)
 - 📋 **Token metadata validation**
+=======
+Each emitted signal includes a `confidence` score (0-1) based on behavioral heuristics:
+- CEX-origin funding (e.g. Kraken, Coinbase)
+- Time between funding → deploy
+- Wallet linkage density (bundled activity)
+- Token metadata validation
 
 Confidence is computed via agent-side scoring and logged alongside the signal.
 
@@ -269,7 +291,7 @@ Explore our comprehensive documentation:
 
 ## 📄 License
 
-MIT © Eremos
+MIT © Eremos LLC
 
 ---
 
