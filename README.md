@@ -1,25 +1,44 @@
-# Eremos
-
+ # 🐝 Eremos
 ![Eremos](docs/banner2.png)
 
-**Autonomous swarm agents for early on-chain signal detection**
+![License](https://img.shields.io/badge/license-MIT-blue.svg)
+![Contributions Welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg)
+![Stars](https://img.shields.io/github/stars/EremosCore/Eremos?style=social)
+[![Twitter Follow](https://img.shields.io/twitter/follow/EremosCore?style=social)](https://twitter.com/EremosCore)
 
-Eremos is a lightweight framework for deploying modular agents that monitor blockchain activity - tracking wallet clusters, mint patterns, and contract anomalies.
-Designed for devs who want low-noise, early signals embedded into their workflows.
+> A modular framework for deploying autonomous **swarm agents** that monitor on-chain activity across the Solana ecosystem.  
+> Built as a **public good**, open-source and extendable.
+
+## 📑 Table of Contents
+1. [Quick Start](#quick-start)
+2. [Features](#features)
+3. [Architecture](#Architecture)
+4. [Example Signal](#Example-Signal)
+5. [Meet Theron Agent 000](#Meet-Theron-Agent-000)
+6. [Signal Confidence](#Signal-Confidence)
+7. [Tech Stack](#Tech-Stack)
+8. [Key Folders](#Key-Folders)
+9. [Contributing](#Contributing)
+10. [License](#License)
+11. [Links](#links)
 
 ---
 
-<p align="center">
-  <img src="docs/therontphd2.png" alt="Agent Theron" width="155"/><br/>
-  <em>Theron - Agent (000)</em>
-</p>
+## Quick Start
+```ts
+Clone your fork
+git clone https://github.com/YOUR-USERNAME/Eremos.git
+cd Eremos
 
-**Meet Theron - Agent-000**  
-*The first deployed agent in the swarm. Passive. Pattern-sensitive.  
-Modular and extendable by design.*
+Install dependencies
+npm install
 
+Copy env file
+cp .env.example .env.local
 
-**Agent-001 Coming Soon** [Teaser #1](https://x.com/EremosCore/status/1949154939923833239), [Teaser #2](https://x.com/EremosCore/status/1954856345284567218)
+Start dev mode
+npm run dev
+```
 
 ---
 
@@ -34,7 +53,14 @@ Modular and extendable by design.*
 - **Ghost Watcher** - Monitors long-dormant wallets that suddenly become active again. Useful for tracing old dev wallets or rug setups.
 - *+ More to come.*
 
+---
+## Architecture
+![Eremos](docs/arch-diagram.png)
 
+**Eremos swarm agents follow a simple lifecycle:**
+- **Observe** — watch Solana programs, wallets, and flows
+- **Detect** — flag bundling behavior, deploys, funding anomalies
+- **Signal** — emit structured alerts and insights
 ---
 
 ## Example Signal
@@ -60,6 +86,20 @@ An example signal emitted by an agent detecting a live token deployment:
 ```
 
 ---
+## Meet Theron Agent 000
+
+<p align="center">
+  <img src="docs/therontphd2.png" alt="Agent Theron" width="155"/><br/>
+  <em>Theron - Agent (000)</em>
+</p>
+
+*The first deployed agent in the swarm. Passive. Pattern-sensitive.  
+Modular and extendable by design.*
+
+
+**Agent-001 Coming Soon** [Teaser](https://x.com/EremosCore/status/1949154939923833239)
+
+---
 
 ## Signal Confidence
 
@@ -82,23 +122,6 @@ Confidence is computed via agent-side scoring and logged alongside the signal.
 
 ---
 
-## Getting Started
-
-```bash
-git clone https://github.com/EremosCore/Eremos.git
-cd Eremos
-npm install
-```
-
-Set up your environment:
-
-```bash
-cp .env.example .env.local
-npm run dev
-```
-
----
-
 ## Key Folders
 
 - `/agents` - Agent templates + logic  
@@ -111,9 +134,8 @@ npm run dev
 
 ## Contributing
 
-We’re open to contributors.  
-If you are experienced in TypeScript and like agent-based systems, check `example.ts` and build your own observer.
-If you're a designer, artist, or just have ideas that fit the mythos - send us a DM on Twitter. [@EremosCore](https://x.com/EremosCore)
+We welcome small, thoughtful contributions!
+See **CONTRIBUTING.md** for full guidelines.
 
 ---
 
@@ -130,3 +152,4 @@ MIT © Eremos LLC
 - **Whitepaper:** [v1.0 PDF](docs/whitepaper.pdf)
 
 _Maintained by the Eremos Core team 💛._
+
