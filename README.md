@@ -121,6 +121,28 @@ If you're a designer, artist, or just have ideas that fit the mythos - send us a
 
 MIT © Eremos LLC
 
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+
+## Security & Governance
+
+- [Security Policy](SECURITY.md)
+- [Code of Conduct](CODE_OF_CONDUCT.md)
+
+## Examples
+
+See [`examples/`](examples/) for starter agents:
+- Scam Detector
+- Whale Tracker
+- MEV Monitor
+
+## Developer Sandbox
+
+See [docs/DEVELOPMENT_SANDBOX.md](docs/DEVELOPMENT_SANDBOX.md) for local testnet setup.
+
+## Advanced Guide
+
+See [docs/ADVANCED_GUIDE.md](docs/ADVANCED_GUIDE.md) for custom agents, deployment, and dashboards.
+
 ---
 
 ## Links
