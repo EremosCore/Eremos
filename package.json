@@ -1,29 +1,30 @@
 {
   "name": "eremos-core",
   "version": "0.1.0",
-  "description": "Autonomous swarm agents for early on-chain signal detection on Solana",
+
+  "description": "Modular agent framework for on-chain activity monitoring and early signal detection.",
   "main": "index.js",
-  "homepage": "https://www.eremos.io",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/EremosCore/Eremos.git"
-  },
-  "bugs": {
-    "url": "https://github.com/EremosCore/Eremos/issues"
+  "engines": {
+    "node": ">=18.0.0",
+    "npm": ">=8.0.0"
   },
   "scripts": {
-    "dev": "echo 'Running dev mode...'",
-    "test": "echo 'Running tests...'",
+    "dev": "tsx watch agents/example.ts",
     "build": "tsc",
-    "lint": "echo 'Running linter...'",
-    "agent:dev": "npx ts-node scripts/dev-agent.ts",
-    "agent:list": "npx ts-node scripts/agent-list.ts",
-    "agent:validate": "npx ts-node scripts/validate-agent.ts",
-    "signal:generate": "npx ts-node scripts/generate-signal.ts",
-    "signal:preview": "npx ts-node scripts/signalhashpreview.ts",
-    "memory:export": "npx ts-node scripts/export-agent-memory.ts",
-    "stress:test": "npx ts-node scripts/stress-test.ts",
-    "cluster:simulate": "npx ts-node scripts/simulate-cluster.ts"
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "test:coverage": "jest --coverage",
+    "validate-agent": "tsx scripts/validate-agent.ts",
+    "generate-agent": "tsx scripts/generate-agent.ts",
+    "generate-signal": "tsx scripts/generate-signal.ts",
+    "simulate-cluster": "tsx scripts/simulate-cluster.ts",
+    "stress-test": "tsx scripts/stress-test.ts",
+    "dev-agent": "tsx scripts/dev-agent.ts",
+    "export-memory": "tsx scripts/export-agent-memory.ts",
+    "lint": "eslint . --ext .ts,.tsx",
+    "lint:fix": "eslint . --ext .ts,.tsx --fix",
+    "format": "prettier --write \"**/*.{ts,tsx,md,json}\"",
+    "typecheck": "tsc --noEmit"
   },
   "keywords": [
     "agent",
@@ -33,40 +34,38 @@
     "on-chain",
     "solana",
     "blockchain",
+
+    "framework",
+    "solana",
     "monitoring",
     "signals",
-    "detection",
-    "modular",
-    "framework",
-    "typescript",
+    "swarm",
     "autonomous",
-    "intelligence",
-    "wallet-tracking",
-    "defi"
+    "typescript"
   ],
   "license": "MIT",
-  "author": {
-    "name": "EremosCore",
-    "email": "core@eremos.io",
-    "url": "https://www.eremos.io"
+  "author": "EremosCore",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/EremosCore/Eremos.git"
   },
-  "contributors": [
-    {
-      "name": "Eremos Core Team",
-      "url": "https://github.com/EremosCore"
-    }
-  ],
-  "engines": {
-    "node": ">=16.0.0",
-    "npm": ">=7.0.0"
+  "bugs": {
+    "url": "https://github.com/EremosCore/Eremos/issues"
   },
-  "files": [
-    "agents/",
-    "types/",
-    "utils/",
-    "scripts/",
-    "docs/",
-    "README.md",
-    "LICENSE"
-  ]
+  "homepage": "https://www.eremos.io",
+  "devDependencies": {
+    "@types/jest": "^29.5.5",
+    "@types/node": "^20.6.0",
+    "@typescript-eslint/eslint-plugin": "^6.7.0",
+    "@typescript-eslint/parser": "^6.7.0",
+    "eslint": "^8.49.0",
+    "jest": "^29.7.0",
+    "prettier": "^3.0.3",
+    "ts-jest": "^29.1.1",
+    "tsx": "^3.12.10",
+    "typescript": "^5.2.2"
+  },
+  "dependencies": {
+    "@solana/web3.js": "^1.78.0"
+  }
 }
