@@ -1,6 +1,51 @@
 # Eremos
+[![Build](https://img.shields.io/github/actions/workflow/status/praise-bit/Eremos/ci.yml?branch=main)](https://github.com/praise-bit/Eremos/actions)
+[![Lint](https://img.shields.io/github/actions/workflow/status/praise-bit/Eremos/lint.yml?branch=main&label=lint)](https://github.com/praise-bit/Eremos/actions)
+[![License](https://img.shields.io/github/license/praise-bit/Eremos)](./LICENSE)
+[![Node](https://img.shields.io/badge/node-%3E%3D18-green)](https://nodejs.org)
+[![Contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)](#-contribution-guidelines)
 
-![Eremos](docs/banner2.png)
+
+Project Contribution – Sample Agent & Documentation Improvements
+
+This update enhances the developer onboarding experience for the Eremos project by introducing a functional sample agent, improving documentation, and providing a clearer, step-by-step setup process.
+The goal is to make it faster and easier for new contributors to start building and testing agents.
+
+⸻
+
+🚀 How It Works
+
+The Sample Agent demonstrates integration with the Eremos core system while logging key runtime events.
+It uses the built-in logger utility to output structured logs, enabling better visibility into the execution flow.
+
+Execution Flow:
+	1.	The agent initializes and connects to the core system.
+	2.	Relevant events are captured and logged in a readable, structured format.
+	3.	Developers can observe each step, understand the data flow, and adapt the code for their own agents.
+
+⸻
+
+🛠 Changes Made
+	•	Added Sample Agent
+	•	Demonstrates basic usage of the Eremos core
+	•	Shows how to integrate logging for better debugging
+	•	Improved Documentation
+	•	Added step-by-step fork/clone/setup instructions
+	•	Included testing & linting commands
+	•	Documented PR submission process
+	•	Formatted commands in code blocks for easy copy-paste
+	•	Code & Structure
+	•	Enhanced readability with clear code comments
+	•	Provided runnable examples for onboarding
+
+                      INSTALLATION SETUP
+# 1. Fork the repository on GitHub
+# 2. Clone your fork
+git clone https://github.com/<your-username>/Eremos.git
+# 3. Navigate to the project folder
+cd Eremos
+
+  ![Eremos](docs/banner2.png)
 
 **Autonomous swarm agents for early on-chain signal detection**
 
@@ -71,62 +116,89 @@ Each emitted signal includes a `confidence` score (0-1) based on behavioral heur
 
 Confidence is computed via agent-side scoring and logged alongside the signal.
 
----
 
-## Tech Stack
-
-- **Frontend:** Next.js, Tailwind CSS
-- **Backend:** Node.js (TypeScript-based agent runner)
-- **Language:** TypeScript (typed logic across agents, utils, and infra)
-- **Chain Layer:** RPC watchers, mempool filters, native triggers
-
----
-
-## Getting Started
-
-```bash
-git clone https://github.com/EremosCore/Eremos.git
-cd Eremos
+# 4. Install dependencies
 npm install
-```
 
-Set up your environment:
+# 5. Run the sample agent
+npm run sample-agent
 
-```bash
-cp .env.example .env.local
-npm run dev
-```
+✅ Impact
 
----
+These updates:
+	•	Reduce onboarding time for first-time contributors
+	•	Provide a clear, consistent process for setup and contribution
+	•	Give developers a working reference implementation to build upon
+	•	Improve debugging with structured logging
 
-## Key Folders
+⸻
 
-- `/agents` - Agent templates + logic  
-- `/utils` - Shared signal/logging utilities  
-- `/types` - TypeScript interfaces + definitions  
-- `/scripts` - Bootstrap and dev scripts  
-- `/docs` - Swarm structure, architecture, & our artwork/official whitepaper
+📄 Contribution Process
+	1.	Fork this repository
+	2.	Clone your fork locally
+	3.	Make your changes in a new branch
+	4.	Test locally before committing
+	5.	Push to your fork and submit a Pull Request against the main repo
 
----
+⸻
 
-## Contributing
+🔗 Resources
+	•	Official Documentation
+	•	Issue Tracker
+	•	Pull Request Guidelines
+                        SAMPlE AGENT GUIDELINES
+Eremos Sample Agent
 
-We’re open to contributors.  
-If you are experienced in TypeScript and like agent-based systems, check `example.ts` and build your own observer.
-If you're a designer, artist, or just have ideas that fit the mythos - send us a DM on Twitter. [@EremosCore](https://x.com/EremosCore)
+This repository contains the Eremos Sample Agent, a reference implementation demonstrating how to interact with the Eremos platform.
+It is designed to be easy to set up, extend, and integrate into larger systems while following best practices for maintainability.
 
----
+⸻
 
-## License
+📌 Features
+	•	TypeScript-based clean architecture.
+	•	Logger utility for consistent debugging and error tracking.
+	•	Configurable environment variables for seamless setup across environments.
+	•	Clear contribution and development guidelines for new contributors.
+	•	Well-structured codebase for scalability and clarity.
 
-MIT © Eremos LLC
+🛠 Logger Utility
 
----
+The logger.ts file provides a consistent and professional way to log messages:
+                    import logger from './utils/logger';
 
-## Links
+logger.info('Server started successfully');
+logger.warn('This is a warning message');
+logger.error('This is an error message');
 
-- **Twitter/X:** [@EremosCore](https://x.com/EremosCore)
-- **Website:** [Eremos.io](https://www.eremos.io/)
-- **Whitepaper:** [v1.0 PDF](docs/whitepaper.pdf)
+Output is timestamped and color-coded for better readability in the console.
 
-_Maintained by the Eremos Core team 💛._
+                        Project Structure
+Eremos/
+│── src/
+│   ├── index.ts         # Entry point
+│   ├── utils/
+│   │   └── logger.ts    # Logger utility
+│── .env.example         # Example environment variables
+│── README.md            # Documentation
+│── package.json
+
+HOW IT WORKS
+	1.	Initialization – The agent loads environment configs and starts services.
+	2.	Processing – The logger records system events and data flow.
+	3.	Execution – The main service executes API calls or tasks.
+	4.	Response Handling – Results are logged and returned to the caller
+
+                    📜 Contribution Guidelines
+
+If you want to contribute:
+	1.	Fork the repository.
+	2.	Clone your fork locally.
+	3.	Create a feature branch.
+	4.	Make your changes.
+	5.	Run tests and lint:
+                npm run lint
+                npm run test
+
+ Visual Detailed contribution instructions can be found in https://github.com/praise-bit/Eremos-MarkZ/blob/main/docs/31D1925E-E5D9-43F0-BBAC-24A4E8A1C926.png
+           Thanks.
+
