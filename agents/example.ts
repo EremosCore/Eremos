@@ -1,6 +1,7 @@
 import { Agent } from "../types/agent";
 import { generateSignalHash } from "../utils/signal";
 import { logSignal } from "../utils/logger";
+import { parseWalletActivityEvent } from "../utils/eventParser";
 
 export const ExampleAgent: Agent = {
   id: "agent-xxx",
@@ -15,8 +16,9 @@ export const ExampleAgent: Agent = {
   description:
     "Template agent used as a reference for custom swarm agent creation. Replace fields and logic to define your own behavior.",
 
-  observe: (event) => {
-    if (event?.type === "wallet_activity") {
+  observe: (rawEvent) => {
+    const event = parseWalletActivityEvent(rawEvent);
+    if (event) {
       const hash = generateSignalHash(event);
       logSignal({
         agent: "Example",
