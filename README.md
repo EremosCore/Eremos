@@ -101,7 +101,7 @@ Confidence is computed via agent-side scoring and logged alongside each signal.
 
 - Node.js 18+ 
 - npm or yarn
-- Basic knowledge of TypeScript
+- Basic/Intermediate knowledge of TypeScript
 
 ### Installation
 
