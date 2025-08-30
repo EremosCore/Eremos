@@ -29,7 +29,7 @@ Closes #(issue number)
 Related to #(issue number)
 
 ## Screenshots/Demo
-If applicable, add screenshots or demo links to help explain your changes.
+If applicable, add screenshots or demo links to help explain your changes. (Please use youtube.com)
 
 ## Deployment Notes
 Any special deployment considerations or migration steps needed.
