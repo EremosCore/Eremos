@@ -1,3 +1,6 @@
+# ***Bounty Granted***
+
+
 # Eremos
 
 ![Eremos](docs/banner2.png)
