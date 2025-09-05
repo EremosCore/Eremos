@@ -162,7 +162,7 @@ Eremos/
 | [Agent Guide](docs/agents.md) | Creating custom agents |
 | [Signals](docs/signals.md) | Signal types and taxonomy |
 | [Memory System](docs/memory.md) | Agent memory and state management |
-| [Glyphs](docs/glyphs.md) | Agent identification symbols |
+| [Glyphs](docs/glyphs.md) | Agent identification symbols (Glyphs) |
 | [Deployment](docs/deployment.md) | Production deployment guide |
 
 ---
