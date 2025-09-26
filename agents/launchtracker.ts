@@ -1,6 +1,7 @@
 import { Agent } from "../types/agent";
 import { generateSignalHash } from "../utils/signal";
 import { logSignal } from "../utils/logger";
+import { parseWalletActivityEvent } from "../utils/eventParser";
 
 export const LaunchTracker: Agent = {
   id: "agent-launch",
@@ -15,13 +16,16 @@ export const LaunchTracker: Agent = {
   description:
     "Monitors freshly funded wallets from CEX sources. Emits high-confidence launch signals based on behavior patterns.",
 
-  observe: (event) => {
+  observe: (rawEvent) => {
+    const event = parseWalletActivityEvent(rawEvent);
+    if (!event) return;
+
     if (
       event?.type === "wallet_activity" &&
       event.source === "kraken" &&
       event.fundingDetected &&
       event.deployDetected &&
-      event.bundleCount >= 3
+      event.bundleCount && event.bundleCount >= 3
     ) {
       const confidence = 0.91;
       const hash = generateSignalHash(event);
@@ -32,7 +36,9 @@ export const LaunchTracker: Agent = {
         glyph: "Σ",
         hash,
         timestamp: new Date().toISOString(),
-        confidence,
+        details: {
+          confidence: confidence
+        }
       });
     }
   },
