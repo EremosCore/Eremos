@@ -31,5 +31,3 @@ You can test agents using `/scripts/dev-agent.ts` or create your own mock.
 - Role: indexing  
 - Glyph: λ  
 - Watches: mint_activity  
-
-//pending adjustments + adding more agents ^
