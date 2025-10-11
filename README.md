@@ -194,7 +194,7 @@ We welcome contributions from the community! Here's how you can help:
 ### For Designers & Artists
 
 Have ideas that fit the Eremos mythos? We'd love to hear from you!  
-Send us a DM on [Twitter @EremosCore](https://x.com/EremosCore)
+Send us a DM on Twitter [@EremosCore](https://x.com/EremosCore)
 
 ### Development Guidelines
 
