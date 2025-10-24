@@ -17,7 +17,7 @@
 
 ---
 
-Eremos is a lightweight framework for deploying modular agents that monitor blockchain activity - tracking wallet clusters, mint patterns, and contract anomalies. Designed for developers who want low-noise, early signals embedded into their workflows.
+Eremos is a lightweight framework for deploying modular agents that monitor blockchain activity - tracking wallet clusters, mint patterns, and contract anomalies. Designed for developers who want early signals embedded into their workflows.
 
 ## Quick Overview
 
@@ -101,7 +101,7 @@ Confidence is computed via agent-side scoring and logged alongside each signal.
 
 - Node.js 18+ 
 - npm or yarn
-- Basic/Intermediate knowledge of TypeScript
+- Basic knowledge of TypeScript
 
 ### Installation
 
