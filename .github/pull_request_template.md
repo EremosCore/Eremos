@@ -22,14 +22,13 @@ Brief description of what this PR does and why.
 - [ ] I have commented my code, particularly in hard-to-understand areas
 - [ ] I have made corresponding changes to the documentation
 - [ ] My changes generate no new warnings
-- [ ] Any dependent changes have been merged and published
 
 ## Related Issues
 Closes #(issue number)
 Related to #(issue number)
 
 ## Screenshots/Demo
-If applicable, add screenshots or demo links to help explain your changes. (Please use youtube.com)
+If applicable, add screenshots or demo links to help explain your changes. (Please use Youtube.com)
 
 ## Deployment Notes
 Any special deployment considerations or migration steps needed.
