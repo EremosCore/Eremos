@@ -26,7 +26,7 @@ Eremos is a lightweight framework for deploying modular agents that monitor bloc
   <em>Theron - Agent (000)</em>
 </div>
 
-**Meet Theron - Agent-000**  
+**Meet Theron - Agent-000 [Theron - X](https://x.com/TheronAgent)**  
 *The first deployed agent in the swarm. Passive. Pattern-sensitive. Modular and extendable by design.*
 
 **Agent-001 Coming Soon** • [Teaser #1](https://x.com/EremosCore/status/1949154939923833239) • [Teaser #2](https://x.com/EremosCore/status/1954856345284567218)
