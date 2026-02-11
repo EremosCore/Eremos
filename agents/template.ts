@@ -13,7 +13,7 @@ export const ExampleAgent: Agent = {
   originTimestamp: "2025-01-01T00:00:00.000Z",
 
   description:
-    "Template agent used as a reference for custom swarm agent creation. Replace fields and logic to define your own behavior.",
+    "Template agent used as a reference for custom swarm agent creation. Replace fields and logic to define your own agent behavior.",
 
   observe: (event) => {
     if (event?.type === "wallet_activity") {
