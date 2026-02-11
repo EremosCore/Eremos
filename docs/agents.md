@@ -2,8 +2,8 @@
 
 ## Base Requirements
 Each agent must include:
-- `observe(event)` — detection logic
-- `getMemory()` — memory snapshot
+- `observe(event)` - detection logic
+- `getMemory()` - memory snapshot
 - `description`, `watchType`, `glyph`, and `triggerThreshold`
 
 Use `/agents/example.ts` as a scaffold.
@@ -17,7 +17,7 @@ You can test agents using `/scripts/dev-agent.ts` or create your own mock.
 
 ## Agents
 
-### Theron (Agent-000)
+### Theron (Agent-000) - https://x.com/TheronAgent
 - Role: memory_vault  
 - Glyph: Ϸ  
 - Watches: anomaly_detection  
@@ -27,7 +27,7 @@ You can test agents using `/scripts/dev-agent.ts` or create your own mock.
 - Glyph: Δ  
 - Watches: wallet_activity  
 
-### Harvester (new)
+### Harvester
 - Role: indexing  
 - Glyph: λ  
 - Watches: mint_activity  
