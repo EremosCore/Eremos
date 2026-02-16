@@ -223,6 +223,28 @@ MIT © [Eremos LLC](LICENSE)
 
 This project is released under the MIT License. Use it, fork it, fragment it, build your own swarm.
 
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+
+## Security & Governance
+
+- [Security Policy](SECURITY.md)
+- [Code of Conduct](CODE_OF_CONDUCT.md)
+
+## Examples
+
+See [`examples/`](examples/) for starter agents:
+- Scam Detector
+- Whale Tracker
+- MEV Monitor
+
+## Developer Sandbox
+
+See [docs/DEVELOPMENT_SANDBOX.md](docs/DEVELOPMENT_SANDBOX.md) for local testnet setup.
+
+## Advanced Guide
+
+See [docs/ADVANCED_GUIDE.md](docs/ADVANCED_GUIDE.md) for custom agents, deployment, and dashboards.
+
 ---
 
 ## Links
