@@ -2,6 +2,11 @@
 
 # Eremos
 
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Twitter Follow](https://img.shields.io/twitter/follow/EremosCore?style=social)](https://twitter.com/EremosCore)
+[![Website](https://img.shields.io/website?url=https%3A%2F%2Feremos.io)](https://eremos.io)
+[![npm version](https://badge.fury.io/js/eremos-core.svg)](https://badge.fury.io/js/eremos-core)
+
 ![Eremos](docs/banner2.png)
 
 **Autonomous swarm agents for early on-chain signal detection**
