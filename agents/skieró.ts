@@ -1,6 +1,7 @@
 import { Agent } from "../types/agent";
 import { logSignal } from "../utils/logger";
 import { generateSignalHash } from "../utils/signal";
+import { parseWalletReactivationEvent } from "../utils/eventParser";
 
 export const GhostWatcher: Agent = {
   id: "agent-022",
@@ -15,15 +16,20 @@ export const GhostWatcher: Agent = {
   description:
     "Tracks long-dormant wallets that suddenly reactivate. Useful for catching old dev or team wallets coming back online.",
 
-  observe: (event) => {
-    if (event.type === "reactivation" && event.walletAgeDays > 180) {
+  observe: (rawEvent) => {
+    const event = parseWalletReactivationEvent(rawEvent);
+    if (!event) return;
+
+    if (event.walletAgeDays > 180) {
       logSignal({
         agent: "Skieró",
         type: "wallet_reactivated",
         glyph: "ψ",
         hash: generateSignalHash(event),
         timestamp: new Date().toISOString(),
-        confidence: 0.78,
+        details: {
+          confidence: 0.78
+        }
       });
     }
   },

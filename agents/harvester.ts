@@ -1,4 +1,7 @@
 import { Agent } from "../types/agent"
+import { generateSignalHash } from "../utils/signal";
+import { logSignal } from "../utils/logger";
+import { parseMintActivityEvent } from "../utils/eventParser";
 
 export const Harvester: Agent = {
   id: "agent-harvester",
@@ -11,9 +14,19 @@ export const Harvester: Agent = {
   originTimestamp: new Date().toISOString(),
   description: "Indexes mint data for high-volume collections.",
 
-  observe: (event) => {
-    if (event?.type === "mint_activity" && event.amount > 10) {
-      console.log("Mint spike detected:", event.amount)
+  observe: (rawEvent) => {
+    const event = parseMintActivityEvent(rawEvent);
+    if (event && event.amount > 10) {
+      logSignal({
+        agent: "Harvester",
+        type: "mint_activity",
+        glyph: "λ",
+        hash: generateSignalHash(event),
+        timestamp: new Date().toISOString(),
+        details: {
+          amount: event.amount
+        }
+      });
     }
   }
 }
