@@ -1,0 +1,5 @@
+{
+  "name": "ScamDetector",
+  "adapters": ["solana"],
+  "rules": ["flag-suspicious-tx"]
+}

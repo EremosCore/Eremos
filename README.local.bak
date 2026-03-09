@@ -1,0 +1,90 @@
+# Eremos Core
+
+[![Build Status](https://img.shields.io/github/actions/workflow/status/EremosCore/Eremos/ci.yml?branch=main)](https://github.com/EremosCore/Eremos/actions)
+[![License](https://img.shields.io/github/license/EremosCore/Eremos)](LICENSE)
+[![Issues](https://img.shields.io/github/issues/EremosCore/Eremos)](https://github.com/EremosCore/Eremos/issues)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](CONTRIBUTING.md)
+
+> **Eremos Core** powers open, composable swarm agents for Solana and beyond.
+
+---
+
+## Table of Contents
+
+- [Overview](#overview)
+- [Architecture](#architecture)
+- [Quickstart](#quickstart)
+- [Usage Examples](#usage-examples)
+- [Contributing](#contributing)
+- [License](#license)
+
+---
+
+## Overview
+
+Eremos Core is an open-source framework for building and deploying swarm agents on Solana. It enables decentralized coordination, composability, and transparency for agent-based systems.
+
+---
+
+## Architecture
+
+![Eremos Architecture Diagram](docs/architecture.svg)
+
+- **Swarm Agents:** Modular, composable agents that interact with Solana and each other.
+- **Core Engine:** Orchestrates agent lifecycle, messaging, and state.
+- **Adapters:** Integrate with Solana, external APIs, and custom logic.
+- **CLI & SDK:** Tools for deploying, monitoring, and extending agents.
+
+---
+
+## Quickstart
+
+```sh
+# 1. Clone the repo
+git clone https://github.com/EremosCore/Eremos.git
+cd Eremos
+
+# 2. Install dependencies
+npm install
+
+# 3. Run the demo
+npm run demo
+```
+
+See [docs/QUICKSTART.md](docs/QUICKSTART.md) for full setup instructions.
+
+---
+
+## Usage Examples
+
+### 1. Launch a Swarm Agent
+
+```js
+import { SwarmAgent } from 'eremos-core';
+
+const agent = new SwarmAgent({
+  name: 'SolanaIndexer',
+  adapters: ['solana', 'http'],
+  onMessage: (msg) => { /* handle messages */ },
+});
+
+agent.start();
+```
+
+### 2. Real-World Use Cases
+
+- **Solana Indexer:** Aggregate and analyze on-chain data.
+- **DeFi Arbitrage Bot:** Coordinate multiple agents for cross-protocol trading.
+- **NFT Discovery:** Swarm agents crawl and index NFT metadata.
+
+---
+
+## Contributing
+
+We welcome PRs! See [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines.
+
+---
+
+## License
+
+MIT © Eremos Core
