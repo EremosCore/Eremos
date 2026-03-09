@@ -216,7 +216,13 @@ Send us a DM on Twitter [@EremosCore](https://x.com/EremosCore)
 | `scripts/validate-agent.ts` | Validate agent configuration |
 
 ---
+## Quick Start
 
+1. **Clone Repository**
+   ```bash
+   git clone https://github.com/Ibnu3456787/Eremos.git
+   cd Eremos
+   
 ## License
 
 MIT © [Eremos LLC](LICENSE)
